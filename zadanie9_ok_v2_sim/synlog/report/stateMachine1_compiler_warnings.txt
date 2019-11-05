@@ -1,0 +1,4 @@
+@W: CD266 :"D:\isplever projects\zadanie9_ok\clk_prescaler.vhd":28:25:28:34|o_clk_slow is not readable.  This may cause a simulation mismatch.
+@W: CD604 :"D:\isplever projects\zadanie9_ok\statemachine1.vhd":61:1:61:14|OTHERS clause is not synthesized 
+@W: CD638 :"D:\isplever projects\zadanie9_ok\clk_prescaler.vhd":17:7:17:23|Signal s_activeprescaler is undriven 
+

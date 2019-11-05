@@ -1,0 +1,78 @@
+#PLAFILE testprj.tt4
+#DATE    12/11/2018
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION currState_0_reg:C_8	// NOD
+DATA LOCATION i_btn_0_:C_*_31	// INP
+DATA LOCATION i_btn_1_:C_*_30	// INP
+DATA LOCATION i_clk:*_*_11	// Cin
+DATA LOCATION o_clkSlow:D_0_36	// OUT
+DATA LOCATION o_diodes_0_:A_0_9	// OUT
+DATA LOCATION o_diodes_1_:A_4_8	// OUT
+DATA LOCATION o_diodes_2_:A_8_7	// OUT
+DATA LOCATION o_diodes_3_:A_12_6	// OUT
+DATA LOCATION o_diodes_4_:A_9_5	// OUT
+DATA LOCATION o_diodes_5_:A_1_4	// OUT
+DATA LOCATION o_diodes_6_:A_13_3	// OUT
+DATA LOCATION o_diodes_7_:A_5_2	// OUT
+DATA LOCATION pres_counter_0_:B_0	// NOD
+DATA LOCATION pres_counter_1_:C_4	// NOD
+DATA LOCATION pres_counter_2_:C_0	// NOD
+DATA LOCATION pres_counter_3_:D_4	// NOD
+DATA LOCATION pres_counter_4_:B_8	// NOD
+DATA LOCATION pres_counter_5_:D_8	// NOD
+DATA LOCATION pres_counter_6_:B_4	// NOD
+DATA IO_DIR   i_btn_0_:IN
+DATA IO_DIR   i_btn_1_:IN
+DATA IO_DIR   i_clk:IN
+DATA IO_DIR   o_clkSlow:OUT
+DATA IO_DIR   o_diodes_0_:OUT
+DATA IO_DIR   o_diodes_1_:OUT
+DATA IO_DIR   o_diodes_2_:OUT
+DATA IO_DIR   o_diodes_3_:OUT
+DATA IO_DIR   o_diodes_4_:OUT
+DATA IO_DIR   o_diodes_5_:OUT
+DATA IO_DIR   o_diodes_6_:OUT
+DATA IO_DIR   o_diodes_7_:OUT
+DATA GLB_CLOCK  i_clk
+DATA PW_LEVEL  i_btn_1_:0
+DATA SLEW      i_btn_1_:0
+DATA PW_LEVEL  o_diodes_7_:0
+DATA SLEW      o_diodes_7_:0
+DATA SLEW      i_clk:0
+DATA PW_LEVEL  o_clkSlow:0
+DATA SLEW      o_clkSlow:0
+DATA PW_LEVEL  i_btn_0_:0
+DATA SLEW      i_btn_0_:0
+DATA PW_LEVEL  o_diodes_6_:0
+DATA SLEW      o_diodes_6_:0
+DATA PW_LEVEL  o_diodes_5_:0
+DATA SLEW      o_diodes_5_:0
+DATA PW_LEVEL  o_diodes_4_:0
+DATA SLEW      o_diodes_4_:0
+DATA PW_LEVEL  o_diodes_3_:0
+DATA SLEW      o_diodes_3_:0
+DATA PW_LEVEL  o_diodes_2_:0
+DATA SLEW      o_diodes_2_:0
+DATA PW_LEVEL  o_diodes_1_:0
+DATA SLEW      o_diodes_1_:0
+DATA PW_LEVEL  o_diodes_0_:0
+DATA SLEW      o_diodes_0_:0
+DATA PW_LEVEL  currState_0_reg:0
+DATA SLEW      currState_0_reg:0
+DATA PW_LEVEL  pres_counter_0_:0
+DATA SLEW      pres_counter_0_:0
+DATA PW_LEVEL  pres_counter_1_:0
+DATA SLEW      pres_counter_1_:0
+DATA PW_LEVEL  pres_counter_2_:0
+DATA SLEW      pres_counter_2_:0
+DATA PW_LEVEL  pres_counter_3_:0
+DATA SLEW      pres_counter_3_:0
+DATA PW_LEVEL  pres_counter_4_:0
+DATA SLEW      pres_counter_4_:0
+DATA PW_LEVEL  pres_counter_5_:0
+DATA SLEW      pres_counter_5_:0
+DATA PW_LEVEL  pres_counter_6_:0
+DATA SLEW      pres_counter_6_:0
+END

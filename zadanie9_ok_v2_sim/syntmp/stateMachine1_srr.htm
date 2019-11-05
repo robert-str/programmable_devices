@@ -1,0 +1,80 @@
+<html><body><samp><pre>
+<!@TC:1547559415>
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: DESKTOP-GLP2QA4
+
+#Implementation: zadanie9_ok
+
+<a name=compilerReport1>$ Start of Compile</a>
+#Tue Jan 15 14:36:55 2019
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1547559415> | Running in 64-bit mode 
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N:<a href="@N:CD720:@XP_HELP">CD720</a> : <a href="C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd:123:18:123:22:@N:CD720:@XP_MSG">std.vhd(123)</a><!@TM:1547559415> | Setting time resolution to ns
+@N: : <a href="D:\isplever projects\zadanie9_ok\statemachine1.vhd:6:7:6:20:@N::@XP_MSG">statemachine1.vhd(6)</a><!@TM:1547559415> | Top entity is set to stateMachine1.
+File D:\isplever projects\zadanie9_ok\clk_prescaler.vhd changed - recompiling
+File D:\isplever projects\zadanie9_ok\statemachine1.vhd changed - recompiling
+<font color=#A52A2A>@W:<a href="@W:CD266:@XP_HELP">CD266</a> : <a href="D:\isplever projects\zadanie9_ok\clk_prescaler.vhd:28:25:28:35:@W:CD266:@XP_MSG">clk_prescaler.vhd(28)</a><!@TM:1547559415> | o_clk_slow is not readable.  This may cause a simulation mismatch.</font>
+VHDL syntax check successful!
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="D:\isplever projects\zadanie9_ok\statemachine1.vhd:6:7:6:20:@N:CD630:@XP_MSG">statemachine1.vhd(6)</a><!@TM:1547559415> | Synthesizing work.statemachine1.sequential 
+@N:<a href="@N:CD233:@XP_HELP">CD233</a> : <a href="D:\isplever projects\zadanie9_ok\statemachine1.vhd:15:11:15:13:@N:CD233:@XP_MSG">statemachine1.vhd(15)</a><!@TM:1547559415> | Using sequential encoding for type state
+<font color=#A52A2A>@W:<a href="@W:CD604:@XP_HELP">CD604</a> : <a href="D:\isplever projects\zadanie9_ok\statemachine1.vhd:61:1:61:15:@W:CD604:@XP_MSG">statemachine1.vhd(61)</a><!@TM:1547559415> | OTHERS clause is not synthesized </font>
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="D:\isplever projects\zadanie9_ok\clk_prescaler.vhd:7:7:7:20:@N:CD630:@XP_MSG">clk_prescaler.vhd(7)</a><!@TM:1547559415> | Synthesizing work.clk_prescaler.prescaler 
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="D:\isplever projects\zadanie9_ok\clk_prescaler.vhd:17:7:17:24:@W:CD638:@XP_MSG">clk_prescaler.vhd(17)</a><!@TM:1547559415> | Signal s_activeprescaler is undriven </font>
+Post processing for work.clk_prescaler.prescaler
+Post processing for work.statemachine1.sequential
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 15 14:36:55 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1547559416> | Running in 64-bit mode 
+File D:\isplever projects\zadanie9_ok\synwork\stateMachine1_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 15 14:36:56 2019
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport2>Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014</a>
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1547559417> | Running in 64-bit mode. 
+@N: : <a href="d:\isplever projects\zadanie9_ok\clk_prescaler.vhd:25:1:25:3:@N::@XP_MSG">clk_prescaler.vhd(25)</a><!@TM:1547559417> | Found counter in view:work.clk_prescaler(prescaler) inst counter[6:0]
+---------------------------------------
+<a name=resourceUsage3>Resource Usage Report</a>
+
+Simple gate primitives:
+DFF             9 uses
+IBUF            3 uses
+OBUF            1 use
+BUFTH           8 uses
+AND2            35 uses
+INV             24 uses
+OR2             1 use
+XOR2            1 use
+
+
+@N:<a href="@N:FC100:@XP_HELP">FC100</a> : <!@TM:1547559417> | Timing Report not generated for this device, please use place and route tools for timing analysis. 
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 103MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jan 15 14:36:57 2019
+
+###########################################################]
+
+</pre></samp></body></html>

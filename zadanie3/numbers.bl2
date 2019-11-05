@@ -1,0 +1,484 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Mon Oct 28 12:04:53 2019
+#$ MODULE numbers
+#$ PINS 19 i_prescalerSelect_6_ seg7_7_ clk clock_out LD BI i_prescalerSelect_5_ \
+#  i_prescalerSelect_4_ i_prescalerSelect_3_ i_prescalerSelect_2_ \
+#  i_prescalerSelect_1_ i_prescalerSelect_0_ seg7_6_ seg7_5_ seg7_4_ seg7_3_ seg7_2_ \
+#  seg7_1_ seg7_0_
+#$ NODES 119 vcc_n_n gnd_n_n U1_G_5 U1_G_17 u1_op_eq_dsec6_n u1_seconds_2_1__n \
+#  u1_seconds_2_3__n U1_seconds_0_0_ u1_n_10_n u1_n_12_n u1_n_20_n u1_n_22_n \
+#  u1_op_eq_seconds6_n U1_G_19 U1_G_15 U1_G_7 U1_G_3 u0_zegar_counter_n U0_counter_0_ \
+#  U0_counter_1_ U0_counter_2_ U0_counter_3_ U0_counter_4_ U0_counter_5_ U0_counter_6_ \
+#  U0_clk_slow_0 U0_G_15 U0_G_16 U0_G_17 U0_G_18 U0_G_19 U0_G_20 U0_G_21 u0_n_32_n \
+#  u0_n_33_n u0_n_34_n u0_n_35_n u0_n_36_n u0_n_37_n u0_n_38_n u0_n_39_n u0_n_40_n \
+#  u0_n_41_n u0_n_42_n u0_n_44_n u1_op_eq_seconds6_i_n u1_op_eq_dsec6_i_n seg7_i_1__n \
+#  seg7_i_2__n seg7_i_5__n seg7_i_6__n u0_counter_i_0_5__n u0_counter_i_0_4__n \
+#  u0_counter_i_0_3__n u0_counter_i_0_2__n u0_counter_i_0_0__n u0_counter_i_0_1__n \
+#  u0_zegar_counter_i_n u0_counter_i_0_6__n u0_n_17_i_n u0_n_18_i_n u0_n_19_i_n \
+#  u0_n_20_i_n u0_n_21_i_n u0_n_22_i_n u0_n_23_i_n clk_c i_prescalerselect_c_0__n \
+#  i_prescalerselect_c_1__n i_prescalerselect_c_2__n i_prescalerselect_c_3__n \
+#  i_prescalerselect_c_4__n i_prescalerselect_c_5__n i_prescalerselect_c_6__n \
+#  U1_dsec_0_reg U1_dsec_1_reg U1_dsec_2_reg U1_dsec_3_reg U1_seconds_0_reg \
+#  U1_seconds_1_reg U1_seconds_2_reg U1_seconds_3_reg U0_clk_slowreg u0_n_36_0_n \
+#  u0_n_35_0_n u0_n_34_0_n u0_n_33_0_n u0_n_32_0_n u0_n_44_i_n u0_n_42_i_n u0_n_41_i_n \
+#  u0_n_40_i_n u0_n_39_i_n u0_n_37_i_n u0_n_38_i_n u1_op_eq_seconds6_1_n \
+#  u1_op_eq_seconds6_2_n u1_op_eq_dsec6_1_n u1_op_eq_dsec6_2_n u0_n_31_0_1_n \
+#  u0_n_24_0_1_n u0_n_30_0_1_n u0_n_29_0_1_n u0_n_28_0_1_n u0_n_5_0_1_n \
+#  u0_zegar_counter_1_n u0_zegar_counter_2_n u0_zegar_counter_3_n \
+#  u0_zegar_counter_4_n u0_zegar_counter_5_n u1_seconds_0_2__un3_n \
+#  u1_seconds_0_2__un1_n u1_seconds_0_2__un0_n u1_seconds_0_3__un3_n \
+#  u1_seconds_0_3__un1_n u1_seconds_0_3__un0_n u1_seconds_0_1__un3_n \
+#  u1_seconds_0_1__un1_n u1_seconds_0_1__un0_n
+.model top
+.inputs i_prescalerSelect_6_.BLIF clk.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF i_prescalerSelect_3_.BLIF i_prescalerSelect_2_.BLIF \
+i_prescalerSelect_1_.BLIF i_prescalerSelect_0_.BLIF vcc_n_n.BLIF gnd_n_n.BLIF \
+U1_G_5.BLIF U1_G_17.BLIF u1_op_eq_dsec6_n.BLIF u1_seconds_2_1__n.BLIF \
+u1_seconds_2_3__n.BLIF U1_seconds_0_0_.BLIF u1_n_10_n.BLIF u1_n_12_n.BLIF \
+u1_n_20_n.BLIF u1_n_22_n.BLIF u1_op_eq_seconds6_n.BLIF U1_G_19.BLIF \
+U1_G_15.BLIF U1_G_7.BLIF U1_G_3.BLIF u0_zegar_counter_n.BLIF \
+U0_counter_0_.BLIF U0_counter_1_.BLIF U0_counter_2_.BLIF U0_counter_3_.BLIF \
+U0_counter_4_.BLIF U0_counter_5_.BLIF U0_counter_6_.BLIF U0_clk_slow_0.BLIF \
+U0_G_15.BLIF U0_G_16.BLIF U0_G_17.BLIF U0_G_18.BLIF U0_G_19.BLIF U0_G_20.BLIF \
+U0_G_21.BLIF u0_n_32_n.BLIF u0_n_33_n.BLIF u0_n_34_n.BLIF u0_n_35_n.BLIF \
+u0_n_36_n.BLIF u0_n_37_n.BLIF u0_n_38_n.BLIF u0_n_39_n.BLIF u0_n_40_n.BLIF \
+u0_n_41_n.BLIF u0_n_42_n.BLIF u0_n_44_n.BLIF u1_op_eq_seconds6_i_n.BLIF \
+u1_op_eq_dsec6_i_n.BLIF seg7_i_1__n.BLIF seg7_i_2__n.BLIF seg7_i_5__n.BLIF \
+seg7_i_6__n.BLIF u0_counter_i_0_5__n.BLIF u0_counter_i_0_4__n.BLIF \
+u0_counter_i_0_3__n.BLIF u0_counter_i_0_2__n.BLIF u0_counter_i_0_0__n.BLIF \
+u0_counter_i_0_1__n.BLIF u0_zegar_counter_i_n.BLIF u0_counter_i_0_6__n.BLIF \
+u0_n_17_i_n.BLIF u0_n_18_i_n.BLIF u0_n_19_i_n.BLIF u0_n_20_i_n.BLIF \
+u0_n_21_i_n.BLIF u0_n_22_i_n.BLIF u0_n_23_i_n.BLIF clk_c.BLIF \
+i_prescalerselect_c_0__n.BLIF i_prescalerselect_c_1__n.BLIF \
+i_prescalerselect_c_2__n.BLIF i_prescalerselect_c_3__n.BLIF \
+i_prescalerselect_c_4__n.BLIF i_prescalerselect_c_5__n.BLIF \
+i_prescalerselect_c_6__n.BLIF U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF \
+U1_dsec_2_reg.BLIF U1_dsec_3_reg.BLIF U1_seconds_0_reg.BLIF \
+U1_seconds_1_reg.BLIF U1_seconds_2_reg.BLIF U1_seconds_3_reg.BLIF \
+U0_clk_slowreg.BLIF u0_n_36_0_n.BLIF u0_n_35_0_n.BLIF u0_n_34_0_n.BLIF \
+u0_n_33_0_n.BLIF u0_n_32_0_n.BLIF u0_n_44_i_n.BLIF u0_n_42_i_n.BLIF \
+u0_n_41_i_n.BLIF u0_n_40_i_n.BLIF u0_n_39_i_n.BLIF u0_n_37_i_n.BLIF \
+u0_n_38_i_n.BLIF u1_op_eq_seconds6_1_n.BLIF u1_op_eq_seconds6_2_n.BLIF \
+u1_op_eq_dsec6_1_n.BLIF u1_op_eq_dsec6_2_n.BLIF u0_n_31_0_1_n.BLIF \
+u0_n_24_0_1_n.BLIF u0_n_30_0_1_n.BLIF u0_n_29_0_1_n.BLIF u0_n_28_0_1_n.BLIF \
+u0_n_5_0_1_n.BLIF u0_zegar_counter_1_n.BLIF u0_zegar_counter_2_n.BLIF \
+u0_zegar_counter_3_n.BLIF u0_zegar_counter_4_n.BLIF u0_zegar_counter_5_n.BLIF \
+u1_seconds_0_2__un3_n.BLIF u1_seconds_0_2__un1_n.BLIF \
+u1_seconds_0_2__un0_n.BLIF u1_seconds_0_3__un3_n.BLIF \
+u1_seconds_0_3__un1_n.BLIF u1_seconds_0_3__un0_n.BLIF \
+u1_seconds_0_1__un3_n.BLIF u1_seconds_0_1__un1_n.BLIF \
+u1_seconds_0_1__un0_n.BLIF
+.outputs seg7_7_ clock_out LD BI seg7_6_ seg7_5_ seg7_4_ seg7_3_ seg7_2_ \
+seg7_1_ seg7_0_ U0_counter_4_.D U0_counter_4_.C U0_counter_5_.D \
+U0_counter_5_.C U0_counter_6_.D U0_counter_6_.C U0_counter_1_.D \
+U0_counter_1_.C U0_counter_2_.D U0_counter_2_.C U0_counter_3_.D \
+U0_counter_3_.C U0_clk_slowreg.D U0_clk_slowreg.C U0_counter_0_.D \
+U0_counter_0_.C U1_dsec_3_reg.D U1_dsec_3_reg.C U1_seconds_0_reg.D \
+U1_seconds_0_reg.C U1_seconds_1_reg.D U1_seconds_1_reg.C U1_seconds_2_reg.D \
+U1_seconds_2_reg.C U1_seconds_3_reg.D U1_seconds_3_reg.C U1_dsec_0_reg.D \
+U1_dsec_0_reg.C U1_dsec_1_reg.D U1_dsec_1_reg.C U1_dsec_2_reg.D \
+U1_dsec_2_reg.C vcc_n_n gnd_n_n u1_op_eq_dsec6_n u1_seconds_2_1__n \
+u1_seconds_2_3__n u1_n_10_n u1_n_12_n u1_n_20_n u1_n_22_n u1_op_eq_seconds6_n \
+u0_zegar_counter_n u0_n_32_n u0_n_33_n u0_n_34_n u0_n_35_n u0_n_36_n u0_n_37_n \
+u0_n_38_n u0_n_39_n u0_n_40_n u0_n_41_n u0_n_42_n u0_n_44_n \
+u1_op_eq_seconds6_i_n u1_op_eq_dsec6_i_n seg7_i_1__n seg7_i_2__n seg7_i_5__n \
+seg7_i_6__n u0_counter_i_0_5__n u0_counter_i_0_4__n u0_counter_i_0_3__n \
+u0_counter_i_0_2__n u0_counter_i_0_0__n u0_counter_i_0_1__n \
+u0_zegar_counter_i_n u0_counter_i_0_6__n u0_n_17_i_n u0_n_18_i_n u0_n_19_i_n \
+u0_n_20_i_n u0_n_21_i_n u0_n_22_i_n u0_n_23_i_n clk_c i_prescalerselect_c_0__n \
+i_prescalerselect_c_1__n i_prescalerselect_c_2__n i_prescalerselect_c_3__n \
+i_prescalerselect_c_4__n i_prescalerselect_c_5__n i_prescalerselect_c_6__n \
+u0_n_36_0_n u0_n_35_0_n u0_n_34_0_n u0_n_33_0_n u0_n_32_0_n u0_n_44_i_n \
+u0_n_42_i_n u0_n_41_i_n u0_n_40_i_n u0_n_39_i_n u0_n_37_i_n u0_n_38_i_n \
+u1_op_eq_seconds6_1_n u1_op_eq_seconds6_2_n u1_op_eq_dsec6_1_n \
+u1_op_eq_dsec6_2_n u0_n_31_0_1_n u0_n_24_0_1_n u0_n_30_0_1_n u0_n_29_0_1_n \
+u0_n_28_0_1_n u0_n_5_0_1_n u0_zegar_counter_1_n u0_zegar_counter_2_n \
+u0_zegar_counter_3_n u0_zegar_counter_4_n u0_zegar_counter_5_n \
+u1_seconds_0_2__un3_n u1_seconds_0_2__un1_n u1_seconds_0_2__un0_n \
+u1_seconds_0_3__un3_n u1_seconds_0_3__un1_n u1_seconds_0_3__un0_n \
+u1_seconds_0_1__un3_n u1_seconds_0_1__un1_n u1_seconds_0_1__un0_n U1_G_5 \
+U1_G_17 U1_seconds_0_0_ U1_G_19 U1_G_15 U1_G_7 U1_G_3 U0_clk_slow_0 U0_G_15 \
+U0_G_16 U0_G_17 U0_G_18 U0_G_19 U0_G_20 U0_G_21
+.names u0_n_29_0_1_n.BLIF u0_zegar_counter_i_n.BLIF U0_counter_4_.D
+11 1
+.names u0_n_28_0_1_n.BLIF u0_zegar_counter_i_n.BLIF U0_counter_5_.D
+11 1
+.names u0_n_5_0_1_n.BLIF u0_zegar_counter_i_n.BLIF U0_counter_6_.D
+11 1
+.names u0_n_31_0_1_n.BLIF u0_zegar_counter_i_n.BLIF U0_counter_1_.D
+11 1
+.names u0_n_24_0_1_n.BLIF u0_zegar_counter_i_n.BLIF U0_counter_2_.D
+11 1
+.names u0_n_30_0_1_n.BLIF u0_zegar_counter_i_n.BLIF U0_counter_3_.D
+11 1
+.names u0_counter_i_0_0__n.BLIF u0_zegar_counter_i_n.BLIF U0_counter_0_.D
+11 1
+.names u1_op_eq_dsec6_i_n.BLIF U1_G_19.BLIF U1_dsec_3_reg.D
+11 1
+.names u1_seconds_0_1__un1_n.BLIF u1_seconds_0_1__un0_n.BLIF \
+U1_seconds_1_reg.D
+1- 1
+-1 1
+.names u1_seconds_0_2__un1_n.BLIF u1_seconds_0_2__un0_n.BLIF \
+U1_seconds_2_reg.D
+1- 1
+-1 1
+.names u1_seconds_0_3__un1_n.BLIF u1_seconds_0_3__un0_n.BLIF \
+U1_seconds_3_reg.D
+1- 1
+-1 1
+.names U1_dsec_0_reg.BLIF U1_dsec_0_reg.D
+0 1
+.names u1_op_eq_dsec6_i_n.BLIF U1_G_15.BLIF U1_dsec_1_reg.D
+11 1
+.names vcc_n_n
+ 1
+.names gnd_n_n
+.names u1_op_eq_dsec6_1_n.BLIF u1_op_eq_dsec6_2_n.BLIF u1_op_eq_dsec6_n
+11 1
+.names u1_op_eq_seconds6_i_n.BLIF U1_G_3.BLIF u1_seconds_2_1__n
+11 1
+.names u1_op_eq_seconds6_i_n.BLIF U1_G_7.BLIF u1_seconds_2_3__n
+11 1
+.names U1_seconds_0_reg.BLIF U1_seconds_1_reg.BLIF u1_n_10_n
+11 1
+.names u1_n_10_n.BLIF U1_seconds_2_reg.BLIF u1_n_12_n
+11 1
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF u1_n_20_n
+11 1
+.names u1_n_20_n.BLIF U1_dsec_2_reg.BLIF u1_n_22_n
+11 1
+.names u1_op_eq_seconds6_1_n.BLIF u1_op_eq_seconds6_2_n.BLIF \
+u1_op_eq_seconds6_n
+11 1
+.names u0_zegar_counter_4_n.BLIF u0_zegar_counter_5_n.BLIF u0_zegar_counter_n
+11 1
+.names u0_n_32_0_n.BLIF u0_n_32_n
+0 1
+.names u0_n_33_0_n.BLIF u0_n_33_n
+0 1
+.names u0_n_34_0_n.BLIF u0_n_34_n
+0 1
+.names u0_n_35_0_n.BLIF u0_n_35_n
+0 1
+.names u0_n_36_0_n.BLIF u0_n_36_n
+0 1
+.names u0_n_36_n.BLIF u0_counter_i_0_6__n.BLIF u0_n_37_n
+11 1
+.names u0_n_36_0_n.BLIF U0_counter_6_.BLIF u0_n_38_n
+11 1
+.names u0_n_35_n.BLIF u0_counter_i_0_5__n.BLIF u0_n_39_n
+11 1
+.names u0_n_34_n.BLIF u0_counter_i_0_4__n.BLIF u0_n_40_n
+11 1
+.names u0_n_33_n.BLIF u0_counter_i_0_3__n.BLIF u0_n_41_n
+11 1
+.names u0_n_32_n.BLIF u0_counter_i_0_2__n.BLIF u0_n_42_n
+11 1
+.names u0_counter_i_0_0__n.BLIF u0_counter_i_0_1__n.BLIF u0_n_44_n
+11 1
+.names u1_op_eq_seconds6_n.BLIF u1_op_eq_seconds6_i_n
+0 1
+.names u1_op_eq_dsec6_n.BLIF u1_op_eq_dsec6_i_n
+0 1
+.names U1_dsec_1_reg.BLIF seg7_i_1__n
+0 1
+.names U1_dsec_2_reg.BLIF seg7_i_2__n
+0 1
+.names U1_seconds_1_reg.BLIF seg7_i_5__n
+0 1
+.names U1_seconds_2_reg.BLIF seg7_i_6__n
+0 1
+.names U0_counter_5_.BLIF u0_counter_i_0_5__n
+0 1
+.names U0_counter_4_.BLIF u0_counter_i_0_4__n
+0 1
+.names U0_counter_3_.BLIF u0_counter_i_0_3__n
+0 1
+.names U0_counter_2_.BLIF u0_counter_i_0_2__n
+0 1
+.names U0_counter_0_.BLIF u0_counter_i_0_0__n
+0 1
+.names U0_counter_1_.BLIF u0_counter_i_0_1__n
+0 1
+.names u0_zegar_counter_n.BLIF u0_zegar_counter_i_n
+0 1
+.names U0_counter_6_.BLIF u0_counter_i_0_6__n
+0 1
+.names U0_G_15.BLIF u0_n_17_i_n
+0 1
+.names U0_G_16.BLIF u0_n_18_i_n
+0 1
+.names U0_G_17.BLIF u0_n_19_i_n
+0 1
+.names U0_G_18.BLIF u0_n_20_i_n
+0 1
+.names U0_G_19.BLIF u0_n_21_i_n
+0 1
+.names U0_G_20.BLIF u0_n_22_i_n
+0 1
+.names U0_G_21.BLIF u0_n_23_i_n
+0 1
+.names u0_n_35_0_n.BLIF U0_counter_5_.BLIF u0_n_36_0_n
+11 1
+.names u0_n_34_0_n.BLIF U0_counter_4_.BLIF u0_n_35_0_n
+11 1
+.names u0_n_33_0_n.BLIF U0_counter_3_.BLIF u0_n_34_0_n
+11 1
+.names u0_n_32_0_n.BLIF U0_counter_2_.BLIF u0_n_33_0_n
+11 1
+.names U0_counter_0_.BLIF U0_counter_1_.BLIF u0_n_32_0_n
+11 1
+.names u0_n_44_n.BLIF u0_n_44_i_n
+0 1
+.names u0_n_42_n.BLIF u0_n_42_i_n
+0 1
+.names u0_n_41_n.BLIF u0_n_41_i_n
+0 1
+.names u0_n_40_n.BLIF u0_n_40_i_n
+0 1
+.names u0_n_39_n.BLIF u0_n_39_i_n
+0 1
+.names u0_n_37_n.BLIF u0_n_37_i_n
+0 1
+.names u0_n_38_n.BLIF u0_n_38_i_n
+0 1
+.names U1_seconds_0_reg.BLIF U1_seconds_3_reg.BLIF u1_op_eq_seconds6_1_n
+11 1
+.names seg7_i_5__n.BLIF seg7_i_6__n.BLIF u1_op_eq_seconds6_2_n
+11 1
+.names U1_dsec_0_reg.BLIF U1_dsec_3_reg.BLIF u1_op_eq_dsec6_1_n
+11 1
+.names seg7_i_1__n.BLIF seg7_i_2__n.BLIF u1_op_eq_dsec6_2_n
+11 1
+.names u0_n_32_n.BLIF u0_n_44_i_n.BLIF u0_n_31_0_1_n
+11 1
+.names u0_n_33_n.BLIF u0_n_42_i_n.BLIF u0_n_24_0_1_n
+11 1
+.names u0_n_34_n.BLIF u0_n_41_i_n.BLIF u0_n_30_0_1_n
+11 1
+.names u0_n_35_n.BLIF u0_n_40_i_n.BLIF u0_n_29_0_1_n
+11 1
+.names u0_n_36_n.BLIF u0_n_39_i_n.BLIF u0_n_28_0_1_n
+11 1
+.names u0_n_37_i_n.BLIF u0_n_38_i_n.BLIF u0_n_5_0_1_n
+11 1
+.names u0_n_17_i_n.BLIF u0_n_18_i_n.BLIF u0_zegar_counter_1_n
+11 1
+.names u0_n_19_i_n.BLIF u0_n_20_i_n.BLIF u0_zegar_counter_2_n
+11 1
+.names u0_n_23_i_n.BLIF u0_n_21_i_n.BLIF u0_zegar_counter_3_n
+11 1
+.names u0_zegar_counter_1_n.BLIF u0_zegar_counter_2_n.BLIF \
+u0_zegar_counter_4_n
+11 1
+.names u0_zegar_counter_3_n.BLIF u0_n_22_i_n.BLIF u0_zegar_counter_5_n
+11 1
+.names u1_op_eq_dsec6_n.BLIF u1_seconds_0_2__un3_n
+0 1
+.names U1_G_5.BLIF u1_op_eq_dsec6_n.BLIF u1_seconds_0_2__un1_n
+11 1
+.names U1_seconds_2_reg.BLIF u1_seconds_0_2__un3_n.BLIF u1_seconds_0_2__un0_n
+11 1
+.names u1_op_eq_dsec6_n.BLIF u1_seconds_0_3__un3_n
+0 1
+.names u1_seconds_2_3__n.BLIF u1_op_eq_dsec6_n.BLIF u1_seconds_0_3__un1_n
+11 1
+.names U1_seconds_3_reg.BLIF u1_seconds_0_3__un3_n.BLIF u1_seconds_0_3__un0_n
+11 1
+.names u1_op_eq_dsec6_n.BLIF u1_seconds_0_1__un3_n
+0 1
+.names u1_seconds_2_1__n.BLIF u1_op_eq_dsec6_n.BLIF u1_seconds_0_1__un1_n
+11 1
+.names U1_seconds_1_reg.BLIF u1_seconds_0_1__un3_n.BLIF u1_seconds_0_1__un0_n
+11 1
+.names u1_n_10_n.BLIF U1_seconds_2_reg.BLIF U1_G_5
+01 1
+10 1
+11 0
+00 0
+.names u1_n_20_n.BLIF U1_dsec_2_reg.BLIF U1_G_17
+01 1
+10 1
+11 0
+00 0
+.names u1_op_eq_dsec6_n.BLIF U1_seconds_0_reg.BLIF U1_seconds_0_0_
+01 1
+10 1
+11 0
+00 0
+.names u1_n_22_n.BLIF U1_dsec_3_reg.BLIF U1_G_19
+01 1
+10 1
+11 0
+00 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_G_15
+01 1
+10 1
+11 0
+00 0
+.names u1_n_12_n.BLIF U1_seconds_3_reg.BLIF U1_G_7
+01 1
+10 1
+11 0
+00 0
+.names U1_seconds_0_reg.BLIF U1_seconds_1_reg.BLIF U1_G_3
+01 1
+10 1
+11 0
+00 0
+.names u0_zegar_counter_n.BLIF U0_clk_slowreg.BLIF U0_clk_slow_0
+01 1
+10 1
+11 0
+00 0
+.names U0_counter_0_.BLIF i_prescalerselect_c_0__n.BLIF U0_G_15
+01 1
+10 1
+11 0
+00 0
+.names U0_counter_1_.BLIF i_prescalerselect_c_1__n.BLIF U0_G_16
+01 1
+10 1
+11 0
+00 0
+.names U0_counter_2_.BLIF i_prescalerselect_c_2__n.BLIF U0_G_17
+01 1
+10 1
+11 0
+00 0
+.names U0_counter_3_.BLIF i_prescalerselect_c_3__n.BLIF U0_G_18
+01 1
+10 1
+11 0
+00 0
+.names U0_counter_4_.BLIF i_prescalerselect_c_4__n.BLIF U0_G_19
+01 1
+10 1
+11 0
+00 0
+.names U0_counter_5_.BLIF i_prescalerselect_c_5__n.BLIF U0_G_20
+01 1
+10 1
+11 0
+00 0
+.names U0_counter_6_.BLIF i_prescalerselect_c_6__n.BLIF U0_G_21
+01 1
+10 1
+11 0
+00 0
+.names U1_seconds_3_reg.BLIF seg7_7_
+1 1
+0 0
+.names U0_clk_slowreg.BLIF clock_out
+1 1
+0 0
+.names vcc_n_n.BLIF LD
+1 1
+0 0
+.names gnd_n_n.BLIF BI
+1 1
+0 0
+.names U1_seconds_2_reg.BLIF seg7_6_
+1 1
+0 0
+.names U1_seconds_1_reg.BLIF seg7_5_
+1 1
+0 0
+.names U1_seconds_0_reg.BLIF seg7_4_
+1 1
+0 0
+.names U1_dsec_3_reg.BLIF seg7_3_
+1 1
+0 0
+.names U1_dsec_2_reg.BLIF seg7_2_
+1 1
+0 0
+.names U1_dsec_1_reg.BLIF seg7_1_
+1 1
+0 0
+.names U1_dsec_0_reg.BLIF seg7_0_
+1 1
+0 0
+.names clk_c.BLIF U0_counter_4_.C
+1 1
+0 0
+.names clk_c.BLIF U0_counter_5_.C
+1 1
+0 0
+.names clk_c.BLIF U0_counter_6_.C
+1 1
+0 0
+.names clk_c.BLIF U0_counter_1_.C
+1 1
+0 0
+.names clk_c.BLIF U0_counter_2_.C
+1 1
+0 0
+.names clk_c.BLIF U0_counter_3_.C
+1 1
+0 0
+.names U0_clk_slow_0.BLIF U0_clk_slowreg.D
+1 1
+0 0
+.names clk_c.BLIF U0_clk_slowreg.C
+1 1
+0 0
+.names clk_c.BLIF U0_counter_0_.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_dsec_3_reg.C
+1 1
+0 0
+.names U1_seconds_0_0_.BLIF U1_seconds_0_reg.D
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_0_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_1_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_2_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_3_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_dsec_0_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_dsec_1_reg.C
+1 1
+0 0
+.names U1_G_17.BLIF U1_dsec_2_reg.D
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_dsec_2_reg.C
+1 1
+0 0
+.names clk.BLIF clk_c
+1 1
+0 0
+.names i_prescalerSelect_0_.BLIF i_prescalerselect_c_0__n
+1 1
+0 0
+.names i_prescalerSelect_1_.BLIF i_prescalerselect_c_1__n
+1 1
+0 0
+.names i_prescalerSelect_2_.BLIF i_prescalerselect_c_2__n
+1 1
+0 0
+.names i_prescalerSelect_3_.BLIF i_prescalerselect_c_3__n
+1 1
+0 0
+.names i_prescalerSelect_4_.BLIF i_prescalerselect_c_4__n
+1 1
+0 0
+.names i_prescalerSelect_5_.BLIF i_prescalerselect_c_5__n
+1 1
+0 0
+.names i_prescalerSelect_6_.BLIF i_prescalerselect_c_6__n
+1 1
+0 0
+.end

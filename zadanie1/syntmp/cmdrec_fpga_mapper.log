@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "D:\isplever projects\zadanie1"  -part M4A5-64   -RWCheckOnRam 1 -areadelay 0 -minc -summaryfile "D:\isplever projects\zadanie1\synlog\report\adder3bit_fpga_mapper.xml" -top_level_module  adder3bit  -multisrs  -oedif  "D:\isplever projects\zadanie1\adder3bit.edi"  -freq 1.000  "D:\isplever projects\zadanie1\synwork\adder3bit_mult.srs"  -ologparam  "D:\isplever projects\zadanie1\syntmp\adder3bit.plg"  -osyn  "D:\isplever projects\zadanie1\adder3bit.srm"  -prjdir  "d:\isplever projects\zadanie1\"  -prjname  adder3bit  -log  "D:\isplever projects\zadanie1\synlog\adder3bit_fpga_mapper.srr" 
+rc:0 success:1
+D:\isplever projects\zadanie1\adder3bit.edi|o|1543565210|10479
+D:\isplever projects\zadanie1\synwork\adder3bit_mult.srs|i|1543565210|2094
+"D:\isplever projects\zadanie1\syntmp\adder3bit.plg"|o|0|0
+D:\isplever projects\zadanie1\adder3bit.srm|o|1543565210|5458
+D:\isplever projects\zadanie1\synlog\adder3bit_fpga_mapper.srr|o|1543565210|1113
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399362084|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399364922|8049664

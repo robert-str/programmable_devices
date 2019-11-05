@@ -1,0 +1,4 @@
+@W: CD266 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\clk_prescaler.vhd":27:18:27:25|clk_slow is not readable.  This may cause a simulation mismatch.
+@W: CD638 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\clk_prescaler.vhd":16:7:16:23|Signal s_activeprescaler is undriven 
+@W: CL159 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\counter1.vhd":10:8:10:16|Input i_sigZero is unused
+

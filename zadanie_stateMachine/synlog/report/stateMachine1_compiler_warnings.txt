@@ -1,0 +1,4 @@
+@W: CD266 :"D:\isplever projects\zadanie_statemachine\clk_prescaler.vhd":27:18:27:25|clk_slow is not readable.  This may cause a simulation mismatch.
+@W: CD638 :"D:\isplever projects\zadanie_statemachine\clk_prescaler.vhd":16:7:16:23|Signal s_activeprescaler is undriven 
+@W: CL246 :"D:\isplever projects\zadanie_statemachine\machina.vhd":10:1:10:5|Input port bits 7 to 3 of i_btn(7 downto 0) are unused 
+

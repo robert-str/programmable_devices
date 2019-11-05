@@ -1,0 +1,139 @@
+
+[Device]
+Family = M4A5;
+PartNumber = M4A5-64/32-10JC;
+Package = 44PLCC;
+PartType = M4A5-64/32;
+Speed = -10;
+Operating_condition = COM;
+Status = Production;
+EN_PinGLB = Yes;
+EN_PinMacrocell = Yes;
+
+[Revision]
+Parent = m4a5.lci;
+DATE = 10/29/2019;
+TIME = 15:23:28;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+Nodes_collapsing_mode = Area;
+
+[Location Assignments]
+layer = OFF;
+clk = Pin, 11, -, -, -;
+keypad_cols_3_ = Pin, 2, -, A, -;
+keypad_cols_2_ = Pin, 3, -, A, -;
+keypad_cols_1_ = Pin, 4, -, A, -;
+keypad_cols_0_ = Pin, 5, -, A, -;
+keypad_rows_0_ = Pin, 9, -, A, -;
+keypad_rows_1_ = Pin, 8, -, A, -;
+keypad_rows_2_ = Pin, 7, -, A, -;
+keypad_rows_3_ = Pin, 6, -, A, -;
+bcd_out_0_ = Pin, 36, -, D, -;
+bcd_out_1_ = Pin, 37, -, D, -;
+bcd_out_2_ = Pin, 38, -, D, -;
+bcd_out_3_ = Pin, 39, -, D, -;
+bcd_out_4_ = Pin, 40, -, D, -;
+bcd_out_5_ = Pin, 41, -, D, -;
+bcd_out_6_ = Pin, 42, -, D, -;
+bcd_out_7_ = Pin, 43, -, D, -;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;

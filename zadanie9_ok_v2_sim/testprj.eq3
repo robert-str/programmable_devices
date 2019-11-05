@@ -1,0 +1,160 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design statemachine1 created  Tue Dec 11 13:14:48 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          1        1    Pin   o_diodes_7_.OE 
+   1          7        1    Pin   o_diodes_7_.T 
+   1          1        1    Pin   o_diodes_7_.C 
+   1          7        1    Pin   o_clkSlow.T 
+   1          1        1    Pin   o_clkSlow.C 
+   1          1        1    Pin   o_diodes_6_.OE 
+   1          7        1    Pin   o_diodes_6_.T 
+   1          1        1    Pin   o_diodes_6_.C 
+   1          1        1    Pin   o_diodes_5_.OE 
+   1          7        1    Pin   o_diodes_5_.T 
+   1          1        1    Pin   o_diodes_5_.C 
+   1          1        1    Pin   o_diodes_4_.OE 
+   1          7        1    Pin   o_diodes_4_.T 
+   1          1        1    Pin   o_diodes_4_.C 
+   1          1        1    Pin   o_diodes_3_.OE 
+   1          7        1    Pin   o_diodes_3_.T 
+   1          1        1    Pin   o_diodes_3_.C 
+   1          1        1    Pin   o_diodes_2_.OE 
+   1          7        1    Pin   o_diodes_2_.T 
+   1          1        1    Pin   o_diodes_2_.C 
+   1          1        1    Pin   o_diodes_1_.OE 
+   1          7        1    Pin   o_diodes_1_.T 
+   1          1        1    Pin   o_diodes_1_.C 
+   1          1        1    Pin   o_diodes_0_.OE 
+   1          7        1    Pin   o_diodes_0_.T 
+   1          1        1    Pin   o_diodes_0_.C 
+   3          3        1    Node  currState_0_reg.D 
+   1          1        1    Node  currState_0_reg.C 
+   2          7        1    Node  pres_counter_0_.D- 
+   1          1        1    Node  pres_counter_0_.C 
+   2          2        1    Node  pres_counter_1_.D 
+   1          1        1    Node  pres_counter_1_.C 
+   3          3        1    Node  pres_counter_2_.D 
+   1          1        1    Node  pres_counter_2_.C 
+   4          4        1    Node  pres_counter_3_.D 
+   1          1        1    Node  pres_counter_3_.C 
+   1          4        1    NodeX1  pres_counter_4_.D.X1 
+   1          1        1    NodeX2  pres_counter_4_.D.X2 
+   1          1        1    Node  pres_counter_4_.C 
+   2          7        1    Node  pres_counter_5_.T 
+   1          1        1    Node  pres_counter_5_.C 
+   1          6        1    Node  pres_counter_6_.T 
+   1          1        1    Node  pres_counter_6_.C 
+=========
+  53                 P-Term Total: 53
+                       Total Pins: 12
+                      Total Nodes: 8
+            Average P-Term/Output: 1
+
+
+Equations:
+
+o_diodes_7_.OE = (currState_0_reg.Q);
+
+o_diodes_7_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_7_.C = (i_clk);
+
+o_clkSlow.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_clkSlow.C = (i_clk);
+
+o_diodes_6_.OE = (currState_0_reg.Q);
+
+o_diodes_6_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_6_.C = (i_clk);
+
+o_diodes_5_.OE = (currState_0_reg.Q);
+
+o_diodes_5_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_5_.C = (i_clk);
+
+o_diodes_4_.OE = (currState_0_reg.Q);
+
+o_diodes_4_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_4_.C = (i_clk);
+
+o_diodes_3_.OE = (currState_0_reg.Q);
+
+o_diodes_3_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_3_.C = (i_clk);
+
+o_diodes_2_.OE = (currState_0_reg.Q);
+
+o_diodes_2_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_2_.C = (i_clk);
+
+o_diodes_1_.OE = (currState_0_reg.Q);
+
+o_diodes_1_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_1_.C = (i_clk);
+
+o_diodes_0_.OE = (currState_0_reg.Q);
+
+o_diodes_0_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_0_.C = (i_clk);
+
+currState_0_reg.D = (i_btn_1_ & !i_btn_0_
+     # i_btn_1_ & currState_0_reg.Q
+     # !i_btn_0_ & currState_0_reg.Q);
+
+currState_0_reg.C = (i_clk);
+
+!pres_counter_0_.D = (pres_counter_0_.Q
+     # !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+pres_counter_0_.C = (i_clk);
+
+pres_counter_1_.D = (!pres_counter_0_.Q & pres_counter_1_.Q
+     # pres_counter_0_.Q & !pres_counter_1_.Q);
+
+pres_counter_1_.C = (i_clk);
+
+pres_counter_2_.D = (!pres_counter_0_.Q & pres_counter_2_.Q
+     # !pres_counter_1_.Q & pres_counter_2_.Q
+     # pres_counter_0_.Q & pres_counter_1_.Q & !pres_counter_2_.Q);
+
+pres_counter_2_.C = (i_clk);
+
+pres_counter_3_.D = (!pres_counter_0_.Q & pres_counter_3_.Q
+     # !pres_counter_1_.Q & pres_counter_3_.Q
+     # !pres_counter_2_.Q & pres_counter_3_.Q
+     # pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & !pres_counter_3_.Q);
+
+pres_counter_3_.C = (i_clk);
+
+pres_counter_4_.D.X1 = (pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & pres_counter_3_.Q);
+
+pres_counter_4_.D.X2 = (pres_counter_4_.Q);
+
+pres_counter_4_.C = (i_clk);
+
+pres_counter_5_.T = (pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & pres_counter_3_.Q & pres_counter_4_.Q
+     # !pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+pres_counter_5_.C = (i_clk);
+
+pres_counter_6_.T = (pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & pres_counter_3_.Q & pres_counter_4_.Q & pres_counter_5_.Q);
+
+pres_counter_6_.C = (i_clk);
+
+
+Reverse-Polarity Equations:
+

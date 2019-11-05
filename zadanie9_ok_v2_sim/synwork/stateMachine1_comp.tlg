@@ -1,0 +1,7 @@
+@N: CD630 :"D:\isplever projects\zadanie9_ok\statemachine1.vhd":6:7:6:19|Synthesizing work.statemachine1.sequential 
+@N: CD233 :"D:\isplever projects\zadanie9_ok\statemachine1.vhd":15:11:15:12|Using sequential encoding for type state
+@W: CD604 :"D:\isplever projects\zadanie9_ok\statemachine1.vhd":61:1:61:14|OTHERS clause is not synthesized 
+@N: CD630 :"D:\isplever projects\zadanie9_ok\clk_prescaler.vhd":7:7:7:19|Synthesizing work.clk_prescaler.prescaler 
+@W: CD638 :"D:\isplever projects\zadanie9_ok\clk_prescaler.vhd":17:7:17:23|Signal s_activeprescaler is undriven 
+Post processing for work.clk_prescaler.prescaler
+Post processing for work.statemachine1.sequential

@@ -1,0 +1,2 @@
+@E: CD326 :"C:\isplever projects\zadanie2\top_module.vhd":32:0:32:1|Port i_sigzero of entity work.counter is unconnected
+

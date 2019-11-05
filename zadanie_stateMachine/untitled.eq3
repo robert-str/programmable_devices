@@ -1,0 +1,214 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design statemachine1 created  Fri Nov 30 10:12:20 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          1        1    Pin   o_diodes_7_.OE 
+   1          7        1    Pin   o_diodes_7_.T 
+   1          1        1    Pin   o_diodes_7_.C 
+   1          7        1    Pin   o_clkSlow.T 
+   1          1        1    Pin   o_clkSlow.C 
+   1          1        1    Pin   o_diodes_6_.OE 
+   1          7        1    Pin   o_diodes_6_.T 
+   1          1        1    Pin   o_diodes_6_.C 
+   1          1        1    Pin   o_diodes_5_.OE 
+   1          7        1    Pin   o_diodes_5_.T 
+   1          1        1    Pin   o_diodes_5_.C 
+   1          1        1    Pin   o_diodes_4_.OE 
+   1          7        1    Pin   o_diodes_4_.T 
+   1          1        1    Pin   o_diodes_4_.C 
+   1          1        1    Pin   o_diodes_3_.OE 
+   1          7        1    Pin   o_diodes_3_.T 
+   1          1        1    Pin   o_diodes_3_.C 
+   1          1        1    Pin   o_diodes_2_.OE 
+   1          7        1    Pin   o_diodes_2_.T 
+   1          1        1    Pin   o_diodes_2_.C 
+   1          1        1    Pin   o_diodes_1_.OE 
+   1          7        1    Pin   o_diodes_1_.T 
+   1          1        1    Pin   o_diodes_1_.C 
+   1          1        1    Pin   o_diodes_0_.OE 
+   1          7        1    Pin   o_diodes_0_.T 
+   1          1        1    Pin   o_diodes_0_.C 
+   2         11        1    Pin   o_state_1_.T 
+   1          1        1    Pin   o_state_1_.C 
+   2         11        1    Pin   o_state_0_.T 
+   1          1        1    Pin   o_state_0_.C 
+   3          5        1    Node  counter_0_.T 
+   1          1        1    Node  counter_0_.C 
+   3          6        1    Node  counter_1_.T 
+   1          1        1    Node  counter_1_.C 
+   3          7        1    Node  counter_2_.T 
+   1          1        1    Node  counter_2_.C 
+   3          8        1    Node  counter_3_.T 
+   1          1        1    Node  counter_3_.C 
+   3          9        1    Node  counter_4_.T 
+   1          1        1    Node  counter_4_.C 
+   3         10        1    Node  counter_5_.T 
+   1          1        1    Node  counter_5_.C 
+   2          7        1    Node  pres_counter_0_.D- 
+   1          1        1    Node  pres_counter_0_.C 
+   2          2        1    Node  pres_counter_1_.D 
+   1          1        1    Node  pres_counter_1_.C 
+   3          3        1    Node  pres_counter_2_.D 
+   1          1        1    Node  pres_counter_2_.C 
+   4          4        1    Node  pres_counter_3_.D 
+   1          1        1    Node  pres_counter_3_.C 
+   1          4        1    NodeX1  pres_counter_4_.D.X1 
+   1          1        1    NodeX2  pres_counter_4_.D.X2 
+   1          1        1    Node  pres_counter_4_.C 
+   2          7        1    Node  pres_counter_5_.T 
+   1          1        1    Node  pres_counter_5_.C 
+   1          6        1    Node  pres_counter_6_.T 
+   1          1        1    Node  pres_counter_6_.C 
+=========
+  79                 P-Term Total: 79
+                       Total Pins: 15
+                      Total Nodes: 13
+            Average P-Term/Output: 1
+
+
+Equations:
+
+o_diodes_7_.OE = (o_state_1_.Q);
+
+o_diodes_7_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_7_.C = (i_clk);
+
+o_clkSlow.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_clkSlow.C = (i_clk);
+
+o_diodes_6_.OE = (o_state_1_.Q);
+
+o_diodes_6_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_6_.C = (i_clk);
+
+o_diodes_5_.OE = (o_state_1_.Q);
+
+o_diodes_5_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_5_.C = (i_clk);
+
+o_diodes_4_.OE = (o_state_1_.Q);
+
+o_diodes_4_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_4_.C = (i_clk);
+
+o_diodes_3_.OE = (o_state_1_.Q);
+
+o_diodes_3_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_3_.C = (i_clk);
+
+o_diodes_2_.OE = (o_state_1_.Q);
+
+o_diodes_2_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_2_.C = (i_clk);
+
+o_diodes_1_.OE = (o_state_1_.Q);
+
+o_diodes_1_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_1_.C = (i_clk);
+
+o_diodes_0_.OE = (o_state_1_.Q);
+
+o_diodes_0_.T = (!pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+o_diodes_0_.C = (i_clk);
+
+o_state_1_.T = (i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & counter_4_.Q & counter_5_.Q & o_state_1_.Q
+     # i_btn_2_ & !i_btn_1_ & !i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & counter_4_.Q & counter_5_.Q & o_state_0_.Q & !o_state_1_.Q);
+
+o_state_1_.C = (i_clk);
+
+o_state_0_.T = (counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & counter_4_.Q & counter_5_.Q & o_state_0_.Q
+     # !i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & counter_4_.Q & counter_5_.Q & !o_state_1_.Q);
+
+o_state_0_.C = (i_clk);
+
+counter_0_.T = (o_state_0_.Q
+     # i_btn_2_ & !i_btn_1_ & i_btn_0_ & o_state_1_.Q
+     # !i_btn_2_ & !i_btn_1_ & i_btn_0_ & !o_state_1_.Q);
+
+counter_0_.C = (i_clk);
+
+counter_1_.T = (counter_0_.Q & o_state_0_.Q
+     # i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & o_state_1_.Q
+     # !i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & !o_state_1_.Q);
+
+counter_1_.C = (i_clk);
+
+counter_2_.T = (counter_0_.Q & counter_1_.Q & o_state_0_.Q
+     # i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & o_state_1_.Q
+     # !i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & !o_state_1_.Q);
+
+counter_2_.C = (i_clk);
+
+counter_3_.T = (counter_0_.Q & counter_1_.Q & counter_2_.Q & o_state_0_.Q
+     # i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & o_state_1_.Q
+     # !i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & !o_state_1_.Q);
+
+counter_3_.C = (i_clk);
+
+counter_4_.T = (counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & o_state_0_.Q
+     # i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & o_state_1_.Q
+     # !i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & !o_state_1_.Q);
+
+counter_4_.C = (i_clk);
+
+counter_5_.T = (counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & counter_4_.Q & o_state_0_.Q
+     # i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & counter_4_.Q & o_state_1_.Q
+     # !i_btn_2_ & !i_btn_1_ & i_btn_0_ & counter_0_.Q & counter_1_.Q & counter_2_.Q & counter_3_.Q & counter_4_.Q & !o_state_1_.Q);
+
+counter_5_.C = (i_clk);
+
+!pres_counter_0_.D = (pres_counter_0_.Q
+     # !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+pres_counter_0_.C = (i_clk);
+
+pres_counter_1_.D = (!pres_counter_0_.Q & pres_counter_1_.Q
+     # pres_counter_0_.Q & !pres_counter_1_.Q);
+
+pres_counter_1_.C = (i_clk);
+
+pres_counter_2_.D = (!pres_counter_0_.Q & pres_counter_2_.Q
+     # !pres_counter_1_.Q & pres_counter_2_.Q
+     # pres_counter_0_.Q & pres_counter_1_.Q & !pres_counter_2_.Q);
+
+pres_counter_2_.C = (i_clk);
+
+pres_counter_3_.D = (!pres_counter_0_.Q & pres_counter_3_.Q
+     # !pres_counter_1_.Q & pres_counter_3_.Q
+     # !pres_counter_2_.Q & pres_counter_3_.Q
+     # pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & !pres_counter_3_.Q);
+
+pres_counter_3_.C = (i_clk);
+
+pres_counter_4_.D.X1 = (pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & pres_counter_3_.Q);
+
+pres_counter_4_.D.X2 = (pres_counter_4_.Q);
+
+pres_counter_4_.C = (i_clk);
+
+pres_counter_5_.T = (pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & pres_counter_3_.Q & pres_counter_4_.Q
+     # !pres_counter_0_.Q & !pres_counter_1_.Q & !pres_counter_2_.Q & !pres_counter_3_.Q & !pres_counter_4_.Q & pres_counter_5_.Q & !pres_counter_6_.Q);
+
+pres_counter_5_.C = (i_clk);
+
+pres_counter_6_.T = (pres_counter_0_.Q & pres_counter_1_.Q & pres_counter_2_.Q & pres_counter_3_.Q & pres_counter_4_.Q & pres_counter_5_.Q);
+
+pres_counter_6_.C = (i_clk);
+
+
+Reverse-Polarity Equations:
+

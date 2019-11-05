@@ -1,0 +1,2 @@
+@W: CL159 :"C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd":10:1:10:3|Input i_b is unused
+

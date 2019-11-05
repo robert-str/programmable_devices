@@ -1,0 +1,71 @@
+#$ DATE Fri Nov 30 09:06:55 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE adder3bit
+#$ PINS 10 i_a_2_ i_b_2_ o_result_3_ i_a_1_ i_a_0_ i_b_1_ i_b_0_ o_result_2_ o_result_1_ o_result_0_
+#$ NODES 20 B2_o_wyjscie_1_0__m2 gnd_n_n B1_m1 b2_o_wyjscie_1_0__i1_mux_n B2_o_wyjscie_1_0__m4 b1_n_2_i_n b2_o_wyjscie_1_0__i1_mux_i_n i_a_i_0__n i_a_i_1__n i_b_i_1__n \
+#  i_a_c_0__n i_a_c_1__n i_b_c_0__n i_b_c_1__n B2_o_wyjscie_1_0__m2_1 b2_o_wyjscie_1_0__m5_un3_n b2_o_wyjscie_1_0__m5_un1_n b2_o_wyjscie_1_0__m5_un0_n i_a_2__n i_b_2__n \
+#  
+.model adder3bit
+.inputs i_a_2_.BLIF i_b_2_.BLIF i_a_1_.BLIF i_a_0_.BLIF i_b_1_.BLIF i_b_0_.BLIF B2_o_wyjscie_1_0__m2.BLIF gnd_n_n.BLIF B1_m1.BLIF \
+  b2_o_wyjscie_1_0__i1_mux_n.BLIF B2_o_wyjscie_1_0__m4.BLIF b1_n_2_i_n.BLIF b2_o_wyjscie_1_0__i1_mux_i_n.BLIF i_a_i_0__n.BLIF i_a_i_1__n.BLIF i_b_i_1__n.BLIF i_a_c_0__n.BLIF i_a_c_1__n.BLIF \
+  i_b_c_0__n.BLIF i_b_c_1__n.BLIF B2_o_wyjscie_1_0__m2_1.BLIF b2_o_wyjscie_1_0__m5_un3_n.BLIF b2_o_wyjscie_1_0__m5_un1_n.BLIF b2_o_wyjscie_1_0__m5_un0_n.BLIF i_a_2__n.BLIF i_b_2__n.BLIF  
+.outputs o_result_3_ o_result_2_ o_result_1_ o_result_0_ B2_o_wyjscie_1_0__m2_1.X1 B2_o_wyjscie_1_0__m2_1.X2 B2_o_wyjscie_1_0__m2.X1 B2_o_wyjscie_1_0__m2.X2 B2_o_wyjscie_1_0__m4.X1 B2_o_wyjscie_1_0__m4.X2 B1_m1.X1 \
+  B1_m1.X2 gnd_n_n b2_o_wyjscie_1_0__i1_mux_n b1_n_2_i_n b2_o_wyjscie_1_0__i1_mux_i_n i_a_i_0__n i_a_i_1__n i_b_i_1__n i_a_c_0__n i_a_c_1__n i_b_c_0__n \
+  i_b_c_1__n b2_o_wyjscie_1_0__m5_un3_n b2_o_wyjscie_1_0__m5_un1_n b2_o_wyjscie_1_0__m5_un0_n i_a_2__n i_b_2__n
+.names  i_a_0_.BLIF i_a_c_0__n
+1 1
+.names  i_a_1_.BLIF i_a_c_1__n
+1 1
+.names  i_b_0_.BLIF i_b_c_0__n
+1 1
+.names  i_b_1_.BLIF i_b_c_1__n
+1 1
+.names  b1_n_2_i_n.BLIF o_result_0_
+1 1
+.names  B2_o_wyjscie_1_0__m2.BLIF o_result_1_
+1 1
+.names  b2_o_wyjscie_1_0__i1_mux_i_n.BLIF o_result_2_
+1 1
+.names  gnd_n_n.BLIF o_result_3_
+1 1
+.names  i_a_c_1__n.BLIF i_a_i_1__n
+0 1
+.names  i_b_c_1__n.BLIF i_b_i_1__n
+0 1
+.names  B2_o_wyjscie_1_0__m4.BLIF b2_o_wyjscie_1_0__m5_un3_n
+0 1
+.names  i_b_i_1__n.BLIF B2_o_wyjscie_1_0__m4.BLIF b2_o_wyjscie_1_0__m5_un1_n
+11 1
+.names  i_a_i_1__n.BLIF b2_o_wyjscie_1_0__m5_un3_n.BLIF b2_o_wyjscie_1_0__m5_un0_n
+11 1
+.names  b2_o_wyjscie_1_0__m5_un1_n.BLIF b2_o_wyjscie_1_0__m5_un0_n.BLIF b2_o_wyjscie_1_0__i1_mux_n
+1- 1
+-1 1
+.names  i_a_c_0__n.BLIF i_a_i_0__n
+0 1
+.names  B1_m1.BLIF b1_n_2_i_n
+0 1
+.names  b2_o_wyjscie_1_0__i1_mux_n.BLIF b2_o_wyjscie_1_0__i1_mux_i_n
+0 1
+.names  gnd_n_n
+.names  i_a_2_.BLIF i_a_2__n
+1 1
+.names  i_b_2_.BLIF i_b_2__n
+1 1
+.names  i_b_c_1__n.BLIF B2_o_wyjscie_1_0__m2_1.X1
+1 1
+.names  b1_n_2_i_n.BLIF B2_o_wyjscie_1_0__m2_1.X2
+1 1
+.names  B2_o_wyjscie_1_0__m2_1.BLIF B2_o_wyjscie_1_0__m2.X1
+1 1
+.names  i_a_c_1__n.BLIF B2_o_wyjscie_1_0__m2.X2
+1 1
+.names  b1_n_2_i_n.BLIF B2_o_wyjscie_1_0__m4.X1
+1 1
+.names  i_a_c_1__n.BLIF B2_o_wyjscie_1_0__m4.X2
+1 1
+.names  i_a_i_0__n.BLIF B1_m1.X1
+1 1
+.names  i_b_c_0__n.BLIF B1_m1.X2
+1 1
+.end

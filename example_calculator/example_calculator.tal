@@ -1,0 +1,66 @@
+
+
+Design Name = example_calculator.tt4
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+*******************
+* TIMING ANALYSIS *
+*******************
+
+Timing Analysis KEY:
+One unit of delay time is equivalent to one pass 
+     through the Central Switch Matrix.
+..   Delay ( in this column ) not applicable to the indicated signal.
+TSU, Set-Up Time ( 0 for input-paired signals ),
+     represents the number of switch matrix passes between
+     an input pin and a register setup before clock.
+     TSU is reported on the register.
+TCO, Clocked Output-to-Pin Time ( 0 for output-paired signals ),
+     represents the number of switch matrix passes between
+     a clocked register and an output pin.
+     TCO is reported on the register.
+TPD, Propagation Delay Time ( calculated only for combinatorial eqns.),
+     represents the number of switch matrix passes between
+     an input pin and an output pin.
+     TPD is reported on the output pin.
+TCR, Clocked Output-to-Register Time,
+     represents the number of switch matrix passes between
+     a clocked register and the register it drives ( before clock ).
+     TCR is reported on the driving register.
+
+                    TSU       TCO       TPD       TCR
+                  #passes   #passes   #passes   #passes
+SIGNAL NAME       min  max  min  max  min  max  min  max
+calc_proc_state_oper_0_  ..   ..   ..   ..   ..   ..    1    3   
+calc_proc_num_buf_0_  ..   ..   ..   ..   ..   ..    1    3   
+calc_proc_num_buf_1_  ..   ..   ..   ..   ..   ..    1    3   
+calc_proc_num_acc_0_  ..   ..   ..   ..   ..   ..    1    3   
+calc_proc_num_acc_1_  ..   ..   ..   ..   ..   ..    1    3   
+input_keypad_key_out_0_   2    2   ..   ..   ..   ..    1    1   
+input_keypad_key_out_1_   2    2   ..   ..   ..   ..    1    1   
+input_keypad_key_out_2_   2    2   ..   ..   ..   ..    1    1   
+input_keypad_key_out_3_   2    2   ..   ..   ..   ..    1    1   
+calc_proc_num_buf_2_  ..   ..   ..   ..   ..   ..    1    2   
+calc_proc_num_acc_2_  ..   ..   ..   ..   ..   ..    1    2   
+input_keypad_counter_0_   1    1   ..   ..   ..   ..    1    2   
+input_keypad_counter_1_   1    1   ..   ..   ..   ..    1    2   
+input_keypad_interrupt   1    1   ..   ..   ..   ..    1    2   
+input_keypad_interrupt_out  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_state_disp_0_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_num_buf_3_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_key_catched_0_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_key_catched_2_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_state_curr_0_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_state_curr_1_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_state_curr_2_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_key_catched_1_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_key_catched_3_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_num_acc_3_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_num_acc_buf_0_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_num_acc_buf_1_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_num_acc_buf_2_  ..   ..   ..   ..   ..   ..    1    1   
+calc_proc_num_acc_buf_3_  ..   ..   ..   ..   ..   ..    1    1   
+input_keypad_counter_2_   1    1    1    1   ..   ..    1    1   
+input_keypad_counter_3_   1    1    1    1   ..   ..    1    1   
+input_keypad_interrupt_0_sqmuxa_n  ..   ..   ..   ..    1    1   ..   ..   

@@ -1,0 +1,235 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design stoper created  Tue Oct 29 13:03:38 2019
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   4          7        1    Pin   disp_3_ 
+   4          7        1    Pin   disp_2_ 
+   4          7        1    Pin   disp_1_ 
+   4          7        1    Pin   disp_0_ 
+   1          2        1    Pin   r_3_.D- 
+   1          1        1    Pin   r_3_.C 
+   1          2        1    Pin   r_2_.D- 
+   1          1        1    Pin   r_2_.C 
+   1          2        1    Pin   r_1_.D- 
+   1          1        1    Pin   r_1_.C 
+   1          2        1    Pin   r_0_.D 
+   1          1        1    Pin   r_0_.C 
+   4          6        1    Node  s_1_.D 
+   1          1        1    Node  s_1_.C 
+   4          5        1    Node  s_2_.D 
+   1          1        1    Node  s_2_.C 
+   2          7        1    NodeX1  d_1_.D.X1 
+   1          4        1    NodeX2  d_1_.D.X2 
+   1          1        1    Node  d_1_.C 
+   1          2        1    NodeX1  d_2_.D.X1 
+   1          5        1    NodeX2  d_2_.D.X2 
+   1          1        1    Node  d_2_.C 
+   3          5        1    Node  j_1_.D 
+   1          1        1    Node  j_1_.C 
+   4          6        1    Node  j_2_.D 
+   1          1        1    Node  j_2_.C 
+   4          6        1    Node  t_1_.D 
+   1          1        1    Node  t_1_.C 
+   4          5        1    Node  t_2_.D 
+   1          1        1    Node  t_2_.C 
+   2          4        1    Node  j_0_.D 
+   1          1        1    Node  j_0_.C 
+   2          7        1    NodeX1  j_3_.D.X1 
+   1          2        1    NodeX2  j_3_.D.X2 
+   1          1        1    Node  j_3_.C 
+   3          4        1    Node  d_0_.D 
+   1          1        1    Node  d_0_.C 
+   3          7        1    Node  d_3_.T 
+   1          1        1    Node  d_3_.C 
+   2          3        1    Node  s_0_.D 
+   1          1        1    Node  s_0_.C 
+   3          6        1    NodeX1  s_3_.D.X1 
+   1          1        1    NodeX2  s_3_.D.X2 
+   1          1        1    Node  s_3_.C 
+   2          3        1    Node  t_0_.D 
+   1          1        1    Node  t_0_.C 
+   3          6        1    NodeX1  t_3_.D.X1 
+   1          1        1    NodeX2  t_3_.D.X2 
+   1          1        1    Node  t_3_.C 
+   2          3        1    Node  currState_0_.D 
+   1          1        1    Node  currState_0_.C 
+   1          4        1    Node  finally_disp17_n 
+   2          4        1    Node  disp_sn_N_3- 
+   2          7        1    Node  se 
+   1          4        1    Node  digit_un3_zl_n 
+   2         11        1    Node  te_i- 
+=========
+ 102                 P-Term Total: 102
+                       Total Pins: 12
+                      Total Nodes: 22
+            Average P-Term/Output: 2
+
+
+Equations:
+
+disp_3_ = (s_3_.Q & finally_disp17_n & disp_sn_N_3
+     # t_3_.Q & !finally_disp17_n & disp_sn_N_3
+     # d_3_.Q & !disp_sn_N_3 & r_0_.Q
+     # j_3_.Q & !disp_sn_N_3 & !r_0_.Q);
+
+disp_2_ = (s_2_.Q & finally_disp17_n & disp_sn_N_3
+     # t_2_.Q & !finally_disp17_n & disp_sn_N_3
+     # d_2_.Q & !disp_sn_N_3 & r_0_.Q
+     # j_2_.Q & !disp_sn_N_3 & !r_0_.Q);
+
+disp_1_ = (s_1_.Q & finally_disp17_n & disp_sn_N_3
+     # t_1_.Q & !finally_disp17_n & disp_sn_N_3
+     # d_1_.Q & !disp_sn_N_3 & r_0_.Q
+     # j_1_.Q & !disp_sn_N_3 & !r_0_.Q);
+
+disp_0_ = (s_0_.Q & finally_disp17_n & disp_sn_N_3
+     # t_0_.Q & !finally_disp17_n & disp_sn_N_3
+     # d_0_.Q & !disp_sn_N_3 & r_0_.Q
+     # j_0_.Q & !disp_sn_N_3 & !r_0_.Q);
+
+!r_3_.D = (!reset & !r_2_.Q);
+
+r_3_.C = (clk);
+
+!r_2_.D = (!reset & !r_1_.Q);
+
+r_2_.C = (clk);
+
+!r_1_.D = (!reset & !r_0_.Q);
+
+r_1_.C = (clk);
+
+r_0_.D = (!reset & r_3_.Q);
+
+r_0_.C = (clk);
+
+s_1_.D = (s_1_.Q & !se
+     # !reset & s_1_.Q & !s_0_.Q
+     # !reset & !s_1_.Q & s_2_.Q & s_0_.Q & se
+     # !reset & !s_1_.Q & s_0_.Q & !s_3_.Q & se);
+
+s_1_.C = (clk);
+
+s_2_.D = (s_2_.Q & !se
+     # !reset & !s_1_.Q & s_2_.Q
+     # !reset & s_2_.Q & !s_0_.Q
+     # !reset & s_1_.Q & !s_2_.Q & s_0_.Q & se);
+
+s_2_.C = (clk);
+
+d_1_.D.X1 = (!reset & d_1_.Q
+     # !reset & !d_2_.Q & d_0_.Q & d_3_.Q & !currState_0_.Q & digit_un3_zl_n);
+
+d_1_.D.X2 = (!reset & d_0_.Q & !currState_0_.Q & digit_un3_zl_n);
+
+d_1_.C = (clk);
+
+d_2_.D.X1 = (!reset & d_2_.Q);
+
+d_2_.D.X2 = (!reset & d_1_.Q & d_0_.Q & !currState_0_.Q & digit_un3_zl_n);
+
+d_2_.C = (clk);
+
+j_1_.D = (!reset & j_1_.Q & currState_0_.Q
+     # !reset & j_1_.Q & !j_0_.Q & !digit_un3_zl_n
+     # !reset & !j_1_.Q & j_0_.Q & !currState_0_.Q & !digit_un3_zl_n);
+
+j_1_.C = (clk);
+
+j_2_.D = (!reset & j_2_.Q & currState_0_.Q
+     # !reset & !j_1_.Q & j_2_.Q & !digit_un3_zl_n
+     # !reset & j_2_.Q & !j_0_.Q & !digit_un3_zl_n
+     # !reset & j_1_.Q & !j_2_.Q & j_0_.Q & !currState_0_.Q & !digit_un3_zl_n);
+
+j_2_.C = (clk);
+
+t_1_.D = (t_1_.Q & te_i
+     # !reset & t_1_.Q & !t_0_.Q
+     # !reset & !t_1_.Q & t_2_.Q & t_0_.Q & !te_i
+     # !reset & !t_1_.Q & t_0_.Q & !t_3_.Q & !te_i);
+
+t_1_.C = (clk);
+
+t_2_.D = (t_2_.Q & te_i
+     # !reset & !t_1_.Q & t_2_.Q
+     # !reset & t_2_.Q & !t_0_.Q
+     # !reset & t_1_.Q & !t_2_.Q & t_0_.Q & !te_i);
+
+t_2_.C = (clk);
+
+j_0_.D = (!reset & j_0_.Q & currState_0_.Q
+     # !reset & !j_0_.Q & !currState_0_.Q & !digit_un3_zl_n);
+
+j_0_.C = (clk);
+
+j_3_.D.X1 = (!reset & j_3_.Q & !currState_0_.Q & digit_un3_zl_n
+     # !reset & j_1_.Q & j_2_.Q & j_0_.Q & !currState_0_.Q & !digit_un3_zl_n);
+
+j_3_.D.X2 = (!reset & j_3_.Q);
+
+j_3_.C = (clk);
+
+d_0_.D = (!reset & d_0_.Q & currState_0_.Q
+     # !reset & d_0_.Q & !digit_un3_zl_n
+     # !reset & !d_0_.Q & !currState_0_.Q & digit_un3_zl_n);
+
+d_0_.C = (clk);
+
+d_3_.T = (reset & d_3_.Q
+     # !reset & d_1_.Q & d_2_.Q & d_0_.Q & !currState_0_.Q & digit_un3_zl_n
+     # !d_1_.Q & !d_2_.Q & d_0_.Q & d_3_.Q & !currState_0_.Q & digit_un3_zl_n);
+
+d_3_.C = (clk);
+
+s_0_.D = (s_0_.Q & !se
+     # !reset & !s_0_.Q & se);
+
+s_0_.C = (clk);
+
+s_3_.D.X1 = (reset & s_3_.Q & se
+     # !reset & s_1_.Q & s_2_.Q & s_0_.Q & se
+     # !reset & !s_1_.Q & !s_2_.Q & s_0_.Q & s_3_.Q & se);
+
+s_3_.D.X2 = (s_3_.Q);
+
+s_3_.C = (clk);
+
+t_0_.D = (t_0_.Q & te_i
+     # !reset & !t_0_.Q & !te_i);
+
+t_0_.C = (clk);
+
+t_3_.D.X1 = (reset & t_3_.Q & !te_i
+     # !reset & t_1_.Q & t_2_.Q & t_0_.Q & !te_i
+     # !reset & !t_1_.Q & !t_2_.Q & t_0_.Q & t_3_.Q & !te_i);
+
+t_3_.D.X2 = (t_3_.Q);
+
+t_3_.C = (clk);
+
+currState_0_.D = (!start & currState_0_.Q
+     # stop & !currState_0_.Q);
+
+currState_0_.C = (clk);
+
+finally_disp17_n = (r_0_.Q & r_1_.Q & !r_2_.Q & r_3_.Q);
+
+!disp_sn_N_3 = (!r_0_.Q & r_1_.Q & r_2_.Q & r_3_.Q
+     # r_0_.Q & !r_1_.Q & r_2_.Q & r_3_.Q);
+
+se = (reset
+     # !d_1_.Q & !d_2_.Q & d_0_.Q & d_3_.Q & !currState_0_.Q & digit_un3_zl_n);
+
+digit_un3_zl_n = (!j_1_.Q & !j_2_.Q & j_0_.Q & j_3_.Q);
+
+!te_i = (reset
+     # !s_1_.Q & !s_2_.Q & !d_1_.Q & !d_2_.Q & d_0_.Q & d_3_.Q & s_0_.Q & s_3_.Q & !currState_0_.Q & digit_un3_zl_n);
+
+
+Reverse-Polarity Equations:
+

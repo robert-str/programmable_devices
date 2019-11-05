@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator"  -part M4A5-64   -RWCheckOnRam 1 -areadelay 0 -minc -summaryfile "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synlog\report\calculator_fpga_mapper.xml" -top_level_module  calculator  -multisrs  -oedif  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.edi"  -freq 1.000  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synwork\calculator_mult.srs"  -ologparam  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\syntmp\calculator.plg"  -osyn  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.srm"  -prjdir  "c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\"  -prjname  calculator  -log  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synlog\calculator_fpga_mapper.srr" 
+rc:1 success:1
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.edi|o|1572358609|132405
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synwork\calculator_mult.srs|i|1572358609|2806
+"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\syntmp\calculator.plg"|o|0|0
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.srm|o|1572358609|48105
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synlog\calculator_fpga_mapper.srr|o|1572358609|2849
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399362084|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399364922|8049664

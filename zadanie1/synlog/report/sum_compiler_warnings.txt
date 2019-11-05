@@ -1,0 +1,2 @@
+@W: CL246 :"C:\isplever projects\zadanie1\sum1b.vhd":9:1:9:7|Input port bits 2 to 1 of wejscie(2 downto 0) are unused 
+

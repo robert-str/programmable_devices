@@ -1,0 +1,70 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file example_calculator.tt4
+; FITTER-generated Placements.
+; DEVICE   mach463a
+; DATE     Tue Oct 29 15:23:34 2019
+
+
+Pin   6  keypad_rows_3_
+Pin   2  keypad_cols_3_ Comb ; S6=1  S9=1  Pair 51
+Pin   43  bcd_out_7_ Lat  ; S6=0  S9=0  Pair 119
+Pin   11  clk
+Pin   7  keypad_rows_2_
+Pin   8  keypad_rows_1_
+Pin   9  keypad_rows_0_
+Pin   3  keypad_cols_2_ Comb ; S6=1  S9=1  Pair 63
+Pin   4  keypad_cols_1_ Comb ; S6=1  S9=1  Pair 45
+Pin   5  keypad_cols_0_ Comb ; S6=1  S9=1  Pair 57
+Pin   42  bcd_out_6_ Lat  ; S6=0  S9=0  Pair 137
+Pin   41  bcd_out_5_ Lat  ; S6=0  S9=0  Pair 132
+Pin   40  bcd_out_4_ Lat  ; S6=0  S9=0  Pair 135
+Pin   39  bcd_out_3_ Lat  ; S6=0  S9=0  Pair 131
+Pin   38  bcd_out_2_ Lat  ; S6=0  S9=0  Pair 123
+Pin   37  bcd_out_1_ Lat  ; S6=0  S9=0  Pair 129
+Pin   36  bcd_out_0_ Lat  ; S6=0  S9=0  Pair 117
+Node  99  input_keypad_interrupt_out Reg  ; S6=1  S9=1 
+Node  108  input_keypad_key_out_0_ Reg  ; S6=1  S9=1 
+Node  105  input_keypad_key_out_1_ Reg  ; S6=1  S9=1 
+Node  48  input_keypad_key_out_2_ Reg  ; S6=1  S9=1 
+Node  60  input_keypad_key_out_3_ Reg  ; S6=1  S9=1 
+Node  84  calc_proc_state_oper_0_ Lat  ; S6=1  S9=0 
+Node  74  calc_proc_state_disp_0_ Lat  ; S6=1  S9=0 
+Node  102  calc_proc_num_buf_0_ Lat  ; S6=1  S9=0 
+Node  96  calc_proc_num_buf_1_ Lat  ; S6=1  S9=0 
+Node  113  calc_proc_num_buf_2_ Lat  ; S6=1  S9=0 
+Node  114  calc_proc_num_buf_3_ Lat  ; S6=1  S9=0 
+Node  107  calc_proc_key_catched_0_ Lat  ; S6=0  S9=0 
+Node  53  calc_proc_key_catched_2_ Lat  ; S6=0  S9=0 
+Node  69  calc_proc_state_curr_0_ Reg  ; S6=1  S9=1 
+Node  81  calc_proc_state_curr_1_ Reg  ; S6=1  S9=1 
+Node  75  calc_proc_state_curr_2_ Reg  ; S6=1  S9=1 
+Node  78  calc_proc_key_catched_1_ Lat  ; S6=1  S9=0 
+Node  47  calc_proc_key_catched_3_ Lat  ; S6=0  S9=0 
+Node  101  calc_proc_num_acc_0_ Lat  ; S6=1  S9=0 
+Node  72  calc_proc_num_acc_1_ Lat  ; S6=1  S9=0 
+Node  95  calc_proc_num_acc_2_ Lat  ; S6=1  S9=0 
+Node  66  calc_proc_num_acc_3_ Lat  ; S6=1  S9=0 
+Node  65  calc_proc_G_89_1 Comb ; S6=1  S9=1 
+Node  111  calc_proc_state_next_0_sqmuxa_2_n Comb ; S6=1  S9=1 
+Node  122  calc_proc_num_acc_buf_0_ Lat  ; S6=1  S9=0 
+Node  125  calc_proc_num_acc_buf_1_ Lat  ; S6=1  S9=0 
+Node  138  calc_proc_num_acc_buf_2_ Lat  ; S6=1  S9=0 
+Node  126  calc_proc_num_acc_buf_3_ Lat  ; S6=1  S9=0 
+Node  54  calc_proc_n_79_1_n Comb ; S6=1  S9=1 
+Node  87  input_keypad_counter_0_ Reg  ; S6=1  S9=1 
+Node  71  input_keypad_counter_1_ Reg  ; S6=1  S9=1 
+Node  93  input_keypad_counter_2_ Reg  ; S6=1  S9=1 
+Node  89  input_keypad_counter_3_ Reg  ; S6=1  S9=1 
+Node  83  input_keypad_interrupt Reg  ; S6=1  S9=1 
+Node  77  input_keypad_interrupt_0_sqmuxa_n Comb ; S6=1  S9=1 
+Node  120  calc_proc_n_36_0_n Comb ; S6=1  S9=1 
+Node  59  calc_proc_n_82_0_n Comb ; S6=1  S9=1 
+Node  90  calc_proc_state_oper_0__0 Comb ; S6=1  S9=1 
+; Unused Pins & Nodes
+; -> None Found.

@@ -1,0 +1,126 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      o_number(7:0)                 o_number                  7          8            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      o_number_7_                 o_number[7]                       1            0            
+        Port      o_number_6_                 o_number[6]                       1            1            
+        Port      o_number_5_                 o_number[5]                       1            2            
+        Port      o_number_4_                 o_number[4]                       1            3            
+        Port      o_number_3_                 o_number[3]                       1            4            
+        Port      o_number_2_                 o_number[2]                       1            5            
+        Port      o_number_1_                 o_number[1]                       1            6            
+        Port      o_number_0_                 o_number[0]                       1            7            
+End
+Section Cross Reference File
+Design 'counter' created Wed Nov 21 09:56:34 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                dsec_3_                                   dsec[3]
+   Inst             seconds_0_                                seconds[0]
+   Inst             seconds_1_                                seconds[1]
+   Inst             seconds_2_                                seconds[2]
+   Inst             seconds_3_                                seconds[3]
+   Inst                dsec_0_                                   dsec[0]
+   Inst                dsec_1_                                   dsec[1]
+   Inst                dsec_2_                                   dsec[2]
+   Inst            o_number_0_                               o_number[0]
+   Inst            o_number_1_                               o_number[1]
+   Inst            o_number_2_                               o_number[2]
+   Inst            o_number_3_                               o_number[3]
+   Inst            o_number_4_                               o_number[4]
+   Inst            o_number_5_                               o_number[5]
+   Inst            o_number_6_                               o_number[6]
+   Inst            o_number_7_                               o_number[7]
+   Inst         op_eq_seconds6                            op_eq.seconds6
+   Inst          op_eq_dsec6_1                             op_eq.dsec6_1
+   Inst          op_eq_dsec6_2                             op_eq.dsec6_2
+   Inst            op_eq_dsec6                               op_eq.dsec6
+   Inst           seconds_2_1_                              seconds_2[1]
+   Inst       op_eq_seconds6_i                          op_eq.seconds6_i
+   Inst           seconds_2_3_                              seconds_2[3]
+   Inst       op_eq_seconds6_1                          op_eq.seconds6_1
+   Inst       op_eq_seconds6_2                          op_eq.seconds6_2
+   Inst           seconds_0_0_                              seconds_0[0]
+   Inst           seconds_i_1_                              seconds_i[1]
+   Inst           seconds_i_2_                              seconds_i[2]
+   Inst              dsec_i_1_                                 dsec_i[1]
+   Inst              dsec_i_2_                                 dsec_i[2]
+   Inst              dsec_3_1_                                 dsec_3[1]
+   Inst          op_eq_dsec6_i                             op_eq.dsec6_i
+   Inst              dsec_3_3_                                 dsec_3[3]
+   Inst         seconds_0_1__r                            seconds_0_1_.r
+   Inst         seconds_0_1__m                            seconds_0_1_.m
+   Inst         seconds_0_1__n                            seconds_0_1_.n
+   Inst         seconds_0_1__p                            seconds_0_1_.p
+   Inst         seconds_0_2__r                            seconds_0_2_.r
+   Inst         seconds_0_2__m                            seconds_0_2_.m
+   Inst         seconds_0_2__n                            seconds_0_2_.n
+   Inst         seconds_0_2__p                            seconds_0_2_.p
+   Inst         seconds_0_3__r                            seconds_0_3_.r
+   Inst         seconds_0_3__m                            seconds_0_3_.m
+   Inst         seconds_0_3__n                            seconds_0_3_.n
+   Inst         seconds_0_3__p                            seconds_0_3_.p
+   Inst              dsec_i_0_                                 dsec_i[0]
+   Net               dsec_0__n                                   dsec[0]
+   Net               dsec_1__n                                   dsec[1]
+   Net               dsec_2__n                                   dsec[2]
+   Net               dsec_3__n                                   dsec[3]
+   Net            seconds_0__n                                seconds[0]
+   Net            seconds_1__n                                seconds[1]
+   Net            seconds_2__n                                seconds[2]
+   Net            seconds_3__n                                seconds[3]
+   Net        un1_seconds_2__n                            un1_seconds[2]
+   Net           un1_dsec_2__n                               un1_dsec[2]
+   Net           op_eq_dsec6_n                               op_eq.dsec6
+   Net             dsec_3_1__n                                 dsec_3[1]
+   Net             dsec_3_3__n                                 dsec_3[3]
+   Net          seconds_2_1__n                              seconds_2[1]
+   Net          seconds_2_3__n                              seconds_2[3]
+   Net        op_eq_seconds6_n                            op_eq.seconds6
+   Net           un1_dsec_3__n                               un1_dsec[3]
+   Net           un1_dsec_1__n                               un1_dsec[1]
+   Net        un1_seconds_3__n                            un1_seconds[3]
+   Net        un1_seconds_1__n                            un1_seconds[1]
+   Net      op_eq_seconds6_i_n                          op_eq.seconds6_i
+   Net         op_eq_dsec6_i_n                             op_eq.dsec6_i
+   Net             dsec_i_1__n                                 dsec_i[1]
+   Net             dsec_i_2__n                                 dsec_i[2]
+   Net          seconds_i_1__n                              seconds_i[1]
+   Net          seconds_i_2__n                              seconds_i[2]
+   Net             dsec_i_0__n                                 dsec_i[0]
+   Net           o_number_0__n                               o_number[0]
+   Net           o_number_1__n                               o_number[1]
+   Net           o_number_2__n                               o_number[2]
+   Net           o_number_3__n                               o_number[3]
+   Net           o_number_4__n                               o_number[4]
+   Net           o_number_5__n                               o_number[5]
+   Net           o_number_6__n                               o_number[6]
+   Net      op_eq_seconds6_1_n                          op_eq.seconds6_1
+   Net      op_eq_seconds6_2_n                          op_eq.seconds6_2
+   Net         op_eq_dsec6_1_n                             op_eq.dsec6_1
+   Net         op_eq_dsec6_2_n                             op_eq.dsec6_2
+   Net      seconds_0_1__un3_n                          seconds_0_1_.un3
+   Net      seconds_0_1__un1_n                          seconds_0_1_.un1
+   Net      seconds_0_1__un0_n                          seconds_0_1_.un0
+   Net      seconds_0_2__un3_n                          seconds_0_2_.un3
+   Net      seconds_0_2__un1_n                          seconds_0_2_.un1
+   Net      seconds_0_2__un0_n                          seconds_0_2_.un0
+   Net      seconds_0_3__un3_n                          seconds_0_3_.un3
+   Net      seconds_0_3__un1_n                          seconds_0_3_.un1
+   Net      seconds_0_3__un0_n                          seconds_0_3_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_clk
+        Input     i_sigZero
+        Output     o_number_7_
+        Output     o_number_6_
+        Output     o_number_5_
+        Output     o_number_4_
+        Output     o_number_3_
+        Output     o_number_2_
+        Output     o_number_1_
+        Output     o_number_0_
+End

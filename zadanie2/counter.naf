@@ -1,0 +1,6 @@
+i_clk  i
+i_sigZero  i
+o_number[3]  o
+o_number[2]  o
+o_number[1]  o
+o_number[0]  o

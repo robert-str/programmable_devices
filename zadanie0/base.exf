@@ -1,0 +1,10 @@
+Section Cross Reference File
+Design 'base' created Tue Nov 05 11:02:35 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_btn
+        Output     o_led
+End

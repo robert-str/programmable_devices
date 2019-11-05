@@ -1,0 +1,1 @@
+-src numbers.tt4 -type PLA -devfile "C:/ispLEVER_Classic2_0/ispcpld/dat/mach4a/mach463ace.dev" -lci "numbers.lct" -touch "numbers.tt4"

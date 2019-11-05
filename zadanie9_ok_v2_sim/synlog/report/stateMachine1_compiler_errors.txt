@@ -1,0 +1,4 @@
+@E: CG103 :"D:\isplever projects\zadanie9_ok\statemachine1.vhd":18:21:18:23|Expecting expression
+@E: CD255 :"D:\isplever projects\zadanie9_ok\statemachine1.vhd":30:23:30:23|No identifier "diodes_temp" in scope
+@E|Parse errors encountered - exiting
+

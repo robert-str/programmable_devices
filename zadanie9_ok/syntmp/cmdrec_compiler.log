@@ -1,0 +1,8 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  D:\projekttestowy\synwork\stateMachine1_comp.srs  -top  stateMachine1  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  D:\projekttestowy\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work D:\projekttestowy\clk_prescaler.vhd -lib work D:\projekttestowy\statemachine1.vhd -loga  D:\projekttestowy\stateMachine1.srr 
+rc:0 success:1
+D:\projekttestowy\synwork\stateMachine1_comp.srs|o|1544530481|2807
+D:\projekttestowy\clk_prescaler.vhd|i|1544528975|1081
+D:\projekttestowy\statemachine1.vhd|i|1544530455|1798
+D:\projekttestowy\stateMachine1.srr|o|1544530481|2033
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401220298|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401220504|5533184

@@ -1,0 +1,157 @@
+#$ DATE Wed Nov 21 09:56:34 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE counter
+#$ PINS 10 o_number_5_ o_number_4_ o_number_7_ o_number_3_ i_clk o_number_2_ i_sigZero o_number_1_ o_number_0_ o_number_6_
+#$ NODES 43 dsec_0_reg dsec_1_reg dsec_2_reg dsec_3_reg seconds_0_reg seconds_1_reg seconds_2_reg seconds_3_reg G_5 G_17 \
+#  op_eq_dsec6_n seconds_2_1__n seconds_2_3__n seconds_0_0_ N_10 N_12 N_20 N_22 op_eq_seconds6_n G_19 \
+#  G_15 G_7 G_3 op_eq_seconds6_i_n op_eq_dsec6_i_n dsec_i_1__n dsec_i_2__n seconds_i_1__n seconds_i_2__n i_clk_c \
+#  op_eq_seconds6_1_n op_eq_seconds6_2_n op_eq_dsec6_1_n op_eq_dsec6_2_n seconds_0_1__un3_n seconds_0_1__un1_n seconds_0_1__un0_n seconds_0_2__un3_n seconds_0_2__un1_n seconds_0_2__un0_n \
+#  seconds_0_3__un3_n seconds_0_3__un1_n seconds_0_3__un0_n 
+.model counter
+.inputs i_clk.BLIF dsec_0_reg.BLIF dsec_1_reg.BLIF dsec_2_reg.BLIF dsec_3_reg.BLIF seconds_0_reg.BLIF seconds_1_reg.BLIF seconds_2_reg.BLIF seconds_3_reg.BLIF \
+  G_5.BLIF G_17.BLIF op_eq_dsec6_n.BLIF seconds_2_1__n.BLIF seconds_2_3__n.BLIF seconds_0_0_.BLIF N_10.BLIF N_12.BLIF N_20.BLIF \
+  N_22.BLIF op_eq_seconds6_n.BLIF G_19.BLIF G_15.BLIF G_7.BLIF G_3.BLIF op_eq_seconds6_i_n.BLIF op_eq_dsec6_i_n.BLIF dsec_i_1__n.BLIF \
+  dsec_i_2__n.BLIF seconds_i_1__n.BLIF seconds_i_2__n.BLIF i_clk_c.BLIF op_eq_seconds6_1_n.BLIF op_eq_seconds6_2_n.BLIF op_eq_dsec6_1_n.BLIF op_eq_dsec6_2_n.BLIF seconds_0_1__un3_n.BLIF \
+  seconds_0_1__un1_n.BLIF seconds_0_1__un0_n.BLIF seconds_0_2__un3_n.BLIF seconds_0_2__un1_n.BLIF seconds_0_2__un0_n.BLIF seconds_0_3__un3_n.BLIF seconds_0_3__un1_n.BLIF seconds_0_3__un0_n.BLIF  
+.outputs o_number_7_ o_number_6_ o_number_5_ o_number_4_ o_number_3_ o_number_2_ o_number_1_ o_number_0_ dsec_3_reg.D dsec_3_reg.C seconds_0_reg.D \
+  seconds_0_reg.C seconds_1_reg.D seconds_1_reg.C seconds_2_reg.D seconds_2_reg.C seconds_3_reg.D seconds_3_reg.C dsec_0_reg.D dsec_0_reg.C dsec_1_reg.D dsec_1_reg.C \
+  dsec_2_reg.D dsec_2_reg.C G_5.X1 G_5.X2 G_17.X1 G_17.X2 G_19.X1 G_19.X2 G_15.X1 G_15.X2 G_7.X1 \
+  G_7.X2 seconds_0_0_.X1 seconds_0_0_.X2 G_3.X1 G_3.X2 op_eq_dsec6_n seconds_2_1__n seconds_2_3__n N_10 N_12 N_20 \
+  N_22 op_eq_seconds6_n op_eq_seconds6_i_n op_eq_dsec6_i_n dsec_i_1__n dsec_i_2__n seconds_i_1__n seconds_i_2__n i_clk_c op_eq_seconds6_1_n op_eq_seconds6_2_n \
+  op_eq_dsec6_1_n op_eq_dsec6_2_n seconds_0_1__un3_n seconds_0_1__un1_n seconds_0_1__un0_n seconds_0_2__un3_n seconds_0_2__un1_n seconds_0_2__un0_n seconds_0_3__un3_n seconds_0_3__un1_n seconds_0_3__un0_n
+.names  i_clk.BLIF i_clk_c
+1 1
+.names  dsec_0_reg.BLIF o_number_0_
+1 1
+.names  dsec_1_reg.BLIF o_number_1_
+1 1
+.names  dsec_2_reg.BLIF o_number_2_
+1 1
+.names  dsec_3_reg.BLIF o_number_3_
+1 1
+.names  seconds_0_reg.BLIF o_number_4_
+1 1
+.names  seconds_1_reg.BLIF o_number_5_
+1 1
+.names  seconds_2_reg.BLIF o_number_6_
+1 1
+.names  seconds_3_reg.BLIF o_number_7_
+1 1
+.names  op_eq_seconds6_1_n.BLIF op_eq_seconds6_2_n.BLIF op_eq_seconds6_n
+11 1
+.names  dsec_0_reg.BLIF dsec_3_reg.BLIF op_eq_dsec6_1_n
+11 1
+.names  dsec_i_1__n.BLIF dsec_i_2__n.BLIF op_eq_dsec6_2_n
+11 1
+.names  op_eq_dsec6_1_n.BLIF op_eq_dsec6_2_n.BLIF op_eq_dsec6_n
+11 1
+.names  op_eq_seconds6_i_n.BLIF G_3.BLIF seconds_2_1__n
+11 1
+.names  op_eq_seconds6_n.BLIF op_eq_seconds6_i_n
+0 1
+.names  op_eq_seconds6_i_n.BLIF G_7.BLIF seconds_2_3__n
+11 1
+.names  seconds_0_reg.BLIF seconds_3_reg.BLIF op_eq_seconds6_1_n
+11 1
+.names  seconds_i_1__n.BLIF seconds_i_2__n.BLIF op_eq_seconds6_2_n
+11 1
+.names  N_20.BLIF dsec_2_reg.BLIF N_22
+11 1
+.names  seconds_1_reg.BLIF seconds_i_1__n
+0 1
+.names  seconds_2_reg.BLIF seconds_i_2__n
+0 1
+.names  dsec_1_reg.BLIF dsec_i_1__n
+0 1
+.names  dsec_2_reg.BLIF dsec_i_2__n
+0 1
+.names  op_eq_dsec6_i_n.BLIF G_15.BLIF dsec_1_reg.D
+11 1
+.names  op_eq_dsec6_n.BLIF op_eq_dsec6_i_n
+0 1
+.names  op_eq_dsec6_i_n.BLIF G_19.BLIF dsec_3_reg.D
+11 1
+.names  op_eq_dsec6_n.BLIF seconds_0_1__un3_n
+0 1
+.names  seconds_2_1__n.BLIF op_eq_dsec6_n.BLIF seconds_0_1__un1_n
+11 1
+.names  seconds_1_reg.BLIF seconds_0_1__un3_n.BLIF seconds_0_1__un0_n
+11 1
+.names  seconds_0_1__un1_n.BLIF seconds_0_1__un0_n.BLIF seconds_1_reg.D
+1- 1
+-1 1
+.names  op_eq_dsec6_n.BLIF seconds_0_2__un3_n
+0 1
+.names  G_5.BLIF op_eq_dsec6_n.BLIF seconds_0_2__un1_n
+11 1
+.names  seconds_2_reg.BLIF seconds_0_2__un3_n.BLIF seconds_0_2__un0_n
+11 1
+.names  seconds_0_2__un1_n.BLIF seconds_0_2__un0_n.BLIF seconds_2_reg.D
+1- 1
+-1 1
+.names  op_eq_dsec6_n.BLIF seconds_0_3__un3_n
+0 1
+.names  seconds_2_3__n.BLIF op_eq_dsec6_n.BLIF seconds_0_3__un1_n
+11 1
+.names  seconds_3_reg.BLIF seconds_0_3__un3_n.BLIF seconds_0_3__un0_n
+11 1
+.names  seconds_0_3__un1_n.BLIF seconds_0_3__un0_n.BLIF seconds_3_reg.D
+1- 1
+-1 1
+.names  dsec_0_reg.BLIF dsec_0_reg.D
+0 1
+.names  seconds_0_reg.BLIF seconds_1_reg.BLIF N_10
+11 1
+.names  N_10.BLIF seconds_2_reg.BLIF N_12
+11 1
+.names  dsec_0_reg.BLIF dsec_1_reg.BLIF N_20
+11 1
+.names  i_clk_c.BLIF dsec_3_reg.C
+1 1
+.names  i_clk_c.BLIF seconds_0_reg.C
+1 1
+.names  i_clk_c.BLIF seconds_1_reg.C
+1 1
+.names  i_clk_c.BLIF seconds_2_reg.C
+1 1
+.names  i_clk_c.BLIF seconds_3_reg.C
+1 1
+.names  i_clk_c.BLIF dsec_0_reg.C
+1 1
+.names  i_clk_c.BLIF dsec_1_reg.C
+1 1
+.names  i_clk_c.BLIF dsec_2_reg.C
+1 1
+.names  N_10.BLIF G_5.X1
+1 1
+.names  seconds_2_reg.BLIF G_5.X2
+1 1
+.names  N_20.BLIF G_17.X1
+1 1
+.names  dsec_2_reg.BLIF G_17.X2
+1 1
+.names  N_22.BLIF G_19.X1
+1 1
+.names  dsec_3_reg.BLIF G_19.X2
+1 1
+.names  dsec_0_reg.BLIF G_15.X1
+1 1
+.names  dsec_1_reg.BLIF G_15.X2
+1 1
+.names  N_12.BLIF G_7.X1
+1 1
+.names  seconds_3_reg.BLIF G_7.X2
+1 1
+.names  op_eq_dsec6_n.BLIF seconds_0_0_.X1
+1 1
+.names  seconds_0_reg.BLIF seconds_0_0_.X2
+1 1
+.names  seconds_0_reg.BLIF G_3.X1
+1 1
+.names  seconds_1_reg.BLIF G_3.X2
+1 1
+.names  seconds_0_0_.BLIF seconds_0_reg.D
+1 1
+.names  G_17.BLIF dsec_2_reg.D
+1 1
+.end

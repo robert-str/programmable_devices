@@ -1,0 +1,16 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+EDIF2BLIF: Warning: Remove floating instance: :
+	i_b[0]
+
+Inspect circuit two_3bits_addes
+    Number of input ports   : 2
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 81
+    Number of nets          : 89
+
+No design errors found in circuit two_3bits_addes
+
+WriteBLIF ended normally.

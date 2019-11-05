@@ -1,0 +1,79 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Fri Nov 09 13:00:33 2018
+#$ MODULE simple1
+#$ PINS 10 diode1_6_ btn_1_ wyjsc diode1_5_ diode1_4_ diode1_3_ diode1_2_ diode1_1_ \
+#  diode1_0_ btn_0_
+#$ NODES 21 N_4 N_5 wyjsc_c diode1_c_0__n diode1_c_1__n diode1_c_2__n diode1_c_3__n \
+#  btn_c_0__n btn_c_1__n wyjsc_1_un3_n wyjsc_1_un1_n wyjsc_1_un0_n wyjsc_2_un3_n \
+#  wyjsc_2_un1_n wyjsc_2_un0_n wyjsc_3_un3_n wyjsc_3_un1_n wyjsc_3_un0_n diode1_6__n \
+#  diode1_5__n diode1_4__n
+.model simple1
+.inputs diode1_6_.BLIF btn_1_.BLIF diode1_5_.BLIF diode1_4_.BLIF \
+diode1_3_.BLIF diode1_2_.BLIF diode1_1_.BLIF diode1_0_.BLIF btn_0_.BLIF \
+N_4.BLIF N_5.BLIF wyjsc_c.BLIF diode1_c_0__n.BLIF diode1_c_1__n.BLIF \
+diode1_c_2__n.BLIF diode1_c_3__n.BLIF btn_c_0__n.BLIF btn_c_1__n.BLIF \
+wyjsc_1_un3_n.BLIF wyjsc_1_un1_n.BLIF wyjsc_1_un0_n.BLIF wyjsc_2_un3_n.BLIF \
+wyjsc_2_un1_n.BLIF wyjsc_2_un0_n.BLIF wyjsc_3_un3_n.BLIF wyjsc_3_un1_n.BLIF \
+wyjsc_3_un0_n.BLIF diode1_6__n.BLIF diode1_5__n.BLIF diode1_4__n.BLIF
+.outputs wyjsc N_4 N_5 wyjsc_c diode1_c_0__n diode1_c_1__n diode1_c_2__n \
+diode1_c_3__n btn_c_0__n btn_c_1__n wyjsc_1_un3_n wyjsc_1_un1_n wyjsc_1_un0_n \
+wyjsc_2_un3_n wyjsc_2_un1_n wyjsc_2_un0_n wyjsc_3_un3_n wyjsc_3_un1_n \
+wyjsc_3_un0_n diode1_6__n diode1_5__n diode1_4__n
+.names wyjsc_1_un1_n.BLIF wyjsc_1_un0_n.BLIF N_4
+1- 1
+-1 1
+.names wyjsc_2_un1_n.BLIF wyjsc_2_un0_n.BLIF N_5
+1- 1
+-1 1
+.names wyjsc_3_un1_n.BLIF wyjsc_3_un0_n.BLIF wyjsc_c
+1- 1
+-1 1
+.names btn_c_1__n.BLIF wyjsc_1_un3_n
+0 1
+.names diode1_c_2__n.BLIF btn_c_1__n.BLIF wyjsc_1_un1_n
+11 1
+.names diode1_c_0__n.BLIF wyjsc_1_un3_n.BLIF wyjsc_1_un0_n
+11 1
+.names btn_c_1__n.BLIF wyjsc_2_un3_n
+0 1
+.names diode1_c_3__n.BLIF btn_c_1__n.BLIF wyjsc_2_un1_n
+11 1
+.names diode1_c_1__n.BLIF wyjsc_2_un3_n.BLIF wyjsc_2_un0_n
+11 1
+.names btn_c_0__n.BLIF wyjsc_3_un3_n
+0 1
+.names N_5.BLIF btn_c_0__n.BLIF wyjsc_3_un1_n
+11 1
+.names N_4.BLIF wyjsc_3_un3_n.BLIF wyjsc_3_un0_n
+11 1
+.names wyjsc_c.BLIF wyjsc
+1 1
+0 0
+.names diode1_0_.BLIF diode1_c_0__n
+1 1
+0 0
+.names diode1_1_.BLIF diode1_c_1__n
+1 1
+0 0
+.names diode1_2_.BLIF diode1_c_2__n
+1 1
+0 0
+.names diode1_3_.BLIF diode1_c_3__n
+1 1
+0 0
+.names btn_0_.BLIF btn_c_0__n
+1 1
+0 0
+.names btn_1_.BLIF btn_c_1__n
+1 1
+0 0
+.names diode1_6_.BLIF diode1_6__n
+1 1
+0 0
+.names diode1_5_.BLIF diode1_5__n
+1 1
+0 0
+.names diode1_4_.BLIF diode1_4__n
+1 1
+0 0
+.end

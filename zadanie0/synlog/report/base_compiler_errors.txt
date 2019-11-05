@@ -1,0 +1,2 @@
+@E: CD441 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\top_module.vhd":16:5:16:11|process must contain at least one wait
+

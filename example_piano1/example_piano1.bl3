@@ -1,0 +1,353 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Tue Oct 29 15:04:31 2019
+#$ MODULE example_piano1
+#$ PINS 14 out0_7_ datain_4_ CLK0 out0_6_ out0_5_ out0_4_ out0_3_ out0_2_ out0_1_ \
+#  out0_0_ datain_3_ datain_2_ datain_1_ datain_0_
+#$ NODES 21 odlicz_0_ odlicz_1_ odlicz_2_ odlicz_3_ odlicz_4_ odlicz_5_ odlicz_6_ \
+#  odlicz_7_ N_89 out0_c_0__n out0_c_1__n out0_c_2__n out0_c_3__n out0_c_4__n \
+#  out0_c_5__n out0_c_6__n un2_datain_17_i N_14_0 un4_odlicz_1 un4_odlicz_2 \
+#  un4_odlicz_6
+.model pianino
+.inputs datain_4_.BLIF CLK0.BLIF datain_3_.BLIF datain_2_.BLIF datain_1_.BLIF \
+datain_0_.BLIF odlicz_0_.BLIF odlicz_1_.BLIF odlicz_2_.BLIF odlicz_3_.BLIF \
+odlicz_4_.BLIF odlicz_5_.BLIF odlicz_6_.BLIF odlicz_7_.BLIF N_89.BLIF \
+out0_c_0__n.BLIF out0_c_1__n.BLIF out0_c_2__n.BLIF out0_c_3__n.BLIF \
+out0_c_4__n.BLIF out0_c_5__n.BLIF out0_c_6__n.BLIF un2_datain_17_i.BLIF \
+N_14_0.BLIF un4_odlicz_1.BLIF un4_odlicz_2.BLIF un4_odlicz_6.BLIF
+.outputs out0_7_ out0_6_ out0_5_ out0_4_ out0_3_ out0_2_ out0_1_ out0_0_ \
+odlicz_0_.D odlicz_0_.C odlicz_0_.AR odlicz_1_.D odlicz_1_.C odlicz_1_.AR \
+odlicz_2_.D odlicz_2_.C odlicz_2_.AR odlicz_3_.D odlicz_3_.C odlicz_3_.AR \
+odlicz_4_.D odlicz_4_.C odlicz_4_.AR odlicz_5_.D odlicz_5_.C odlicz_5_.AR \
+odlicz_6_.C odlicz_6_.AR odlicz_7_.C odlicz_7_.AR N_89 out0_c_0__n out0_c_1__n \
+out0_c_2__n out0_c_3__n out0_c_4__n out0_c_5__n out0_c_6__n N_14_0 \
+odlicz_6_.D.X1 odlicz_6_.D.X2 odlicz_7_.D.X1 odlicz_7_.D.X2 un2_datain_17_i.X1 \
+un2_datain_17_i.X2 un4_odlicz_1.X1 un4_odlicz_1.X2 un4_odlicz_2.X1 \
+un4_odlicz_2.X2 un4_odlicz_6.X1 un4_odlicz_6.X2
+.names odlicz_0_.BLIF un4_odlicz_1.BLIF un4_odlicz_2.BLIF un4_odlicz_6.BLIF \
+odlicz_0_.D
+0-0- 1
+00-- 1
+0--0 1
+-111 0
+1--- 0
+.names odlicz_0_.BLIF odlicz_1_.BLIF un4_odlicz_1.BLIF un4_odlicz_2.BLIF \
+un4_odlicz_6.BLIF odlicz_1_.D
+10-0- 1
+01-0- 1
+100-- 1
+010-- 1
+10--0 1
+01--0 1
+--111 0
+00--- 0
+11--- 0
+.names odlicz_0_.BLIF odlicz_1_.BLIF odlicz_2_.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF odlicz_2_.D
+110-0- 1
+1100-- 1
+110--0 1
+-01-0- 1
+0-1-0- 1
+-010-- 1
+0-10-- 1
+-01--0 1
+0-1--0 1
+111--- 0
+---111 0
+-00--- 0
+0-0--- 0
+.names odlicz_3_.BLIF N_89.BLIF un4_odlicz_1.BLIF un4_odlicz_2.BLIF \
+un4_odlicz_6.BLIF odlicz_3_.D
+10-0- 1
+01-0- 1
+100-- 1
+010-- 1
+10--0 1
+01--0 1
+--111 0
+00--- 0
+11--- 0
+.names odlicz_3_.BLIF odlicz_4_.BLIF N_89.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF odlicz_4_.D
+101-0- 1
+1010-- 1
+101--0 1
+-10-0- 1
+01--0- 1
+-100-- 1
+01-0-- 1
+-10--0 1
+01---0 1
+111--- 0
+---111 0
+-00--- 0
+00---- 0
+.names odlicz_0_.BLIF odlicz_1_.BLIF odlicz_2_.BLIF N_89
+111 1
+-0- 0
+0-- 0
+--0 0
+.names out0_c_0__n.BLIF un2_datain_17_i.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF out0_c_0__n
+01111 1
+11-0- 1
+110-- 1
+11--0 1
+1-111 0
+0--0- 0
+0-0-- 0
+-0--- 0
+0---0 0
+.names out0_c_1__n.BLIF un2_datain_17_i.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF out0_c_1__n
+01111 1
+11-0- 1
+110-- 1
+11--0 1
+1-111 0
+0--0- 0
+0-0-- 0
+-0--- 0
+0---0 0
+.names out0_c_2__n.BLIF un2_datain_17_i.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF out0_c_2__n
+01111 1
+11-0- 1
+110-- 1
+11--0 1
+1-111 0
+0--0- 0
+0-0-- 0
+-0--- 0
+0---0 0
+.names out0_c_3__n.BLIF un2_datain_17_i.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF out0_c_3__n
+01111 1
+11-0- 1
+110-- 1
+11--0 1
+1-111 0
+0--0- 0
+0-0-- 0
+-0--- 0
+0---0 0
+.names out0_c_4__n.BLIF un2_datain_17_i.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF out0_c_4__n
+01111 1
+11-0- 1
+110-- 1
+11--0 1
+1-111 0
+0--0- 0
+0-0-- 0
+-0--- 0
+0---0 0
+.names out0_c_5__n.BLIF un2_datain_17_i.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF out0_c_5__n
+01111 1
+11-0- 1
+110-- 1
+11--0 1
+1-111 0
+0--0- 0
+0-0-- 0
+-0--- 0
+0---0 0
+.names out0_c_6__n.BLIF un2_datain_17_i.BLIF un4_odlicz_1.BLIF \
+un4_odlicz_2.BLIF un4_odlicz_6.BLIF out0_c_6__n
+01111 1
+11-0- 1
+110-- 1
+11--0 1
+1-111 0
+0--0- 0
+0-0-- 0
+-0--- 0
+0---0 0
+.names un2_datain_17_i.BLIF N_14_0.BLIF un4_odlicz_1.BLIF un4_odlicz_2.BLIF \
+un4_odlicz_6.BLIF N_14_0
+10111 1
+11-0- 1
+110-- 1
+11--0 1
+-1111 0
+-0-0- 0
+-00-- 0
+0---- 0
+-0--0 0
+.names N_14_0.BLIF out0_7_
+1 1
+0 0
+.names out0_c_6__n.BLIF out0_6_
+1 1
+0 0
+.names out0_c_5__n.BLIF out0_5_
+1 1
+0 0
+.names out0_c_4__n.BLIF out0_4_
+1 1
+0 0
+.names out0_c_3__n.BLIF out0_3_
+1 1
+0 0
+.names out0_c_2__n.BLIF out0_2_
+1 1
+0 0
+.names out0_c_1__n.BLIF out0_1_
+1 1
+0 0
+.names out0_c_0__n.BLIF out0_0_
+1 1
+0 0
+.names CLK0.BLIF odlicz_0_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_0_.AR
+0 1
+1 0
+.names CLK0.BLIF odlicz_1_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_1_.AR
+0 1
+1 0
+.names CLK0.BLIF odlicz_2_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_2_.AR
+0 1
+1 0
+.names CLK0.BLIF odlicz_3_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_3_.AR
+0 1
+1 0
+.names CLK0.BLIF odlicz_4_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_4_.AR
+0 1
+1 0
+.names odlicz_3_.BLIF odlicz_4_.BLIF odlicz_5_.BLIF N_89.BLIF odlicz_5_.D
+1101 1
+-01- 1
+0-1- 1
+--10 1
+1111 0
+-00- 0
+0-0- 0
+--00 0
+.names CLK0.BLIF odlicz_5_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_5_.AR
+0 1
+1 0
+.names CLK0.BLIF odlicz_6_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_6_.AR
+0 1
+1 0
+.names CLK0.BLIF odlicz_7_.C
+1 1
+0 0
+.names un2_datain_17_i.BLIF odlicz_7_.AR
+0 1
+1 0
+.names odlicz_6_.BLIF odlicz_6_.D.X1
+1 1
+0 0
+.names odlicz_3_.BLIF odlicz_4_.BLIF odlicz_5_.BLIF odlicz_6_.BLIF N_89.BLIF \
+odlicz_6_.D.X2
+111-1 1
+0---- 0
+-0--- 0
+--0-- 0
+----0 0
+.names odlicz_7_.BLIF odlicz_7_.D.X1
+1 1
+0 0
+.names odlicz_3_.BLIF odlicz_4_.BLIF odlicz_5_.BLIF odlicz_6_.BLIF \
+odlicz_7_.BLIF N_89.BLIF odlicz_7_.D.X2
+1111-1 1
+0----- 0
+-0---- 0
+--0--- 0
+---0-- 0
+-----0 0
+.names datain_4_.BLIF un2_datain_17_i.X1
+0 1
+1 0
+.names datain_4_.BLIF datain_3_.BLIF datain_2_.BLIF datain_1_.BLIF \
+datain_0_.BLIF un2_datain_17_i.X2
+-0000 1
+-1--- 0
+--1-- 0
+---1- 0
+----1 0
+.names datain_2_.BLIF odlicz_2_.BLIF odlicz_4_.BLIF un4_odlicz_1.X1
+000 1
+1-- 0
+-1- 0
+--1 0
+.names datain_4_.BLIF datain_3_.BLIF datain_2_.BLIF datain_1_.BLIF \
+datain_0_.BLIF odlicz_2_.BLIF odlicz_4_.BLIF un4_odlicz_1.X2
+0001-0- 1
+000-10- 1
+0-1--10 1
+1-1--00 1
+1-0---- 0
+-10---- 0
+1----1- 0
+--0--1- 0
+--1---1 0
+--000-- 0
+0-1--0- 0
+.names datain_4_.BLIF odlicz_0_.BLIF odlicz_1_.BLIF un4_odlicz_2.X1
+100 1
+0-- 0
+-1- 0
+--1 0
+.names datain_4_.BLIF datain_3_.BLIF datain_2_.BLIF datain_1_.BLIF \
+datain_0_.BLIF odlicz_0_.BLIF odlicz_1_.BLIF un4_odlicz_2.X2
+-000000 1
+0--0101 1
+0--1100 1
+01-0011 1
+0-10011 1
+0--1010 1
+1000011 1
+1--1--- 0
+1---1-- 0
+----11- 0
+---1--1 0
+11---1- 0
+1-1--1- 0
+-1--00- 0
+--1-00- 0
+---100- 0
+----001 0
+---01-0 0
+1----10 0
+---0-10 0
+0000-1- 0
+.names odlicz_3_.BLIF odlicz_5_.BLIF odlicz_6_.BLIF odlicz_7_.BLIF \
+un4_odlicz_6.X1
+0000 1
+1--- 0
+-1-- 0
+--1- 0
+---1 0
+.names datain_4_.BLIF datain_3_.BLIF datain_2_.BLIF odlicz_3_.BLIF \
+odlicz_5_.BLIF odlicz_6_.BLIF odlicz_7_.BLIF un4_odlicz_6.X2
+001-000 1
+010-000 1
+1------ 0
+----1-- 0
+-----1- 0
+------1 0
+-11---- 0
+-00---- 0
+.end

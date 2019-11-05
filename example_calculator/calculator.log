@@ -1,0 +1,13 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit calculator
+    Number of input ports   : 2
+    Number of output ports  : 2
+    Number of bidir ports   : 0
+    Number of instances     : 324
+    Number of nets          : 329
+
+No design errors found in circuit calculator
+
+WriteBLIF ended normally.

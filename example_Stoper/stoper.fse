@@ -1,0 +1,8 @@
+
+fsm_encoding {7751751} sequential
+
+fsm_state_encoding {7751751} s1 {0}
+
+fsm_state_encoding {7751751} s2 {1}
+
+fsm_registers {7751751} {currState[0]} 

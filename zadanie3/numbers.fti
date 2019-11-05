@@ -1,0 +1,133 @@
+#PLAFILE numbers.tt4
+#DATE    10/28/2019
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION BI:D_12_42	// OUT
+DATA LOCATION LD:D_1_41	// OUT
+DATA LOCATION RN_clock_out:D_0	// NOD {clock_out}
+DATA LOCATION RN_seg7_0_:A_2	// NOD {seg7_0_}
+DATA LOCATION RN_seg7_1_:A_5	// NOD {seg7_1_}
+DATA LOCATION RN_seg7_2_:A_4	// NOD {seg7_2_}
+DATA LOCATION RN_seg7_3_:A_8	// NOD {seg7_3_}
+DATA LOCATION RN_seg7_4_:A_9	// NOD {seg7_4_}
+DATA LOCATION RN_seg7_5_:A_0	// NOD {seg7_5_}
+DATA LOCATION RN_seg7_6_:A_12	// NOD {seg7_6_}
+DATA LOCATION RN_seg7_7_:A_1	// NOD {seg7_7_}
+DATA LOCATION U0_counter_0_:B_8	// NOD
+DATA LOCATION U0_counter_1_:B_4	// NOD
+DATA LOCATION U0_counter_2_:B_0	// NOD
+DATA LOCATION U0_counter_3_:C_4	// NOD
+DATA LOCATION U0_counter_4_:C_12	// NOD
+DATA LOCATION U0_counter_5_:C_8	// NOD
+DATA LOCATION U0_counter_6_:C_1	// NOD
+DATA LOCATION clk:*_*_11	// Cin
+DATA LOCATION clock_out:D_0_43	//  IO {RN_clock_out}
+DATA LOCATION i_prescalerSelect_0_:B_*_14	// INP
+DATA LOCATION i_prescalerSelect_1_:B_*_15	// INP
+DATA LOCATION i_prescalerSelect_2_:B_*_16	// INP
+DATA LOCATION i_prescalerSelect_3_:B_*_17	// INP
+DATA LOCATION i_prescalerSelect_4_:B_*_18	// INP
+DATA LOCATION i_prescalerSelect_5_:B_*_19	// INP
+DATA LOCATION i_prescalerSelect_6_:B_*_20	// INP
+DATA LOCATION seg7_0_:A_2_9	//  IO {RN_seg7_0_}
+DATA LOCATION seg7_1_:A_5_8	//  IO {RN_seg7_1_}
+DATA LOCATION seg7_2_:A_4_7	//  IO {RN_seg7_2_}
+DATA LOCATION seg7_3_:A_8_6	//  IO {RN_seg7_3_}
+DATA LOCATION seg7_4_:A_9_5	//  IO {RN_seg7_4_}
+DATA LOCATION seg7_5_:A_0_4	//  IO {RN_seg7_5_}
+DATA LOCATION seg7_6_:A_12_3	//  IO {RN_seg7_6_}
+DATA LOCATION seg7_7_:A_1_2	//  IO {RN_seg7_7_}
+DATA LOCATION u0_n_33_0_n:B_12	// NOD
+DATA LOCATION u0_zegar_counter_4_n:D_4	// NOD
+DATA LOCATION u0_zegar_counter_5_n:C_0	// NOD
+DATA LOCATION u1_op_eq_dsec6_n:B_1	// NOD
+DATA IO_DIR   BI:OUT
+DATA IO_DIR   LD:OUT
+DATA IO_DIR   clk:IN
+DATA IO_DIR   clock_out:OUT
+DATA IO_DIR   i_prescalerSelect_0_:IN
+DATA IO_DIR   i_prescalerSelect_1_:IN
+DATA IO_DIR   i_prescalerSelect_2_:IN
+DATA IO_DIR   i_prescalerSelect_3_:IN
+DATA IO_DIR   i_prescalerSelect_4_:IN
+DATA IO_DIR   i_prescalerSelect_5_:IN
+DATA IO_DIR   i_prescalerSelect_6_:IN
+DATA IO_DIR   seg7_0_:OUT
+DATA IO_DIR   seg7_1_:OUT
+DATA IO_DIR   seg7_2_:OUT
+DATA IO_DIR   seg7_3_:OUT
+DATA IO_DIR   seg7_4_:OUT
+DATA IO_DIR   seg7_5_:OUT
+DATA IO_DIR   seg7_6_:OUT
+DATA IO_DIR   seg7_7_:OUT
+DATA GLB_CLOCK  clk
+DATA PW_LEVEL  i_prescalerSelect_6_:0
+DATA SLEW      i_prescalerSelect_6_:0
+DATA SLEW      clk:0
+DATA PW_LEVEL  LD:0
+DATA SLEW      LD:0
+DATA PW_LEVEL  BI:0
+DATA SLEW      BI:0
+DATA PW_LEVEL  i_prescalerSelect_5_:0
+DATA SLEW      i_prescalerSelect_5_:0
+DATA PW_LEVEL  i_prescalerSelect_4_:0
+DATA SLEW      i_prescalerSelect_4_:0
+DATA PW_LEVEL  i_prescalerSelect_3_:0
+DATA SLEW      i_prescalerSelect_3_:0
+DATA PW_LEVEL  i_prescalerSelect_2_:0
+DATA SLEW      i_prescalerSelect_2_:0
+DATA PW_LEVEL  i_prescalerSelect_1_:0
+DATA SLEW      i_prescalerSelect_1_:0
+DATA PW_LEVEL  i_prescalerSelect_0_:0
+DATA SLEW      i_prescalerSelect_0_:0
+DATA PW_LEVEL  seg7_7_:0
+DATA SLEW      seg7_7_:0
+DATA PW_LEVEL  clock_out:0
+DATA SLEW      clock_out:0
+DATA PW_LEVEL  seg7_6_:0
+DATA SLEW      seg7_6_:0
+DATA PW_LEVEL  seg7_5_:0
+DATA SLEW      seg7_5_:0
+DATA PW_LEVEL  seg7_4_:0
+DATA SLEW      seg7_4_:0
+DATA PW_LEVEL  seg7_3_:0
+DATA SLEW      seg7_3_:0
+DATA PW_LEVEL  seg7_2_:0
+DATA SLEW      seg7_2_:0
+DATA PW_LEVEL  seg7_1_:0
+DATA SLEW      seg7_1_:0
+DATA PW_LEVEL  seg7_0_:0
+DATA SLEW      seg7_0_:0
+DATA PW_LEVEL  u1_op_eq_dsec6_n:0
+DATA SLEW      u1_op_eq_dsec6_n:0
+DATA PW_LEVEL  U0_counter_0_:0
+DATA SLEW      U0_counter_0_:0
+DATA PW_LEVEL  U0_counter_1_:0
+DATA SLEW      U0_counter_1_:0
+DATA PW_LEVEL  U0_counter_2_:0
+DATA SLEW      U0_counter_2_:0
+DATA PW_LEVEL  U0_counter_3_:0
+DATA SLEW      U0_counter_3_:0
+DATA PW_LEVEL  U0_counter_4_:0
+DATA SLEW      U0_counter_4_:0
+DATA PW_LEVEL  U0_counter_5_:0
+DATA SLEW      U0_counter_5_:0
+DATA PW_LEVEL  U0_counter_6_:0
+DATA SLEW      U0_counter_6_:0
+DATA PW_LEVEL  u0_n_33_0_n:0
+DATA SLEW      u0_n_33_0_n:0
+DATA PW_LEVEL  u0_zegar_counter_4_n:0
+DATA SLEW      u0_zegar_counter_4_n:0
+DATA PW_LEVEL  u0_zegar_counter_5_n:0
+DATA SLEW      u0_zegar_counter_5_n:0
+DATA PW_LEVEL  RN_seg7_7_:0
+DATA PW_LEVEL  RN_clock_out:0
+DATA PW_LEVEL  RN_seg7_6_:0
+DATA PW_LEVEL  RN_seg7_5_:0
+DATA PW_LEVEL  RN_seg7_4_:0
+DATA PW_LEVEL  RN_seg7_3_:0
+DATA PW_LEVEL  RN_seg7_2_:0
+DATA PW_LEVEL  RN_seg7_1_:0
+DATA PW_LEVEL  RN_seg7_0_:0
+END

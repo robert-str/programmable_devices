@@ -1,0 +1,6 @@
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Net calc_proc.state_next_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Net calc_proc.N_36_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":67:8:67:25|Net calc_proc.state_next_0_sqmuxa_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":40:1:40:12|Net calc_proc.un1_num_acc3_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":70:1:70:12|Net calc_proc.N_18_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Net calc_proc.un1_num_acc3_2_0 appears to be an unidentified clock source. Assuming default frequency. 

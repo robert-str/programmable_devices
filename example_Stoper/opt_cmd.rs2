@@ -1,0 +1,1 @@
+-global -lci example_stoper.lct -touch example_stoper.imp

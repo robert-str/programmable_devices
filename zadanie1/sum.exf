@@ -1,0 +1,41 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      o_wyjscie(1:0)                o_wyjscie                  1          2            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      o_wyjscie_1_                o_wyjscie[1]                       1            0            
+        Port      o_wyjscie_0_                o_wyjscie[0]                       1            1            
+End
+Section Cross Reference File
+Design 'sum' created Fri Nov 30 08:50:59 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst           o_wyjscie_0_                              o_wyjscie[0]
+   Inst           o_wyjscie_1_                              o_wyjscie[1]
+   Inst      o_wyjscie_1_0__m4                         o_wyjscie_1_0_.m4
+   Inst   o_wyjscie_1_0__i_c_i                      o_wyjscie_1_0_.i_c_i
+   Inst   o_wyjscie_1_0__i_b_i                      o_wyjscie_1_0_.i_b_i
+   Inst    o_wyjscie_1_0__m5_r                       o_wyjscie_1_0_.m5.r
+   Inst    o_wyjscie_1_0__m5_m                       o_wyjscie_1_0_.m5.m
+   Inst    o_wyjscie_1_0__m5_n                       o_wyjscie_1_0_.m5.n
+   Inst    o_wyjscie_1_0__m5_p                       o_wyjscie_1_0_.m5.p
+   Inst   o_wyjscie_1_0__i1_mux_i                   o_wyjscie_1_0_.i1_mux_i
+   Inst    o_wyjscie_1_0__m2_1                       o_wyjscie_1_0_.m2_1
+   Inst      o_wyjscie_1_0__m2                         o_wyjscie_1_0_.m2
+   Net    o_wyjscie_1_0__i1_mux_n                     o_wyjscie_1_0_.i1_mux
+   Net    o_wyjscie_1_0__n_7_n                        o_wyjscie_1_0_.N_7
+   Net    o_wyjscie_1_0__i1_mux_i_n                   o_wyjscie_1_0_.i1_mux_i
+   Net          o_wyjscie_0__n                              o_wyjscie[0]
+   Net    o_wyjscie_1_0__m5_un3_n                     o_wyjscie_1_0_.m5.un3
+   Net    o_wyjscie_1_0__m5_un1_n                     o_wyjscie_1_0_.m5.un1
+   Net    o_wyjscie_1_0__m5_un0_n                     o_wyjscie_1_0_.m5.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_a
+        Input     i_b
+        Input     i_c
+        Output     o_wyjscie_1_
+        Output     o_wyjscie_0_
+End

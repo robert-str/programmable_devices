@@ -1,0 +1,58 @@
+#PLAFILE counter.tt4
+#DATE    11/21/2018
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION U1_o_number_0_:D_0	// NOD
+DATA LOCATION U1_o_number_1_:B_0	// NOD
+DATA LOCATION U1_o_number_2_:C_0	// NOD
+DATA LOCATION U1_o_number_3_:D_4	// NOD
+DATA LOCATION clk:D_*_36	// INP
+DATA LOCATION seg7_0_:A_2_9	// OUT
+DATA LOCATION seg7_1_:A_4_8	// OUT
+DATA LOCATION seg7_2_:A_5_7	// OUT
+DATA LOCATION seg7_3_:A_12_6	// OUT
+DATA LOCATION seg7_4_:A_8_5	// OUT
+DATA LOCATION seg7_5_:A_1_4	// OUT
+DATA LOCATION seg7_6_:A_0_3	// OUT
+DATA LOCATION seg7_7_:A_14_2	// OUT
+DATA LOCATION zero:D_*_37	// INP
+DATA IO_DIR   clk:IN
+DATA IO_DIR   seg7_0_:OUT
+DATA IO_DIR   seg7_1_:OUT
+DATA IO_DIR   seg7_2_:OUT
+DATA IO_DIR   seg7_3_:OUT
+DATA IO_DIR   seg7_4_:OUT
+DATA IO_DIR   seg7_5_:OUT
+DATA IO_DIR   seg7_6_:OUT
+DATA IO_DIR   seg7_7_:OUT
+DATA IO_DIR   zero:IN
+DATA PW_LEVEL  seg7_7_:0
+DATA SLEW      seg7_7_:0
+DATA PW_LEVEL  clk:0
+DATA SLEW      clk:0
+DATA PW_LEVEL  zero:0
+DATA SLEW      zero:0
+DATA PW_LEVEL  seg7_6_:0
+DATA SLEW      seg7_6_:0
+DATA PW_LEVEL  seg7_5_:0
+DATA SLEW      seg7_5_:0
+DATA PW_LEVEL  seg7_4_:0
+DATA SLEW      seg7_4_:0
+DATA PW_LEVEL  seg7_3_:0
+DATA SLEW      seg7_3_:0
+DATA PW_LEVEL  seg7_2_:0
+DATA SLEW      seg7_2_:0
+DATA PW_LEVEL  seg7_1_:0
+DATA SLEW      seg7_1_:0
+DATA PW_LEVEL  seg7_0_:0
+DATA SLEW      seg7_0_:0
+DATA PW_LEVEL  U1_o_number_0_:0
+DATA SLEW      U1_o_number_0_:0
+DATA PW_LEVEL  U1_o_number_1_:0
+DATA SLEW      U1_o_number_1_:0
+DATA PW_LEVEL  U1_o_number_2_:0
+DATA SLEW      U1_o_number_2_:0
+DATA PW_LEVEL  U1_o_number_3_:0
+DATA SLEW      U1_o_number_3_:0
+END

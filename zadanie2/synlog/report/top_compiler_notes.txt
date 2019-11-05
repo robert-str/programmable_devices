@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\isplever projects\zadanie2\top_module.vhd":6:7:6:9|Top entity is set to top.
+@N: CD630 :"C:\isplever projects\zadanie2\top_module.vhd":6:7:6:9|Synthesizing work.top.top 
+@N: CD630 :"C:\isplever projects\zadanie2\seg7_decoder_v1.vhd":6:7:6:17|Synthesizing work.bcd_to_seg7.combinational 
+@N: CD630 :"C:\isplever projects\zadanie2\counter1.vhd":7:7:7:13|Synthesizing work.counter.seq 
+

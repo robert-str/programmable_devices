@@ -1,0 +1,13 @@
+@N: CD630 :"D:\isplever projects\zadanie_statemachine\machina.vhd":6:7:6:19|Synthesizing work.statemachine1.sequential 
+@N: CD233 :"D:\isplever projects\zadanie_statemachine\machina.vhd":19:11:19:12|Using sequential encoding for type state
+@N: CD630 :"D:\isplever projects\zadanie_statemachine\clk_prescaler.vhd":6:7:6:19|Synthesizing work.clk_prescaler.prescaler 
+@W: CD638 :"D:\isplever projects\zadanie_statemachine\clk_prescaler.vhd":16:7:16:23|Signal s_activeprescaler is undriven 
+Post processing for work.clk_prescaler.prescaler
+Post processing for work.statemachine1.sequential
+@N: CL201 :"D:\isplever projects\zadanie_statemachine\machina.vhd":38:1:38:2|Trying to extract state machine for register currState
+Extracted state machine for register currState
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL246 :"D:\isplever projects\zadanie_statemachine\machina.vhd":10:1:10:5|Input port bits 7 to 3 of i_btn(7 downto 0) are unused 

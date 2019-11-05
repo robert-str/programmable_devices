@@ -1,0 +1,116 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      prescalerValue(6:0)               prescalerValue                  6          7            -1
+      Port          2      number(6:0)                   number                  6          7            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      prescalerValue_6_               prescalerValue[6]                       1            0            
+        Port      prescalerValue_5_               prescalerValue[5]                       1            1            
+        Port      prescalerValue_4_               prescalerValue[4]                       1            2            
+        Port      prescalerValue_3_               prescalerValue[3]                       1            3            
+        Port      prescalerValue_2_               prescalerValue[2]                       1            4            
+        Port      prescalerValue_1_               prescalerValue[1]                       1            5            
+        Port      prescalerValue_0_               prescalerValue[0]                       1            6            
+        Port      number_6_                   number[6]                       2            0            
+        Port      number_5_                   number[5]                       2            1            
+        Port      number_4_                   number[4]                       2            2            
+        Port      number_3_                   number[3]                       2            3            
+        Port      number_2_                   number[2]                       2            4            
+        Port      number_1_                   number[1]                       2            5            
+        Port      number_0_                   number[0]                       2            6            
+End
+Section Cross Reference File
+Design 'clk_prescaler' created Fri Nov 23 10:40:42 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst             counter_5_                                counter[5]
+   Inst             counter_6_                                counter[6]
+   Inst           numberDFF_4_                              numberDFF[4]
+   Inst             counter_1_                                counter[1]
+   Inst             counter_2_                                counter[2]
+   Inst             counter_3_                                counter[3]
+   Inst             counter_0_                                counter[0]
+   Inst      prescalerValue_0_                         prescalerValue[0]
+   Inst      prescalerValue_1_                         prescalerValue[1]
+   Inst      prescalerValue_2_                         prescalerValue[2]
+   Inst      prescalerValue_3_                         prescalerValue[3]
+   Inst      prescalerValue_4_                         prescalerValue[4]
+   Inst      prescalerValue_5_                         prescalerValue[5]
+   Inst      prescalerValue_6_                         prescalerValue[6]
+   Inst              number_0_                                 number[0]
+   Inst              number_1_                                 number[1]
+   Inst              number_2_                                 number[2]
+   Inst              number_3_                                 number[3]
+   Inst              number_4_                                 number[4]
+   Inst              number_5_                                 number[5]
+   Inst              number_6_                                 number[6]
+   Inst           counter_i_0_                              counter_i[0]
+   Inst            number_0_0_                               number_0[0]
+   Inst            number_0_1_                               number_0[1]
+   Inst            number_0_2_                               number_0[2]
+   Inst            number_0_3_                               number_0[3]
+   Inst            number_0_4_                               number_0[4]
+   Inst            number_0_5_                               number_0[5]
+   Inst        zegar_counter_i                           zegar.counter_i
+   Inst            number_0_6_                               number_0[6]
+   Net         zegar_counter_n                             zegar.counter
+   Net            counter_4__n                                counter[4]
+   Net        un3_counter_6__n                            un3_counter[6]
+   Net        un3_counter_5__n                            un3_counter[5]
+   Net        un3_counter_4__n                            un3_counter[4]
+   Net        un3_counter_3__n                            un3_counter[3]
+   Net        un3_counter_2__n                            un3_counter[2]
+   Net        un3_counter_1__n                            un3_counter[1]
+   Net       zegar_counter_i_n                           zegar.counter_i
+   Net          counter_i_0__n                              counter_i[0]
+   Net    prescalervalue_c_0__n                       prescalerValue_c[0]
+   Net     prescalervalue_0__n                         prescalerValue[0]
+   Net    prescalervalue_c_1__n                       prescalerValue_c[1]
+   Net     prescalervalue_1__n                         prescalerValue[1]
+   Net    prescalervalue_c_2__n                       prescalerValue_c[2]
+   Net     prescalervalue_2__n                         prescalerValue[2]
+   Net    prescalervalue_c_3__n                       prescalerValue_c[3]
+   Net     prescalervalue_3__n                         prescalerValue[3]
+   Net    prescalervalue_c_4__n                       prescalerValue_c[4]
+   Net     prescalervalue_4__n                         prescalerValue[4]
+   Net    prescalervalue_c_5__n                       prescalerValue_c[5]
+   Net     prescalervalue_5__n                         prescalerValue[5]
+   Net    prescalervalue_c_6__n                       prescalerValue_c[6]
+   Net            counter_0__n                                counter[0]
+   Net             number_0__n                                 number[0]
+   Net            counter_1__n                                counter[1]
+   Net             number_1__n                                 number[1]
+   Net            counter_2__n                                counter[2]
+   Net             number_2__n                                 number[2]
+   Net            counter_3__n                                counter[3]
+   Net             number_3__n                                 number[3]
+   Net             number_4__n                                 number[4]
+   Net            counter_5__n                                counter[5]
+   Net             number_5__n                                 number[5]
+   Net            counter_6__n                                counter[6]
+   Net       zegar_counter_1_n                           zegar.counter_1
+   Net       zegar_counter_2_n                           zegar.counter_2
+   Net       zegar_counter_3_n                           zegar.counter_3
+   Net       zegar_counter_4_n                           zegar.counter_4
+   Net       zegar_counter_5_n                           zegar.counter_5
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     prescalerValue_6_
+        Input     clk_fast
+        Input     prescalerValue_5_
+        Input     prescalerValue_4_
+        Input     prescalerValue_3_
+        Input     prescalerValue_2_
+        Input     prescalerValue_1_
+        Input     prescalerValue_0_
+        Output     number_6_
+        Output     clk_1s
+        Output     number_5_
+        Output     number_4_
+        Output     number_3_
+        Output     number_2_
+        Output     number_1_
+        Output     number_0_
+End

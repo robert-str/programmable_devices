@@ -1,0 +1,14 @@
+power[3]  o
+power[2]  o
+power[1]  o
+power[0]  o
+check[3]  i
+check[2]  i
+check[1]  i
+check[0]  i
+outdata[4]  o
+outdata[3]  o
+outdata[2]  o
+outdata[1]  o
+outdata[0]  o
+clk  i

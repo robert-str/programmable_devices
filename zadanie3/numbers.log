@@ -1,0 +1,8 @@
+Prefit Logic Optimizer (May 31 2012)  Mon Oct 28 12:04:54 2019
+
+C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe -inp numbers.tt3 -out numbers.tt4 -err automake.err -log numbers.log -percent numbers.tte -mod top -gui @numbers.l0 
+Number of pins (IO)    :    19
+Number of outputs (MC) :    19
+Number of registers    :    16
+Number of logic pterms :   113
+C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe complete - Time 0 seconds

@@ -1,0 +1,17 @@
+clk  i
+keypad_rows[3]  i
+keypad_rows[2]  i
+keypad_rows[1]  i
+keypad_rows[0]  i
+keypad_cols[3]  o
+keypad_cols[2]  o
+keypad_cols[1]  o
+keypad_cols[0]  o
+bcd_out[7]  o
+bcd_out[6]  o
+bcd_out[5]  o
+bcd_out[4]  o
+bcd_out[3]  o
+bcd_out[2]  o
+bcd_out[1]  o
+bcd_out[0]  o

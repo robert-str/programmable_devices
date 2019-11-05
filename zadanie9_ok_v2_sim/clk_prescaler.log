@@ -1,0 +1,13 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit clk_prescaler
+    Number of input ports   : 2
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 84
+    Number of nets          : 92
+
+No design errors found in circuit clk_prescaler
+
+WriteBLIF ended normally.

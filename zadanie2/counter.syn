@@ -1,0 +1,15 @@
+JDF B
+// Created by Version 2.0 
+PROJECT counter
+DESIGN counter Normal
+DEVKIT M4A5-64/32-10JC
+ENTRY Pure VHDL
+MODULE top_module.vhd
+MODSTYLE top Normal
+MODULE counter1.vhd
+MODSTYLE counter Normal
+MODULE seg7_decoder_v1.vhd
+MODSTYLE bcd_to_seg7 Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE top

@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\top_module.vhd":6:7:6:9|Top entity is set to top.
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\top_module.vhd":6:7:6:9|Synthesizing work.top.top 
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\counter1.vhd":7:7:7:13|Synthesizing work.counter.seq 
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\clk_prescaler.vhd":6:7:6:19|Synthesizing work.clk_prescaler.prescaler 
+

@@ -1,0 +1,2 @@
+@W: CL246 :"C:\isplever projects\zadanie1\zadanie1.vhd":10:1:10:6|Input port bits 6 to 4 of diode1(6 downto 0) are unused 
+

@@ -1,0 +1,3 @@
+@N: CD630 :"C:\isplever projects\zadanie3\counter1.vhd":7:7:7:13|Synthesizing work.counter.seq 
+Post processing for work.counter.seq
+@W: CL159 :"C:\isplever projects\zadanie3\counter1.vhd":10:8:10:16|Input i_sigZero is unused

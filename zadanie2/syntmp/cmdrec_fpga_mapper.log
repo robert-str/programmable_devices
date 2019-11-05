@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "C:\isplever projects\zadanie2"  -part M4A5-64   -RWCheckOnRam 1 -areadelay 0 -minc -summaryfile "C:\isplever projects\zadanie2\synlog\report\top_fpga_mapper.xml" -top_level_module  top  -multisrs  -oedif  "C:\isplever projects\zadanie2\top.edi"  -freq 1.000  "C:\isplever projects\zadanie2\synwork\top_mult.srs"  -ologparam  "C:\isplever projects\zadanie2\syntmp\top.plg"  -osyn  "C:\isplever projects\zadanie2\top.srm"  -prjdir  "c:\isplever projects\zadanie2\"  -prjname  top  -log  "C:\isplever projects\zadanie2\synlog\top_fpga_mapper.srr" 
+rc:0 success:1
+C:\isplever projects\zadanie2\top.edi|o|1542788876|32860
+C:\isplever projects\zadanie2\synwork\top_mult.srs|i|1542788876|2443
+"C:\isplever projects\zadanie2\syntmp\top.plg"|o|0|0
+C:\isplever projects\zadanie2\top.srm|o|1542788876|11389
+C:\isplever projects\zadanie2\synlog\top_fpga_mapper.srr|o|1542788876|1357
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399362084|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399364922|8049664

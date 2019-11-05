@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\stoper.vhd":7:7:7:12|Top entity is set to stoper.
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\stoper.vhd":7:7:7:12|Synthesizing work.stoper.simply 
+@N: CD233 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\stoper.vhd":18:11:18:12|Using sequential encoding for type state
+@N: CL201 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\stoper.vhd":75:1:75:2|Trying to extract state machine for register currState
+

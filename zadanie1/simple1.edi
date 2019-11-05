@@ -1,0 +1,222 @@
+(edif simple1
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2018 11 9 13 0 30)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "I-2014.03LC , mapper maplat, Build 923R"))
+     )
+   )
+  (external mach
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell AND2 (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+           (port I1 (direction INPUT))
+         )
+       )
+    )
+    (cell IBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell INV (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell OBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell OR2 (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+           (port I1 (direction INPUT))
+         )
+       )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell simple1 (cellType GENERIC)
+       (view combinational (viewType NETLIST)
+         (interface
+           (port (array (rename diode1 "diode1(6:0)") 7) (direction INPUT))
+           (port (array (rename btn "btn(1:0)") 2) (direction INPUT))
+           (port wyjsc (direction OUTPUT))
+         )
+         (contents
+          (instance wyjsc (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (instance (rename diode1_0 "diode1[0]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename diode1_1 "diode1[1]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename diode1_2 "diode1[2]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename diode1_3 "diode1[3]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename diode1_4 "diode1[4]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename diode1_5 "diode1[5]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename diode1_6 "diode1[6]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename btn_0 "btn[0]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename btn_1 "btn[1]") (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance (rename wyjsc_1_r "wyjsc_1.r") (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (instance (rename wyjsc_1_m "wyjsc_1.m") (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename wyjsc_1_n "wyjsc_1.n") (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename wyjsc_1_p "wyjsc_1.p") (viewRef prim (cellRef OR2 (libraryRef mach)))          )
+          (instance (rename wyjsc_2_r "wyjsc_2.r") (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (instance (rename wyjsc_2_m "wyjsc_2.m") (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename wyjsc_2_n "wyjsc_2.n") (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename wyjsc_2_p "wyjsc_2.p") (viewRef prim (cellRef OR2 (libraryRef mach)))          )
+          (instance (rename wyjsc_3_r "wyjsc_3.r") (viewRef prim (cellRef INV (libraryRef mach)))          )
+          (instance (rename wyjsc_3_m "wyjsc_3.m") (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename wyjsc_3_n "wyjsc_3.n") (viewRef prim (cellRef AND2 (libraryRef mach)))          )
+          (instance (rename wyjsc_3_p "wyjsc_3.p") (viewRef prim (cellRef OR2 (libraryRef mach)))          )
+          (net N_4 (joined
+           (portRef O (instanceRef wyjsc_1_p))
+           (portRef I0 (instanceRef wyjsc_3_n))
+          ))
+          (net N_5 (joined
+           (portRef O (instanceRef wyjsc_2_p))
+           (portRef I0 (instanceRef wyjsc_3_m))
+          ))
+          (net wyjsc_c (joined
+           (portRef O (instanceRef wyjsc_3_p))
+           (portRef I0 (instanceRef wyjsc))
+          ))
+          (net wyjsc (joined
+           (portRef O (instanceRef wyjsc))
+           (portRef wyjsc)
+          ))
+          (net (rename diode1_c_0 "diode1_c[0]") (joined
+           (portRef O (instanceRef diode1_0))
+           (portRef I0 (instanceRef wyjsc_1_n))
+          ))
+          (net (rename diode1_0 "diode1[0]") (joined
+           (portRef (member diode1 6))
+           (portRef I0 (instanceRef diode1_0))
+          ))
+          (net (rename diode1_c_1 "diode1_c[1]") (joined
+           (portRef O (instanceRef diode1_1))
+           (portRef I0 (instanceRef wyjsc_2_n))
+          ))
+          (net (rename diode1_1 "diode1[1]") (joined
+           (portRef (member diode1 5))
+           (portRef I0 (instanceRef diode1_1))
+          ))
+          (net (rename diode1_c_2 "diode1_c[2]") (joined
+           (portRef O (instanceRef diode1_2))
+           (portRef I0 (instanceRef wyjsc_1_m))
+          ))
+          (net (rename diode1_2 "diode1[2]") (joined
+           (portRef (member diode1 4))
+           (portRef I0 (instanceRef diode1_2))
+          ))
+          (net (rename diode1_c_3 "diode1_c[3]") (joined
+           (portRef O (instanceRef diode1_3))
+           (portRef I0 (instanceRef wyjsc_2_m))
+          ))
+          (net (rename diode1_3 "diode1[3]") (joined
+           (portRef (member diode1 3))
+           (portRef I0 (instanceRef diode1_3))
+          ))
+          (net (rename diode1_c_4 "diode1_c[4]") (joined
+           (portRef O (instanceRef diode1_4))
+          ))
+          (net (rename diode1_4 "diode1[4]") (joined
+           (portRef (member diode1 2))
+           (portRef I0 (instanceRef diode1_4))
+          ))
+          (net (rename diode1_c_5 "diode1_c[5]") (joined
+           (portRef O (instanceRef diode1_5))
+          ))
+          (net (rename diode1_5 "diode1[5]") (joined
+           (portRef (member diode1 1))
+           (portRef I0 (instanceRef diode1_5))
+          ))
+          (net (rename diode1_c_6 "diode1_c[6]") (joined
+           (portRef O (instanceRef diode1_6))
+          ))
+          (net (rename diode1_6 "diode1[6]") (joined
+           (portRef (member diode1 0))
+           (portRef I0 (instanceRef diode1_6))
+          ))
+          (net (rename btn_c_0 "btn_c[0]") (joined
+           (portRef O (instanceRef btn_0))
+           (portRef I1 (instanceRef wyjsc_3_m))
+           (portRef I0 (instanceRef wyjsc_3_r))
+          ))
+          (net (rename btn_0 "btn[0]") (joined
+           (portRef (member btn 1))
+           (portRef I0 (instanceRef btn_0))
+          ))
+          (net (rename btn_c_1 "btn_c[1]") (joined
+           (portRef O (instanceRef btn_1))
+           (portRef I1 (instanceRef wyjsc_2_m))
+           (portRef I0 (instanceRef wyjsc_2_r))
+           (portRef I1 (instanceRef wyjsc_1_m))
+           (portRef I0 (instanceRef wyjsc_1_r))
+          ))
+          (net (rename btn_1 "btn[1]") (joined
+           (portRef (member btn 0))
+           (portRef I0 (instanceRef btn_1))
+          ))
+          (net (rename wyjsc_1_un3 "wyjsc_1.un3") (joined
+           (portRef O (instanceRef wyjsc_1_r))
+           (portRef I1 (instanceRef wyjsc_1_n))
+          ))
+          (net (rename wyjsc_1_un1 "wyjsc_1.un1") (joined
+           (portRef O (instanceRef wyjsc_1_m))
+           (portRef I0 (instanceRef wyjsc_1_p))
+          ))
+          (net (rename wyjsc_1_un0 "wyjsc_1.un0") (joined
+           (portRef O (instanceRef wyjsc_1_n))
+           (portRef I1 (instanceRef wyjsc_1_p))
+          ))
+          (net (rename wyjsc_2_un3 "wyjsc_2.un3") (joined
+           (portRef O (instanceRef wyjsc_2_r))
+           (portRef I1 (instanceRef wyjsc_2_n))
+          ))
+          (net (rename wyjsc_2_un1 "wyjsc_2.un1") (joined
+           (portRef O (instanceRef wyjsc_2_m))
+           (portRef I0 (instanceRef wyjsc_2_p))
+          ))
+          (net (rename wyjsc_2_un0 "wyjsc_2.un0") (joined
+           (portRef O (instanceRef wyjsc_2_n))
+           (portRef I1 (instanceRef wyjsc_2_p))
+          ))
+          (net (rename wyjsc_3_un3 "wyjsc_3.un3") (joined
+           (portRef O (instanceRef wyjsc_3_r))
+           (portRef I1 (instanceRef wyjsc_3_n))
+          ))
+          (net (rename wyjsc_3_un1 "wyjsc_3.un1") (joined
+           (portRef O (instanceRef wyjsc_3_m))
+           (portRef I0 (instanceRef wyjsc_3_p))
+          ))
+          (net (rename wyjsc_3_un0 "wyjsc_3.un0") (joined
+           (portRef O (instanceRef wyjsc_3_n))
+           (portRef I1 (instanceRef wyjsc_3_p))
+          ))
+         )
+        (property orig_inst_of (string "simple1"))
+       )
+    )
+  )
+  (design simple1 (cellRef simple1 (libraryRef work)))
+)

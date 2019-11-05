@@ -1,0 +1,13 @@
+JDF B
+// Created by Version 2.0 
+PROJECT testPrj
+DESIGN testprj Normal
+DEVKIT M4A5-64/32-10JC
+ENTRY Pure VHDL
+MODULE statemachine1.vhd
+MODSTYLE stateMachine1 Normal
+MODULE clk_prescaler.vhd
+MODSTYLE clk_prescaler Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE stateMachine1

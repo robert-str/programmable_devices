@@ -1,0 +1,6 @@
+
+GROUP MACH_SEG_A seg7_7_ seg7_6_ seg7_5_ seg7_4_ seg7_3_ seg7_2_ seg7_1_ 
+      seg7_0_ 
+GROUP MACH_SEG_B U1_o_number_1_ 
+GROUP MACH_SEG_C U1_o_number_2_ 
+GROUP MACH_SEG_D U1_o_number_3_ U1_o_number_0_ 

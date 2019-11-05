@@ -1,0 +1,1122 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+
+
+Project_Summary
+~~~~~~~~~~~~~~~
+
+Project Name :          example_calculator
+Project Path :          C:\Users\strak.DESKTOP-D9MDDLK\Documents\ispLEVER Projects\example_calculator
+Project Fitted on :     Tue Oct 29 15:23:34 2019
+
+Device :                M4A5-64/32
+Package :               44PLCC
+Speed :                 -10
+Partnumber :            M4A5-64/32-10JC
+Source Format :         Pure_VHDL
+
+
+// Project 'example_calculator' was Fitted Successfully! //
+
+
+Compilation_Times
+~~~~~~~~~~~~~~~~~
+Reading/DRC                                   0 sec
+Partition                                     0 sec
+Place                                         0 sec
+Route                                         0 sec
+Jedec/Report generation                       0 sec
+                                         --------
+Fitter                                   00:00:00
+
+
+Design_Summary
+~~~~~~~~~~~~~~
+  Total Input Pins :                  5
+  Total Output Pins :                12
+  Total Bidir I/O Pins :              0
+  Total Flip-Flops :                 39
+  Total Product Terms :             129
+  Total Reserved Pins :               0
+  Total Reserved Blocks :             0
+
+
+Device_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~~~~
+                                 Total
+                               Available  Used  Available  Utilization
+Dedicated Pins
+  Input-Only Pins                ..       ..     ..    -->    ..
+  Clock/Input Pins                2        1      1    -->    50%
+I/O Pins                         32       16     16    -->    50%
+Logic Macrocells                 64       51     13    -->    79%
+  Input Registers                32        0     32    -->     0%
+  Unusable Macrocells            ..        1     ..
+
+CSM Outputs/Total Block Inputs  132       76     56    -->    57%
+Logical Product Terms           320      135    185    -->    42%
+Product Term Clusters            64       51     13    -->    79%
+
+
+Blocks_Resource_Summary
+~~~~~~~~~~~~~~~~~~~~~~~
+                                                                  # of PT  
+                   I/O    Inp    Macrocells   Macrocells   logic  clusters 
+          Fanin    Pins   Reg   Used Unusable  available    PTs   available  Pwr
+---------------------------------------------------------------------------------
+Maximum     33      8      8     --     --         16       80       16       -
+---------------------------------------------------------------------------------
+Block  A    20      8      0     12      1          3       44        6       Hi 
+Block  B    20      0      0     13      0          3       34        8       Hi 
+Block  C    20      0      0     12      0          4       21       12       Hi 
+Block  D    16      8      0     13      0          3       36        3       Hi 
+---------------------------------------------------------------------------------
+
+<Note> Four rightmost columns above reflect last status of the placement process.
+<Note> Pwr (Power) : Hi = High
+                     Lo = Low.
+
+
+Optimizer_and_Fitter_Options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pin Assignment :                       Yes
+Group Assignment :                     No
+Pin Reservation :                      No (1)
+Block Reservation :                    No
+
+@Ignore_Project_Constraints :
+  Pin Assignments :                    No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+  Group Assignments :                  No
+  Macrocell Assignment :               No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+
+@Backannotate_Project_Constraints
+  Pin Assignments :                    No
+  Pin And Block Assignments :          No
+  Pin, Macrocell and Block :           No
+
+@Timing_Constraints :                  No
+
+@Global_Project_Optimization :
+  Balanced Partitioning :              Yes
+  Spread Placement :                   Yes
+
+  Note :
+    Pack Design :
+       Balanced Partitioning = No
+       Spread Placement      = No
+    Spread Design :
+       Balanced Partitioning = Yes
+       Spread Placement      = Yes
+
+@Logic_Synthesis :
+  Logic Reduction :                    Yes
+  Node Collapsing :                    Yes
+  D/T Synthesis :                      Yes
+  Clock Optimization :                 No
+  Input Register Optimization :        Yes
+  XOR Synthesis :                      Yes
+  Max. P-Term for Collapsing :         16
+  Max. P-Term for Splitting :          16
+  Max. Equation Fanin :                32
+  Keep Xor :                           Yes
+
+@Utilization_options
+  Max. % of macrocells used :          100
+  Max. % of block inputs used :        100
+  Max. % of segment lines used :       ---
+  Max. % of macrocells used :          ---
+
+
+@Import_Source_Constraint_Option       No
+
+@Zero_Hold_Time                        No
+
+@Pull_up                               No
+
+@User_Signature                        #H0
+
+@Output_Slew_Rate                      Default = Fast(2)
+
+@Power                                 Default = High(2)
+
+
+Device Options:
+<Note> 1 : Reserved unused I/Os can be independently driven to Low or High, and does not
+           follow the drive level set for the Global Configure Unused I/O Option.
+<Note> 2 : For user-specified constraints on individual signals, refer to the Output, 
+           Bidir and Burried Signal Lists.
+
+
+
+
+Pinout_Listing
+~~~~~~~~~~~~~~
+      | Pin  |Blk |Assigned|
+Pin No| Type |Pad |Pin     | Signal name
+---------------------------------------------------------------
+    1 |  GND |    |        |
+    2 |  I_O | A7 |   *    |keypad_cols_3_
+3     |  I_O | A6 |   *    |keypad_cols_2_
+4     |  I_O | A5 |   *    |keypad_cols_1_
+5     |  I_O | A4 |   *    |keypad_cols_0_
+6     |  I_O | A3 |   *    |keypad_rows_3_
+7     |  I_O | A2 |   *    |keypad_rows_2_
+8     |  I_O | A1 |   *    |keypad_rows_1_
+9     |  I_O | A0 |   *    |keypad_rows_0_
+10    | JTAG |    |        |
+11    | CkIn |    |   *    |clk
+12    |  GND |    |        |
+13    | JTAG |    |        |
+14    |  I_O | B0 |        |
+15    |  I_O | B1 |        |
+16    |  I_O | B2 |        |
+17    |  I_O | B3 |        |
+18    |  I_O | B4 |        |
+19    |  I_O | B5 |        |
+20    |  I_O | B6 |        |
+21    |  I_O | B7 |        |
+22    |  Vcc |    |        |
+23    |  GND |    |        |
+24    |  I_O | C7 |        |
+25    |  I_O | C6 |        |
+26    |  I_O | C5 |        |
+27    |  I_O | C4 |        |
+28    |  I_O | C3 |        |
+29    |  I_O | C2 |        |
+30    |  I_O | C1 |        |
+31    |  I_O | C0 |        |
+32    | JTAG |    |        |
+33    | CkIn |    |        |
+34    |  GND |    |        |
+35    | JTAG |    |        |
+36    |  I_O | D0 |   *    |bcd_out_0_
+37    |  I_O | D1 |   *    |bcd_out_1_
+38    |  I_O | D2 |   *    |bcd_out_2_
+39    |  I_O | D3 |   *    |bcd_out_3_
+40    |  I_O | D4 |   *    |bcd_out_4_
+41    |  I_O | D5 |   *    |bcd_out_5_
+42    |  I_O | D6 |   *    |bcd_out_6_
+43    |  I_O | D7 |   *    |bcd_out_7_
+44    |  Vcc |    |        |
+
+---------------------------------------------------------------------------
+
+<Note> Blk Pad : This notation refers to the Block I/O pad number in the device.
+<Note> Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
+<Note> Pin Type : 
+           CkIn : Dedicated input or clock pin 
+           CLK  : Dedicated clock pin
+           INP  : Dedicated input pin
+           JTAG : JTAG Control and test pin
+           NC   : No connected
+
+
+
+Input_Signal_List
+~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Input 
+Pin Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+  9  A   .  I/O          -B--    Hi Fast      keypad_rows_0_   
+  8  A   .  I/O          -B--    Hi Fast      keypad_rows_1_   
+  7  A   .  I/O          -B--    Hi Fast      keypad_rows_2_   
+  6  A   .  I/O          -BC-    Hi Fast      keypad_rows_3_   
+ 11  .   . Ck/I          ABC-    -  Fast      clk   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Output_Signal_List
+~~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Output 
+Pin Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+ 36  D   2  LAT  * *     ----    Hi Fast      bcd_out_0_   
+ 37  D   3  LAT  * *     ----    Hi Fast      bcd_out_1_   
+ 38  D   3  LAT  * *     ----    Hi Fast      bcd_out_2_   
+ 39  D   2  LAT  * *     ----    Hi Fast      bcd_out_3_   
+ 40  D   2  LAT  * *     ----    Hi Fast      bcd_out_4_   
+ 41  D   1  LAT  * *     ----    Hi Fast      bcd_out_5_   
+ 42  D   1  LAT  * *     ----    Hi Fast      bcd_out_6_   
+ 43  D   1  LAT  * *     ----    Hi Fast      bcd_out_7_   
+  5  A   1  COM          ----    Hi Fast      keypad_cols_0_   
+  4  A   1  COM          ----    Hi Fast      keypad_cols_1_   
+  3  A   1  COM          ----    Hi Fast      keypad_cols_2_   
+  2  A   1  COM          ----    Hi Fast      keypad_cols_3_   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Bidir_Signal_List
+~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Bidir 
+Pin Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+Buried_Signal_List
+~~~~~~~~~~~~~~~~~~
+                 P R
+            Pin  r e O   Node 
+#Mc Blk PTs Type e s E   Fanout Pwr Slew      Signal 
+----------------------------------------------------------------------
+ A13  A   7  COM          ---D    Hi Fast      calc_proc_G_89_1   
+ C9  C   1  LAT  * *     -BC-    Hi Fast      calc_proc_key_catched_0_   
+ B6  B   1  LAT  * *     -BC-    Hi Fast      calc_proc_key_catched_1_   
+ A5  A   1  LAT  * *     -BC-    Hi Fast      calc_proc_key_catched_2_   
+ A1  A   1  LAT  * *     -BC-    Hi Fast      calc_proc_key_catched_3_   
+ D2  D   4  COM          ---D    Hi Fast      calc_proc_n_36_0_n   
+ A6  A   4  COM          A---    Hi Fast      calc_proc_n_79_1_n   
+ A9  A  16  COM          ---D    Hi Fast      calc_proc_n_82_0_n   
+ C5  C   1  LAT  * *     A--D    Hi Fast      calc_proc_num_acc_0_   
+ B2  B   1  LAT  * *     A--D    Hi Fast      calc_proc_num_acc_1_   
+ C1  C   1  LAT  * *     A--D    Hi Fast      calc_proc_num_acc_2_   
+ A14  A   1  LAT  * *     ---D    Hi Fast      calc_proc_num_acc_3_   
+ D3  D   2  LAT  * *     --C-    Hi Fast      calc_proc_num_acc_buf_0_   
+ D5  D   5  LAT  * *     -B--    Hi Fast      calc_proc_num_acc_buf_1_   
+ D14  D   4  LAT  * *     --C-    Hi Fast      calc_proc_num_acc_buf_2_   
+ D6  D   4  LAT  * *     A---    Hi Fast      calc_proc_num_acc_buf_3_   
+ C6  C   1  LAT  * *     A--D    Hi Fast      calc_proc_num_buf_0_   
+ C2  C   1  LAT  * *     A--D    Hi Fast      calc_proc_num_buf_1_   
+ C13  C   1  LAT  * *     A--D    Hi Fast      calc_proc_num_buf_2_   
+ C14  C   1  LAT  * *     ---D    Hi Fast      calc_proc_num_buf_3_   
+ B0  B   4  DFF  * *     ABCD    Hi Fast      calc_proc_state_curr_0_   
+ B8  B   3  DFF  * *     ABCD    Hi Fast      calc_proc_state_curr_1_   
+ B4  B   3  DFF  * *     ABCD    Hi Fast      calc_proc_state_curr_2_   
+ B3  B   1  LAT  * *     ---D    Hi Fast      calc_proc_state_disp_0_   
+ C12  C   2  COM          -BC-    Hi Fast      calc_proc_state_next_0_sqmuxa_2_n   
+ B10  B   1  LAT  * *     A--D    Hi Fast      calc_proc_state_oper_0_   
+ B14  B   2  COM          -B--    Hi Fast      calc_proc_state_oper_0__0   
+ B12  B   5  DFF  * *     ABC-    Hi Fast      input_keypad_counter_0_   
+ B1  B   4  DFF  * *     ABC-    Hi Fast      input_keypad_counter_1_   
+ C0  C   1  DFF  * *     ABC-    Hi Fast      input_keypad_counter_2_   
+ B13  B   1  TFF  * *     A-C-    Hi Fast      input_keypad_counter_3_   
+ B9  B   4  DFF  * *     -BC-    Hi Fast      input_keypad_interrupt   
+ B5  B   4  COM          A-C-    Hi Fast      input_keypad_interrupt_0_sqmuxa_n   
+ C4  C   1  DFF  * *     ABC-    Hi Fast      input_keypad_interrupt_out   
+ C10  C   3  DFF  * *     --C-    Hi Fast      input_keypad_key_out_0_   
+ C8  C   5  DFF  * *     -BC-    Hi Fast      input_keypad_key_out_1_   
+ A2  A   5  DFF  * *     A---    Hi Fast      input_keypad_key_out_2_   
+ A10  A   3  DFF  * *     A---    Hi Fast      input_keypad_key_out_3_   
+----------------------------------------------------------------------
+
+<Note> Power : Hi = High
+               MH = Medium High
+               ML = Medium Low
+               Lo = Low
+
+
+
+
+Signals_Fanout_List
+~~~~~~~~~~~~~~~~~~~
+Signal Source  :    Fanout List
+-----------------------------------------------------------------------------
+keypad_rows_3_{ B}:input_keypad_counter_0_{ B}input_keypad_counter_1_{ B}input_keypad_counter_2_{ C}
+               :input_keypad_counter_3_{ B}input_keypad_interrupt{ B}input_keypad_interrupt_0_sqmuxa_n{ B}
+keypad_rows_2_{ B}:input_keypad_counter_0_{ B}input_keypad_interrupt{ B}input_keypad_interrupt_0_sqmuxa_n{ B}
+keypad_rows_1_{ B}:input_keypad_counter_0_{ B}input_keypad_counter_1_{ B}input_keypad_interrupt{ B}
+               :input_keypad_interrupt_0_sqmuxa_n{ B}
+keypad_rows_0_{ B}:input_keypad_counter_0_{ B}input_keypad_interrupt{ B}input_keypad_interrupt_0_sqmuxa_n{ B}
+input_keypad_interrupt_out{ D}:calc_proc_key_catched_0_{ C}calc_proc_key_catched_2_{ A}calc_proc_state_curr_0_{ B}
+               :calc_proc_state_curr_1_{ B}calc_proc_state_curr_2_{ B}calc_proc_key_catched_1_{ B}
+               :calc_proc_key_catched_3_{ A}
+input_keypad_key_out_0_{ D}:input_keypad_key_out_0_{ C}calc_proc_key_catched_0_{ C}
+input_keypad_key_out_1_{ D}:input_keypad_key_out_1_{ C}calc_proc_key_catched_1_{ B}
+input_keypad_key_out_2_{ B}:input_keypad_key_out_2_{ A}calc_proc_key_catched_2_{ A}
+input_keypad_key_out_3_{ B}:input_keypad_key_out_3_{ A}calc_proc_key_catched_3_{ A}
+calc_proc_state_oper_0_{ C}:calc_proc_G_89_1{ A}calc_proc_num_acc_buf_1_{ D}calc_proc_num_acc_buf_2_{ D}
+               :calc_proc_num_acc_buf_3_{ D}calc_proc_n_79_1_n{ A}calc_proc_n_36_0_n{ D}
+               :calc_proc_n_82_0_n{ A}
+calc_proc_state_disp_0_{ C}:     bcd_out_7_{ D}     bcd_out_6_{ D}     bcd_out_5_{ D}
+               :     bcd_out_4_{ D}     bcd_out_3_{ D}     bcd_out_2_{ D}
+               :     bcd_out_1_{ D}     bcd_out_0_{ D}
+calc_proc_num_buf_0_{ D}:     bcd_out_0_{ D}calc_proc_G_89_1{ A}calc_proc_num_acc_buf_0_{ D}
+               :calc_proc_num_acc_buf_1_{ D}calc_proc_n_79_1_n{ A}calc_proc_n_82_0_n{ A}
+calc_proc_num_buf_1_{ D}:     bcd_out_1_{ D}calc_proc_G_89_1{ A}calc_proc_num_acc_buf_1_{ D}
+               :calc_proc_n_79_1_n{ A}calc_proc_n_82_0_n{ A}
+calc_proc_num_buf_2_{ D}:     bcd_out_2_{ D}calc_proc_num_acc_buf_2_{ D}calc_proc_n_82_0_n{ A}
+calc_proc_num_buf_3_{ D}:     bcd_out_3_{ D}calc_proc_num_acc_buf_3_{ D}
+calc_proc_key_catched_0_{ D}:calc_proc_state_oper_0_{ B}calc_proc_num_buf_0_{ C}calc_proc_state_curr_0_{ B}
+               :calc_proc_state_curr_1_{ B}calc_proc_state_oper_0__0{ B}
+calc_proc_key_catched_2_{ B}:calc_proc_state_oper_0_{ B}calc_proc_num_buf_2_{ C}calc_proc_state_curr_0_{ B}
+               :calc_proc_state_curr_1_{ B}calc_proc_state_next_0_sqmuxa_2_n{ C}calc_proc_state_oper_0__0{ B}
+calc_proc_state_curr_0_{ C}:     bcd_out_7_{ D}     bcd_out_6_{ D}     bcd_out_5_{ D}
+               :     bcd_out_4_{ D}     bcd_out_3_{ D}     bcd_out_2_{ D}
+               :     bcd_out_1_{ D}     bcd_out_0_{ D}calc_proc_state_oper_0_{ B}
+               :calc_proc_state_disp_0_{ B}calc_proc_num_buf_0_{ C}calc_proc_num_buf_1_{ C}
+               :calc_proc_num_buf_2_{ C}calc_proc_num_buf_3_{ C}calc_proc_key_catched_0_{ C}
+               :calc_proc_key_catched_2_{ A}calc_proc_state_curr_0_{ B}calc_proc_state_curr_1_{ B}
+               :calc_proc_state_curr_2_{ B}calc_proc_key_catched_1_{ B}calc_proc_key_catched_3_{ A}
+               :calc_proc_num_acc_0_{ C}calc_proc_num_acc_1_{ B}calc_proc_num_acc_2_{ C}
+               :calc_proc_num_acc_3_{ A}calc_proc_state_next_0_sqmuxa_2_n{ C}calc_proc_num_acc_buf_0_{ D}
+               :calc_proc_num_acc_buf_1_{ D}calc_proc_num_acc_buf_2_{ D}calc_proc_num_acc_buf_3_{ D}
+               :calc_proc_n_36_0_n{ D}calc_proc_state_oper_0__0{ B}
+calc_proc_state_curr_1_{ C}:     bcd_out_7_{ D}     bcd_out_6_{ D}     bcd_out_5_{ D}
+               :     bcd_out_4_{ D}     bcd_out_3_{ D}     bcd_out_2_{ D}
+               :     bcd_out_1_{ D}     bcd_out_0_{ D}calc_proc_state_oper_0_{ B}
+               :calc_proc_state_disp_0_{ B}calc_proc_num_buf_0_{ C}calc_proc_num_buf_1_{ C}
+               :calc_proc_num_buf_2_{ C}calc_proc_num_buf_3_{ C}calc_proc_key_catched_0_{ C}
+               :calc_proc_key_catched_2_{ A}calc_proc_state_curr_0_{ B}calc_proc_state_curr_1_{ B}
+               :calc_proc_state_curr_2_{ B}calc_proc_key_catched_1_{ B}calc_proc_key_catched_3_{ A}
+               :calc_proc_num_acc_0_{ C}calc_proc_num_acc_1_{ B}calc_proc_num_acc_2_{ C}
+               :calc_proc_num_acc_3_{ A}calc_proc_state_next_0_sqmuxa_2_n{ C}calc_proc_num_acc_buf_0_{ D}
+               :calc_proc_num_acc_buf_1_{ D}calc_proc_num_acc_buf_2_{ D}calc_proc_num_acc_buf_3_{ D}
+               :calc_proc_n_36_0_n{ D}calc_proc_state_oper_0__0{ B}
+calc_proc_state_curr_2_{ C}:     bcd_out_7_{ D}     bcd_out_6_{ D}     bcd_out_5_{ D}
+               :     bcd_out_4_{ D}     bcd_out_3_{ D}     bcd_out_2_{ D}
+               :     bcd_out_1_{ D}     bcd_out_0_{ D}calc_proc_state_oper_0_{ B}
+               :calc_proc_state_disp_0_{ B}calc_proc_num_buf_0_{ C}calc_proc_num_buf_1_{ C}
+               :calc_proc_num_buf_2_{ C}calc_proc_num_buf_3_{ C}calc_proc_key_catched_0_{ C}
+               :calc_proc_key_catched_2_{ A}calc_proc_state_curr_0_{ B}calc_proc_state_curr_1_{ B}
+               :calc_proc_state_curr_2_{ B}calc_proc_key_catched_1_{ B}calc_proc_key_catched_3_{ A}
+               :calc_proc_num_acc_0_{ C}calc_proc_num_acc_1_{ B}calc_proc_num_acc_2_{ C}
+               :calc_proc_num_acc_3_{ A}calc_proc_state_next_0_sqmuxa_2_n{ C}calc_proc_num_acc_buf_0_{ D}
+               :calc_proc_num_acc_buf_1_{ D}calc_proc_num_acc_buf_2_{ D}calc_proc_num_acc_buf_3_{ D}
+               :calc_proc_n_36_0_n{ D}calc_proc_state_oper_0__0{ B}
+calc_proc_key_catched_1_{ C}:calc_proc_state_oper_0_{ B}calc_proc_num_buf_1_{ C}calc_proc_state_curr_0_{ B}
+               :calc_proc_state_curr_1_{ B}calc_proc_state_curr_2_{ B}calc_proc_state_next_0_sqmuxa_2_n{ C}
+               :calc_proc_state_oper_0__0{ B}
+calc_proc_key_catched_3_{ B}:calc_proc_state_oper_0_{ B}calc_proc_num_buf_3_{ C}calc_proc_state_curr_0_{ B}
+               :calc_proc_state_curr_1_{ B}calc_proc_state_curr_2_{ B}calc_proc_state_next_0_sqmuxa_2_n{ C}
+               :calc_proc_state_oper_0__0{ B}
+calc_proc_num_acc_0_{ D}:     bcd_out_0_{ D}calc_proc_G_89_1{ A}calc_proc_num_acc_buf_0_{ D}
+               :calc_proc_num_acc_buf_1_{ D}calc_proc_n_79_1_n{ A}calc_proc_n_36_0_n{ D}
+               :calc_proc_n_82_0_n{ A}
+calc_proc_num_acc_1_{ C}:     bcd_out_4_{ D}     bcd_out_3_{ D}     bcd_out_2_{ D}
+               :     bcd_out_1_{ D}calc_proc_G_89_1{ A}calc_proc_num_acc_buf_1_{ D}
+               :calc_proc_n_79_1_n{ A}calc_proc_n_36_0_n{ D}calc_proc_n_82_0_n{ A}
+calc_proc_num_acc_2_{ D}:     bcd_out_4_{ D}     bcd_out_3_{ D}     bcd_out_2_{ D}
+               :     bcd_out_1_{ D}calc_proc_G_89_1{ A}calc_proc_n_36_0_n{ D}
+               :calc_proc_n_82_0_n{ A}
+calc_proc_num_acc_3_{ B}:     bcd_out_4_{ D}     bcd_out_3_{ D}     bcd_out_2_{ D}
+               :     bcd_out_1_{ D}calc_proc_num_acc_buf_3_{ D}calc_proc_n_36_0_n{ D}
+calc_proc_G_89_1{ B}:calc_proc_num_acc_buf_2_{ D}
+calc_proc_state_next_0_sqmuxa_2_n{ D}:calc_proc_state_disp_0_{ B}calc_proc_num_buf_0_{ C}calc_proc_num_buf_1_{ C}
+               :calc_proc_num_buf_2_{ C}calc_proc_num_buf_3_{ C}
+calc_proc_num_acc_buf_0_{ E}:calc_proc_num_acc_0_{ C}
+calc_proc_num_acc_buf_1_{ E}:calc_proc_num_acc_1_{ B}
+calc_proc_num_acc_buf_2_{ E}:calc_proc_num_acc_2_{ C}
+calc_proc_num_acc_buf_3_{ E}:calc_proc_num_acc_3_{ A}
+calc_proc_n_79_1_n{ B}:calc_proc_n_82_0_n{ A}
+input_keypad_counter_0_{ C}:input_keypad_key_out_0_{ C}input_keypad_key_out_1_{ C}input_keypad_key_out_2_{ A}
+               :input_keypad_key_out_3_{ A}input_keypad_counter_0_{ B}input_keypad_counter_1_{ B}
+               :input_keypad_counter_2_{ C}input_keypad_counter_3_{ B}input_keypad_interrupt{ B}
+               :input_keypad_interrupt_0_sqmuxa_n{ B}
+input_keypad_counter_1_{ C}:input_keypad_key_out_0_{ C}input_keypad_key_out_1_{ C}input_keypad_key_out_2_{ A}
+               :input_keypad_key_out_3_{ A}input_keypad_counter_0_{ B}input_keypad_counter_1_{ B}
+               :input_keypad_counter_2_{ C}input_keypad_counter_3_{ B}input_keypad_interrupt{ B}
+               :input_keypad_interrupt_0_sqmuxa_n{ B}
+input_keypad_counter_2_{ D}: keypad_cols_3_{ A} keypad_cols_2_{ A} keypad_cols_1_{ A}
+               : keypad_cols_0_{ A}input_keypad_key_out_0_{ C}input_keypad_key_out_1_{ C}
+               :input_keypad_key_out_2_{ A}input_keypad_key_out_3_{ A}input_keypad_counter_2_{ C}
+               :input_keypad_counter_3_{ B}
+input_keypad_counter_3_{ C}: keypad_cols_3_{ A} keypad_cols_2_{ A} keypad_cols_1_{ A}
+               : keypad_cols_0_{ A}input_keypad_key_out_0_{ C}input_keypad_key_out_1_{ C}
+               :input_keypad_key_out_2_{ A}input_keypad_key_out_3_{ A}
+input_keypad_interrupt{ C}:input_keypad_interrupt_out{ C}input_keypad_counter_0_{ B}input_keypad_counter_1_{ B}
+               :input_keypad_counter_2_{ C}input_keypad_counter_3_{ B}input_keypad_interrupt_0_sqmuxa_n{ B}
+input_keypad_interrupt_0_sqmuxa_n{ C}:input_keypad_key_out_0_{ C}input_keypad_key_out_1_{ C}input_keypad_key_out_2_{ A}
+               :input_keypad_key_out_3_{ A}
+calc_proc_n_36_0_n{ E}:calc_proc_num_acc_buf_0_{ D}calc_proc_num_acc_buf_1_{ D}calc_proc_num_acc_buf_2_{ D}
+               :calc_proc_num_acc_buf_3_{ D}
+calc_proc_n_82_0_n{ B}:calc_proc_num_acc_buf_3_{ D}
+calc_proc_state_oper_0__0{ C}:calc_proc_state_oper_0_{ B}
+-----------------------------------------------------------------------------
+
+<Note> {.} : Indicates block location of signal
+
+
+Set_Reset_Summary
+~~~~~~~~~~~~~~~~~
+
+Block  A
+block level set pt   : GND
+block level reset pt : GND
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|     |     |     |     | keypad_cols_0_
+|     |     |     |     | keypad_cols_1_
+|     |     |     |     | keypad_cols_2_
+|     |     |     |     | keypad_cols_3_
+|  *  |  A  |     |     | calc_proc_key_catched_3_
+|  *  |  A  |     |     | calc_proc_key_catched_2_
+|     |     |     |     | calc_proc_n_82_0_n
+|     |     |     |     | calc_proc_G_89_1
+|  *  |  S  | BS  | BR  | input_keypad_key_out_2_
+|     |     |     |     | calc_proc_n_79_1_n
+|  *  |  S  | BS  | BR  | input_keypad_key_out_3_
+|  *  |  A  |     |     | calc_proc_num_acc_3_
+|     |     |     |     | keypad_rows_3_
+|     |     |     |     | keypad_rows_0_
+|     |     |     |     | keypad_rows_1_
+|     |     |     |     | keypad_rows_2_
+
+
+Block  B
+block level set pt   : GND
+block level reset pt : GND
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  S  | BS  | BR  | calc_proc_state_curr_0_
+|  *  |  S  | BS  | BR  | calc_proc_state_curr_2_
+|  *  |  S  | BS  | BR  | calc_proc_state_curr_1_
+|  *  |  S  | BS  | BR  | input_keypad_counter_0_
+|  *  |  S  | BS  | BR  | input_keypad_counter_1_
+|     |     |     |     | input_keypad_interrupt_0_sqmuxa_n
+|  *  |  S  | BS  | BR  | input_keypad_interrupt
+|  *  |  S  | BS  | BR  | input_keypad_counter_3_
+|  *  |  A  |     |     | calc_proc_num_acc_1_
+|  *  |  A  |     |     | calc_proc_key_catched_1_
+|  *  |  A  |     |     | calc_proc_state_oper_0_
+|     |     |     |     | calc_proc_state_oper_0__0
+|  *  |  A  |     |     | calc_proc_state_disp_0_
+
+
+Block  C
+block level set pt   : GND
+block level reset pt : GND
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  S  | BS  | BR  | input_keypad_counter_2_
+|  *  |  S  | BS  | BR  | input_keypad_interrupt_out
+|  *  |  S  | BS  | BR  | input_keypad_key_out_1_
+|     |     |     |     | calc_proc_state_next_0_sqmuxa_2_n
+|  *  |  A  |     |     | calc_proc_num_acc_2_
+|  *  |  A  |     |     | calc_proc_num_acc_0_
+|  *  |  A  |     |     | calc_proc_key_catched_0_
+|  *  |  A  |     |     | calc_proc_num_buf_2_
+|  *  |  A  |     |     | calc_proc_num_buf_1_
+|  *  |  A  |     |     | calc_proc_num_buf_0_
+|  *  |  S  | BS  | BR  | input_keypad_key_out_0_
+|  *  |  A  |     |     | calc_proc_num_buf_3_
+
+
+Block  D
+block level set pt   : 
+block level reset pt : 
+Equations :
+|     |     |Block|Block| Signal
+| Reg |Mode |Set  |Reset| Name
++-----+-----+-----+-----+------------------------
+|  *  |  A  |     |     | bcd_out_2_
+|  *  |  A  |     |     | bcd_out_1_
+|  *  |  A  |     |     | bcd_out_4_
+|  *  |  A  |     |     | bcd_out_3_
+|  *  |  A  |     |     | bcd_out_0_
+|  *  |  A  |     |     | bcd_out_7_
+|  *  |  A  |     |     | bcd_out_6_
+|  *  |  A  |     |     | bcd_out_5_
+|  *  |  A  |     |     | calc_proc_num_acc_buf_1_
+|     |     |     |     | calc_proc_n_36_0_n
+|  *  |  A  |     |     | calc_proc_num_acc_buf_3_
+|  *  |  A  |     |     | calc_proc_num_acc_buf_2_
+|  *  |  A  |     |     | calc_proc_num_acc_buf_0_
+
+
+<Note> (S) means the macrocell is configured in synchronous mode
+       i.e. it uses the block-level set and reset pt.
+       (A) means the macrocell is configured in asynchronous mode
+       i.e. it can have its independant set or reset pt.
+       (BS) means the block-level set pt is selected.
+       (BR) means the block-level reset pt is selected.
+
+
+
+
+BLOCK_A_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx A0             ...           ...     mx A17calc_proc_state_oper_0_    mcell  B10
+mx A1calc_proc_num_buf_2_    mcell  C13     mx A18             ...           ...
+mx A2input_keypad_key_out_2_     mcell  A2     mx A19calc_proc_num_acc_0_     mcell  C5
+mx A3calc_proc_num_buf_0_     mcell  C6     mx A20input_keypad_interrupt_out     mcell  C4
+mx A4input_keypad_key_out_3_    mcell  A10     mx A21input_keypad_counter_0_    mcell  B12
+mx A5input_keypad_counter_3_    mcell  B13     mx A22             ...           ...
+mx A6calc_proc_num_acc_2_     mcell  C1     mx A23             ...           ...
+mx A7input_keypad_interrupt_0_sqmuxa_n     mcell  B5     mx A24             ...           ...
+mx A8calc_proc_n_79_1_n     mcell  A6     mx A25input_keypad_counter_1_     mcell  B1
+mx A9calc_proc_num_acc_1_     mcell  B2     mx A26             ...           ...
+mx A10calc_proc_num_acc_buf_3_     mcell  D6     mx A27             ...           ...
+mx A11calc_proc_state_curr_2_     mcell  B4     mx A28             ...           ...
+mx A12input_keypad_counter_2_     mcell  C0     mx A29             ...           ...
+mx A13             ...           ...     mx A30             ...           ...
+mx A14calc_proc_state_curr_1_     mcell  B8     mx A31             ...           ...
+mx A15calc_proc_num_buf_1_     mcell  C2     mx A32             ...           ...
+mx A16calc_proc_state_curr_0_     mcell  B0
+----------------------------------------------------------------------------
+
+
+BLOCK_B_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx B0calc_proc_key_catched_0_     mcell  C9     mx B17  keypad_rows_0_         pin 9
+mx B1calc_proc_key_catched_1_     mcell  B6     mx B18             ...           ...
+mx B2input_keypad_key_out_1_     mcell  C8     mx B19             ...           ...
+mx B3  keypad_rows_3_         pin 6     mx B20input_keypad_interrupt_out     mcell  C4
+mx B4calc_proc_key_catched_2_     mcell  A5     mx B21input_keypad_counter_0_    mcell  B12
+mx B5  keypad_rows_1_         pin 8     mx B22             ...           ...
+mx B6             ...           ...     mx B23             ...           ...
+mx B7input_keypad_counter_1_     mcell  B1     mx B24             ...           ...
+mx B8             ...           ...     mx B25             ...           ...
+mx B9calc_proc_key_catched_3_     mcell  A1     mx B26input_keypad_interrupt     mcell  B9
+mx B10input_keypad_counter_2_     mcell  C0     mx B27  keypad_rows_2_         pin 7
+mx B11calc_proc_state_curr_2_     mcell  B4     mx B28             ...           ...
+mx B12calc_proc_state_oper_0__0    mcell  B14     mx B29             ...           ...
+mx B13             ...           ...     mx B30             ...           ...
+mx B14calc_proc_state_curr_1_     mcell  B8     mx B31             ...           ...
+mx B15calc_proc_num_acc_buf_1_     mcell  D5     mx B32calc_proc_state_next_0_sqmuxa_2_n    mcell  C12
+mx B16calc_proc_state_curr_0_     mcell  B0
+----------------------------------------------------------------------------
+
+
+BLOCK_C_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx C0calc_proc_num_acc_buf_0_     mcell  D3     mx C17             ...           ...
+mx C1calc_proc_key_catched_1_     mcell  B6     mx C18calc_proc_state_curr_0_     mcell  B0
+mx C2input_keypad_key_out_1_     mcell  C8     mx C19             ...           ...
+mx C3  keypad_rows_3_         pin 6     mx C20input_keypad_interrupt_out     mcell  C4
+mx C4calc_proc_key_catched_2_     mcell  A5     mx C21input_keypad_counter_0_    mcell  B12
+mx C5input_keypad_counter_3_    mcell  B13     mx C22calc_proc_num_acc_buf_2_    mcell  D14
+mx C6input_keypad_interrupt_0_sqmuxa_n     mcell  B5     mx C23             ...           ...
+mx C7input_keypad_counter_1_     mcell  B1     mx C24             ...           ...
+mx C8             ...           ...     mx C25             ...           ...
+mx C9calc_proc_key_catched_3_     mcell  A1     mx C26             ...           ...
+mx C10input_keypad_counter_2_     mcell  C0     mx C27calc_proc_key_catched_0_     mcell  C9
+mx C11calc_proc_state_curr_2_     mcell  B4     mx C28             ...           ...
+mx C12calc_proc_state_next_0_sqmuxa_2_n    mcell  C12     mx C29calc_proc_state_curr_1_     mcell  B8
+mx C13             ...           ...     mx C30             ...           ...
+mx C14input_keypad_key_out_0_    mcell  C10     mx C31             ...           ...
+mx C15             ...           ...     mx C32             ...           ...
+mx C16input_keypad_interrupt     mcell  B9
+----------------------------------------------------------------------------
+
+
+BLOCK_D_LOGIC_ARRAY_FANIN
+~~~~~~~~~~~~~~~~~~~~~~~~~
+CSM             Signal    Source        CSM             Signal    Source
+------------------------------------    ------------------------------------
+mx D0             ...           ...     mx D17calc_proc_state_oper_0_    mcell  B10
+mx D1calc_proc_num_acc_3_    mcell  A14     mx D18calc_proc_num_buf_0_     mcell  C6
+mx D2calc_proc_num_buf_3_    mcell  C14     mx D19calc_proc_G_89_1    mcell  A13
+mx D3calc_proc_n_82_0_n     mcell  A9     mx D20calc_proc_num_acc_0_     mcell  C5
+mx D4             ...           ...     mx D21             ...           ...
+mx D5calc_proc_state_curr_0_     mcell  B0     mx D22             ...           ...
+mx D6calc_proc_num_acc_2_     mcell  C1     mx D23             ...           ...
+mx D7calc_proc_n_36_0_n     mcell  D2     mx D24             ...           ...
+mx D8calc_proc_num_acc_1_     mcell  B2     mx D25             ...           ...
+mx D9             ...           ...     mx D26             ...           ...
+mx D10calc_proc_state_disp_0_     mcell  B3     mx D27             ...           ...
+mx D11calc_proc_state_curr_2_     mcell  B4     mx D28             ...           ...
+mx D12             ...           ...     mx D29             ...           ...
+mx D13             ...           ...     mx D30             ...           ...
+mx D14calc_proc_state_curr_1_     mcell  B8     mx D31             ...           ...
+mx D15calc_proc_num_buf_1_     mcell  C2     mx D32             ...           ...
+mx D16calc_proc_num_buf_2_    mcell  C13
+----------------------------------------------------------------------------
+
+<Note> CSM indicates the mux inputs from the Central Switch Matrix.
+<Note> Source indicates where the signal comes from (pin or macrocell). 
+
+
+
+
+PostFit_Equations
+~~~~~~~~~~~~~~~~~
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          2        1    Pin   keypad_cols_3_- 
+   1          1        1    Pin   bcd_out_7_.D 
+   1          3        1    Pin   bcd_out_7_.AP 
+   1          2        1    Pin   bcd_out_7_.LH 
+   1          2        1    Pin   keypad_cols_2_- 
+   1          2        1    Pin   keypad_cols_1_- 
+   1          2        1    Pin   keypad_cols_0_- 
+   1          1        1    Pin   bcd_out_6_.D 
+   1          3        1    Pin   bcd_out_6_.AP 
+   1          2        1    Pin   bcd_out_6_.LH 
+   1          1        1    Pin   bcd_out_5_.D 
+   1          3        1    Pin   bcd_out_5_.AP 
+   1          2        1    Pin   bcd_out_5_.LH 
+   2          4        1    Pin   bcd_out_4_.D- 
+   1          3        1    Pin   bcd_out_4_.AP 
+   1          2        1    Pin   bcd_out_4_.LH 
+   2          5        1    Pin   bcd_out_3_.D 
+   1          3        1    Pin   bcd_out_3_.AP 
+   1          2        1    Pin   bcd_out_3_.LH 
+   3          5        1    Pin   bcd_out_2_.D 
+   1          3        1    Pin   bcd_out_2_.AP 
+   1          2        1    Pin   bcd_out_2_.LH 
+   3          5        1    Pin   bcd_out_1_.D 
+   1          3        1    Pin   bcd_out_1_.AP 
+   1          2        1    Pin   bcd_out_1_.LH 
+   2          3        1    Pin   bcd_out_0_.D 
+   1          3        1    Pin   bcd_out_0_.AP 
+   1          2        1    Pin   bcd_out_0_.LH 
+   1          1        1    Node  input_keypad_interrupt_out.D 
+   1          1        1    Node  input_keypad_interrupt_out.C 
+   3          4        1    NodeX1  input_keypad_key_out_0_.D.X1 
+   1          4        1    NodeX2  input_keypad_key_out_0_.D.X2 
+   1          1        1    Node  input_keypad_key_out_0_.C 
+   5          6        1    Node  input_keypad_key_out_1_.D 
+   1          1        1    Node  input_keypad_key_out_1_.C 
+   5          6        1    Node  input_keypad_key_out_2_.D 
+   1          1        1    Node  input_keypad_key_out_2_.C 
+   3          5        1    NodeX1  input_keypad_key_out_3_.D.X1 
+   1          4        1    NodeX2  input_keypad_key_out_3_.D.X2 
+   1          1        1    Node  input_keypad_key_out_3_.C 
+   1          7        1    Node  calc_proc_state_oper_0_.AR 
+   1          0        1    Node  calc_proc_state_oper_0_.D 
+   1          1        1    Node  calc_proc_state_oper_0_.LH 
+   1          1        1    Node  calc_proc_state_disp_0_.AR 
+   1          0        1    Node  calc_proc_state_disp_0_.D 
+   1          3        1    Node  calc_proc_state_disp_0_.LH 
+   1          3        1    Node  calc_proc_num_buf_0_.AR 
+   1          1        1    Node  calc_proc_num_buf_0_.D 
+   1          1        1    Node  calc_proc_num_buf_0_.LH 
+   1          3        1    Node  calc_proc_num_buf_1_.AR 
+   1          1        1    Node  calc_proc_num_buf_1_.D 
+   1          1        1    Node  calc_proc_num_buf_1_.LH 
+   1          3        1    Node  calc_proc_num_buf_2_.AR 
+   1          1        1    Node  calc_proc_num_buf_2_.D 
+   1          1        1    Node  calc_proc_num_buf_2_.LH 
+   1          3        1    Node  calc_proc_num_buf_3_.AR 
+   1          1        1    Node  calc_proc_num_buf_3_.D 
+   1          1        1    Node  calc_proc_num_buf_3_.LH 
+   1          1        1    Node  calc_proc_key_catched_0_.D 
+   1          3        1    Node  calc_proc_key_catched_0_.AP 
+   1          4        1    Node  calc_proc_key_catched_0_.LH 
+   1          1        1    Node  calc_proc_key_catched_2_.D 
+   1          3        1    Node  calc_proc_key_catched_2_.AP 
+   1          4        1    Node  calc_proc_key_catched_2_.LH 
+   4          8        1    Node  calc_proc_state_curr_0_.D 
+   1          1        1    Node  calc_proc_state_curr_0_.C 
+   3          8        1    Node  calc_proc_state_curr_1_.D 
+   1          1        1    Node  calc_proc_state_curr_1_.C 
+   3          6        1    Node  calc_proc_state_curr_2_.D- 
+   1          1        1    Node  calc_proc_state_curr_2_.C 
+   1          3        1    Node  calc_proc_key_catched_1_.AR 
+   1          1        1    Node  calc_proc_key_catched_1_.D 
+   1          4        1    Node  calc_proc_key_catched_1_.LH 
+   1          1        1    Node  calc_proc_key_catched_3_.D 
+   1          3        1    Node  calc_proc_key_catched_3_.AP 
+   1          4        1    Node  calc_proc_key_catched_3_.LH 
+   1          3        1    Node  calc_proc_num_acc_0_.AR 
+   1          1        1    Node  calc_proc_num_acc_0_.D 
+   1          2        1    Node  calc_proc_num_acc_0_.LH 
+   1          3        1    Node  calc_proc_num_acc_1_.AR 
+   1          1        1    Node  calc_proc_num_acc_1_.D 
+   1          2        1    Node  calc_proc_num_acc_1_.LH 
+   1          3        1    Node  calc_proc_num_acc_2_.AR 
+   1          1        1    Node  calc_proc_num_acc_2_.D 
+   1          2        1    Node  calc_proc_num_acc_2_.LH 
+   1          3        1    Node  calc_proc_num_acc_3_.AR 
+   1          1        1    Node  calc_proc_num_acc_3_.D 
+   1          2        1    Node  calc_proc_num_acc_3_.LH 
+   7          5        1    NodeX1  calc_proc_G_89_1.X1 
+   1          1        1    NodeX2  calc_proc_G_89_1.X2 
+   2          6        1    Node  calc_proc_state_next_0_sqmuxa_2_n 
+   1          3        1    Node  calc_proc_num_acc_buf_0_.AR 
+   2          2        1    Node  calc_proc_num_acc_buf_0_.D 
+   1          1        1    Node  calc_proc_num_acc_buf_0_.LH 
+   5          4        1    NodeX1  calc_proc_num_acc_buf_1_.D.X1 
+   1          1        1    NodeX2  calc_proc_num_acc_buf_1_.D.X2 
+   1          3        1    Node  calc_proc_num_acc_buf_1_.AR 
+   1          1        1    Node  calc_proc_num_acc_buf_1_.LH 
+   1          3        1    Node  calc_proc_num_acc_buf_2_.AR 
+   4          3        1    Node  calc_proc_num_acc_buf_2_.D 
+   1          1        1    Node  calc_proc_num_acc_buf_2_.LH 
+   4          3        1    NodeX1  calc_proc_num_acc_buf_3_.D.X1 
+   1          1        1    NodeX2  calc_proc_num_acc_buf_3_.D.X2 
+   1          3        1    Node  calc_proc_num_acc_buf_3_.AR 
+   1          1        1    Node  calc_proc_num_acc_buf_3_.LH 
+   4          5        1    Node  calc_proc_n_79_1_n- 
+   5          7        1    Node  input_keypad_counter_0_.D 
+   1          1        1    Node  input_keypad_counter_0_.C 
+   4          5        1    Node  input_keypad_counter_1_.D 
+   1          1        1    Node  input_keypad_counter_1_.C 
+   1          4        1    NodeX1  input_keypad_counter_2_.D.X1 
+   1          1        1    NodeX2  input_keypad_counter_2_.D.X2 
+   1          1        1    Node  input_keypad_counter_2_.C 
+   1          5        1    Node  input_keypad_counter_3_.T 
+   1          1        1    Node  input_keypad_counter_3_.C 
+   4          6        1    Node  input_keypad_interrupt.D 
+   1          1        1    Node  input_keypad_interrupt.C 
+   4          7        1    Node  input_keypad_interrupt_0_sqmuxa_n 
+   4          8        1    Node  calc_proc_n_36_0_n- 
+  16          8        1    Node  calc_proc_n_82_0_n- 
+   2          7        1    Node  calc_proc_state_oper_0__0 
+=========
+ 200                 P-Term Total: 200
+                       Total Pins: 17
+                      Total Nodes: 38
+            Average P-Term/Output: 2
+
+
+Equations:
+
+!keypad_cols_3_ = (!input_keypad_counter_2_.Q & !input_keypad_counter_3_.Q);
+
+bcd_out_7_.D = (!calc_proc_state_disp_0_.Q);
+
+bcd_out_7_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_7_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+!keypad_cols_2_ = (input_keypad_counter_2_.Q & !input_keypad_counter_3_.Q);
+
+!keypad_cols_1_ = (!input_keypad_counter_2_.Q & input_keypad_counter_3_.Q);
+
+!keypad_cols_0_ = (input_keypad_counter_2_.Q & input_keypad_counter_3_.Q);
+
+bcd_out_6_.D = (!calc_proc_state_disp_0_.Q);
+
+bcd_out_6_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_6_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+bcd_out_5_.D = (!calc_proc_state_disp_0_.Q);
+
+bcd_out_5_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_5_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+!bcd_out_4_.D = (calc_proc_state_disp_0_.Q & !calc_proc_num_acc_3_.Q
+     # calc_proc_state_disp_0_.Q & !calc_proc_num_acc_1_.Q & !calc_proc_num_acc_2_.Q);
+
+bcd_out_4_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_4_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+bcd_out_3_.D = (!calc_proc_state_disp_0_.Q & calc_proc_num_buf_3_.Q
+     # calc_proc_state_disp_0_.Q & !calc_proc_num_acc_1_.Q & !calc_proc_num_acc_2_.Q & calc_proc_num_acc_3_.Q);
+
+bcd_out_3_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_3_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+bcd_out_2_.D = (!calc_proc_state_disp_0_.Q & calc_proc_num_buf_2_.Q
+     # calc_proc_state_disp_0_.Q & calc_proc_num_acc_1_.Q & calc_proc_num_acc_2_.Q
+     # calc_proc_state_disp_0_.Q & calc_proc_num_acc_2_.Q & !calc_proc_num_acc_3_.Q);
+
+bcd_out_2_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_2_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+bcd_out_1_.D = (!calc_proc_state_disp_0_.Q & calc_proc_num_buf_1_.Q
+     # calc_proc_state_disp_0_.Q & calc_proc_num_acc_1_.Q & !calc_proc_num_acc_3_.Q
+     # calc_proc_state_disp_0_.Q & !calc_proc_num_acc_1_.Q & calc_proc_num_acc_2_.Q & calc_proc_num_acc_3_.Q);
+
+bcd_out_1_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_1_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+bcd_out_0_.D = (!calc_proc_state_disp_0_.Q & calc_proc_num_buf_0_.Q
+     # calc_proc_state_disp_0_.Q & calc_proc_num_acc_0_.Q);
+
+bcd_out_0_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+bcd_out_0_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+input_keypad_interrupt_out.D = (input_keypad_interrupt.Q);
+
+input_keypad_interrupt_out.C = (clk);
+
+input_keypad_key_out_0_.D.X1 = (input_keypad_key_out_0_.Q & !input_keypad_interrupt_0_sqmuxa_n
+     # input_keypad_counter_0_.Q & input_keypad_counter_2_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # !input_keypad_counter_0_.Q & !input_keypad_counter_2_.Q & input_keypad_interrupt_0_sqmuxa_n);
+
+input_keypad_key_out_0_.D.X2 = (!input_keypad_counter_1_.Q & input_keypad_counter_2_.Q & input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n);
+
+input_keypad_key_out_0_.C = (clk);
+
+input_keypad_key_out_1_.D = (input_keypad_key_out_1_.Q & !input_keypad_interrupt_0_sqmuxa_n
+     # input_keypad_counter_1_.Q & !input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # !input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q & input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # !input_keypad_counter_0_.Q & input_keypad_counter_2_.Q & input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # input_keypad_counter_0_.Q & !input_keypad_counter_2_.Q & !input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n);
+
+input_keypad_key_out_1_.C = (clk);
+
+input_keypad_key_out_2_.D = (input_keypad_key_out_2_.Q & !input_keypad_interrupt_0_sqmuxa_n
+     # !input_keypad_counter_0_.Q & input_keypad_counter_2_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # input_keypad_counter_0_.Q & input_keypad_counter_1_.Q & input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # !input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q & input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # !input_keypad_counter_1_.Q & input_keypad_counter_2_.Q & !input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n);
+
+input_keypad_key_out_2_.C = (clk);
+
+input_keypad_key_out_3_.D.X1 = (input_keypad_key_out_3_.Q & !input_keypad_interrupt_0_sqmuxa_n
+     # input_keypad_counter_0_.Q & input_keypad_counter_1_.Q & input_keypad_interrupt_0_sqmuxa_n
+     # !input_keypad_counter_0_.Q & input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n);
+
+input_keypad_key_out_3_.D.X2 = (!input_keypad_counter_1_.Q & !input_keypad_counter_2_.Q & input_keypad_counter_3_.Q & input_keypad_interrupt_0_sqmuxa_n);
+
+input_keypad_key_out_3_.C = (clk);
+
+calc_proc_state_oper_0_.AR = (calc_proc_key_catched_0_.Q & !calc_proc_key_catched_2_.Q & !calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q & calc_proc_key_catched_1_.Q & calc_proc_key_catched_3_.Q);
+
+calc_proc_state_oper_0_.D = (1);
+
+calc_proc_state_oper_0_.LH = (calc_proc_state_oper_0__0);
+
+calc_proc_state_disp_0_.AR = (calc_proc_state_next_0_sqmuxa_2_n);
+
+calc_proc_state_disp_0_.D = (1);
+
+calc_proc_state_disp_0_.LH = (calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_buf_0_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_buf_0_.D = (calc_proc_key_catched_0_.Q);
+
+calc_proc_num_buf_0_.LH = (calc_proc_state_next_0_sqmuxa_2_n);
+
+calc_proc_num_buf_1_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_buf_1_.D = (calc_proc_key_catched_1_.Q);
+
+calc_proc_num_buf_1_.LH = (calc_proc_state_next_0_sqmuxa_2_n);
+
+calc_proc_num_buf_2_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_buf_2_.D = (calc_proc_key_catched_2_.Q);
+
+calc_proc_num_buf_2_.LH = (calc_proc_state_next_0_sqmuxa_2_n);
+
+calc_proc_num_buf_3_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_buf_3_.D = (calc_proc_key_catched_3_.Q);
+
+calc_proc_num_buf_3_.LH = (calc_proc_state_next_0_sqmuxa_2_n);
+
+calc_proc_key_catched_0_.D = (input_keypad_key_out_0_.Q);
+
+calc_proc_key_catched_0_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_key_catched_0_.LH = (!input_keypad_interrupt_out.Q & calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_key_catched_2_.D = (input_keypad_key_out_2_.Q);
+
+calc_proc_key_catched_2_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_key_catched_2_.LH = (!input_keypad_interrupt_out.Q & calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_state_curr_0_.D = (calc_proc_state_curr_2_.Q
+     # input_keypad_interrupt_out.Q & calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q
+     # !calc_proc_key_catched_0_.Q & !calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & calc_proc_key_catched_1_.Q & calc_proc_key_catched_3_.Q
+     # !calc_proc_key_catched_2_.Q & !calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & calc_proc_key_catched_1_.Q & calc_proc_key_catched_3_.Q);
+
+calc_proc_state_curr_0_.C = (clk);
+
+calc_proc_state_curr_1_.D = (!input_keypad_interrupt_out.Q & calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q
+     # !calc_proc_key_catched_0_.Q & !calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & calc_proc_key_catched_1_.Q & calc_proc_key_catched_3_.Q
+     # !calc_proc_key_catched_2_.Q & !calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & calc_proc_key_catched_1_.Q & calc_proc_key_catched_3_.Q);
+
+calc_proc_state_curr_1_.C = (clk);
+
+!calc_proc_state_curr_2_.D = (input_keypad_interrupt_out.Q & calc_proc_state_curr_0_.Q & calc_proc_state_curr_2_.Q
+     # calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q
+     # !calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & calc_proc_key_catched_1_.Q & calc_proc_key_catched_3_.Q);
+
+calc_proc_state_curr_2_.C = (clk);
+
+calc_proc_key_catched_1_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_key_catched_1_.D = (input_keypad_key_out_1_.Q);
+
+calc_proc_key_catched_1_.LH = (!input_keypad_interrupt_out.Q & calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_key_catched_3_.D = (input_keypad_key_out_3_.Q);
+
+calc_proc_key_catched_3_.AP = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_key_catched_3_.LH = (!input_keypad_interrupt_out.Q & calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_0_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_0_.D = (calc_proc_num_acc_buf_0_.Q);
+
+calc_proc_num_acc_0_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+calc_proc_num_acc_1_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_1_.D = (calc_proc_num_acc_buf_1_.Q);
+
+calc_proc_num_acc_1_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+calc_proc_num_acc_2_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_2_.D = (calc_proc_num_acc_buf_2_.Q);
+
+calc_proc_num_acc_2_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+calc_proc_num_acc_3_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_3_.D = (calc_proc_num_acc_buf_3_.Q);
+
+calc_proc_num_acc_3_.LH = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q);
+
+calc_proc_G_89_1.X1 = (calc_proc_state_oper_0_.Q & !calc_proc_num_buf_0_.Q & !calc_proc_num_buf_1_.Q
+     # calc_proc_state_oper_0_.Q & !calc_proc_num_buf_1_.Q & !calc_proc_num_acc_0_.Q
+     # !calc_proc_state_oper_0_.Q & calc_proc_num_buf_1_.Q & !calc_proc_num_acc_1_.Q
+     # !calc_proc_num_buf_0_.Q & calc_proc_num_buf_1_.Q & !calc_proc_num_acc_1_.Q
+     # calc_proc_state_oper_0_.Q & !calc_proc_num_buf_1_.Q & !calc_proc_num_acc_1_.Q
+     # calc_proc_num_buf_0_.Q & !calc_proc_num_acc_0_.Q & !calc_proc_num_acc_1_.Q
+     # !calc_proc_state_oper_0_.Q & calc_proc_num_buf_0_.Q & calc_proc_num_buf_1_.Q & !calc_proc_num_acc_0_.Q);
+
+calc_proc_G_89_1.X2 = (!calc_proc_num_acc_2_.Q);
+
+calc_proc_state_next_0_sqmuxa_2_n = (!calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q & !calc_proc_key_catched_3_.Q
+     # !calc_proc_key_catched_2_.Q & !calc_proc_state_curr_0_.Q & calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q & !calc_proc_key_catched_1_.Q);
+
+calc_proc_num_acc_buf_0_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_buf_0_.D = (!calc_proc_num_buf_0_.Q & calc_proc_num_acc_0_.Q
+     # calc_proc_num_buf_0_.Q & !calc_proc_num_acc_0_.Q);
+
+calc_proc_num_acc_buf_0_.LH = (calc_proc_n_36_0_n);
+
+calc_proc_num_acc_buf_1_.D.X1 = (!calc_proc_num_buf_0_.Q & calc_proc_num_acc_1_.Q
+     # calc_proc_state_oper_0_.Q & !calc_proc_num_acc_0_.Q & calc_proc_num_acc_1_.Q
+     # !calc_proc_state_oper_0_.Q & calc_proc_num_buf_0_.Q & calc_proc_num_acc_0_.Q & calc_proc_num_acc_1_.Q
+     # calc_proc_state_oper_0_.Q & calc_proc_num_buf_0_.Q & calc_proc_num_acc_0_.Q & !calc_proc_num_acc_1_.Q
+     # !calc_proc_state_oper_0_.Q & calc_proc_num_buf_0_.Q & !calc_proc_num_acc_0_.Q & !calc_proc_num_acc_1_.Q);
+
+calc_proc_num_acc_buf_1_.D.X2 = (calc_proc_num_buf_1_.Q);
+
+calc_proc_num_acc_buf_1_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_buf_1_.LH = (calc_proc_n_36_0_n);
+
+calc_proc_num_acc_buf_2_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_buf_2_.D = (!calc_proc_state_oper_0_.Q & calc_proc_num_buf_2_.Q & calc_proc_G_89_1
+     # calc_proc_state_oper_0_.Q & !calc_proc_num_buf_2_.Q & calc_proc_G_89_1
+     # calc_proc_state_oper_0_.Q & calc_proc_num_buf_2_.Q & !calc_proc_G_89_1
+     # !calc_proc_state_oper_0_.Q & !calc_proc_num_buf_2_.Q & !calc_proc_G_89_1);
+
+calc_proc_num_acc_buf_2_.LH = (calc_proc_n_36_0_n);
+
+calc_proc_num_acc_buf_3_.D.X1 = (!calc_proc_num_buf_3_.Q & calc_proc_num_acc_3_.Q & calc_proc_n_82_0_n
+     # calc_proc_num_buf_3_.Q & !calc_proc_num_acc_3_.Q & calc_proc_n_82_0_n
+     # calc_proc_num_buf_3_.Q & calc_proc_num_acc_3_.Q & !calc_proc_n_82_0_n
+     # !calc_proc_num_buf_3_.Q & !calc_proc_num_acc_3_.Q & !calc_proc_n_82_0_n);
+
+calc_proc_num_acc_buf_3_.D.X2 = (!calc_proc_state_oper_0_.Q);
+
+calc_proc_num_acc_buf_3_.AR = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q);
+
+calc_proc_num_acc_buf_3_.LH = (calc_proc_n_36_0_n);
+
+!calc_proc_n_79_1_n = (!calc_proc_state_oper_0_.Q & calc_proc_num_buf_0_.Q & !calc_proc_num_acc_0_.Q
+     # calc_proc_state_oper_0_.Q & !calc_proc_num_buf_0_.Q & !calc_proc_num_acc_0_.Q
+     # !calc_proc_state_oper_0_.Q & calc_proc_num_buf_1_.Q & !calc_proc_num_acc_1_.Q
+     # calc_proc_state_oper_0_.Q & !calc_proc_num_buf_1_.Q & !calc_proc_num_acc_1_.Q);
+
+input_keypad_counter_0_.D = (input_keypad_counter_0_.Q & !input_keypad_interrupt.Q
+     # !keypad_rows_3_ & input_keypad_counter_0_.Q & input_keypad_counter_1_.Q
+     # !keypad_rows_1_ & input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q
+     # keypad_rows_2_ & !input_keypad_counter_0_.Q & input_keypad_counter_1_.Q & input_keypad_interrupt.Q
+     # keypad_rows_0_ & !input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q & input_keypad_interrupt.Q);
+
+input_keypad_counter_0_.C = (clk);
+
+input_keypad_counter_1_.D = (!keypad_rows_3_ & input_keypad_counter_1_.Q
+     # !input_keypad_counter_0_.Q & input_keypad_counter_1_.Q
+     # input_keypad_counter_1_.Q & !input_keypad_interrupt.Q
+     # keypad_rows_1_ & input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q & input_keypad_interrupt.Q);
+
+input_keypad_counter_1_.C = (clk);
+
+input_keypad_counter_2_.D.X1 = (keypad_rows_3_ & input_keypad_counter_0_.Q & input_keypad_counter_1_.Q & input_keypad_interrupt.Q);
+
+input_keypad_counter_2_.D.X2 = (input_keypad_counter_2_.Q);
+
+input_keypad_counter_2_.C = (clk);
+
+input_keypad_counter_3_.T = (keypad_rows_3_ & input_keypad_counter_0_.Q & input_keypad_counter_1_.Q & input_keypad_counter_2_.Q & input_keypad_interrupt.Q);
+
+input_keypad_counter_3_.C = (clk);
+
+input_keypad_interrupt.D = (keypad_rows_3_ & input_keypad_counter_0_.Q & input_keypad_counter_1_.Q
+     # keypad_rows_2_ & !input_keypad_counter_0_.Q & input_keypad_counter_1_.Q
+     # keypad_rows_1_ & input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q
+     # keypad_rows_0_ & !input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q);
+
+input_keypad_interrupt.C = (clk);
+
+input_keypad_interrupt_0_sqmuxa_n = (!keypad_rows_3_ & input_keypad_counter_0_.Q & input_keypad_counter_1_.Q & input_keypad_interrupt.Q
+     # !keypad_rows_2_ & !input_keypad_counter_0_.Q & input_keypad_counter_1_.Q & input_keypad_interrupt.Q
+     # !keypad_rows_1_ & input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q & input_keypad_interrupt.Q
+     # !keypad_rows_0_ & !input_keypad_counter_0_.Q & !input_keypad_counter_1_.Q & input_keypad_interrupt.Q);
+
+!calc_proc_n_36_0_n = (!calc_proc_state_curr_0_.Q
+     # !calc_proc_state_curr_1_.Q
+     # calc_proc_state_curr_2_.Q
+     # !calc_proc_state_oper_0_.Q & !calc_proc_num_acc_0_.Q & !calc_proc_num_acc_1_.Q & !calc_proc_num_acc_2_.Q & !calc_proc_num_acc_3_.Q);
+
+!calc_proc_n_82_0_n = (calc_proc_state_oper_0_.Q & calc_proc_num_buf_2_.Q & calc_proc_num_acc_2_.Q
+     # !calc_proc_state_oper_0_.Q & !calc_proc_num_buf_2_.Q & calc_proc_num_acc_2_.Q
+     # !calc_proc_state_oper_0_.Q & !calc_proc_num_buf_2_.Q & calc_proc_n_79_1_n
+     # calc_proc_num_buf_2_.Q & calc_proc_num_acc_2_.Q & calc_proc_n_79_1_n
+     # calc_proc_state_oper_0_.Q & calc_proc_num_buf_1_.Q & calc_proc_num_buf_2_.Q & calc_proc_num_acc_1_.Q
+     # !calc_proc_state_oper_0_.Q & !calc_proc_num_buf_1_.Q & !calc_proc_num_buf_2_.Q & calc_proc_num_acc_1_.Q
+     # !calc_proc_num_buf_1_.Q & calc_proc_num_buf_2_.Q & calc_proc_num_acc_1_.Q & calc_proc_num_acc_2_.Q
+     # calc_proc_num_buf_1_.Q & !calc_proc_num_buf_2_.Q & calc_proc_num_acc_1_.Q & calc_proc_num_acc_2_.Q
+     # calc_proc_state_oper_0_.Q & calc_proc_num_buf_0_.Q & calc_proc_num_buf_1_.Q & calc_proc_num_buf_2_.Q & calc_proc_num_acc_0_.Q
+     # !calc_proc_state_oper_0_.Q & !calc_proc_num_buf_0_.Q & !calc_proc_num_buf_1_.Q & !calc_proc_num_buf_2_.Q & calc_proc_num_acc_0_.Q
+     # calc_proc_state_oper_0_.Q & calc_proc_num_buf_0_.Q & calc_proc_num_buf_2_.Q & calc_proc_num_acc_0_.Q & calc_proc_num_acc_1_.Q
+     # !calc_proc_state_oper_0_.Q & !calc_proc_num_buf_0_.Q & !calc_proc_num_buf_2_.Q & calc_proc_num_acc_0_.Q & calc_proc_num_acc_1_.Q
+     # !calc_proc_num_buf_0_.Q & !calc_proc_num_buf_1_.Q & calc_proc_num_buf_2_.Q & calc_proc_num_acc_0_.Q & calc_proc_num_acc_2_.Q
+     # calc_proc_num_buf_0_.Q & calc_proc_num_buf_1_.Q & !calc_proc_num_buf_2_.Q & calc_proc_num_acc_0_.Q & calc_proc_num_acc_2_.Q
+     # calc_proc_num_buf_0_.Q & !calc_proc_num_buf_1_.Q & calc_proc_num_acc_0_.Q & calc_proc_num_acc_1_.Q & calc_proc_num_acc_2_.Q
+     # !calc_proc_num_buf_0_.Q & calc_proc_num_buf_2_.Q & calc_proc_num_acc_0_.Q & calc_proc_num_acc_1_.Q & calc_proc_num_acc_2_.Q);
+
+calc_proc_state_oper_0__0 = (!calc_proc_state_curr_0_.Q & !calc_proc_state_curr_1_.Q & !calc_proc_state_curr_2_.Q
+     # !calc_proc_key_catched_0_.Q & !calc_proc_key_catched_2_.Q & !calc_proc_state_curr_0_.Q & !calc_proc_state_curr_2_.Q & calc_proc_key_catched_1_.Q & calc_proc_key_catched_3_.Q);
+
+
+Reverse-Polarity Equations:
+

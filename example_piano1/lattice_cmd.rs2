@@ -1,0 +1,1 @@
+-src example_piano1.tt4 -type PLA -devfile "C:/ispLEVER_Classic2_0/ispcpld/dat/mach4a/mach463ace.dev" -lci "example_piano1.lct" -touch "example_piano1.tt4"

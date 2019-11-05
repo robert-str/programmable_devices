@@ -1,0 +1,128 @@
+#PLAFILE example_stoper.tt4
+#DATE    10/29/2019
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION RN_r_0_:D_0	// NOD {r_0_}
+DATA LOCATION RN_r_1_:D_5	// NOD {r_1_}
+DATA LOCATION RN_r_2_:D_4	// NOD {r_2_}
+DATA LOCATION RN_r_3_:D_8	// NOD {r_3_}
+DATA LOCATION clk:*_*_11	// Cin
+DATA LOCATION currState_0_:D_12	// NOD
+DATA LOCATION d_0_:C_8	// NOD
+DATA LOCATION d_1_:C_1	// NOD
+DATA LOCATION d_2_:C_5	// NOD
+DATA LOCATION d_3_:C_4	// NOD
+DATA LOCATION digit_un3_zl_n:B_0	// NOD
+DATA LOCATION disp_0_:A_4_2	// OUT
+DATA LOCATION disp_1_:A_12_3	// OUT
+DATA LOCATION disp_2_:A_0_4	// OUT
+DATA LOCATION disp_3_:A_8_5	// OUT
+DATA LOCATION disp_sn_N_3:D_9	// NOD
+DATA LOCATION finally_disp17_n:D_13	// NOD
+DATA LOCATION j_0_:D_1	// NOD
+DATA LOCATION j_1_:B_5	// NOD
+DATA LOCATION j_2_:B_12	// NOD
+DATA LOCATION j_3_:B_13	// NOD
+DATA LOCATION r_0_:D_0_36	//  IO {RN_r_0_}
+DATA LOCATION r_1_:D_5_37	//  IO {RN_r_1_}
+DATA LOCATION r_2_:D_4_38	//  IO {RN_r_2_}
+DATA LOCATION r_3_:D_8_39	//  IO {RN_r_3_}
+DATA LOCATION reset:C_*_31	// INP
+DATA LOCATION s_0_:A_9	// NOD
+DATA LOCATION s_1_:C_0	// NOD
+DATA LOCATION s_2_:A_1	// NOD
+DATA LOCATION s_3_:A_5	// NOD
+DATA LOCATION se:C_12	// NOD
+DATA LOCATION start:C_*_30	// INP
+DATA LOCATION stop:C_*_29	// INP
+DATA LOCATION t_0_:B_9	// NOD
+DATA LOCATION t_1_:B_8	// NOD
+DATA LOCATION t_2_:B_4	// NOD
+DATA LOCATION t_3_:B_1	// NOD
+DATA LOCATION te_i:C_9	// NOD
+DATA IO_DIR   clk:IN
+DATA IO_DIR   disp_0_:OUT
+DATA IO_DIR   disp_1_:OUT
+DATA IO_DIR   disp_2_:OUT
+DATA IO_DIR   disp_3_:OUT
+DATA IO_DIR   r_0_:OUT
+DATA IO_DIR   r_1_:OUT
+DATA IO_DIR   r_2_:OUT
+DATA IO_DIR   r_3_:OUT
+DATA IO_DIR   reset:IN
+DATA IO_DIR   start:IN
+DATA IO_DIR   stop:IN
+DATA GLB_CLOCK  clk
+DATA PW_LEVEL  disp_3_:0
+DATA SLEW      disp_3_:0
+DATA PW_LEVEL  start:0
+DATA SLEW      start:0
+DATA PW_LEVEL  stop:0
+DATA SLEW      stop:0
+DATA PW_LEVEL  reset:0
+DATA SLEW      reset:0
+DATA SLEW      clk:0
+DATA PW_LEVEL  disp_2_:0
+DATA SLEW      disp_2_:0
+DATA PW_LEVEL  disp_1_:0
+DATA SLEW      disp_1_:0
+DATA PW_LEVEL  disp_0_:0
+DATA SLEW      disp_0_:0
+DATA PW_LEVEL  r_3_:0
+DATA SLEW      r_3_:0
+DATA PW_LEVEL  r_2_:0
+DATA SLEW      r_2_:0
+DATA PW_LEVEL  r_1_:0
+DATA SLEW      r_1_:0
+DATA PW_LEVEL  r_0_:0
+DATA SLEW      r_0_:0
+DATA PW_LEVEL  s_1_:0
+DATA SLEW      s_1_:0
+DATA PW_LEVEL  s_2_:0
+DATA SLEW      s_2_:0
+DATA PW_LEVEL  d_1_:0
+DATA SLEW      d_1_:0
+DATA PW_LEVEL  d_2_:0
+DATA SLEW      d_2_:0
+DATA PW_LEVEL  j_1_:0
+DATA SLEW      j_1_:0
+DATA PW_LEVEL  j_2_:0
+DATA SLEW      j_2_:0
+DATA PW_LEVEL  t_1_:0
+DATA SLEW      t_1_:0
+DATA PW_LEVEL  t_2_:0
+DATA SLEW      t_2_:0
+DATA PW_LEVEL  j_0_:0
+DATA SLEW      j_0_:0
+DATA PW_LEVEL  j_3_:0
+DATA SLEW      j_3_:0
+DATA PW_LEVEL  d_0_:0
+DATA SLEW      d_0_:0
+DATA PW_LEVEL  d_3_:0
+DATA SLEW      d_3_:0
+DATA PW_LEVEL  s_0_:0
+DATA SLEW      s_0_:0
+DATA PW_LEVEL  s_3_:0
+DATA SLEW      s_3_:0
+DATA PW_LEVEL  t_0_:0
+DATA SLEW      t_0_:0
+DATA PW_LEVEL  t_3_:0
+DATA SLEW      t_3_:0
+DATA PW_LEVEL  currState_0_:0
+DATA SLEW      currState_0_:0
+DATA PW_LEVEL  finally_disp17_n:0
+DATA SLEW      finally_disp17_n:0
+DATA PW_LEVEL  disp_sn_N_3:0
+DATA SLEW      disp_sn_N_3:0
+DATA PW_LEVEL  se:0
+DATA SLEW      se:0
+DATA PW_LEVEL  digit_un3_zl_n:0
+DATA SLEW      digit_un3_zl_n:0
+DATA PW_LEVEL  te_i:0
+DATA SLEW      te_i:0
+DATA PW_LEVEL  RN_r_3_:0
+DATA PW_LEVEL  RN_r_2_:0
+DATA PW_LEVEL  RN_r_1_:0
+DATA PW_LEVEL  RN_r_0_:0
+END

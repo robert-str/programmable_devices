@@ -1,0 +1,93 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design sum created Wed Nov 14 11:19:50 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   wyjscie_1_ 
+   1/1        1        1    Pin   wyjscie_0_ 
+   1/1        1        1    NodeX1  G_1.X1 
+   1/1        1        1    NodeX2  G_1.X2 
+   1          2        1    Node  N_3 
+   1          2        1    Node  N_4 
+   1          2        1    Node  N_5 
+   1          1        1    Node  N_6 
+   1/1        1        1    Node  wejscie_c_0__n 
+   1/1        1        1    Node  wejscie_c_1__n 
+   1/1        1        1    Node  wejscie_c_2__n 
+   1          1        1    Node  N_3_i 
+   1          1        1    Node  N_4_i 
+   1          1        1    Node  N_5_i 
+   1          2        1    Node  N_6_0 
+   1/1        1        1    NodeX1  G_1_1.X1 
+   1/1        1        1    NodeX2  G_1_1.X2 
+   1          2        1    Node  N_6_0_1 
+=========
+  18/9          Best P-Term Total: 18
+                       Total Pins: 5
+                      Total Nodes: 14
+            Average P-Term/Output: 1
+
+
+Equations:
+
+wyjscie_1_ = (N_6);
+
+wyjscie_0_ = (G_1);
+
+G_1.X1 = (G_1_1);
+
+G_1.X2 = (wejscie_c_2__n);
+
+N_3 = (wejscie_c_0__n & wejscie_c_1__n);
+
+N_4 = (wejscie_c_1__n & wejscie_c_2__n);
+
+N_5 = (wejscie_c_0__n & wejscie_c_2__n);
+
+N_6 = (!N_6_0);
+
+wejscie_c_0__n = (wejscie_0_);
+
+wejscie_c_1__n = (wejscie_1_);
+
+wejscie_c_2__n = (wejscie_2_);
+
+N_3_i = (!N_3);
+
+N_4_i = (!N_4);
+
+N_5_i = (!N_5);
+
+N_6_0 = (N_6_0_1 & N_4_i);
+
+G_1_1.X1 = (wejscie_c_0__n);
+
+G_1_1.X2 = (wejscie_c_1__n);
+
+N_6_0_1 = (N_5_i & N_3_i);
+
+
+Reverse-Polarity Equations:
+
+!wyjscie_1_ = (!N_6);
+
+!wyjscie_0_ = (!G_1);
+
+!G_1.X1 = (!G_1_1);
+
+!G_1.X2 = (!wejscie_c_2__n);
+
+!wejscie_c_0__n = (!wejscie_0_);
+
+!wejscie_c_1__n = (!wejscie_1_);
+
+!wejscie_c_2__n = (!wejscie_2_);
+
+!G_1_1.X1 = (!wejscie_c_0__n);
+
+!G_1_1.X2 = (!wejscie_c_1__n);
+

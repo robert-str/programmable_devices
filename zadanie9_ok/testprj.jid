@@ -1,0 +1,2 @@
+. stateMachine1 statemachine1.vhd d:\projekttestowy\statemachine1.vhd
+pres clk_prescaler clk_prescaler.vhd d:\projekttestowy\clk_prescaler.vhd

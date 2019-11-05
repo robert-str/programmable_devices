@@ -1,0 +1,47 @@
+#$ TOOL  ispLEVER Classic 2.0.00.17.20.15
+#$ DATE  Tue Dec 11 13:14:48 2018
+#$ MODULE  stateMachine1
+#$ PINS 12 i_btn_1_ o_diodes_7_ i_clk o_clkSlow i_btn_0_ o_diodes_6_
+ o_diodes_5_ o_diodes_4_ o_diodes_3_ o_diodes_2_ o_diodes_1_ o_diodes_0_
+#$ NODES 8 currState_0_reg pres_counter_0_ pres_counter_1_ pres_counter_2_
+ pres_counter_3_ pres_counter_4_ pres_counter_5_ pres_counter_6_
+.type f
+.i 11
+.o 43
+.ilb i_btn_1_ i_clk i_btn_0_ currState_0_reg.Q pres_counter_0_.Q
+ pres_counter_1_.Q pres_counter_2_.Q pres_counter_3_.Q pres_counter_4_.Q
+ pres_counter_5_.Q pres_counter_6_.Q
+.ob o_diodes_7_.T o_diodes_7_.C o_diodes_7_.OE o_clkSlow.T o_clkSlow.C
+ o_diodes_6_.T o_diodes_6_.C o_diodes_6_.OE o_diodes_5_.T o_diodes_5_.C
+ o_diodes_5_.OE o_diodes_4_.T o_diodes_4_.C o_diodes_4_.OE o_diodes_3_.T
+ o_diodes_3_.C o_diodes_3_.OE o_diodes_2_.T o_diodes_2_.C o_diodes_2_.OE
+ o_diodes_1_.T o_diodes_1_.C o_diodes_1_.OE o_diodes_0_.T o_diodes_0_.C
+ o_diodes_0_.OE currState_0_reg.D currState_0_reg.C pres_counter_0_.D%
+ pres_counter_0_.C pres_counter_1_.D pres_counter_1_.C pres_counter_2_.D
+ pres_counter_2_.C pres_counter_3_.D pres_counter_3_.C pres_counter_4_.D.X1
+ pres_counter_4_.D.X2 pres_counter_4_.C pres_counter_5_.T pres_counter_5_.C
+ pres_counter_6_.T pres_counter_6_.C
+.phase 1111111111111111111111111111111111111111111
+.p 21
+----0000010 1001010010010010010010010000000000000001000
+-1--------- 0100101001001001001001001001010101010010101
+---1------- 0010000100100100100100100100000000000000000
+1-0-------- 0000000000000000000000000010000000000000000
+1--1------- 0000000000000000000000000010000000000000000
+--01------- 0000000000000000000000000010000000000000000
+----1------ 0000000000000000000000000000100000000000000
+-----000010 0000000000000000000000000000100000000000000
+----01----- 0000000000000000000000000000001000000000000
+----10----- 0000000000000000000000000000001000000000000
+----0-1---- 0000000000000000000000000000000010000000000
+-----01---- 0000000000000000000000000000000010000000000
+----110---- 0000000000000000000000000000000010000000000
+----0--1--- 0000000000000000000000000000000000100000000
+-----0-1--- 0000000000000000000000000000000000100000000
+------01--- 0000000000000000000000000000000000100000000
+----1110--- 0000000000000000000000000000000000100000000
+----1111--- 0000000000000000000000000000000000001000000
+--------1-- 0000000000000000000000000000000000000100000
+----11111-- 0000000000000000000000000000000000000001000
+----111111- 0000000000000000000000000000000000000000010
+.end

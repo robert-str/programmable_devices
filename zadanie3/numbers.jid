@@ -1,0 +1,3 @@
+. top top_module.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\top_module.vhd"
+U0 clk_prescaler clk_prescaler.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\clk_prescaler.vhd"
+U1 counter counter1.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie3\counter1.vhd"

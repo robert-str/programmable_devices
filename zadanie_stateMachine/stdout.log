@@ -1,0 +1,53 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Fri Nov 30 10:12:14 2018
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch d:/isplever projects/zadanie_statemachine\stateMachine1.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "D:\isplever projects\zadanie_statemachine\stateMachine1.srr"
+
+Running stateMachine1|zadanie_statemachine
+
+Running: Compile on stateMachine1|zadanie_statemachine
+
+Running: Compile Process on stateMachine1|zadanie_statemachine
+
+Running: Compile Input on stateMachine1|zadanie_statemachine
+Copied D:\isplever projects\zadanie_statemachine\synwork\stateMachine1_comp.srs to D:\isplever projects\zadanie_statemachine\stateMachine1.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on stateMachine1|zadanie_statemachine
+Copied D:\isplever projects\zadanie_statemachine\synwork\stateMachine1_comp.srs to D:\isplever projects\zadanie_statemachine\synwork\stateMachine1_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Copied D:\isplever projects\zadanie_statemachine\synwork\stateMachine1_mult.srs to D:\isplever projects\zadanie_statemachine\stateMachine1.srs
+Copied D:\isplever projects\zadanie_statemachine\stateMachine1.srr to D:\isplever projects\zadanie_statemachine\statemachine1.srf
+Complete: Compile Process on stateMachine1|zadanie_statemachine
+Complete: Compile on stateMachine1|zadanie_statemachine
+
+Running: Map on stateMachine1|zadanie_statemachine
+
+Running: Map & Optimize on stateMachine1|zadanie_statemachine
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Complete: Map on stateMachine1|zadanie_statemachine
+Copied D:\isplever projects\zadanie_statemachine\stateMachine1.srr to D:\isplever projects\zadanie_statemachine\statemachine1.srf
+Complete: Logic Synthesis on stateMachine1|zadanie_statemachine
+
+exit status=0
+
+exit status=0
+

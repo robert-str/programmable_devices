@@ -1,0 +1,771 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Tue Oct 29 13:03:38 2019
+#$ MODULE example_stoper
+#$ PINS 12 r_3_ disp_3_ start stop reset clk r_2_ r_1_ r_0_ disp_2_ disp_1_ disp_0_
+#$ NODES 243 s_e2_un1_n s_e2_un0_n s_e1_un3_n s_1_ s_e1_un1_n s_2_ s_e1_un0_n d_1_ \
+#  s_e0_un3_n d_2_ s_e0_un1_n j_1_ s_e0_un0_n j_2_ dispmux_3__un3_n t_1_ dispmux_3__un1_n \
+#  t_2_ dispmux_3__un0_n j_0_ dispmux_2__un3_n j_3_ dispmux_2__un1_n d_0_ \
+#  dispmux_2__un0_n d_3_ dispmux_1__un3_n s_0_ dispmux_1__un1_n s_3_ dispmux_1__un0_n \
+#  t_0_ dispmux_0__un3_n t_3_ dispmux_0__un1_n dispmux_0__un0_n disp_1_3__un3_n \
+#  disp_1_3__un1_n disp_1_3__un0_n te currState_0_ N_11 N_12 N_13 N_14 N_15 N_17 N_18 N_20 \
+#  s_n3 N_49 N_50 s_n2 N_49_1 N_47 s_n0 N_110 N_44 s_n1 N_46 finally_disp17_n \
+#  finally_disp16_n finally_disp15_n digit_un7_zl_n s_c1 disp_sn_N_3 N_78 N_83 N_77 N_82 \
+#  N_76 N_81 N_75 N_80 se N_10 N_165 N_126 j_c1 j_n3 N_33 N_34 j_n2 N_33_1 N_31 N_90 je \
+#  t_0_sqmuxa_6 d_n3 N_41 N_42 d_n2 N_41_1 N_39 d_n0 N_98 N_36 d_n1 N_38 j_n0 N_28 j_n1 N_30 \
+#  s_0_sqmuxa d_1_sqmuxa digit_un5_zl_n d_0_sqmuxa digit_un3_zl_n d_c1 de N_156_i N_157_i \
+#  currstate_i_0__n j_i_1__n j_i_2__n d_i_1__n d_i_2__n t_i_1__n t_i_2__n start_i \
+#  t_i_0__n t_i_3__n reset_i N_158_i finally_disp15_i_n finally_disp16_i_n s_i_1__n \
+#  s_i_2__n r_i_0__n r_i_1__n r_i_2__n start_c stop_c reset_c clk_c rDFF_0_reg rDFF_1_reg \
+#  rDFF_2_reg rDFF_3_reg disp_c_0__n disp_c_1__n disp_c_2__n disp_c_3__n \
+#  digit_un3_zl_i_n N_90_i digit_un5_zl_i_n N_98_i t_0_sqmuxa_6_i N_126_i d_1_sqmuxa_i \
+#  de_0 d_0_sqmuxa_i se_0 s_0_sqmuxa_i te_i je_0 N_12_i N_11_i N_10_i N_165_i N_20_i t_e0_0 \
+#  N_4_0 N_5_0 N_6_0 digit_un7_zl_i_n N_110_i N_14_i N_18_i N_17_i N_13_i N_15_i \
+#  finally_disp17_1_n finally_disp17_2_n finally_disp16_1_n finally_disp16_2_n \
+#  finally_disp15_1_n finally_disp15_2_n digit_un7_zl_1_n digit_un7_zl_2_n \
+#  t_0_sqmuxa_6_1 t_0_sqmuxa_6_2 s_0_sqmuxa_1 digit_un5_zl_1_n digit_un5_zl_2_n \
+#  digit_un3_zl_1_n digit_un3_zl_2_n N_8_i_1 N_162_i_1 N_161_i_1 N_20_1 d_e1_un3_n \
+#  d_e1_un1_n d_e1_un0_n d_e0_un3_n d_e0_un1_n d_e0_un0_n j_e1_un3_n j_e1_un1_n \
+#  j_e1_un0_n j_e0_un3_n j_e0_un1_n j_e0_un0_n d_e3_un3_n d_e3_un1_n d_e3_un0_n \
+#  d_e2_un3_n d_e2_un1_n d_e2_un0_n currstate_ns_0_0__m2_un3_n \
+#  currstate_ns_0_0__m2_un1_n currstate_ns_0_0__m2_un0_n j_e3_un3_n j_e3_un1_n \
+#  j_e3_un0_n j_e2_un3_n j_e2_un1_n j_e2_un0_n disp_1_2__un3_n disp_1_2__un1_n \
+#  disp_1_2__un0_n disp_1_1__un3_n disp_1_1__un1_n disp_1_1__un0_n disp_1_0__un3_n \
+#  disp_1_0__un1_n disp_1_0__un0_n disp_0_3__un3_n disp_0_3__un1_n disp_0_3__un0_n \
+#  disp_0_2__un3_n disp_0_2__un1_n disp_0_2__un0_n disp_0_1__un3_n disp_0_1__un1_n \
+#  disp_0_1__un0_n disp_0_0__un3_n disp_0_0__un1_n disp_0_0__un0_n s_e3_un3_n \
+#  s_e3_un1_n s_e3_un0_n s_e2_un3_n
+.model stoper
+.inputs start.BLIF stop.BLIF reset.BLIF clk.BLIF s_e2_un1_n.BLIF \
+s_e2_un0_n.BLIF s_e1_un3_n.BLIF s_1_.BLIF s_e1_un1_n.BLIF s_2_.BLIF \
+s_e1_un0_n.BLIF d_1_.BLIF s_e0_un3_n.BLIF d_2_.BLIF s_e0_un1_n.BLIF j_1_.BLIF \
+s_e0_un0_n.BLIF j_2_.BLIF dispmux_3__un3_n.BLIF t_1_.BLIF \
+dispmux_3__un1_n.BLIF t_2_.BLIF dispmux_3__un0_n.BLIF j_0_.BLIF \
+dispmux_2__un3_n.BLIF j_3_.BLIF dispmux_2__un1_n.BLIF d_0_.BLIF \
+dispmux_2__un0_n.BLIF d_3_.BLIF dispmux_1__un3_n.BLIF s_0_.BLIF \
+dispmux_1__un1_n.BLIF s_3_.BLIF dispmux_1__un0_n.BLIF t_0_.BLIF \
+dispmux_0__un3_n.BLIF t_3_.BLIF dispmux_0__un1_n.BLIF dispmux_0__un0_n.BLIF \
+disp_1_3__un3_n.BLIF disp_1_3__un1_n.BLIF disp_1_3__un0_n.BLIF te.BLIF \
+currState_0_.BLIF N_11.BLIF N_12.BLIF N_13.BLIF N_14.BLIF N_15.BLIF N_17.BLIF \
+N_18.BLIF N_20.BLIF s_n3.BLIF N_49.BLIF N_50.BLIF s_n2.BLIF N_49_1.BLIF \
+N_47.BLIF s_n0.BLIF N_110.BLIF N_44.BLIF s_n1.BLIF N_46.BLIF \
+finally_disp17_n.BLIF finally_disp16_n.BLIF finally_disp15_n.BLIF \
+digit_un7_zl_n.BLIF s_c1.BLIF disp_sn_N_3.BLIF N_78.BLIF N_83.BLIF N_77.BLIF \
+N_82.BLIF N_76.BLIF N_81.BLIF N_75.BLIF N_80.BLIF se.BLIF N_10.BLIF N_165.BLIF \
+N_126.BLIF j_c1.BLIF j_n3.BLIF N_33.BLIF N_34.BLIF j_n2.BLIF N_33_1.BLIF \
+N_31.BLIF N_90.BLIF je.BLIF t_0_sqmuxa_6.BLIF d_n3.BLIF N_41.BLIF N_42.BLIF \
+d_n2.BLIF N_41_1.BLIF N_39.BLIF d_n0.BLIF N_98.BLIF N_36.BLIF d_n1.BLIF \
+N_38.BLIF j_n0.BLIF N_28.BLIF j_n1.BLIF N_30.BLIF s_0_sqmuxa.BLIF \
+d_1_sqmuxa.BLIF digit_un5_zl_n.BLIF d_0_sqmuxa.BLIF digit_un3_zl_n.BLIF \
+d_c1.BLIF de.BLIF N_156_i.BLIF N_157_i.BLIF currstate_i_0__n.BLIF \
+j_i_1__n.BLIF j_i_2__n.BLIF d_i_1__n.BLIF d_i_2__n.BLIF t_i_1__n.BLIF \
+t_i_2__n.BLIF start_i.BLIF t_i_0__n.BLIF t_i_3__n.BLIF reset_i.BLIF \
+N_158_i.BLIF finally_disp15_i_n.BLIF finally_disp16_i_n.BLIF s_i_1__n.BLIF \
+s_i_2__n.BLIF r_i_0__n.BLIF r_i_1__n.BLIF r_i_2__n.BLIF start_c.BLIF \
+stop_c.BLIF reset_c.BLIF clk_c.BLIF rDFF_0_reg.BLIF rDFF_1_reg.BLIF \
+rDFF_2_reg.BLIF rDFF_3_reg.BLIF disp_c_0__n.BLIF disp_c_1__n.BLIF \
+disp_c_2__n.BLIF disp_c_3__n.BLIF digit_un3_zl_i_n.BLIF N_90_i.BLIF \
+digit_un5_zl_i_n.BLIF N_98_i.BLIF t_0_sqmuxa_6_i.BLIF N_126_i.BLIF \
+d_1_sqmuxa_i.BLIF de_0.BLIF d_0_sqmuxa_i.BLIF se_0.BLIF s_0_sqmuxa_i.BLIF \
+te_i.BLIF je_0.BLIF N_12_i.BLIF N_11_i.BLIF N_10_i.BLIF N_165_i.BLIF \
+N_20_i.BLIF t_e0_0.BLIF N_4_0.BLIF N_5_0.BLIF N_6_0.BLIF digit_un7_zl_i_n.BLIF \
+N_110_i.BLIF N_14_i.BLIF N_18_i.BLIF N_17_i.BLIF N_13_i.BLIF N_15_i.BLIF \
+finally_disp17_1_n.BLIF finally_disp17_2_n.BLIF finally_disp16_1_n.BLIF \
+finally_disp16_2_n.BLIF finally_disp15_1_n.BLIF finally_disp15_2_n.BLIF \
+digit_un7_zl_1_n.BLIF digit_un7_zl_2_n.BLIF t_0_sqmuxa_6_1.BLIF \
+t_0_sqmuxa_6_2.BLIF s_0_sqmuxa_1.BLIF digit_un5_zl_1_n.BLIF \
+digit_un5_zl_2_n.BLIF digit_un3_zl_1_n.BLIF digit_un3_zl_2_n.BLIF N_8_i_1.BLIF \
+N_162_i_1.BLIF N_161_i_1.BLIF N_20_1.BLIF d_e1_un3_n.BLIF d_e1_un1_n.BLIF \
+d_e1_un0_n.BLIF d_e0_un3_n.BLIF d_e0_un1_n.BLIF d_e0_un0_n.BLIF \
+j_e1_un3_n.BLIF j_e1_un1_n.BLIF j_e1_un0_n.BLIF j_e0_un3_n.BLIF \
+j_e0_un1_n.BLIF j_e0_un0_n.BLIF d_e3_un3_n.BLIF d_e3_un1_n.BLIF \
+d_e3_un0_n.BLIF d_e2_un3_n.BLIF d_e2_un1_n.BLIF d_e2_un0_n.BLIF \
+currstate_ns_0_0__m2_un3_n.BLIF currstate_ns_0_0__m2_un1_n.BLIF \
+currstate_ns_0_0__m2_un0_n.BLIF j_e3_un3_n.BLIF j_e3_un1_n.BLIF \
+j_e3_un0_n.BLIF j_e2_un3_n.BLIF j_e2_un1_n.BLIF j_e2_un0_n.BLIF \
+disp_1_2__un3_n.BLIF disp_1_2__un1_n.BLIF disp_1_2__un0_n.BLIF \
+disp_1_1__un3_n.BLIF disp_1_1__un1_n.BLIF disp_1_1__un0_n.BLIF \
+disp_1_0__un3_n.BLIF disp_1_0__un1_n.BLIF disp_1_0__un0_n.BLIF \
+disp_0_3__un3_n.BLIF disp_0_3__un1_n.BLIF disp_0_3__un0_n.BLIF \
+disp_0_2__un3_n.BLIF disp_0_2__un1_n.BLIF disp_0_2__un0_n.BLIF \
+disp_0_1__un3_n.BLIF disp_0_1__un1_n.BLIF disp_0_1__un0_n.BLIF \
+disp_0_0__un3_n.BLIF disp_0_0__un1_n.BLIF disp_0_0__un0_n.BLIF s_e3_un3_n.BLIF \
+s_e3_un1_n.BLIF s_e3_un0_n.BLIF s_e2_un3_n.BLIF
+.outputs r_3_ disp_3_ r_2_ r_1_ r_0_ disp_2_ disp_1_ disp_0_ currState_0_.D \
+currState_0_.C t_3_.D t_3_.C rDFF_0_reg.D rDFF_0_reg.C rDFF_1_reg.D \
+rDFF_1_reg.C rDFF_2_reg.D rDFF_2_reg.C rDFF_3_reg.D rDFF_3_reg.C t_0_.D t_0_.C \
+t_1_.D t_1_.C t_2_.D t_2_.C s_2_.D s_2_.C s_3_.D s_3_.C d_3_.D d_3_.C s_0_.D \
+s_0_.C s_1_.D s_1_.C d_1_.D d_1_.C d_2_.D d_2_.C j_2_.D j_2_.C j_3_.D j_3_.C \
+d_0_.D d_0_.C j_0_.D j_0_.C j_1_.D j_1_.C s_e2_un1_n s_e2_un0_n s_e1_un3_n \
+s_e1_un1_n s_e1_un0_n s_e0_un3_n s_e0_un1_n s_e0_un0_n dispmux_3__un3_n \
+dispmux_3__un1_n dispmux_3__un0_n dispmux_2__un3_n dispmux_2__un1_n \
+dispmux_2__un0_n dispmux_1__un3_n dispmux_1__un1_n dispmux_1__un0_n \
+dispmux_0__un3_n dispmux_0__un1_n dispmux_0__un0_n disp_1_3__un3_n \
+disp_1_3__un1_n disp_1_3__un0_n te N_11 N_12 N_13 N_14 N_15 N_17 N_18 N_20 \
+N_49 N_50 N_49_1 N_47 N_110 N_44 N_46 finally_disp17_n finally_disp16_n \
+finally_disp15_n digit_un7_zl_n s_c1 disp_sn_N_3 N_78 N_83 N_77 N_82 N_76 N_81 \
+N_75 N_80 se N_10 N_165 N_126 j_c1 N_33 N_34 N_33_1 N_31 N_90 je t_0_sqmuxa_6 \
+N_41 N_42 N_41_1 N_39 N_98 N_36 N_38 N_28 N_30 s_0_sqmuxa d_1_sqmuxa \
+digit_un5_zl_n d_0_sqmuxa digit_un3_zl_n d_c1 de N_156_i N_157_i \
+currstate_i_0__n j_i_1__n j_i_2__n d_i_1__n d_i_2__n t_i_1__n t_i_2__n start_i \
+t_i_0__n t_i_3__n reset_i N_158_i finally_disp15_i_n finally_disp16_i_n \
+s_i_1__n s_i_2__n r_i_0__n r_i_1__n r_i_2__n start_c stop_c reset_c clk_c \
+disp_c_0__n disp_c_1__n disp_c_2__n disp_c_3__n digit_un3_zl_i_n N_90_i \
+digit_un5_zl_i_n N_98_i t_0_sqmuxa_6_i N_126_i d_1_sqmuxa_i de_0 d_0_sqmuxa_i \
+se_0 s_0_sqmuxa_i te_i je_0 N_12_i N_11_i N_10_i N_165_i N_20_i t_e0_0 N_4_0 \
+N_5_0 N_6_0 digit_un7_zl_i_n N_110_i N_14_i N_18_i N_17_i N_13_i N_15_i \
+finally_disp17_1_n finally_disp17_2_n finally_disp16_1_n finally_disp16_2_n \
+finally_disp15_1_n finally_disp15_2_n digit_un7_zl_1_n digit_un7_zl_2_n \
+t_0_sqmuxa_6_1 t_0_sqmuxa_6_2 s_0_sqmuxa_1 digit_un5_zl_1_n digit_un5_zl_2_n \
+digit_un3_zl_1_n digit_un3_zl_2_n N_8_i_1 N_162_i_1 N_161_i_1 N_20_1 \
+d_e1_un3_n d_e1_un1_n d_e1_un0_n d_e0_un3_n d_e0_un1_n d_e0_un0_n j_e1_un3_n \
+j_e1_un1_n j_e1_un0_n j_e0_un3_n j_e0_un1_n j_e0_un0_n d_e3_un3_n d_e3_un1_n \
+d_e3_un0_n d_e2_un3_n d_e2_un1_n d_e2_un0_n currstate_ns_0_0__m2_un3_n \
+currstate_ns_0_0__m2_un1_n currstate_ns_0_0__m2_un0_n j_e3_un3_n j_e3_un1_n \
+j_e3_un0_n j_e2_un3_n j_e2_un1_n j_e2_un0_n disp_1_2__un3_n disp_1_2__un1_n \
+disp_1_2__un0_n disp_1_1__un3_n disp_1_1__un1_n disp_1_1__un0_n \
+disp_1_0__un3_n disp_1_0__un1_n disp_1_0__un0_n disp_0_3__un3_n \
+disp_0_3__un1_n disp_0_3__un0_n disp_0_2__un3_n disp_0_2__un1_n \
+disp_0_2__un0_n disp_0_1__un3_n disp_0_1__un1_n disp_0_1__un0_n \
+disp_0_0__un3_n disp_0_0__un1_n disp_0_0__un0_n s_e3_un3_n s_e3_un1_n \
+s_e3_un0_n s_e2_un3_n s_n3 s_n2 s_n0 s_n1 j_n3 j_n2 d_n3 d_n2 d_n0 d_n1 j_n0 \
+j_n1
+.names currstate_ns_0_0__m2_un1_n.BLIF currstate_ns_0_0__m2_un0_n.BLIF \
+currState_0_.D
+1- 1
+-1 1
+.names N_161_i_1.BLIF N_14_i.BLIF t_3_.D
+11 1
+.names rDFF_3_reg.BLIF reset_i.BLIF rDFF_0_reg.D
+11 1
+.names N_4_0.BLIF rDFF_1_reg.D
+0 1
+.names N_5_0.BLIF rDFF_2_reg.D
+0 1
+.names N_6_0.BLIF rDFF_3_reg.D
+0 1
+.names t_e0_0.BLIF t_0_.D
+0 1
+.names N_8_i_1.BLIF N_18_i.BLIF t_1_.D
+11 1
+.names N_162_i_1.BLIF N_14_i.BLIF t_2_.D
+11 1
+.names s_e2_un1_n.BLIF s_e2_un0_n.BLIF s_2_.D
+1- 1
+-1 1
+.names s_e3_un1_n.BLIF s_e3_un0_n.BLIF s_3_.D
+1- 1
+-1 1
+.names d_e3_un1_n.BLIF d_e3_un0_n.BLIF d_3_.D
+1- 1
+-1 1
+.names s_e0_un1_n.BLIF s_e0_un0_n.BLIF s_0_.D
+1- 1
+-1 1
+.names s_e1_un1_n.BLIF s_e1_un0_n.BLIF s_1_.D
+1- 1
+-1 1
+.names d_e1_un1_n.BLIF d_e1_un0_n.BLIF d_1_.D
+1- 1
+-1 1
+.names d_e2_un1_n.BLIF d_e2_un0_n.BLIF d_2_.D
+1- 1
+-1 1
+.names j_e2_un1_n.BLIF j_e2_un0_n.BLIF j_2_.D
+1- 1
+-1 1
+.names j_e3_un1_n.BLIF j_e3_un0_n.BLIF j_3_.D
+1- 1
+-1 1
+.names d_e0_un1_n.BLIF d_e0_un0_n.BLIF d_0_.D
+1- 1
+-1 1
+.names j_e0_un1_n.BLIF j_e0_un0_n.BLIF j_0_.D
+1- 1
+-1 1
+.names j_e1_un1_n.BLIF j_e1_un0_n.BLIF j_1_.D
+1- 1
+-1 1
+.names s_n2.BLIF se.BLIF s_e2_un1_n
+11 1
+.names s_2_.BLIF s_e2_un3_n.BLIF s_e2_un0_n
+11 1
+.names se.BLIF s_e1_un3_n
+0 1
+.names s_n1.BLIF se.BLIF s_e1_un1_n
+11 1
+.names s_1_.BLIF s_e1_un3_n.BLIF s_e1_un0_n
+11 1
+.names se.BLIF s_e0_un3_n
+0 1
+.names N_158_i.BLIF se.BLIF s_e0_un1_n
+11 1
+.names s_0_.BLIF s_e0_un3_n.BLIF s_e0_un0_n
+11 1
+.names disp_sn_N_3.BLIF dispmux_3__un3_n
+0 1
+.names N_83.BLIF disp_sn_N_3.BLIF dispmux_3__un1_n
+11 1
+.names N_78.BLIF dispmux_3__un3_n.BLIF dispmux_3__un0_n
+11 1
+.names disp_sn_N_3.BLIF dispmux_2__un3_n
+0 1
+.names N_82.BLIF disp_sn_N_3.BLIF dispmux_2__un1_n
+11 1
+.names N_77.BLIF dispmux_2__un3_n.BLIF dispmux_2__un0_n
+11 1
+.names disp_sn_N_3.BLIF dispmux_1__un3_n
+0 1
+.names N_81.BLIF disp_sn_N_3.BLIF dispmux_1__un1_n
+11 1
+.names N_76.BLIF dispmux_1__un3_n.BLIF dispmux_1__un0_n
+11 1
+.names disp_sn_N_3.BLIF dispmux_0__un3_n
+0 1
+.names N_80.BLIF disp_sn_N_3.BLIF dispmux_0__un1_n
+11 1
+.names N_75.BLIF dispmux_0__un3_n.BLIF dispmux_0__un0_n
+11 1
+.names finally_disp17_n.BLIF disp_1_3__un3_n
+0 1
+.names s_3_.BLIF finally_disp17_n.BLIF disp_1_3__un1_n
+11 1
+.names t_3_.BLIF disp_1_3__un3_n.BLIF disp_1_3__un0_n
+11 1
+.names te_i.BLIF te
+0 1
+.names N_11_i.BLIF N_11
+0 1
+.names N_12_i.BLIF N_12
+0 1
+.names N_12.BLIF t_i_3__n.BLIF N_13
+11 1
+.names N_126.BLIF te.BLIF N_14
+11 1
+.names N_12_i.BLIF t_3_.BLIF N_15
+11 1
+.names N_11.BLIF t_i_2__n.BLIF N_17
+11 1
+.names N_10.BLIF t_i_1__n.BLIF N_18
+11 1
+.names N_20_1.BLIF te.BLIF N_20
+11 1
+.names N_49_1.BLIF s_c1.BLIF N_49
+11 1
+.names N_110_i.BLIF s_3_.BLIF N_50
+11 1
+.names N_110_i.BLIF s_2_.BLIF N_49_1
+11 1
+.names N_110_i.BLIF s_c1.BLIF N_47
+11 1
+.names N_110_i.BLIF N_110
+0 1
+.names N_110_i.BLIF s_0_.BLIF N_44
+11 1
+.names N_110_i.BLIF s_1_.BLIF N_46
+11 1
+.names finally_disp17_1_n.BLIF finally_disp17_2_n.BLIF finally_disp17_n
+11 1
+.names finally_disp16_1_n.BLIF finally_disp16_2_n.BLIF finally_disp16_n
+11 1
+.names finally_disp15_1_n.BLIF finally_disp15_2_n.BLIF finally_disp15_n
+11 1
+.names digit_un7_zl_1_n.BLIF digit_un7_zl_2_n.BLIF digit_un7_zl_n
+11 1
+.names s_0_.BLIF s_1_.BLIF s_c1
+11 1
+.names finally_disp15_i_n.BLIF finally_disp16_i_n.BLIF disp_sn_N_3
+11 1
+.names disp_0_3__un1_n.BLIF disp_0_3__un0_n.BLIF N_78
+1- 1
+-1 1
+.names disp_1_3__un1_n.BLIF disp_1_3__un0_n.BLIF N_83
+1- 1
+-1 1
+.names disp_0_2__un1_n.BLIF disp_0_2__un0_n.BLIF N_77
+1- 1
+-1 1
+.names disp_1_2__un1_n.BLIF disp_1_2__un0_n.BLIF N_82
+1- 1
+-1 1
+.names disp_0_1__un1_n.BLIF disp_0_1__un0_n.BLIF N_76
+1- 1
+-1 1
+.names disp_1_1__un1_n.BLIF disp_1_1__un0_n.BLIF N_81
+1- 1
+-1 1
+.names disp_0_0__un1_n.BLIF disp_0_0__un0_n.BLIF N_75
+1- 1
+-1 1
+.names disp_1_0__un1_n.BLIF disp_1_0__un0_n.BLIF N_80
+1- 1
+-1 1
+.names se_0.BLIF se
+0 1
+.names N_10_i.BLIF N_10
+0 1
+.names t_0_.BLIF te_i.BLIF N_165
+11 1
+.names N_126_i.BLIF N_126
+0 1
+.names j_0_.BLIF j_1_.BLIF j_c1
+11 1
+.names N_33_1.BLIF j_c1.BLIF N_33
+11 1
+.names N_90_i.BLIF j_3_.BLIF N_34
+11 1
+.names N_90_i.BLIF j_2_.BLIF N_33_1
+11 1
+.names N_90_i.BLIF j_c1.BLIF N_31
+11 1
+.names N_90_i.BLIF N_90
+0 1
+.names je_0.BLIF je
+0 1
+.names t_0_sqmuxa_6_1.BLIF t_0_sqmuxa_6_2.BLIF t_0_sqmuxa_6
+11 1
+.names N_41_1.BLIF d_c1.BLIF N_41
+11 1
+.names N_98_i.BLIF d_3_.BLIF N_42
+11 1
+.names N_98_i.BLIF d_2_.BLIF N_41_1
+11 1
+.names N_98_i.BLIF d_c1.BLIF N_39
+11 1
+.names N_98_i.BLIF N_98
+0 1
+.names N_98_i.BLIF d_0_.BLIF N_36
+11 1
+.names N_98_i.BLIF d_1_.BLIF N_38
+11 1
+.names N_90_i.BLIF j_0_.BLIF N_28
+11 1
+.names N_90_i.BLIF j_1_.BLIF N_30
+11 1
+.names s_0_sqmuxa_1.BLIF digit_un5_zl_n.BLIF s_0_sqmuxa
+11 1
+.names currstate_i_0__n.BLIF digit_un3_zl_n.BLIF d_1_sqmuxa
+11 1
+.names digit_un5_zl_1_n.BLIF digit_un5_zl_2_n.BLIF digit_un5_zl_n
+11 1
+.names d_1_sqmuxa.BLIF digit_un5_zl_n.BLIF d_0_sqmuxa
+11 1
+.names digit_un3_zl_1_n.BLIF digit_un3_zl_2_n.BLIF digit_un3_zl_n
+11 1
+.names d_0_.BLIF d_1_.BLIF d_c1
+11 1
+.names de_0.BLIF de
+0 1
+.names j_n0.BLIF N_156_i
+0 1
+.names d_n0.BLIF N_157_i
+0 1
+.names currState_0_.BLIF currstate_i_0__n
+0 1
+.names j_1_.BLIF j_i_1__n
+0 1
+.names j_2_.BLIF j_i_2__n
+0 1
+.names d_1_.BLIF d_i_1__n
+0 1
+.names d_2_.BLIF d_i_2__n
+0 1
+.names t_1_.BLIF t_i_1__n
+0 1
+.names t_2_.BLIF t_i_2__n
+0 1
+.names start_c.BLIF start_i
+0 1
+.names t_0_.BLIF t_i_0__n
+0 1
+.names t_3_.BLIF t_i_3__n
+0 1
+.names reset_c.BLIF reset_i
+0 1
+.names s_n0.BLIF N_158_i
+0 1
+.names finally_disp15_n.BLIF finally_disp15_i_n
+0 1
+.names finally_disp16_n.BLIF finally_disp16_i_n
+0 1
+.names s_1_.BLIF s_i_1__n
+0 1
+.names s_2_.BLIF s_i_2__n
+0 1
+.names rDFF_0_reg.BLIF r_i_0__n
+0 1
+.names rDFF_1_reg.BLIF r_i_1__n
+0 1
+.names rDFF_2_reg.BLIF r_i_2__n
+0 1
+.names dispmux_0__un1_n.BLIF dispmux_0__un0_n.BLIF disp_c_0__n
+1- 1
+-1 1
+.names dispmux_1__un1_n.BLIF dispmux_1__un0_n.BLIF disp_c_1__n
+1- 1
+-1 1
+.names dispmux_2__un1_n.BLIF dispmux_2__un0_n.BLIF disp_c_2__n
+1- 1
+-1 1
+.names dispmux_3__un1_n.BLIF dispmux_3__un0_n.BLIF disp_c_3__n
+1- 1
+-1 1
+.names digit_un3_zl_n.BLIF digit_un3_zl_i_n
+0 1
+.names digit_un3_zl_i_n.BLIF reset_i.BLIF N_90_i
+11 1
+.names digit_un5_zl_n.BLIF digit_un5_zl_i_n
+0 1
+.names digit_un5_zl_i_n.BLIF reset_i.BLIF N_98_i
+11 1
+.names t_0_sqmuxa_6.BLIF t_0_sqmuxa_6_i
+0 1
+.names reset_i.BLIF t_0_sqmuxa_6_i.BLIF N_126_i
+11 1
+.names d_1_sqmuxa.BLIF d_1_sqmuxa_i
+0 1
+.names d_1_sqmuxa_i.BLIF reset_i.BLIF de_0
+11 1
+.names d_0_sqmuxa.BLIF d_0_sqmuxa_i
+0 1
+.names d_0_sqmuxa_i.BLIF reset_i.BLIF se_0
+11 1
+.names s_0_sqmuxa.BLIF s_0_sqmuxa_i
+0 1
+.names reset_i.BLIF s_0_sqmuxa_i.BLIF te_i
+11 1
+.names currState_0_.BLIF reset_i.BLIF je_0
+11 1
+.names N_11_i.BLIF t_2_.BLIF N_12_i
+11 1
+.names N_10_i.BLIF t_1_.BLIF N_11_i
+11 1
+.names t_0_.BLIF te.BLIF N_10_i
+11 1
+.names N_165.BLIF N_165_i
+0 1
+.names N_20.BLIF N_20_i
+0 1
+.names N_20_i.BLIF N_165_i.BLIF t_e0_0
+11 1
+.names r_i_0__n.BLIF reset_i.BLIF N_4_0
+11 1
+.names r_i_1__n.BLIF reset_i.BLIF N_5_0
+11 1
+.names r_i_2__n.BLIF reset_i.BLIF N_6_0
+11 1
+.names digit_un7_zl_n.BLIF digit_un7_zl_i_n
+0 1
+.names digit_un7_zl_i_n.BLIF reset_i.BLIF N_110_i
+11 1
+.names N_14.BLIF N_14_i
+0 1
+.names N_18.BLIF N_18_i
+0 1
+.names N_17.BLIF N_17_i
+0 1
+.names N_13.BLIF N_13_i
+0 1
+.names N_15.BLIF N_15_i
+0 1
+.names rDFF_0_reg.BLIF rDFF_1_reg.BLIF finally_disp17_1_n
+11 1
+.names rDFF_3_reg.BLIF r_i_2__n.BLIF finally_disp17_2_n
+11 1
+.names rDFF_0_reg.BLIF rDFF_2_reg.BLIF finally_disp16_1_n
+11 1
+.names rDFF_3_reg.BLIF r_i_1__n.BLIF finally_disp16_2_n
+11 1
+.names rDFF_1_reg.BLIF rDFF_2_reg.BLIF finally_disp15_1_n
+11 1
+.names rDFF_3_reg.BLIF r_i_0__n.BLIF finally_disp15_2_n
+11 1
+.names s_0_.BLIF s_3_.BLIF digit_un7_zl_1_n
+11 1
+.names s_i_1__n.BLIF s_i_2__n.BLIF digit_un7_zl_2_n
+11 1
+.names t_0_.BLIF t_3_.BLIF t_0_sqmuxa_6_1
+11 1
+.names t_i_1__n.BLIF t_i_2__n.BLIF t_0_sqmuxa_6_2
+11 1
+.names digit_un7_zl_n.BLIF d_1_sqmuxa.BLIF s_0_sqmuxa_1
+11 1
+.names d_0_.BLIF d_3_.BLIF digit_un5_zl_1_n
+11 1
+.names d_i_1__n.BLIF d_i_2__n.BLIF digit_un5_zl_2_n
+11 1
+.names j_0_.BLIF j_3_.BLIF digit_un3_zl_1_n
+11 1
+.names j_i_1__n.BLIF j_i_2__n.BLIF digit_un3_zl_2_n
+11 1
+.names N_11.BLIF N_14_i.BLIF N_8_i_1
+11 1
+.names N_17_i.BLIF N_12.BLIF N_162_i_1
+11 1
+.names N_15_i.BLIF N_13_i.BLIF N_161_i_1
+11 1
+.names N_126_i.BLIF t_i_0__n.BLIF N_20_1
+11 1
+.names de.BLIF d_e1_un3_n
+0 1
+.names d_n1.BLIF de.BLIF d_e1_un1_n
+11 1
+.names d_1_.BLIF d_e1_un3_n.BLIF d_e1_un0_n
+11 1
+.names de.BLIF d_e0_un3_n
+0 1
+.names N_157_i.BLIF de.BLIF d_e0_un1_n
+11 1
+.names d_0_.BLIF d_e0_un3_n.BLIF d_e0_un0_n
+11 1
+.names je.BLIF j_e1_un3_n
+0 1
+.names j_n1.BLIF je.BLIF j_e1_un1_n
+11 1
+.names j_1_.BLIF j_e1_un3_n.BLIF j_e1_un0_n
+11 1
+.names je.BLIF j_e0_un3_n
+0 1
+.names N_156_i.BLIF je.BLIF j_e0_un1_n
+11 1
+.names j_0_.BLIF j_e0_un3_n.BLIF j_e0_un0_n
+11 1
+.names de.BLIF d_e3_un3_n
+0 1
+.names d_n3.BLIF de.BLIF d_e3_un1_n
+11 1
+.names d_3_.BLIF d_e3_un3_n.BLIF d_e3_un0_n
+11 1
+.names de.BLIF d_e2_un3_n
+0 1
+.names d_n2.BLIF de.BLIF d_e2_un1_n
+11 1
+.names d_2_.BLIF d_e2_un3_n.BLIF d_e2_un0_n
+11 1
+.names currState_0_.BLIF currstate_ns_0_0__m2_un3_n
+0 1
+.names start_i.BLIF currState_0_.BLIF currstate_ns_0_0__m2_un1_n
+11 1
+.names stop_c.BLIF currstate_ns_0_0__m2_un3_n.BLIF currstate_ns_0_0__m2_un0_n
+11 1
+.names je.BLIF j_e3_un3_n
+0 1
+.names j_n3.BLIF je.BLIF j_e3_un1_n
+11 1
+.names j_3_.BLIF j_e3_un3_n.BLIF j_e3_un0_n
+11 1
+.names je.BLIF j_e2_un3_n
+0 1
+.names j_n2.BLIF je.BLIF j_e2_un1_n
+11 1
+.names j_2_.BLIF j_e2_un3_n.BLIF j_e2_un0_n
+11 1
+.names finally_disp17_n.BLIF disp_1_2__un3_n
+0 1
+.names s_2_.BLIF finally_disp17_n.BLIF disp_1_2__un1_n
+11 1
+.names t_2_.BLIF disp_1_2__un3_n.BLIF disp_1_2__un0_n
+11 1
+.names finally_disp17_n.BLIF disp_1_1__un3_n
+0 1
+.names s_1_.BLIF finally_disp17_n.BLIF disp_1_1__un1_n
+11 1
+.names t_1_.BLIF disp_1_1__un3_n.BLIF disp_1_1__un0_n
+11 1
+.names finally_disp17_n.BLIF disp_1_0__un3_n
+0 1
+.names s_0_.BLIF finally_disp17_n.BLIF disp_1_0__un1_n
+11 1
+.names t_0_.BLIF disp_1_0__un3_n.BLIF disp_1_0__un0_n
+11 1
+.names rDFF_0_reg.BLIF disp_0_3__un3_n
+0 1
+.names d_3_.BLIF rDFF_0_reg.BLIF disp_0_3__un1_n
+11 1
+.names j_3_.BLIF disp_0_3__un3_n.BLIF disp_0_3__un0_n
+11 1
+.names rDFF_0_reg.BLIF disp_0_2__un3_n
+0 1
+.names d_2_.BLIF rDFF_0_reg.BLIF disp_0_2__un1_n
+11 1
+.names j_2_.BLIF disp_0_2__un3_n.BLIF disp_0_2__un0_n
+11 1
+.names rDFF_0_reg.BLIF disp_0_1__un3_n
+0 1
+.names d_1_.BLIF rDFF_0_reg.BLIF disp_0_1__un1_n
+11 1
+.names j_1_.BLIF disp_0_1__un3_n.BLIF disp_0_1__un0_n
+11 1
+.names rDFF_0_reg.BLIF disp_0_0__un3_n
+0 1
+.names d_0_.BLIF rDFF_0_reg.BLIF disp_0_0__un1_n
+11 1
+.names j_0_.BLIF disp_0_0__un3_n.BLIF disp_0_0__un0_n
+11 1
+.names se.BLIF s_e3_un3_n
+0 1
+.names s_n3.BLIF se.BLIF s_e3_un1_n
+11 1
+.names s_3_.BLIF s_e3_un3_n.BLIF s_e3_un0_n
+11 1
+.names se.BLIF s_e2_un3_n
+0 1
+.names N_49.BLIF N_50.BLIF s_n3
+01 1
+10 1
+11 0
+00 0
+.names N_49_1.BLIF N_47.BLIF s_n2
+01 1
+10 1
+11 0
+00 0
+.names N_110.BLIF N_44.BLIF s_n0
+01 1
+10 1
+11 0
+00 0
+.names N_44.BLIF N_46.BLIF s_n1
+01 1
+10 1
+11 0
+00 0
+.names N_33.BLIF N_34.BLIF j_n3
+01 1
+10 1
+11 0
+00 0
+.names N_33_1.BLIF N_31.BLIF j_n2
+01 1
+10 1
+11 0
+00 0
+.names N_41.BLIF N_42.BLIF d_n3
+01 1
+10 1
+11 0
+00 0
+.names N_41_1.BLIF N_39.BLIF d_n2
+01 1
+10 1
+11 0
+00 0
+.names N_98.BLIF N_36.BLIF d_n0
+01 1
+10 1
+11 0
+00 0
+.names N_36.BLIF N_38.BLIF d_n1
+01 1
+10 1
+11 0
+00 0
+.names N_90.BLIF N_28.BLIF j_n0
+01 1
+10 1
+11 0
+00 0
+.names N_28.BLIF N_30.BLIF j_n1
+01 1
+10 1
+11 0
+00 0
+.names rDFF_3_reg.BLIF r_3_
+1 1
+0 0
+.names disp_c_3__n.BLIF disp_3_
+1 1
+0 0
+.names rDFF_2_reg.BLIF r_2_
+1 1
+0 0
+.names rDFF_1_reg.BLIF r_1_
+1 1
+0 0
+.names rDFF_0_reg.BLIF r_0_
+1 1
+0 0
+.names disp_c_2__n.BLIF disp_2_
+1 1
+0 0
+.names disp_c_1__n.BLIF disp_1_
+1 1
+0 0
+.names disp_c_0__n.BLIF disp_0_
+1 1
+0 0
+.names clk_c.BLIF currState_0_.C
+1 1
+0 0
+.names clk_c.BLIF t_3_.C
+1 1
+0 0
+.names clk_c.BLIF rDFF_0_reg.C
+1 1
+0 0
+.names clk_c.BLIF rDFF_1_reg.C
+1 1
+0 0
+.names clk_c.BLIF rDFF_2_reg.C
+1 1
+0 0
+.names clk_c.BLIF rDFF_3_reg.C
+1 1
+0 0
+.names clk_c.BLIF t_0_.C
+1 1
+0 0
+.names clk_c.BLIF t_1_.C
+1 1
+0 0
+.names clk_c.BLIF t_2_.C
+1 1
+0 0
+.names clk_c.BLIF s_2_.C
+1 1
+0 0
+.names clk_c.BLIF s_3_.C
+1 1
+0 0
+.names clk_c.BLIF d_3_.C
+1 1
+0 0
+.names clk_c.BLIF s_0_.C
+1 1
+0 0
+.names clk_c.BLIF s_1_.C
+1 1
+0 0
+.names clk_c.BLIF d_1_.C
+1 1
+0 0
+.names clk_c.BLIF d_2_.C
+1 1
+0 0
+.names clk_c.BLIF j_2_.C
+1 1
+0 0
+.names clk_c.BLIF j_3_.C
+1 1
+0 0
+.names clk_c.BLIF d_0_.C
+1 1
+0 0
+.names clk_c.BLIF j_0_.C
+1 1
+0 0
+.names clk_c.BLIF j_1_.C
+1 1
+0 0
+.names start.BLIF start_c
+1 1
+0 0
+.names stop.BLIF stop_c
+1 1
+0 0
+.names reset.BLIF reset_c
+1 1
+0 0
+.names clk.BLIF clk_c
+1 1
+0 0
+.end

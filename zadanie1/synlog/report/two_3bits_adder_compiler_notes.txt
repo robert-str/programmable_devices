@@ -1,0 +1,8 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd":6:7:6:21|Top entity is set to two_3bits_adder.
+@N: CD630 :"C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd":6:7:6:21|Synthesizing work.two_3bits_adder.combinational 
+@N: CD630 :"C:\isplever projects\zadanie1\seg7_decoder_v1.vhd":6:7:6:17|Synthesizing work.bcd_to_seg7.combinational 
+@N: CD630 :"C:\isplever projects\zadanie1\three_bit_adder.vhd":6:7:6:15|Synthesizing work.adder3bit.combinational 
+@N: CD630 :"C:\isplever projects\zadanie1\sum1b.vhd":6:7:6:9|Synthesizing work.sum.comb 
+

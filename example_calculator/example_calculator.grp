@@ -1,0 +1,18 @@
+
+GROUP MACH_SEG_A input_keypad_key_out_2_ input_keypad_key_out_3_ calc_proc_key_catched_2_ 
+      calc_proc_key_catched_3_ calc_proc_num_acc_3_ keypad_cols_3_ keypad_cols_2_ 
+      keypad_cols_1_ keypad_cols_0_ calc_proc_n_82_0_n calc_proc_G_89_1 
+      calc_proc_n_79_1_n 
+GROUP MACH_SEG_B calc_proc_state_oper_0_ calc_proc_state_curr_0_ calc_proc_state_curr_1_ 
+      input_keypad_counter_0_ input_keypad_interrupt calc_proc_state_curr_2_ 
+      input_keypad_counter_1_ calc_proc_key_catched_1_ input_keypad_counter_3_ 
+      calc_proc_num_acc_1_ calc_proc_state_disp_0_ input_keypad_interrupt_0_sqmuxa_n 
+      calc_proc_state_oper_0__0 
+GROUP MACH_SEG_C input_keypad_key_out_0_ input_keypad_key_out_1_ input_keypad_counter_2_ 
+      calc_proc_key_catched_0_ calc_proc_num_buf_0_ calc_proc_num_buf_2_ 
+      calc_proc_num_buf_1_ calc_proc_num_buf_3_ calc_proc_num_acc_0_ calc_proc_num_acc_2_ 
+      input_keypad_interrupt_out calc_proc_state_next_0_sqmuxa_2_n 
+GROUP MACH_SEG_D bcd_out_3_ bcd_out_2_ bcd_out_1_ bcd_out_4_ bcd_out_0_ 
+      bcd_out_5_ bcd_out_6_ bcd_out_7_ calc_proc_num_acc_buf_1_ calc_proc_num_acc_buf_3_ 
+      calc_proc_num_acc_buf_2_ calc_proc_num_acc_buf_0_ calc_proc_n_36_0_n 
+      

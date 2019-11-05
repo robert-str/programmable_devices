@@ -1,0 +1,40 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: PC407
+
+#Implementation: zadanie1
+
+$ Start of Compile
+#Fri Nov 09 13:00:28 2018
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\isplever projects\zadanie1\zadanie1.vhd":6:7:6:13|Top entity is set to simple1.
+File C:\isplever projects\zadanie1\zadanie1.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\isplever projects\zadanie1\zadanie1.vhd changed - recompiling
+@N: CD630 :"C:\isplever projects\zadanie1\zadanie1.vhd":6:7:6:13|Synthesizing work.simple1.combinational 
+Post processing for work.simple1.combinational
+@W: CL246 :"C:\isplever projects\zadanie1\zadanie1.vhd":10:1:10:6|Input port bits 6 to 4 of diode1(6 downto 0) are unused 
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 09 13:00:28 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\isplever projects\zadanie1\synwork\simple1_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 09 13:00:29 2018
+
+###########################################################]

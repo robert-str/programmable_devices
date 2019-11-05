@@ -1,0 +1,45 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file untitled.tt4
+; FITTER-generated Placements.
+; DEVICE   mach463a
+; DATE     Fri Nov 30 10:14:03 2018
+
+
+Pin   43  o_diodes_7_ Reg  ; S6=1  S9=1  Pair 117
+Pin   11  i_clk
+Pin   24  o_clkSlow Reg  ; S6=1  S9=1  Pair 95
+Pin   7  i_btn_2_
+Pin   8  i_btn_1_
+Pin   9  i_btn_0_
+Pin   42  o_diodes_6_ Reg  ; S6=1  S9=1  Pair 135
+Pin   41  o_diodes_5_ Reg  ; S6=1  S9=1  Pair 119
+Pin   40  o_diodes_4_ Reg  ; S6=1  S9=1  Pair 129
+Pin   39  o_diodes_3_ Reg  ; S6=1  S9=1  Pair 131
+Pin   38  o_diodes_2_ Reg  ; S6=1  S9=1  Pair 123
+Pin   37  o_diodes_1_ Reg  ; S6=1  S9=1  Pair 125
+Pin   36  o_diodes_0_ Reg  ; S6=1  S9=1  Pair 120
+Pin   30  o_state_1_ Reg  ; S6=1  S9=1  Pair 99
+Pin   31  o_state_0_ Reg  ; S6=1  S9=1  Pair 93
+Node  99  RN_o_state_1_ Reg  ; S6=1  S9=1 
+Node  93  RN_o_state_0_ Reg  ; S6=1  S9=1 
+Node  63  counter_0_ Reg  ; S6=1  S9=1 
+Node  75  counter_1_ Reg  ; S6=1  S9=1 
+Node  105  counter_2_ Reg  ; S6=1  S9=1 
+Node  47  counter_3_ Reg  ; S6=1  S9=1 
+Node  71  counter_4_ Reg  ; S6=1  S9=1 
+Node  77  counter_5_ Reg  ; S6=1  S9=1 
+Node  69  pres_counter_0_ Reg  ; S6=1  S9=1 
+Node  57  pres_counter_1_ Reg  ; S6=1  S9=1 
+Node  51  pres_counter_2_ Reg  ; S6=1  S9=1 
+Node  45  pres_counter_3_ Reg  ; S6=1  S9=1 
+Node  87  pres_counter_4_ Reg  ; S6=1  S9=1 
+Node  81  pres_counter_5_ Reg  ; S6=1  S9=1 
+Node  111  pres_counter_6_ Reg  ; S6=1  S9=1 
+; Unused Pins & Nodes
+; -> None Found.

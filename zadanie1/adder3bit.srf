@@ -1,0 +1,45 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: DESKTOP-GLP2QA4
+
+#Implementation: zadanie1
+
+$ Start of Compile
+#Fri Nov 30 09:06:49 2018
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"D:\isplever projects\zadanie1\three_bit_adder.vhd":6:7:6:15|Top entity is set to adder3bit.
+File C:\isplever projects\zadanie1\sum1b.vhd changed - recompiling
+File C:\isplever projects\zadanie1\three_bit_adder.vhd changed - recompiling
+VHDL syntax check successful!
+@N: CD630 :"D:\isplever projects\zadanie1\three_bit_adder.vhd":6:7:6:15|Synthesizing work.adder3bit.combinational 
+@W: CD638 :"D:\isplever projects\zadanie1\three_bit_adder.vhd":16:7:16:8|Signal c1 is undriven 
+@W: CD638 :"D:\isplever projects\zadanie1\three_bit_adder.vhd":16:11:16:12|Signal c2 is undriven 
+@N: CD630 :"D:\isplever projects\zadanie1\sum1b.vhd":6:7:6:9|Synthesizing work.sum.comb 
+Post processing for work.sum.comb
+Post processing for work.adder3bit.combinational
+@W: CL247 :"D:\isplever projects\zadanie1\three_bit_adder.vhd":9:1:9:3|Input port bit 2 of i_a(2 downto 0) is unused 
+@W: CL247 :"D:\isplever projects\zadanie1\three_bit_adder.vhd":10:1:10:3|Input port bit 2 of i_b(2 downto 0) is unused 
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 30 09:06:49 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\isplever projects\zadanie1\synwork\adder3bit_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 30 09:06:50 2018
+
+###########################################################]

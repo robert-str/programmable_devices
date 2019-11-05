@@ -1,0 +1,6 @@
+
+GROUP MACH_SEG_A s_3_ s_2_ s_0_ disp_3_ disp_2_ disp_1_ disp_0_ 
+GROUP MACH_SEG_B j_3_ t_1_ t_3_ j_2_ t_2_ j_1_ t_0_ digit_un3_zl_n 
+GROUP MACH_SEG_C d_1_ d_3_ s_1_ d_2_ d_0_ te_i se 
+GROUP MACH_SEG_D r_0_ RN_r_0_ r_2_ RN_r_2_ r_3_ RN_r_3_ r_1_ RN_r_1_ j_0_ 
+      currState_0_ disp_sn_N_3 finally_disp17_n 

@@ -1,0 +1,7 @@
+15
+~E 1 "./../../clk_prescaler.vhd" 7 clk_prescaler
+~A 1 "./../../clk_prescaler.vhd" 14 prescaler
+~E 1 "./../../statemachine1.vhd" 6 stateMachine1
+~A 1 "./../../statemachine1.vhd" 14 sequential
+~E 1 "./../../tb_statemachine1.vhd" 7 testbench
+~A 1 "./../../tb_statemachine1.vhd" 10 behavior

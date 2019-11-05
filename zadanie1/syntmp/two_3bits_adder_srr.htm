@@ -1,0 +1,82 @@
+<html><body><samp><pre>
+<!@TC:1542703940>
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: PC407
+
+#Implementation: zadanie1
+
+<a name=compilerReport1>$ Start of Compile</a>
+#Tue Nov 20 09:52:20 2018
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1542703940> | Running in 64-bit mode 
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N:<a href="@N:CD720:@XP_HELP">CD720</a> : <a href="C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd:123:18:123:22:@N:CD720:@XP_MSG">std.vhd(123)</a><!@TM:1542703940> | Setting time resolution to ns
+@N: : <a href="C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd:6:7:6:22:@N::@XP_MSG">zadanie_comb_fin1.vhd(6)</a><!@TM:1542703940> | Top entity is set to two_3bits_adder.
+File C:\isplever projects\zadanie1\seg7_decoder_v1.vhd changed - recompiling
+File C:\isplever projects\zadanie1\three_bit_adder.vhd changed - recompiling
+File C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd changed - recompiling
+VHDL syntax check successful!
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd:6:7:6:22:@N:CD630:@XP_MSG">zadanie_comb_fin1.vhd(6)</a><!@TM:1542703940> | Synthesizing work.two_3bits_adder.combinational 
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\isplever projects\zadanie1\seg7_decoder_v1.vhd:6:7:6:18:@N:CD630:@XP_MSG">seg7_decoder_v1.vhd(6)</a><!@TM:1542703940> | Synthesizing work.bcd_to_seg7.combinational 
+Post processing for work.bcd_to_seg7.combinational
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\isplever projects\zadanie1\three_bit_adder.vhd:6:7:6:16:@N:CD630:@XP_MSG">three_bit_adder.vhd(6)</a><!@TM:1542703940> | Synthesizing work.adder3bit.combinational 
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\isplever projects\zadanie1\three_bit_adder.vhd:16:11:16:13:@W:CD638:@XP_MSG">three_bit_adder.vhd(16)</a><!@TM:1542703940> | Signal c2 is undriven </font>
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\isplever projects\zadanie1\sum1b.vhd:6:7:6:10:@N:CD630:@XP_MSG">sum1b.vhd(6)</a><!@TM:1542703940> | Synthesizing work.sum.comb 
+Post processing for work.sum.comb
+Post processing for work.adder3bit.combinational
+Post processing for work.two_3bits_adder.combinational
+<font color=#A52A2A>@W:<a href="@W:CL247:@XP_HELP">CL247</a> : <a href="C:\isplever projects\zadanie1\three_bit_adder.vhd:9:1:9:4:@W:CL247:@XP_MSG">three_bit_adder.vhd(9)</a><!@TM:1542703940> | Input port bit 2 of i_a(2 downto 0) is unused </font>
+<font color=#A52A2A>@W:<a href="@W:CL247:@XP_HELP">CL247</a> : <a href="C:\isplever projects\zadanie1\three_bit_adder.vhd:10:1:10:4:@W:CL247:@XP_MSG">three_bit_adder.vhd(10)</a><!@TM:1542703940> | Input port bit 2 of i_b(2 downto 0) is unused </font>
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Nov 20 09:52:20 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1542703941> | Running in 64-bit mode 
+File C:\isplever projects\zadanie1\synwork\two_3bits_adder_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Nov 20 09:52:21 2018
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport2>Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014</a>
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1542703941> | Running in 64-bit mode. 
+@N:<a href="@N:MO106:@XP_HELP">MO106</a> : <a href="c:\isplever projects\zadanie1\seg7_decoder_v1.vhd:34:2:34:14:@N:MO106:@XP_MSG">seg7_decoder_v1.vhd(34)</a><!@TM:1542703941> | Found ROM, 'DEKODER1.seg7_1[7:0]', 16 words by 8 bits 
+---------------------------------------
+<a name=resourceUsage3>Resource Usage Report</a>
+
+Simple gate primitives:
+IBUF            6 uses
+OBUF            8 uses
+INV             16 uses
+AND2            18 uses
+XOR2            5 uses
+OR2             1 use
+
+
+@N:<a href="@N:FC100:@XP_HELP">FC100</a> : <!@TM:1542703941> | Timing Report not generated for this device, please use place and route tools for timing analysis. 
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 38MB peak: 103MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Nov 20 09:52:21 2018
+
+###########################################################]
+
+</pre></samp></body></html>

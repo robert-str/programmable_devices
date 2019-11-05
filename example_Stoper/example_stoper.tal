@@ -1,0 +1,61 @@
+
+
+Design Name = example_stoper.tt4
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+*******************
+* TIMING ANALYSIS *
+*******************
+
+Timing Analysis KEY:
+One unit of delay time is equivalent to one pass 
+     through the Central Switch Matrix.
+..   Delay ( in this column ) not applicable to the indicated signal.
+TSU, Set-Up Time ( 0 for input-paired signals ),
+     represents the number of switch matrix passes between
+     an input pin and a register setup before clock.
+     TSU is reported on the register.
+TCO, Clocked Output-to-Pin Time ( 0 for output-paired signals ),
+     represents the number of switch matrix passes between
+     a clocked register and an output pin.
+     TCO is reported on the register.
+TPD, Propagation Delay Time ( calculated only for combinatorial eqns.),
+     represents the number of switch matrix passes between
+     an input pin and an output pin.
+     TPD is reported on the output pin.
+TCR, Clocked Output-to-Register Time,
+     represents the number of switch matrix passes between
+     a clocked register and the register it drives ( before clock ).
+     TCR is reported on the driving register.
+
+                    TSU       TCO       TPD       TCR
+                  #passes   #passes   #passes   #passes
+SIGNAL NAME       min  max  min  max  min  max  min  max
+            j_1_   1    1    1    1   ..   ..    1    3   
+            j_2_   1    1    1    1   ..   ..    1    3   
+            j_0_   1    1    1    1   ..   ..    1    3   
+            j_3_   1    1    1    1   ..   ..    2    3   
+            r_3_   1    1    0    2   ..   ..    1    1   
+         RN_r_3_   1    1    0    2   ..   ..    1    1   
+            r_2_   1    1    0    2   ..   ..    1    1   
+         RN_r_2_   1    1    0    2   ..   ..    1    1   
+            r_1_   1    1    0    2   ..   ..    1    1   
+         RN_r_1_   1    1    0    2   ..   ..    1    1   
+            r_0_   1    1    0    2   ..   ..    1    1   
+         RN_r_0_   1    1    0    2   ..   ..    1    1   
+            s_1_   1    2    1    1   ..   ..    1    2   
+            s_2_   1    2    1    1   ..   ..    1    2   
+            d_1_   1    1    1    1   ..   ..    1    2   
+            d_2_   1    1    1    1   ..   ..    1    2   
+            t_1_   1    2    1    1   ..   ..    1    1   
+            t_2_   1    2    1    1   ..   ..    1    1   
+            d_0_   1    1    1    1   ..   ..    1    2   
+            d_3_   1    1    1    1   ..   ..    1    2   
+            s_0_   1    2    1    1   ..   ..    1    2   
+            s_3_   1    2    1    1   ..   ..    1    2   
+            t_0_   1    2    1    1   ..   ..    1    1   
+            t_3_   1    2    1    1   ..   ..    1    1   
+    currState_0_   1    1   ..   ..   ..   ..    1    2   
+              se  ..   ..   ..   ..    1    1   ..   ..   
+            te_i  ..   ..   ..   ..    1    1   ..   ..   

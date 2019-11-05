@@ -1,0 +1,109 @@
+#PLAFILE untitled.tt4
+#DATE    11/30/2018
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION RN_o_state_0_:C_0	// NOD {o_state_0_}
+DATA LOCATION RN_o_state_1_:C_4	// NOD {o_state_1_}
+DATA LOCATION counter_0_:A_12	// NOD
+DATA LOCATION counter_1_:B_4	// NOD
+DATA LOCATION counter_2_:C_8	// NOD
+DATA LOCATION counter_3_:A_1	// NOD
+DATA LOCATION counter_4_:B_1	// NOD
+DATA LOCATION counter_5_:B_5	// NOD
+DATA LOCATION i_btn_0_:A_*_9	// INP
+DATA LOCATION i_btn_1_:A_*_8	// INP
+DATA LOCATION i_btn_2_:A_*_7	// INP
+DATA LOCATION i_clk:*_*_11	// Cin
+DATA LOCATION o_clkSlow:C_1_24	// OUT
+DATA LOCATION o_diodes_0_:D_2_36	// OUT
+DATA LOCATION o_diodes_1_:D_5_37	// OUT
+DATA LOCATION o_diodes_2_:D_4_38	// OUT
+DATA LOCATION o_diodes_3_:D_9_39	// OUT
+DATA LOCATION o_diodes_4_:D_8_40	// OUT
+DATA LOCATION o_diodes_5_:D_1_41	// OUT
+DATA LOCATION o_diodes_6_:D_12_42	// OUT
+DATA LOCATION o_diodes_7_:D_0_43	// OUT
+DATA LOCATION o_state_0_:C_0_31	//  IO {RN_o_state_0_}
+DATA LOCATION o_state_1_:C_4_30	//  IO {RN_o_state_1_}
+DATA LOCATION pres_counter_0_:B_0	// NOD
+DATA LOCATION pres_counter_1_:A_8	// NOD
+DATA LOCATION pres_counter_2_:A_4	// NOD
+DATA LOCATION pres_counter_3_:A_0	// NOD
+DATA LOCATION pres_counter_4_:B_12	// NOD
+DATA LOCATION pres_counter_5_:B_8	// NOD
+DATA LOCATION pres_counter_6_:C_12	// NOD
+DATA IO_DIR   i_btn_0_:IN
+DATA IO_DIR   i_btn_1_:IN
+DATA IO_DIR   i_btn_2_:IN
+DATA IO_DIR   i_clk:IN
+DATA IO_DIR   o_clkSlow:OUT
+DATA IO_DIR   o_diodes_0_:OUT
+DATA IO_DIR   o_diodes_1_:OUT
+DATA IO_DIR   o_diodes_2_:OUT
+DATA IO_DIR   o_diodes_3_:OUT
+DATA IO_DIR   o_diodes_4_:OUT
+DATA IO_DIR   o_diodes_5_:OUT
+DATA IO_DIR   o_diodes_6_:OUT
+DATA IO_DIR   o_diodes_7_:OUT
+DATA IO_DIR   o_state_0_:OUT
+DATA IO_DIR   o_state_1_:OUT
+DATA GLB_CLOCK  i_clk
+DATA PW_LEVEL  o_diodes_7_:0
+DATA SLEW      o_diodes_7_:0
+DATA SLEW      i_clk:0
+DATA PW_LEVEL  o_clkSlow:0
+DATA SLEW      o_clkSlow:0
+DATA PW_LEVEL  i_btn_2_:0
+DATA SLEW      i_btn_2_:0
+DATA PW_LEVEL  i_btn_1_:0
+DATA SLEW      i_btn_1_:0
+DATA PW_LEVEL  i_btn_0_:0
+DATA SLEW      i_btn_0_:0
+DATA PW_LEVEL  o_diodes_6_:0
+DATA SLEW      o_diodes_6_:0
+DATA PW_LEVEL  o_diodes_5_:0
+DATA SLEW      o_diodes_5_:0
+DATA PW_LEVEL  o_diodes_4_:0
+DATA SLEW      o_diodes_4_:0
+DATA PW_LEVEL  o_diodes_3_:0
+DATA SLEW      o_diodes_3_:0
+DATA PW_LEVEL  o_diodes_2_:0
+DATA SLEW      o_diodes_2_:0
+DATA PW_LEVEL  o_diodes_1_:0
+DATA SLEW      o_diodes_1_:0
+DATA PW_LEVEL  o_diodes_0_:0
+DATA SLEW      o_diodes_0_:0
+DATA PW_LEVEL  o_state_1_:0
+DATA SLEW      o_state_1_:0
+DATA PW_LEVEL  o_state_0_:0
+DATA SLEW      o_state_0_:0
+DATA PW_LEVEL  counter_0_:0
+DATA SLEW      counter_0_:0
+DATA PW_LEVEL  counter_1_:0
+DATA SLEW      counter_1_:0
+DATA PW_LEVEL  counter_2_:0
+DATA SLEW      counter_2_:0
+DATA PW_LEVEL  counter_3_:0
+DATA SLEW      counter_3_:0
+DATA PW_LEVEL  counter_4_:0
+DATA SLEW      counter_4_:0
+DATA PW_LEVEL  counter_5_:0
+DATA SLEW      counter_5_:0
+DATA PW_LEVEL  pres_counter_0_:0
+DATA SLEW      pres_counter_0_:0
+DATA PW_LEVEL  pres_counter_1_:0
+DATA SLEW      pres_counter_1_:0
+DATA PW_LEVEL  pres_counter_2_:0
+DATA SLEW      pres_counter_2_:0
+DATA PW_LEVEL  pres_counter_3_:0
+DATA SLEW      pres_counter_3_:0
+DATA PW_LEVEL  pres_counter_4_:0
+DATA SLEW      pres_counter_4_:0
+DATA PW_LEVEL  pres_counter_5_:0
+DATA SLEW      pres_counter_5_:0
+DATA PW_LEVEL  pres_counter_6_:0
+DATA SLEW      pres_counter_6_:0
+DATA PW_LEVEL  RN_o_state_1_:0
+DATA PW_LEVEL  RN_o_state_0_:0
+END

@@ -1,0 +1,496 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Tue Oct 29 15:04:31 2019
+#$ MODULE pianino
+#$ PINS 14 out0_7_ datain_4_ CLK0 out0_6_ out0_5_ out0_4_ out0_3_ out0_2_ out0_1_ \
+#  out0_0_ datain_3_ datain_2_ datain_1_ datain_0_
+#$ NODES 149 un2_datain_17 G_87 G_89 G_91 un4_odlicz odlicz_0_ odlicz_1_ odlicz_2_ \
+#  odlicz_3_ odlicz_4_ odlicz_5_ odlicz_6_ odlicz_7_ N_87 N_89 N_91 N_93 N_95 N_97 N_137 \
+#  N_138 N_139 N_7 N_27 N_29 N_33 N_34 N_36 N_37 N_38 N_46 N_47 N_48 N_49 N_50 N_51 N_52 N_53 N_54 \
+#  N_55 N_56 N_58 N_59 N_60 G_102_0_x2 G_104_0_x2 out0_i_x2_7_ odlicz_4_i_x2_4_ \
+#  odlicz_4_i_x2_3_ odlicz_4_i_x2_2_ odlicz_4_i_x2_1_ G_103_i_x2 N_2 N_3_0 N_14_i \
+#  datain_i_0__n datain_i_4__n datain_i_1__n un4_odlicz_i datain_i_2__n odlicz_i_0__n \
+#  odlicz_i_1__n odlicz_i_3__n odlicz_i_4__n odlicz_i_5__n odlicz_i_6__n odlicz_i_7__n \
+#  CLK0_c datain_c_0__n datain_c_1__n datain_c_2__n datain_c_3__n datain_c_4__n N_14 \
+#  out0_c_0__n out0_c_1__n out0_c_2__n out0_c_3__n out0_c_4__n out0_c_5__n out0_c_6__n \
+#  N_54_i N_138_0 N_52_i N_53_i N_50_i N_51_i N_38_i N_37_i N_36_i N_34_0 N_33_i N_60_i \
+#  un2_datain_17_i N_29_i N_58_i N_59_i N_27_i datain_c_i_3__n N_26_i N_14_0 N_55_i N_56_i \
+#  N_137_0 N_48_i N_49_i N_139_0 N_46_i N_47_i N_7_0 N_58_1 un2_datain_17_i_1 N_36_i_1 \
+#  N_138_0_1 N_138_0_2 N_138_0_3 N_54_1 N_54_2 N_51_1 N_51_2 N_53_1 N_50_1 un4_odlicz_1 \
+#  un4_odlicz_2 un4_odlicz_3 un4_odlicz_4 un4_odlicz_5 un4_odlicz_6 m3_un3_n m3_un1_n \
+#  m3_un0_n m4_un3_n m4_un1_n m4_un0_n m5_un3_n m5_un1_n m5_un0_n m6_un3_n m6_un1_n \
+#  m6_un0_n m7_un3_n m7_un1_n m7_un0_n m8_un3_n m8_un1_n m8_un0_n m9_un3_n m9_un1_n \
+#  m9_un0_n
+.model pianino
+.inputs datain_4_.BLIF CLK0.BLIF datain_3_.BLIF datain_2_.BLIF datain_1_.BLIF \
+datain_0_.BLIF un2_datain_17.BLIF G_87.BLIF G_89.BLIF G_91.BLIF \
+un4_odlicz.BLIF odlicz_0_.BLIF odlicz_1_.BLIF odlicz_2_.BLIF odlicz_3_.BLIF \
+odlicz_4_.BLIF odlicz_5_.BLIF odlicz_6_.BLIF odlicz_7_.BLIF N_87.BLIF \
+N_89.BLIF N_91.BLIF N_93.BLIF N_95.BLIF N_97.BLIF N_137.BLIF N_138.BLIF \
+N_139.BLIF N_7.BLIF N_27.BLIF N_29.BLIF N_33.BLIF N_34.BLIF N_36.BLIF \
+N_37.BLIF N_38.BLIF N_46.BLIF N_47.BLIF N_48.BLIF N_49.BLIF N_50.BLIF \
+N_51.BLIF N_52.BLIF N_53.BLIF N_54.BLIF N_55.BLIF N_56.BLIF N_58.BLIF \
+N_59.BLIF N_60.BLIF G_102_0_x2.BLIF G_104_0_x2.BLIF out0_i_x2_7_.BLIF \
+odlicz_4_i_x2_4_.BLIF odlicz_4_i_x2_3_.BLIF odlicz_4_i_x2_2_.BLIF \
+odlicz_4_i_x2_1_.BLIF G_103_i_x2.BLIF N_2.BLIF N_3_0.BLIF N_14_i.BLIF \
+datain_i_0__n.BLIF datain_i_4__n.BLIF datain_i_1__n.BLIF un4_odlicz_i.BLIF \
+datain_i_2__n.BLIF odlicz_i_0__n.BLIF odlicz_i_1__n.BLIF odlicz_i_3__n.BLIF \
+odlicz_i_4__n.BLIF odlicz_i_5__n.BLIF odlicz_i_6__n.BLIF odlicz_i_7__n.BLIF \
+CLK0_c.BLIF datain_c_0__n.BLIF datain_c_1__n.BLIF datain_c_2__n.BLIF \
+datain_c_3__n.BLIF datain_c_4__n.BLIF N_14.BLIF out0_c_0__n.BLIF \
+out0_c_1__n.BLIF out0_c_2__n.BLIF out0_c_3__n.BLIF out0_c_4__n.BLIF \
+out0_c_5__n.BLIF out0_c_6__n.BLIF N_54_i.BLIF N_138_0.BLIF N_52_i.BLIF \
+N_53_i.BLIF N_50_i.BLIF N_51_i.BLIF N_38_i.BLIF N_37_i.BLIF N_36_i.BLIF \
+N_34_0.BLIF N_33_i.BLIF N_60_i.BLIF un2_datain_17_i.BLIF N_29_i.BLIF \
+N_58_i.BLIF N_59_i.BLIF N_27_i.BLIF datain_c_i_3__n.BLIF N_26_i.BLIF \
+N_14_0.BLIF N_55_i.BLIF N_56_i.BLIF N_137_0.BLIF N_48_i.BLIF N_49_i.BLIF \
+N_139_0.BLIF N_46_i.BLIF N_47_i.BLIF N_7_0.BLIF N_58_1.BLIF \
+un2_datain_17_i_1.BLIF N_36_i_1.BLIF N_138_0_1.BLIF N_138_0_2.BLIF \
+N_138_0_3.BLIF N_54_1.BLIF N_54_2.BLIF N_51_1.BLIF N_51_2.BLIF N_53_1.BLIF \
+N_50_1.BLIF un4_odlicz_1.BLIF un4_odlicz_2.BLIF un4_odlicz_3.BLIF \
+un4_odlicz_4.BLIF un4_odlicz_5.BLIF un4_odlicz_6.BLIF m3_un3_n.BLIF \
+m3_un1_n.BLIF m3_un0_n.BLIF m4_un3_n.BLIF m4_un1_n.BLIF m4_un0_n.BLIF \
+m5_un3_n.BLIF m5_un1_n.BLIF m5_un0_n.BLIF m6_un3_n.BLIF m6_un1_n.BLIF \
+m6_un0_n.BLIF m7_un3_n.BLIF m7_un1_n.BLIF m7_un0_n.BLIF m8_un3_n.BLIF \
+m8_un1_n.BLIF m8_un0_n.BLIF m9_un3_n.BLIF m9_un1_n.BLIF m9_un0_n.BLIF
+.outputs out0_7_ out0_6_ out0_5_ out0_4_ out0_3_ out0_2_ out0_1_ out0_0_ \
+odlicz_0_.D odlicz_0_.C odlicz_0_.AR odlicz_1_.D odlicz_1_.C odlicz_1_.AR \
+odlicz_2_.D odlicz_2_.C odlicz_2_.AR odlicz_3_.D odlicz_3_.C odlicz_3_.AR \
+odlicz_4_.D odlicz_4_.C odlicz_4_.AR odlicz_5_.D odlicz_5_.C odlicz_5_.AR \
+odlicz_6_.D odlicz_6_.C odlicz_6_.AR odlicz_7_.D odlicz_7_.C odlicz_7_.AR \
+un2_datain_17 un4_odlicz N_87 N_89 N_91 N_93 N_95 N_97 N_137 N_138 N_139 N_7 \
+N_27 N_29 N_33 N_34 N_36 N_37 N_38 N_46 N_47 N_48 N_49 N_50 N_51 N_52 N_53 \
+N_54 N_55 N_56 N_58 N_59 N_60 N_2 N_3_0 N_14_i datain_i_0__n datain_i_4__n \
+datain_i_1__n un4_odlicz_i datain_i_2__n odlicz_i_0__n odlicz_i_1__n \
+odlicz_i_3__n odlicz_i_4__n odlicz_i_5__n odlicz_i_6__n odlicz_i_7__n CLK0_c \
+datain_c_0__n datain_c_1__n datain_c_2__n datain_c_3__n datain_c_4__n N_14 \
+out0_c_0__n out0_c_1__n out0_c_2__n out0_c_3__n out0_c_4__n out0_c_5__n \
+out0_c_6__n N_54_i N_138_0 N_52_i N_53_i N_50_i N_51_i N_38_i N_37_i N_36_i \
+N_34_0 N_33_i N_60_i un2_datain_17_i N_29_i N_58_i N_59_i N_27_i \
+datain_c_i_3__n N_26_i N_14_0 N_55_i N_56_i N_137_0 N_48_i N_49_i N_139_0 \
+N_46_i N_47_i N_7_0 N_58_1 un2_datain_17_i_1 N_36_i_1 N_138_0_1 N_138_0_2 \
+N_138_0_3 N_54_1 N_54_2 N_51_1 N_51_2 N_53_1 N_50_1 un4_odlicz_1 un4_odlicz_2 \
+un4_odlicz_3 un4_odlicz_4 un4_odlicz_5 un4_odlicz_6 m3_un3_n m3_un1_n m3_un0_n \
+m4_un3_n m4_un1_n m4_un0_n m5_un3_n m5_un1_n m5_un0_n m6_un3_n m6_un1_n \
+m6_un0_n m7_un3_n m7_un1_n m7_un0_n m8_un3_n m8_un1_n m8_un0_n m9_un3_n \
+m9_un1_n m9_un0_n G_87 G_89 G_91 G_102_0_x2 G_104_0_x2 out0_i_x2_7_ \
+odlicz_4_i_x2_4_ odlicz_4_i_x2_3_ odlicz_4_i_x2_2_ odlicz_4_i_x2_1_ G_103_i_x2
+.names odlicz_i_0__n.BLIF un4_odlicz_i.BLIF odlicz_0_.D
+11 1
+.names odlicz_4_i_x2_1_.BLIF un4_odlicz_i.BLIF odlicz_1_.D
+11 1
+.names odlicz_4_i_x2_2_.BLIF un4_odlicz_i.BLIF odlicz_2_.D
+11 1
+.names odlicz_4_i_x2_3_.BLIF un4_odlicz_i.BLIF odlicz_3_.D
+11 1
+.names odlicz_4_i_x2_4_.BLIF un4_odlicz_i.BLIF odlicz_4_.D
+11 1
+.names un2_datain_17_i.BLIF un2_datain_17
+0 1
+.names un4_odlicz_5.BLIF un4_odlicz_6.BLIF un4_odlicz
+11 1
+.names odlicz_0_.BLIF odlicz_1_.BLIF N_87
+11 1
+.names N_87.BLIF odlicz_2_.BLIF N_89
+11 1
+.names N_89.BLIF odlicz_3_.BLIF N_91
+11 1
+.names N_91.BLIF odlicz_4_.BLIF N_93
+11 1
+.names N_93.BLIF odlicz_5_.BLIF N_95
+11 1
+.names N_95.BLIF odlicz_6_.BLIF N_97
+11 1
+.names N_137_0.BLIF N_137
+0 1
+.names N_138_0.BLIF N_138
+0 1
+.names N_139_0.BLIF N_139
+0 1
+.names N_7_0.BLIF N_7
+0 1
+.names N_27_i.BLIF N_27
+0 1
+.names N_29_i.BLIF N_29
+0 1
+.names N_33_i.BLIF N_33
+0 1
+.names N_34_0.BLIF N_34
+0 1
+.names N_36_i.BLIF N_36
+0 1
+.names N_37_i.BLIF N_37
+0 1
+.names N_38_i.BLIF N_38
+0 1
+.names N_36.BLIF odlicz_i_4__n.BLIF N_46
+11 1
+.names N_36_i.BLIF odlicz_4_.BLIF N_47
+11 1
+.names N_37.BLIF odlicz_i_3__n.BLIF N_48
+11 1
+.names N_37_i.BLIF odlicz_3_.BLIF N_49
+11 1
+.names N_50_1.BLIF odlicz_i_0__n.BLIF N_50
+11 1
+.names N_51_1.BLIF N_51_2.BLIF N_51
+11 1
+.names datain_c_0__n.BLIF odlicz_i_0__n.BLIF N_52
+11 1
+.names N_53_1.BLIF odlicz_i_0__n.BLIF N_53
+11 1
+.names N_54_1.BLIF N_54_2.BLIF N_54
+11 1
+.names N_38.BLIF odlicz_i_1__n.BLIF N_55
+11 1
+.names N_38_i.BLIF odlicz_1_.BLIF N_56
+11 1
+.names N_58_1.BLIF datain_i_4__n.BLIF N_58
+11 1
+.names datain_c_1__n.BLIF datain_c_4__n.BLIF N_59
+11 1
+.names N_27.BLIF datain_c_4__n.BLIF N_60
+11 1
+.names un2_datain_17_i.BLIF un4_odlicz.BLIF N_2
+11 1
+.names un2_datain_17_i.BLIF un4_odlicz_i.BLIF N_3_0
+11 1
+.names N_14.BLIF N_14_i
+0 1
+.names datain_c_0__n.BLIF datain_i_0__n
+0 1
+.names datain_c_4__n.BLIF datain_i_4__n
+0 1
+.names datain_c_1__n.BLIF datain_i_1__n
+0 1
+.names un4_odlicz.BLIF un4_odlicz_i
+0 1
+.names datain_c_2__n.BLIF datain_i_2__n
+0 1
+.names odlicz_0_.BLIF odlicz_i_0__n
+0 1
+.names odlicz_1_.BLIF odlicz_i_1__n
+0 1
+.names odlicz_3_.BLIF odlicz_i_3__n
+0 1
+.names odlicz_4_.BLIF odlicz_i_4__n
+0 1
+.names odlicz_5_.BLIF odlicz_i_5__n
+0 1
+.names odlicz_6_.BLIF odlicz_i_6__n
+0 1
+.names odlicz_7_.BLIF odlicz_i_7__n
+0 1
+.names N_14_0.BLIF N_14
+0 1
+.names m9_un1_n.BLIF m9_un0_n.BLIF out0_c_0__n
+1- 1
+-1 1
+.names m8_un1_n.BLIF m8_un0_n.BLIF out0_c_1__n
+1- 1
+-1 1
+.names m7_un1_n.BLIF m7_un0_n.BLIF out0_c_2__n
+1- 1
+-1 1
+.names m6_un1_n.BLIF m6_un0_n.BLIF out0_c_3__n
+1- 1
+-1 1
+.names m5_un1_n.BLIF m5_un0_n.BLIF out0_c_4__n
+1- 1
+-1 1
+.names m4_un1_n.BLIF m4_un0_n.BLIF out0_c_5__n
+1- 1
+-1 1
+.names m3_un1_n.BLIF m3_un0_n.BLIF out0_c_6__n
+1- 1
+-1 1
+.names N_54.BLIF N_54_i
+0 1
+.names N_138_0_3.BLIF N_53_i.BLIF N_138_0
+11 1
+.names N_52.BLIF N_52_i
+0 1
+.names N_53.BLIF N_53_i
+0 1
+.names N_50.BLIF N_50_i
+0 1
+.names N_51.BLIF N_51_i
+0 1
+.names G_102_0_x2.BLIF datain_i_1__n.BLIF N_38_i
+11 1
+.names G_104_0_x2.BLIF datain_i_4__n.BLIF N_37_i
+11 1
+.names N_36_i_1.BLIF datain_i_4__n.BLIF N_36_i
+11 1
+.names datain_c_2__n.BLIF datain_i_4__n.BLIF N_34_0
+11 1
+.names datain_i_0__n.BLIF datain_i_1__n.BLIF N_33_i
+11 1
+.names N_60.BLIF N_60_i
+0 1
+.names un2_datain_17_i_1.BLIF N_59_i.BLIF un2_datain_17_i
+11 1
+.names N_26_i.BLIF datain_i_1__n.BLIF N_29_i
+11 1
+.names N_58.BLIF N_58_i
+0 1
+.names N_59.BLIF N_59_i
+0 1
+.names N_26_i.BLIF datain_i_0__n.BLIF N_27_i
+11 1
+.names datain_c_3__n.BLIF datain_c_i_3__n
+0 1
+.names datain_c_i_3__n.BLIF datain_i_2__n.BLIF N_26_i
+11 1
+.names out0_i_x2_7_.BLIF un2_datain_17_i.BLIF N_14_0
+11 1
+.names N_55.BLIF N_55_i
+0 1
+.names N_56.BLIF N_56_i
+0 1
+.names N_55_i.BLIF N_56_i.BLIF N_137_0
+11 1
+.names N_48.BLIF N_48_i
+0 1
+.names N_49.BLIF N_49_i
+0 1
+.names N_48_i.BLIF N_49_i.BLIF N_139_0
+11 1
+.names N_46.BLIF N_46_i
+0 1
+.names N_47.BLIF N_47_i
+0 1
+.names N_46_i.BLIF N_47_i.BLIF N_7_0
+11 1
+.names N_27_i.BLIF datain_i_1__n.BLIF N_58_1
+11 1
+.names N_60_i.BLIF N_58_i.BLIF un2_datain_17_i_1
+11 1
+.names N_26_i.BLIF N_33.BLIF N_36_i_1
+11 1
+.names N_54_i.BLIF N_50_i.BLIF N_138_0_1
+11 1
+.names N_51_i.BLIF N_52_i.BLIF N_138_0_2
+11 1
+.names N_138_0_1.BLIF N_138_0_2.BLIF N_138_0_3
+11 1
+.names N_27_i.BLIF datain_c_4__n.BLIF N_54_1
+11 1
+.names datain_i_1__n.BLIF odlicz_0_.BLIF N_54_2
+11 1
+.names N_29.BLIF datain_i_0__n.BLIF N_51_1
+11 1
+.names datain_i_4__n.BLIF odlicz_0_.BLIF N_51_2
+11 1
+.names N_29_i.BLIF datain_i_4__n.BLIF N_53_1
+11 1
+.names N_29.BLIF datain_c_4__n.BLIF N_50_1
+11 1
+.names N_7.BLIF G_103_i_x2.BLIF un4_odlicz_1
+11 1
+.names N_137.BLIF N_138.BLIF un4_odlicz_2
+11 1
+.names N_139.BLIF odlicz_i_5__n.BLIF un4_odlicz_3
+11 1
+.names odlicz_i_6__n.BLIF odlicz_i_7__n.BLIF un4_odlicz_4
+11 1
+.names un4_odlicz_1.BLIF un4_odlicz_2.BLIF un4_odlicz_5
+11 1
+.names un4_odlicz_3.BLIF un4_odlicz_4.BLIF un4_odlicz_6
+11 1
+.names out0_c_6__n.BLIF m3_un3_n
+0 1
+.names N_3_0.BLIF out0_c_6__n.BLIF m3_un1_n
+11 1
+.names N_2.BLIF m3_un3_n.BLIF m3_un0_n
+11 1
+.names out0_c_5__n.BLIF m4_un3_n
+0 1
+.names N_3_0.BLIF out0_c_5__n.BLIF m4_un1_n
+11 1
+.names N_2.BLIF m4_un3_n.BLIF m4_un0_n
+11 1
+.names out0_c_4__n.BLIF m5_un3_n
+0 1
+.names N_3_0.BLIF out0_c_4__n.BLIF m5_un1_n
+11 1
+.names N_2.BLIF m5_un3_n.BLIF m5_un0_n
+11 1
+.names out0_c_3__n.BLIF m6_un3_n
+0 1
+.names N_3_0.BLIF out0_c_3__n.BLIF m6_un1_n
+11 1
+.names N_2.BLIF m6_un3_n.BLIF m6_un0_n
+11 1
+.names out0_c_2__n.BLIF m7_un3_n
+0 1
+.names N_3_0.BLIF out0_c_2__n.BLIF m7_un1_n
+11 1
+.names N_2.BLIF m7_un3_n.BLIF m7_un0_n
+11 1
+.names out0_c_1__n.BLIF m8_un3_n
+0 1
+.names N_3_0.BLIF out0_c_1__n.BLIF m8_un1_n
+11 1
+.names N_2.BLIF m8_un3_n.BLIF m8_un0_n
+11 1
+.names out0_c_0__n.BLIF m9_un3_n
+0 1
+.names N_3_0.BLIF out0_c_0__n.BLIF m9_un1_n
+11 1
+.names N_2.BLIF m9_un3_n.BLIF m9_un0_n
+11 1
+.names N_14_i.BLIF out0_7_
+1 1
+0 0
+.names out0_c_6__n.BLIF out0_6_
+1 1
+0 0
+.names out0_c_5__n.BLIF out0_5_
+1 1
+0 0
+.names out0_c_4__n.BLIF out0_4_
+1 1
+0 0
+.names out0_c_3__n.BLIF out0_3_
+1 1
+0 0
+.names out0_c_2__n.BLIF out0_2_
+1 1
+0 0
+.names out0_c_1__n.BLIF out0_1_
+1 1
+0 0
+.names out0_c_0__n.BLIF out0_0_
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_0_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_0_.AR
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_1_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_1_.AR
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_2_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_2_.AR
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_3_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_3_.AR
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_4_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_4_.AR
+1 1
+0 0
+.names G_87.BLIF odlicz_5_.D
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_5_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_5_.AR
+1 1
+0 0
+.names G_89.BLIF odlicz_6_.D
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_6_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_6_.AR
+1 1
+0 0
+.names G_91.BLIF odlicz_7_.D
+1 1
+0 0
+.names CLK0_c.BLIF odlicz_7_.C
+1 1
+0 0
+.names un2_datain_17.BLIF odlicz_7_.AR
+1 1
+0 0
+.names CLK0.BLIF CLK0_c
+1 1
+0 0
+.names datain_0_.BLIF datain_c_0__n
+1 1
+0 0
+.names datain_1_.BLIF datain_c_1__n
+1 1
+0 0
+.names datain_2_.BLIF datain_c_2__n
+1 1
+0 0
+.names datain_3_.BLIF datain_c_3__n
+1 1
+0 0
+.names datain_4_.BLIF datain_c_4__n
+1 1
+0 0
+.names odlicz_5_.BLIF N_93.BLIF G_87
+01 1
+10 1
+11 0
+00 0
+.names odlicz_6_.BLIF N_95.BLIF G_89
+01 1
+10 1
+11 0
+00 0
+.names odlicz_7_.BLIF N_97.BLIF G_91
+01 1
+10 1
+11 0
+00 0
+.names N_27.BLIF datain_c_4__n.BLIF G_102_0_x2
+01 1
+10 1
+11 0
+00 0
+.names datain_c_2__n.BLIF datain_c_3__n.BLIF G_104_0_x2
+01 1
+10 1
+11 0
+00 0
+.names un4_odlicz.BLIF N_14_i.BLIF out0_i_x2_7_
+01 1
+10 1
+11 0
+00 0
+.names odlicz_4_.BLIF N_91.BLIF odlicz_4_i_x2_4_
+01 1
+10 1
+11 0
+00 0
+.names odlicz_3_.BLIF N_89.BLIF odlicz_4_i_x2_3_
+01 1
+10 1
+11 0
+00 0
+.names odlicz_2_.BLIF N_87.BLIF odlicz_4_i_x2_2_
+01 1
+10 1
+11 0
+00 0
+.names odlicz_0_.BLIF odlicz_1_.BLIF odlicz_4_i_x2_1_
+01 1
+10 1
+11 0
+00 0
+.names odlicz_2_.BLIF N_34.BLIF G_103_i_x2
+01 1
+10 1
+11 0
+00 0
+.end

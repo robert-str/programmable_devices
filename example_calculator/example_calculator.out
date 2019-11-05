@@ -1,0 +1,122 @@
+
+54 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  37 bcd_out_2_  0        3   0              37   -1   3   0   20
+  36 bcd_out_1_  0        3   0              36   -1   3   0   20
+  39 bcd_out_4_  0        3   0              39   -1   2   0   20
+  38 bcd_out_3_  0        3   0              38   -1   2   0   20
+  35 bcd_out_0_  0        3   0              35   -1   2   0   20
+  42 bcd_out_7_  0        3   0              42   -1   1   0   20
+  41 bcd_out_6_  0        3   0              41   -1   1   0   20
+  40 bcd_out_5_  0        3   0              40   -1   1   0   20
+   4 keypad_cols_0_  0        0   0               4   -1   1   0   21
+   3 keypad_cols_1_  0        0   0               3   -1   1   0   21
+   2 keypad_cols_2_  0        0   0               2   -1   1   0   21
+   1 keypad_cols_3_  0        0   0               1   -1   1   0   21
+ 154 calc_proc_state_curr_0_  3   -1   1   4  0  1  2  3  -1   -1   4   0   21
+ 156 calc_proc_state_curr_2_  3   -1   1   4  0  1  2  3  -1   -1   3   0   21
+ 155 calc_proc_state_curr_1_  3   -1   1   4  0  1  2  3  -1   -1   3   0   21
+ 175 calc_proc_n_36_0_n  3   -1   1   3  0  1     3  -1   -1   4   0   21
+ 174 input_keypad_interrupt  3   -1   2   3  0     2  3  -1   -1   4   0   21
+ 146 calc_proc_state_oper_0_  3   -1   1   3  0  1     3  -1   -1   1   0   20
+ 141 input_keypad_interrupt_out  3   -1   3   3  0  1  2     -1   -1   1   0   21
+ 170 input_keypad_counter_0_  3   -1   0   2  0     2     -1   -1   5   0   21
+ 171 input_keypad_counter_1_  3   -1   0   2  0     2     -1   -1   4   0   21
+ 164 calc_proc_state_next_0_sqmuxa_2_n  3   -1   2   2     1  2     -1   -1   2   0   21
+ 173 input_keypad_counter_3_  3   -1   2   2  0     2     -1   -1   1   0   21
+ 172 input_keypad_counter_2_  3   -1   2   2  0     2     -1   -1   1   1   21
+ 162 calc_proc_num_acc_3_  3   -1   0   2     1     3  -1   -1   1   0   20
+ 161 calc_proc_num_acc_2_  3   -1   1   2     1     3  -1   -1   1   0   20
+ 160 calc_proc_num_acc_1_  3   -1   3   2     1     3  -1   -1   1   0   20
+ 159 calc_proc_num_acc_0_  3   -1   3   2     1     3  -1   -1   1   0   20
+ 158 calc_proc_key_catched_3_  3   -1   0   2     1  2     -1   -1   1   0   20
+ 157 calc_proc_key_catched_1_  3   -1   0   2     1  2     -1   -1   1   0   20
+ 153 calc_proc_key_catched_2_  3   -1   2   2     1  2     -1   -1   1   0   20
+ 150 calc_proc_num_buf_2_  3   -1   2   2  0        3  -1   -1   1   0   20
+ 149 calc_proc_num_buf_1_  3   -1   2   2     1     3  -1   -1   1   0   20
+ 148 calc_proc_num_buf_0_  3   -1   1   2     1     3  -1   -1   1   0   20
+ 176 calc_proc_n_82_0_n  3   -1   3   1           3  -1   -1  16   0   21
+ 144 input_keypad_key_out_2_  3   -1   2   1        2     -1   -1  10   0   21
+ 143 input_keypad_key_out_1_  3   -1   0   1  0           -1   -1  10   0   21
+ 142 input_keypad_key_out_0_  3   -1   2   1        2     -1   -1  10   0   21
+ 145 input_keypad_key_out_3_  3   -1   0   1  0           -1   -1   9   0   21
+ 163 calc_proc_G_89_1  3   -1   1   1  0           -1   -1   7   1   21
+ 166 calc_proc_num_acc_buf_1_  3   -1   1   1           3  -1   -1   5   1   20
+ 169 calc_proc_n_79_1_n  3   -1   1   1           3  -1   -1   4   0   21
+ 168 calc_proc_num_acc_buf_3_  3   -1   3   1  0           -1   -1   4   1   20
+ 167 calc_proc_num_acc_buf_2_  3   -1   0   1     1        -1   -1   4   0   20
+ 177 calc_proc_state_oper_0__0  3   -1   1   1     1        -1   -1   2   0   21
+ 165 calc_proc_num_acc_buf_0_  3   -1   1   1           3  -1   -1   2   0   20
+ 152 calc_proc_key_catched_0_  3   -1   2   1     1        -1   -1   1   0   20
+ 151 calc_proc_num_buf_3_  3   -1   2   1           3  -1   -1   1   0   20
+ 147 calc_proc_state_disp_0_  3   -1   2   1           3  -1   -1   1   0   20
+  10        clk  9       -1   0              10   -1
+   8 keypad_rows_0_  1   -1  -1   2  0     2      8   -1
+   7 keypad_rows_1_  1   -1  -1   2  0     2      7   -1
+   6 keypad_rows_2_  1   -1  -1   2  0     2      6   -1
+   5 keypad_rows_3_  1   -1  -1   2  0     2      5   -1
+55 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  37 bcd_out_2_  0        3   0              37   -1   3   0   20
+  36 bcd_out_1_  0        3   0              36   -1   3   0   20
+  39 bcd_out_4_  0        3   0              39   -1   2   0   20
+  38 bcd_out_3_  0        3   0              38   -1   2   0   20
+  35 bcd_out_0_  0        3   0              35   -1   2   0   20
+  42 bcd_out_7_  0        3   0              42   -1   1   0   20
+  41 bcd_out_6_  0        3   0              41   -1   1   0   20
+  40 bcd_out_5_  0        3   0              40   -1   1   0   20
+   4 keypad_cols_0_  0        0   0               4   -1   1   0   21
+   3 keypad_cols_1_  0        0   0               3   -1   1   0   21
+   2 keypad_cols_2_  0        0   0               2   -1   1   0   21
+   1 keypad_cols_3_  0        0   0               1   -1   1   0   21
+ 154 calc_proc_state_curr_0_  3   -1   1   4  0  1  2  3  -1   -1   4   0   21
+ 156 calc_proc_state_curr_2_  3   -1   1   4  0  1  2  3  -1   -1   3   0   21
+ 155 calc_proc_state_curr_1_  3   -1   1   4  0  1  2  3  -1   -1   3   0   21
+ 170 input_keypad_counter_0_  3   -1   1   3  0  1  2     -1   -1   5   0   21
+ 171 input_keypad_counter_1_  3   -1   1   3  0  1  2     -1   -1   4   0   21
+ 172 input_keypad_counter_2_  3   -1   2   3  0  1  2     -1   -1   1   1   21
+ 141 input_keypad_interrupt_out  3   -1   2   3  0  1  2     -1   -1   1   0   21
+ 143 input_keypad_key_out_1_  3   -1   2   2     1  2     -1   -1   5   0   21
+ 175 input_keypad_interrupt_0_sqmuxa_n  3   -1   1   2  0     2     -1   -1   4   0   21
+ 174 input_keypad_interrupt  3   -1   1   2     1  2     -1   -1   4   0   21
+ 164 calc_proc_state_next_0_sqmuxa_2_n  3   -1   2   2     1  2     -1   -1   2   0   21
+ 173 input_keypad_counter_3_  3   -1   1   2  0     2     -1   -1   1   0   21
+ 161 calc_proc_num_acc_2_  3   -1   2   2  0        3  -1   -1   1   0   20
+ 160 calc_proc_num_acc_1_  3   -1   1   2  0        3  -1   -1   1   0   20
+ 159 calc_proc_num_acc_0_  3   -1   2   2  0        3  -1   -1   1   0   20
+ 158 calc_proc_key_catched_3_  3   -1   0   2     1  2     -1   -1   1   0   20
+ 157 calc_proc_key_catched_1_  3   -1   1   2     1  2     -1   -1   1   0   20
+ 153 calc_proc_key_catched_2_  3   -1   0   2     1  2     -1   -1   1   0   20
+ 152 calc_proc_key_catched_0_  3   -1   2   2     1  2     -1   -1   1   0   20
+ 150 calc_proc_num_buf_2_  3   -1   2   2  0        3  -1   -1   1   0   20
+ 149 calc_proc_num_buf_1_  3   -1   2   2  0        3  -1   -1   1   0   20
+ 148 calc_proc_num_buf_0_  3   -1   2   2  0        3  -1   -1   1   0   20
+ 146 calc_proc_state_oper_0_  3   -1   1   2  0        3  -1   -1   1   0   20
+ 177 calc_proc_n_82_0_n  3   -1   0   1           3  -1   -1  16   0   21
+ 163 calc_proc_G_89_1  3   -1   0   1           3  -1   -1   7   1   21
+ 166 calc_proc_num_acc_buf_1_  3   -1   3   1     1        -1   -1   5   1   20
+ 144 input_keypad_key_out_2_  3   -1   0   1  0           -1   -1   5   0   21
+ 176 calc_proc_n_36_0_n  3   -1   3   1           3  -1   -1   4   0   21
+ 169 calc_proc_n_79_1_n  3   -1   0   1  0           -1   -1   4   0   21
+ 168 calc_proc_num_acc_buf_3_  3   -1   3   1  0           -1   -1   4   1   20
+ 167 calc_proc_num_acc_buf_2_  3   -1   3   1        2     -1   -1   4   0   20
+ 145 input_keypad_key_out_3_  3   -1   0   1  0           -1   -1   3   1   21
+ 142 input_keypad_key_out_0_  3   -1   2   1        2     -1   -1   3   1   21
+ 178 calc_proc_state_oper_0__0  3   -1   1   1     1        -1   -1   2   0   21
+ 165 calc_proc_num_acc_buf_0_  3   -1   3   1        2     -1   -1   2   0   20
+ 162 calc_proc_num_acc_3_  3   -1   0   1           3  -1   -1   1   0   20
+ 151 calc_proc_num_buf_3_  3   -1   2   1           3  -1   -1   1   0   20
+ 147 calc_proc_state_disp_0_  3   -1   1   1           3  -1   -1   1   0   20
+  10        clk  9       -1   0              10   -1
+   5 keypad_rows_3_  1   -1  -1   2     1  2      5   -1
+   8 keypad_rows_0_  1   -1  -1   1     1         8   -1
+   7 keypad_rows_1_  1   -1  -1   1     1         7   -1
+   6 keypad_rows_2_  1   -1  -1   1     1         6   -1

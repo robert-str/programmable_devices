@@ -1,0 +1,11 @@
+@N: CD630 :"C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd":6:7:6:21|Synthesizing work.two_3bits_adder.combinational 
+@N: CD630 :"C:\isplever projects\zadanie1\seg7_decoder_v1.vhd":6:7:6:17|Synthesizing work.bcd_to_seg7.combinational 
+Post processing for work.bcd_to_seg7.combinational
+@N: CD630 :"C:\isplever projects\zadanie1\three_bit_adder.vhd":6:7:6:15|Synthesizing work.adder3bit.combinational 
+@W: CD638 :"C:\isplever projects\zadanie1\three_bit_adder.vhd":16:11:16:12|Signal c2 is undriven 
+@N: CD630 :"C:\isplever projects\zadanie1\sum1b.vhd":6:7:6:9|Synthesizing work.sum.comb 
+Post processing for work.sum.comb
+Post processing for work.adder3bit.combinational
+Post processing for work.two_3bits_adder.combinational
+@W: CL247 :"C:\isplever projects\zadanie1\three_bit_adder.vhd":9:1:9:3|Input port bit 2 of i_a(2 downto 0) is unused 
+@W: CL247 :"C:\isplever projects\zadanie1\three_bit_adder.vhd":10:1:10:3|Input port bit 2 of i_b(2 downto 0) is unused 

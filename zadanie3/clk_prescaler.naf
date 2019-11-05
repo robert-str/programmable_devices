@@ -1,0 +1,9 @@
+clk_fast  i
+prescalerValue[6]  i
+prescalerValue[5]  i
+prescalerValue[4]  i
+prescalerValue[3]  i
+prescalerValue[2]  i
+prescalerValue[1]  i
+prescalerValue[0]  i
+clk_slow  o

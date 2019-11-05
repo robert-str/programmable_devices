@@ -1,0 +1,3 @@
+@E: CD392 :"D:\projekttestowy\statemachine1.vhd":29:32:29:35|Can't convert expression to type std_logic
+@E: CD392 :"D:\projekttestowy\statemachine1.vhd":29:32:29:35|Can't convert expression to type std_logic
+

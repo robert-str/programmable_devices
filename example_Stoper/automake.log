@@ -1,0 +1,90 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Fit Design
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\blif2eqn.exe example_stoper.tte -o example_stoper.eq3 -use_short -err automake.err -gui'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Reading Open-ABEL (PLA) file example_stoper.tte...
+Writing report to file example_stoper.eq3...
+
+BLIF2EQN complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\lci2vci.exe -lci example_stoper.lct -out example_stoper.vct -log example_stoper.l2v'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\machfitr.exe @"example_stoper.rsp"'
+
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+
+*** Source file is example_stoper.tt4 . Device is M4A5-64/32-10JC .
+
+<Note>  F40016:  0 pins have been reserved out of 34 .
+<Note>  F40021:  34 pins are available after reservation, 12 are required
+                 by the design.
+<Note>  F35065:  For outputs, implicit output enables will be set to VCC.
+<Note>  F35068:  Since SET/RESET DON'T CARE is turned off, any unspecified
+                 SET/RESET will be defaulted to GND.
+
+*** End of Pla2db. 
+Check preplaced pins/nodes
+Check preplaced blocks
+Check unreferenced pins/nodes
+Check clock rules
+
+List of global clocks:
+   clk:
+...... Is preplaced at a global clock pin.
+
+List of non-global clocks:
+   None.
+
+*** End of Normalization.
+
+*** End of DRC. 
+
+*** Start Partitioning
+ 
+*** Partitioning successful.
+
+
+*** Starting Place&Route
+
+*** Place&Route Successful
+...... Zero Hold Time For Input Registers? N
+*** The JEDEC file generated is example_stoper.jed .
+*** Report Generator invoked.
+*** Report Generator end.
+
+// Fitting successful.
+// ERROR count 0 WARNING count 0 .
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\lci2vci.exe -vci example_stoper.vco -out example_stoper.lco -log example_stoper.v2l'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\synsvf.exe -exe "C:\ispLEVER_Classic2_0\ispvmsystem/ispufw" -prj example_stoper -if example_stoper.jed -j2s -log example_stoper.svl -gui'
+
+Need not generate svf file according to the constraints, exit
+Done: completed successfully.

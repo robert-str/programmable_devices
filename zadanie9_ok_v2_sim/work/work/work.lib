@@ -1,0 +1,49 @@
+timestamp=1547559484722
+
+[~A]
+ModifyID=15
+Version=73
+
+[clk_prescaler]
+A/prescaler=21|./../../clk_prescaler.vhd|14|1*0
+BinI32/prescaler=3*0
+I=0*648
+I/prescaler=0*1511
+M=11|0|vc1|1547559484119|./../../clk_prescaler.vhd|0*223*0x0347813615f44e0f59c2176ce89ad70eaf8e843e|0*558*0x5eebbfaf24833dd780412b1f91e05209
+M/prescaler=21|0|vc1|1547559484121|./../../clk_prescaler.vhd|0*889*0xff13c9b0a0951f4ac7930ff9a5c69f95f086aa39|0*1408*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../../clk_prescaler.vhd|7
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|3fa773871a20c14e1f0f5ca696d695a3a4bae5606f9dea13debe9edc5559195e0f555f6991c27b9dea43824aa87081c5
+Version/prescaler=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|cae12c06217c698b50665c41a2a64cabb47390a3fca90f02da94c6585948d109e43f9d7e8dec105811ead3ebfcb55be7
+
+[statemachine1]
+A/sequential=21|./../../statemachine1.vhd|14|1*1806
+BinI32/sequential=3*561
+I=0*2480
+I/sequential=0*3843
+M=11|0|vc1|1547559484364|./../../statemachine1.vhd|0*2019*0xe439ac389f4cc7c7ce0b170a3b43d073d67e678a|0*2390*0x5eebbfaf24833dd780412b1f91e05209
+M/sequential=21|0|vc1|1547559484366|./../../statemachine1.vhd|0*2721*0xfcc4c0244885d12a3004c00035f1a19633b88be3|0*3739*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../../statemachine1.vhd|6
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|010e5c648bab5fd538c39afc92759baf147c35b3a2eda5824cb6350750eec87a24ee9ea50239cc966caa0150d5fb5677
+Version/sequential=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|55c06bc45e3f780fdc274d14e0a3c29ed1348bca961d073d52fe9ea5543e22c534e5b02304ec92dc147aa643fe75314b
+
+[testbench]
+A/behavior=21|./../../tb_statemachine1.vhd|10|1*5044
+BinI32/behavior=3*1398
+I=0*4554
+I/behavior=0*5766
+M=11|0|vc1|1547559484619|./../../tb_statemachine1.vhd|0*4228*0x60b39730ac49a2b83510569ace244188fc801624|0*4465*0x5eebbfaf24833dd780412b1f91e05209
+M/behavior=21|0|vc1|1547559484622|./../../tb_statemachine1.vhd|0*4783*0x1b809ec7d1c5ab2c1c2da933f2e495e17f96073f|0*5665*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../../tb_statemachine1.vhd|7
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d7913c112dc37cb284ed64cd0564db326e1ef
+Version/behavior=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5f39127942042be14a111d1b6f2c43c8e4
+
+[~MFT]
+0=20|0work.mgf|5766|0
+1=2|1work.mgf|5044|0
+3=2|3work.mgf|1398|0
+
+[~U]
+clk_prescaler=11|0*0|
+statemachine1=stateMachine1 11|0*1762|
+testbench=11|0*4155|
+

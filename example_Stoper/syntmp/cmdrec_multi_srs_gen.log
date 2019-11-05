@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  stoper  -multisrs  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synwork\stoper_comp.srs"  -osyn  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synwork\stoper_mult.srs"  -log  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synlog\stoper_multi_srs_gen.srr" 
+rc:0 success:1
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synwork\stoper_comp.srs|i|1572350611|3135
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synwork\stoper_mult.srs|o|1572350613|3560
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synlog\stoper_multi_srs_gen.srr|o|1572350613|376
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401220336|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401220532|6337536

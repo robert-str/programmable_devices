@@ -1,0 +1,129 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Nov 21 09:27:59 2018
+#$ MODULE counter
+#$ PINS 10 seg7_7_ clk zero seg7_6_ seg7_5_ seg7_4_ seg7_3_ seg7_2_ seg7_1_ seg7_0_
+#$ NODES 4 U1_o_number_0_ U1_o_number_1_ U1_o_number_2_ U1_o_number_3_
+.model top
+.inputs clk.BLIF zero.BLIF U1_o_number_0_.BLIF U1_o_number_1_.BLIF \
+U1_o_number_2_.BLIF U1_o_number_3_.BLIF
+.outputs seg7_7_ seg7_6_ seg7_5_ seg7_4_ seg7_3_ seg7_2_ seg7_1_ seg7_0_ \
+U1_o_number_2_.D U1_o_number_2_.C U1_o_number_3_.D U1_o_number_3_.C \
+U1_o_number_0_.D U1_o_number_0_.C U1_o_number_1_.D U1_o_number_1_.C
+.names zero.BLIF U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_2_.D
+0110 1
+0-01 1
+00-1 1
+-111 0
+--00 0
+-0-0 0
+1--- 0
+.names zero.BLIF U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF U1_o_number_3_.D
+-1110 1
+1---- 1
+---01 1
+--0-1 1
+-0--1 1
+01111 0
+0--00 0
+0-0-0 0
+00--0 0
+.names zero.BLIF U1_o_number_0_.BLIF U1_o_number_0_.D
+00 1
+1- 0
+-1 0
+.names zero.BLIF U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_1_.D
+-10 1
+-01 1
+1-- 1
+000 0
+011 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_7_
+1000 1
+0010 1
+0-0- 0
+1-1- 0
+-1-- 0
+---1 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_6_
+1010 1
+011- 1
+-111 1
+0-11 1
+00-0 0
+11-0 0
+10-1 0
+--0- 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_5_
+0100 1
+-111 1
+0-11 1
+-00- 0
+1-0- 0
+10-- 0
+--10 0
+--01 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_4_
+0101 1
+1000 1
+0010 1
+111- 1
+0-00 0
+110- 0
+011- 0
+-0-1 0
+101- 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_3_
+100- 1
+-010 1
+1--0 1
+0-0- 0
+01-- 0
+--11 0
+-1-1 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_2_
+-100 1
+1-00 1
+11-0 1
+-01- 0
+0-1- 0
+00-- 0
+---1 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_1_
+1110 1
+-000 1
+-011 1
+01-- 0
+-010 0
+-10- 0
+--01 0
+-1-1 0
+.names U1_o_number_0_.BLIF U1_o_number_1_.BLIF U1_o_number_2_.BLIF \
+U1_o_number_3_.BLIF seg7_0_
+-00- 1
+-11- 1
+0--- 1
+---0 1
+1101 0
+1011 0
+.names clk.BLIF U1_o_number_2_.C
+1 1
+0 0
+.names clk.BLIF U1_o_number_3_.C
+1 1
+0 0
+.names clk.BLIF U1_o_number_0_.C
+1 1
+0 0
+.names clk.BLIF U1_o_number_1_.C
+1 1
+0 0
+.end

@@ -1,0 +1,854 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Tue Oct 29 15:16:53 2019
+#$ MODULE example_calculator
+#$ PINS 17 keypad_rows_3_ keypad_cols_3_ bcd_out_7_ clk keypad_rows_2_ \
+#  keypad_rows_1_ keypad_rows_0_ keypad_cols_2_ keypad_cols_1_ keypad_cols_0_ \
+#  bcd_out_6_ bcd_out_5_ bcd_out_4_ bcd_out_3_ bcd_out_2_ bcd_out_1_ bcd_out_0_
+#$ NODES 43 input_keypad_interrupt_out input_keypad_key_out_0_ \
+#  input_keypad_key_out_1_ input_keypad_key_out_2_ input_keypad_key_out_3_ \
+#  calc_proc_state_oper_0_ calc_proc_state_disp_0_ calc_proc_num_buf_0_ \
+#  calc_proc_num_buf_1_ calc_proc_num_buf_2_ calc_proc_num_buf_3_ \
+#  calc_proc_key_catched_0_ calc_proc_key_catched_2_ calc_proc_state_curr_0_ \
+#  calc_proc_state_curr_1_ calc_proc_state_curr_2_ calc_proc_key_catched_1_ \
+#  calc_proc_key_catched_3_ calc_proc_num_acc_0_ calc_proc_num_acc_1_ \
+#  calc_proc_num_acc_2_ calc_proc_num_acc_3_ calc_proc_G_89_1 \
+#  calc_proc_state_next_0_sqmuxa_2_n calc_proc_num_acc_buf_0_ \
+#  calc_proc_num_acc_buf_1_ calc_proc_num_acc_buf_2_ calc_proc_num_acc_buf_3_ \
+#  calc_proc_n_79_1_n input_keypad_counter_0_ input_keypad_counter_1_ \
+#  input_keypad_counter_2_ input_keypad_counter_3_ input_keypad_interrupt \
+#  input_keypad_interrupt_0_sqmuxa_n calc_proc_number_out_1_0_reg \
+#  calc_proc_number_out_1_1_reg calc_proc_number_out_1_2_reg \
+#  calc_proc_number_out_1_3_reg calc_proc_number_out_1_4_reg \
+#  calc_proc_number_out_1_5_reg calc_proc_n_36_0_n calc_proc_n_82_0_n
+.model calculator
+.inputs keypad_rows_3_.BLIF clk.BLIF keypad_rows_2_.BLIF keypad_rows_1_.BLIF \
+keypad_rows_0_.BLIF input_keypad_interrupt_out.BLIF \
+input_keypad_key_out_0_.BLIF input_keypad_key_out_1_.BLIF \
+input_keypad_key_out_2_.BLIF input_keypad_key_out_3_.BLIF \
+calc_proc_state_oper_0_.BLIF calc_proc_state_disp_0_.BLIF \
+calc_proc_num_buf_0_.BLIF calc_proc_num_buf_1_.BLIF calc_proc_num_buf_2_.BLIF \
+calc_proc_num_buf_3_.BLIF calc_proc_key_catched_0_.BLIF \
+calc_proc_key_catched_2_.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_1_.BLIF calc_proc_key_catched_3_.BLIF \
+calc_proc_num_acc_0_.BLIF calc_proc_num_acc_1_.BLIF calc_proc_num_acc_2_.BLIF \
+calc_proc_num_acc_3_.BLIF calc_proc_G_89_1.BLIF \
+calc_proc_state_next_0_sqmuxa_2_n.BLIF calc_proc_num_acc_buf_0_.BLIF \
+calc_proc_num_acc_buf_1_.BLIF calc_proc_num_acc_buf_2_.BLIF \
+calc_proc_num_acc_buf_3_.BLIF calc_proc_n_79_1_n.BLIF \
+input_keypad_counter_0_.BLIF input_keypad_counter_1_.BLIF \
+input_keypad_counter_2_.BLIF input_keypad_counter_3_.BLIF \
+input_keypad_interrupt.BLIF input_keypad_interrupt_0_sqmuxa_n.BLIF \
+calc_proc_number_out_1_0_reg.BLIF calc_proc_number_out_1_1_reg.BLIF \
+calc_proc_number_out_1_2_reg.BLIF calc_proc_number_out_1_3_reg.BLIF \
+calc_proc_number_out_1_4_reg.BLIF calc_proc_number_out_1_5_reg.BLIF \
+calc_proc_n_36_0_n.BLIF calc_proc_n_82_0_n.BLIF
+.outputs keypad_cols_3_ bcd_out_7_ keypad_cols_2_ keypad_cols_1_ \
+keypad_cols_0_ bcd_out_6_ bcd_out_5_ bcd_out_4_ bcd_out_3_ bcd_out_2_ \
+bcd_out_1_ bcd_out_0_ calc_proc_num_acc_buf_1_.LH calc_proc_num_acc_buf_1_.AR \
+calc_proc_num_acc_buf_2_.D calc_proc_num_acc_buf_2_.LH \
+calc_proc_num_acc_buf_2_.AR calc_proc_num_acc_buf_3_.LH \
+calc_proc_num_acc_buf_3_.AR calc_proc_num_buf_0_.D calc_proc_num_buf_0_.LH \
+calc_proc_num_buf_0_.AR calc_proc_num_buf_1_.D calc_proc_num_buf_1_.LH \
+calc_proc_num_buf_1_.AR input_keypad_counter_1_.D input_keypad_counter_1_.C \
+input_keypad_counter_2_.C input_keypad_counter_3_.C input_keypad_key_out_0_.C \
+input_keypad_key_out_1_.D input_keypad_key_out_1_.C input_keypad_key_out_2_.D \
+input_keypad_key_out_2_.C input_keypad_key_out_3_.D input_keypad_key_out_3_.C \
+input_keypad_interrupt.D input_keypad_interrupt.C input_keypad_counter_0_.D \
+input_keypad_counter_0_.C input_keypad_interrupt_out.D \
+input_keypad_interrupt_out.C calc_proc_state_curr_0_.D \
+calc_proc_state_curr_0_.C calc_proc_state_curr_1_.D calc_proc_state_curr_1_.C \
+calc_proc_state_curr_2_.D calc_proc_state_curr_2_.C calc_proc_state_disp_0_.D \
+calc_proc_state_disp_0_.LH calc_proc_state_disp_0_.AR \
+calc_proc_state_oper_0_.D calc_proc_state_oper_0_.LH \
+calc_proc_state_oper_0_.AR calc_proc_num_buf_2_.D calc_proc_num_buf_2_.LH \
+calc_proc_num_buf_2_.AR calc_proc_num_buf_3_.D calc_proc_num_buf_3_.LH \
+calc_proc_num_buf_3_.AR calc_proc_num_acc_0_.D calc_proc_num_acc_0_.LH \
+calc_proc_num_acc_0_.AR calc_proc_num_acc_1_.D calc_proc_num_acc_1_.LH \
+calc_proc_num_acc_1_.AR calc_proc_num_acc_2_.D calc_proc_num_acc_2_.LH \
+calc_proc_num_acc_2_.AR calc_proc_num_acc_3_.D calc_proc_num_acc_3_.LH \
+calc_proc_num_acc_3_.AR calc_proc_number_out_1_0_reg.D \
+calc_proc_number_out_1_0_reg.LH calc_proc_number_out_1_0_reg.AP \
+calc_proc_number_out_1_1_reg.D calc_proc_number_out_1_1_reg.LH \
+calc_proc_number_out_1_1_reg.AP calc_proc_number_out_1_2_reg.D \
+calc_proc_number_out_1_2_reg.LH calc_proc_number_out_1_2_reg.AP \
+calc_proc_number_out_1_3_reg.D calc_proc_number_out_1_3_reg.LH \
+calc_proc_number_out_1_3_reg.AP calc_proc_number_out_1_4_reg.D \
+calc_proc_number_out_1_4_reg.LH calc_proc_number_out_1_4_reg.AP \
+calc_proc_number_out_1_5_reg.D calc_proc_number_out_1_5_reg.LH \
+calc_proc_number_out_1_5_reg.AP calc_proc_key_catched_0_.D \
+calc_proc_key_catched_0_.LH calc_proc_key_catched_0_.AP \
+calc_proc_key_catched_1_.D calc_proc_key_catched_1_.LH \
+calc_proc_key_catched_1_.AR calc_proc_key_catched_2_.D \
+calc_proc_key_catched_2_.LH calc_proc_key_catched_2_.AP \
+calc_proc_key_catched_3_.D calc_proc_key_catched_3_.LH \
+calc_proc_key_catched_3_.AP calc_proc_num_acc_buf_0_.D \
+calc_proc_num_acc_buf_0_.LH calc_proc_num_acc_buf_0_.AR \
+calc_proc_state_next_0_sqmuxa_2_n calc_proc_n_79_1_n \
+input_keypad_interrupt_0_sqmuxa_n calc_proc_n_36_0_n calc_proc_n_82_0_n \
+input_keypad_key_out_0_.D.X1 input_keypad_key_out_0_.D.X2 calc_proc_G_89_1.X1 \
+calc_proc_G_89_1.X2 calc_proc_num_acc_buf_1_.D.X1 \
+calc_proc_num_acc_buf_1_.D.X2 calc_proc_num_acc_buf_3_.D.X1 \
+calc_proc_num_acc_buf_3_.D.X2 input_keypad_counter_2_.D.X1 \
+input_keypad_counter_2_.D.X2 input_keypad_counter_3_.D.X1 \
+input_keypad_counter_3_.D.X2
+.names calc_proc_state_oper_0_.BLIF calc_proc_num_buf_2_.BLIF \
+calc_proc_G_89_1.BLIF calc_proc_num_acc_buf_2_.D
+000 1
+110 1
+101 1
+011 1
+100 0
+010 0
+001 0
+111 0
+.names keypad_rows_3_.BLIF keypad_rows_1_.BLIF input_keypad_counter_0_.BLIF \
+input_keypad_counter_1_.BLIF input_keypad_interrupt.BLIF \
+input_keypad_counter_1_.D
+-1101 1
+--01- 1
+0--1- 1
+---10 1
+1-111 0
+--00- 0
+-0-0- 0
+---00 0
+.names input_keypad_key_out_1_.BLIF input_keypad_counter_0_.BLIF \
+input_keypad_counter_1_.BLIF input_keypad_counter_2_.BLIF \
+input_keypad_counter_3_.BLIF input_keypad_interrupt_0_sqmuxa_n.BLIF \
+input_keypad_key_out_1_.D
+-0-111 1
+-1-001 1
+-00-11 1
+1----0 1
+--1-01 1
+--0101 0
+--1011 0
+-00-01 0
+0----0 0
+-1--11 0
+.names input_keypad_key_out_2_.BLIF input_keypad_counter_0_.BLIF \
+input_keypad_counter_1_.BLIF input_keypad_counter_2_.BLIF \
+input_keypad_counter_3_.BLIF input_keypad_interrupt_0_sqmuxa_n.BLIF \
+input_keypad_key_out_2_.D
+--0101 1
+-11-11 1
+-00-11 1
+1----0 1
+-0-1-1 1
+-10-11 0
+-010-1 0
+---001 0
+-11-01 0
+0----0 0
+.names input_keypad_key_out_3_.BLIF input_keypad_counter_0_.BLIF \
+input_keypad_counter_1_.BLIF input_keypad_counter_2_.BLIF \
+input_keypad_counter_3_.BLIF input_keypad_interrupt_0_sqmuxa_n.BLIF \
+input_keypad_key_out_3_.D
+-0-111 1
+-1-011 1
+1----0 1
+-11--1 1
+--1-11 1
+-101-1 0
+-000-1 0
+0----0 0
+-0--01 0
+--0-01 0
+.names input_keypad_interrupt_out.BLIF calc_proc_key_catched_0_.BLIF \
+calc_proc_key_catched_2_.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_1_.BLIF calc_proc_key_catched_3_.BLIF \
+calc_proc_state_curr_0_.D
+--001-11 1
+-0-01-11 1
+1--10--- 1
+-----1-- 1
+-110-0-- 0
+0--1-0-- 0
+---0-00- 0
+---0-0-0 0
+---110-- 0
+---000-- 0
+.names input_keypad_interrupt_out.BLIF calc_proc_key_catched_0_.BLIF \
+calc_proc_key_catched_2_.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_1_.BLIF calc_proc_key_catched_3_.BLIF \
+calc_proc_state_curr_1_.D
+0--100-- 1
+--001-11 1
+-0-01-11 1
+-110---- 0
+1--1---- 0
+---0--0- 0
+---1-1-- 0
+---0---0 0
+---00--- 0
+---11--- 0
+.names input_keypad_interrupt_out.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_1_.BLIF calc_proc_key_catched_3_.BLIF \
+calc_proc_state_curr_2_.D
+01-1-- 1
+-110-- 1
+-00--- 1
+-0--0- 1
+-0---0 1
+-01-11 0
+-100-- 0
+11-1-- 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_state_disp_0_.LH
+110 1
+-0- 0
+0-- 0
+--1 0
+.names calc_proc_key_catched_0_.BLIF calc_proc_key_catched_2_.BLIF \
+calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_key_catched_1_.BLIF \
+calc_proc_key_catched_3_.BLIF calc_proc_state_oper_0_.LH
+000-011 1
+--000-- 1
+---1-0- 0
+-1-1--- 0
+1--1--- 0
+----1-- 0
+--1---- 0
+---1--0 0
+.names calc_proc_key_catched_0_.BLIF calc_proc_key_catched_2_.BLIF \
+calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_key_catched_1_.BLIF \
+calc_proc_key_catched_3_.BLIF calc_proc_state_oper_0_.AR
+1001011 1
+-----0- 0
+----1-- 0
+---0--- 0
+--1---- 0
+-1----- 0
+0------ 0
+------0 0
+.names calc_proc_state_disp_0_.BLIF calc_proc_num_buf_0_.BLIF \
+calc_proc_num_acc_0_.BLIF calc_proc_number_out_1_0_reg.D
+01- 1
+1-1 1
+00- 0
+1-0 0
+.names calc_proc_state_disp_0_.BLIF calc_proc_num_buf_1_.BLIF \
+calc_proc_num_acc_1_.BLIF calc_proc_num_acc_2_.BLIF calc_proc_num_acc_3_.BLIF \
+calc_proc_number_out_1_1_reg.D
+1-011 1
+1-1-0 1
+01--- 1
+1--01 0
+00--- 0
+1-0-0 0
+1-1-1 0
+.names calc_proc_state_disp_0_.BLIF calc_proc_num_buf_2_.BLIF \
+calc_proc_num_acc_1_.BLIF calc_proc_num_acc_2_.BLIF calc_proc_num_acc_3_.BLIF \
+calc_proc_number_out_1_2_reg.D
+1-11- 1
+1--10 1
+01--- 1
+00--- 0
+1--0- 0
+1-0-1 0
+.names calc_proc_state_disp_0_.BLIF calc_proc_num_buf_3_.BLIF \
+calc_proc_num_acc_1_.BLIF calc_proc_num_acc_2_.BLIF calc_proc_num_acc_3_.BLIF \
+calc_proc_number_out_1_3_reg.D
+1-001 1
+01--- 1
+00--- 0
+1--1- 0
+1-1-- 0
+1---0 0
+.names calc_proc_state_disp_0_.BLIF calc_proc_num_acc_1_.BLIF \
+calc_proc_num_acc_2_.BLIF calc_proc_num_acc_3_.BLIF \
+calc_proc_number_out_1_4_reg.D
+0--- 1
+--11 1
+-1-1 1
+100- 0
+1--0 0
+.names calc_proc_key_catched_2_.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_1_.BLIF calc_proc_key_catched_3_.BLIF \
+calc_proc_state_next_0_sqmuxa_2_n
+00100- 1
+-010-0 1
+---1-- 0
+--0--- 0
+-1---- 0
+----11 0
+1----1 0
+.names calc_proc_state_oper_0_.BLIF calc_proc_num_buf_0_.BLIF \
+calc_proc_num_buf_1_.BLIF calc_proc_num_acc_0_.BLIF calc_proc_num_acc_1_.BLIF \
+calc_proc_n_79_1_n
+000-- 1
+111-- 1
+0-01- 1
+1-11- 1
+00--1 1
+11--1 1
+---11 1
+10-0- 0
+01-0- 0
+1-0-0 0
+0-1-0 0
+.names keypad_rows_3_.BLIF keypad_rows_2_.BLIF keypad_rows_1_.BLIF \
+keypad_rows_0_.BLIF input_keypad_counter_0_.BLIF input_keypad_counter_1_.BLIF \
+input_keypad_interrupt.BLIF input_keypad_interrupt_0_sqmuxa_n
+---0001 1
+--0-101 1
+-0--011 1
+0---111 1
+---100- 0
+--1-10- 0
+-1--01- 0
+1---11- 0
+------0 0
+.names calc_proc_state_oper_0_.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_num_acc_0_.BLIF calc_proc_num_acc_1_.BLIF calc_proc_num_acc_2_.BLIF \
+calc_proc_num_acc_3_.BLIF calc_proc_n_36_0_n
+-110--1- 1
+-110-1-- 1
+-1101--- 1
+1110---- 1
+-110---1 1
+0---0000 0
+---1---- 0
+--0----- 0
+-0------ 0
+.names calc_proc_state_oper_0_.BLIF calc_proc_num_buf_0_.BLIF \
+calc_proc_num_buf_1_.BLIF calc_proc_num_buf_2_.BLIF calc_proc_num_acc_0_.BLIF \
+calc_proc_num_acc_1_.BLIF calc_proc_num_acc_2_.BLIF calc_proc_n_79_1_n.BLIF \
+calc_proc_n_82_0_n
+--100-00 1
+-10--000 1
+--10-000 1
+-001--0- 1
+-110--00 1
+---1000- 1
+-0-1-00- 1
+--010-0- 1
+--01-00- 1
+0111---0 1
+0-110--0 1
+01-1-0-0 1
+0-11-0-0 1
+1000---- 1
+0--100-0 1
+1-000--- 1
+10-0-0-- 1
+1--000-- 1
+1-00-0-- 1
+0--1--0- 1
+1--0--0- 1
+----0000 1
+-0011-1- 0
+-0-1111- 0
+-1101-1- 0
+-10-111- 0
+--01-11- 0
+--10-11- 0
+---1--11 0
+00001--- 0
+00-011-- 0
+11111--- 0
+11-111-- 0
+0-00-1-- 0
+1-11-1-- 0
+0--0--1- 0
+1--1--1- 0
+0--0---1 0
+.names input_keypad_counter_2_.BLIF input_keypad_counter_3_.BLIF \
+keypad_cols_3_
+1- 1
+-1 1
+00 0
+.names calc_proc_number_out_1_5_reg.BLIF bcd_out_7_
+1 1
+0 0
+.names input_keypad_counter_2_.BLIF input_keypad_counter_3_.BLIF \
+keypad_cols_2_
+0- 1
+-1 1
+10 0
+.names input_keypad_counter_2_.BLIF input_keypad_counter_3_.BLIF \
+keypad_cols_1_
+1- 1
+-0 1
+01 0
+.names input_keypad_counter_2_.BLIF input_keypad_counter_3_.BLIF \
+keypad_cols_0_
+0- 1
+-0 1
+11 0
+.names calc_proc_number_out_1_5_reg.BLIF bcd_out_6_
+1 1
+0 0
+.names calc_proc_number_out_1_5_reg.BLIF bcd_out_5_
+1 1
+0 0
+.names calc_proc_number_out_1_4_reg.BLIF bcd_out_4_
+1 1
+0 0
+.names calc_proc_number_out_1_3_reg.BLIF bcd_out_3_
+1 1
+0 0
+.names calc_proc_number_out_1_2_reg.BLIF bcd_out_2_
+1 1
+0 0
+.names calc_proc_number_out_1_1_reg.BLIF bcd_out_1_
+1 1
+0 0
+.names calc_proc_number_out_1_0_reg.BLIF bcd_out_0_
+1 1
+0 0
+.names calc_proc_n_36_0_n.BLIF calc_proc_num_acc_buf_1_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_buf_1_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_n_36_0_n.BLIF calc_proc_num_acc_buf_2_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_buf_2_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_n_36_0_n.BLIF calc_proc_num_acc_buf_3_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_buf_3_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_key_catched_0_.BLIF calc_proc_num_buf_0_.D
+1 1
+0 0
+.names calc_proc_state_next_0_sqmuxa_2_n.BLIF calc_proc_num_buf_0_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_buf_0_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_key_catched_1_.BLIF calc_proc_num_buf_1_.D
+1 1
+0 0
+.names calc_proc_state_next_0_sqmuxa_2_n.BLIF calc_proc_num_buf_1_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_buf_1_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names clk.BLIF input_keypad_counter_1_.C
+1 1
+0 0
+.names clk.BLIF input_keypad_counter_2_.C
+1 1
+0 0
+.names clk.BLIF input_keypad_counter_3_.C
+1 1
+0 0
+.names clk.BLIF input_keypad_key_out_0_.C
+1 1
+0 0
+.names clk.BLIF input_keypad_key_out_1_.C
+1 1
+0 0
+.names clk.BLIF input_keypad_key_out_2_.C
+1 1
+0 0
+.names clk.BLIF input_keypad_key_out_3_.C
+1 1
+0 0
+.names keypad_rows_3_.BLIF keypad_rows_2_.BLIF keypad_rows_1_.BLIF \
+keypad_rows_0_.BLIF input_keypad_counter_0_.BLIF input_keypad_counter_1_.BLIF \
+input_keypad_interrupt.D
+---100 1
+--1-10 1
+-1--01 1
+1---11 1
+---000 0
+--0-10 0
+-0--01 0
+0---11 0
+.names clk.BLIF input_keypad_interrupt.C
+1 1
+0 0
+.names keypad_rows_3_.BLIF keypad_rows_2_.BLIF keypad_rows_1_.BLIF \
+keypad_rows_0_.BLIF input_keypad_counter_0_.BLIF input_keypad_counter_1_.BLIF \
+input_keypad_interrupt.BLIF input_keypad_counter_0_.D
+---1001 1
+-1--011 1
+--0-10- 1
+0---11- 1
+----1-0 1
+--1-101 0
+1---111 0
+---000- 0
+-0--01- 0
+----0-0 0
+.names clk.BLIF input_keypad_counter_0_.C
+1 1
+0 0
+.names input_keypad_interrupt.BLIF input_keypad_interrupt_out.D
+1 1
+0 0
+.names clk.BLIF input_keypad_interrupt_out.C
+1 1
+0 0
+.names clk.BLIF calc_proc_state_curr_0_.C
+1 1
+0 0
+.names clk.BLIF calc_proc_state_curr_1_.C
+1 1
+0 0
+.names clk.BLIF calc_proc_state_curr_2_.C
+1 1
+0 0
+.names calc_proc_state_disp_0_.D
+ 1
+.names calc_proc_state_next_0_sqmuxa_2_n.BLIF calc_proc_state_disp_0_.AR
+1 1
+0 0
+.names calc_proc_state_oper_0_.D
+ 1
+.names calc_proc_key_catched_2_.BLIF calc_proc_num_buf_2_.D
+1 1
+0 0
+.names calc_proc_state_next_0_sqmuxa_2_n.BLIF calc_proc_num_buf_2_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_buf_2_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_key_catched_3_.BLIF calc_proc_num_buf_3_.D
+1 1
+0 0
+.names calc_proc_state_next_0_sqmuxa_2_n.BLIF calc_proc_num_buf_3_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_buf_3_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_num_acc_buf_0_.BLIF calc_proc_num_acc_0_.D
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_num_acc_0_.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_0_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_num_acc_buf_1_.BLIF calc_proc_num_acc_1_.D
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_num_acc_1_.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_1_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_num_acc_buf_2_.BLIF calc_proc_num_acc_2_.D
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_num_acc_2_.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_2_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_num_acc_buf_3_.BLIF calc_proc_num_acc_3_.D
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_num_acc_3_.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_3_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_number_out_1_0_reg.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_number_out_1_0_reg.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_number_out_1_1_reg.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_number_out_1_1_reg.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_number_out_1_2_reg.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_number_out_1_2_reg.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_number_out_1_3_reg.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_number_out_1_3_reg.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_number_out_1_4_reg.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_number_out_1_4_reg.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_state_disp_0_.BLIF calc_proc_number_out_1_5_reg.D
+0 1
+1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_number_out_1_5_reg.LH
+00 1
+1- 0
+-1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_number_out_1_5_reg.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names input_keypad_key_out_0_.BLIF calc_proc_key_catched_0_.D
+1 1
+0 0
+.names input_keypad_interrupt_out.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_0_.LH
+0100 1
+--1- 0
+-0-- 0
+1--- 0
+---1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_key_catched_0_.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names input_keypad_key_out_1_.BLIF calc_proc_key_catched_1_.D
+1 1
+0 0
+.names input_keypad_interrupt_out.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_1_.LH
+0100 1
+--1- 0
+-0-- 0
+1--- 0
+---1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_key_catched_1_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names input_keypad_key_out_2_.BLIF calc_proc_key_catched_2_.D
+1 1
+0 0
+.names input_keypad_interrupt_out.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_2_.LH
+0100 1
+--1- 0
+-0-- 0
+1--- 0
+---1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_key_catched_2_.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names input_keypad_key_out_3_.BLIF calc_proc_key_catched_3_.D
+1 1
+0 0
+.names input_keypad_interrupt_out.BLIF calc_proc_state_curr_0_.BLIF \
+calc_proc_state_curr_1_.BLIF calc_proc_state_curr_2_.BLIF \
+calc_proc_key_catched_3_.LH
+0100 1
+--1- 0
+-0-- 0
+1--- 0
+---1 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_key_catched_3_.AP
+000 1
+-1- 0
+1-- 0
+--1 0
+.names calc_proc_num_buf_0_.BLIF calc_proc_num_acc_0_.BLIF \
+calc_proc_num_acc_buf_0_.D
+10 1
+01 1
+00 0
+11 0
+.names calc_proc_n_36_0_n.BLIF calc_proc_num_acc_buf_0_.LH
+1 1
+0 0
+.names calc_proc_state_curr_0_.BLIF calc_proc_state_curr_1_.BLIF \
+calc_proc_state_curr_2_.BLIF calc_proc_num_acc_buf_0_.AR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names input_keypad_counter_0_.BLIF input_keypad_interrupt_0_sqmuxa_n.BLIF \
+input_keypad_key_out_0_.D.X1
+01 1
+1- 0
+-0 0
+.names input_keypad_key_out_0_.BLIF input_keypad_counter_0_.BLIF \
+input_keypad_counter_1_.BLIF input_keypad_counter_2_.BLIF \
+input_keypad_counter_3_.BLIF input_keypad_interrupt_0_sqmuxa_n.BLIF \
+input_keypad_key_out_0_.D.X2
+1----0 1
+--11-1 1
+---101 1
+---0-1 0
+0----0 0
+--0-11 0
+.names calc_proc_num_acc_2_.BLIF calc_proc_G_89_1.X1
+0 1
+1 0
+.names calc_proc_state_oper_0_.BLIF calc_proc_num_buf_0_.BLIF \
+calc_proc_num_buf_1_.BLIF calc_proc_num_acc_0_.BLIF calc_proc_num_acc_1_.BLIF \
+calc_proc_num_acc_2_.BLIF calc_proc_G_89_1.X2
+100--- 1
+1-00-- 1
+0-1-0- 1
+-01-0- 1
+1-0-0- 1
+-1-00- 1
+0110-- 1
+000--- 0
+0-01-- 0
+1-1-1- 0
+-01-1- 0
+0-0-1- 0
+-1-11- 0
+--111- 0
+1111-- 0
+.names calc_proc_num_buf_1_.BLIF calc_proc_num_acc_buf_1_.D.X1
+0 1
+1 0
+.names calc_proc_state_oper_0_.BLIF calc_proc_num_buf_0_.BLIF \
+calc_proc_num_buf_1_.BLIF calc_proc_num_acc_0_.BLIF calc_proc_num_acc_1_.BLIF \
+calc_proc_num_acc_buf_1_.D.X2
+-0--0 1
+0--10 1
+1--00 1
+01-01 1
+11-11 1
+-0--1 0
+0--11 0
+1--01 0
+11-10 0
+01-00 0
+.names calc_proc_state_oper_0_.BLIF calc_proc_num_acc_buf_3_.D.X1
+0 1
+1 0
+.names calc_proc_state_oper_0_.BLIF calc_proc_num_buf_3_.BLIF \
+calc_proc_num_acc_3_.BLIF calc_proc_n_82_0_n.BLIF \
+calc_proc_num_acc_buf_3_.D.X2
+-000 1
+-011 1
+-101 1
+-110 1
+-111 0
+-001 0
+-010 0
+-100 0
+.names input_keypad_counter_2_.BLIF input_keypad_counter_2_.D.X1
+1 1
+0 0
+.names keypad_rows_3_.BLIF input_keypad_counter_0_.BLIF \
+input_keypad_counter_1_.BLIF input_keypad_counter_2_.BLIF \
+input_keypad_interrupt.BLIF input_keypad_counter_2_.D.X2
+111-1 1
+0---- 0
+-0--- 0
+--0-- 0
+----0 0
+.names input_keypad_counter_3_.BLIF input_keypad_counter_3_.D.X1
+1 1
+0 0
+.names keypad_rows_3_.BLIF input_keypad_counter_0_.BLIF \
+input_keypad_counter_1_.BLIF input_keypad_counter_2_.BLIF \
+input_keypad_counter_3_.BLIF input_keypad_interrupt.BLIF \
+input_keypad_counter_3_.D.X2
+1111-1 1
+0----- 0
+-0---- 0
+--0--- 0
+---0-- 0
+-----0 0
+.end

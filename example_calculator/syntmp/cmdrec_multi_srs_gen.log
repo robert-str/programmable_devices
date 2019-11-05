@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  calculator  -multisrs  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synwork\calculator_comp.srs"  -osyn  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synwork\calculator_mult.srs"  -log  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synlog\calculator_multi_srs_gen.srr" 
+rc:0 success:1
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synwork\calculator_comp.srs|i|1572358608|5782
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synwork\calculator_mult.srs|o|1572358609|2806
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\synlog\calculator_multi_srs_gen.srr|o|1572358609|376
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401220336|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401220532|6337536

@@ -1,0 +1,12 @@
+i_clk  i
+i_btn[1]  i
+i_btn[0]  i
+o_clkSlow  o
+o_diodes[7]  o
+o_diodes[6]  o
+o_diodes[5]  o
+o_diodes[4]  o
+o_diodes[3]  o
+o_diodes[2]  o
+o_diodes[1]  o
+o_diodes[0]  o

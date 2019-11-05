@@ -1,0 +1,197 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Tue Dec 11 13:14:48 2018
+#$ MODULE testprj
+#$ PINS 12 i_btn_1_ o_diodes_7_ i_clk o_clkSlow i_btn_0_ o_diodes_6_ o_diodes_5_ \
+#  o_diodes_4_ o_diodes_3_ o_diodes_2_ o_diodes_1_ o_diodes_0_
+#$ NODES 9 currState_0_reg pres_counter_0_ pres_counter_1_ pres_counter_2_ \
+#  pres_counter_3_ pres_counter_4_ pres_counter_5_ pres_counter_6_ pres_o_clk_slowreg
+.model statemachine1
+.inputs i_btn_1_.BLIF i_clk.BLIF i_btn_0_.BLIF currState_0_reg.BLIF \
+pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_3_.BLIF pres_counter_4_.BLIF pres_counter_5_.BLIF \
+pres_counter_6_.BLIF pres_o_clk_slowreg.BLIF
+.outputs o_diodes_7_ o_clkSlow o_diodes_6_ o_diodes_5_ o_diodes_4_ o_diodes_3_ \
+o_diodes_2_ o_diodes_1_ o_diodes_0_ pres_counter_4_.C pres_counter_5_.C \
+pres_counter_6_.C pres_counter_1_.D pres_counter_1_.C pres_counter_2_.D \
+pres_counter_2_.C pres_counter_3_.D pres_counter_3_.C pres_o_clk_slowreg.C \
+pres_counter_0_.D pres_counter_0_.C currState_0_reg.D currState_0_reg.C \
+o_diodes_0_.OE o_diodes_1_.OE o_diodes_2_.OE o_diodes_3_.OE o_diodes_4_.OE \
+o_diodes_5_.OE o_diodes_6_.OE o_diodes_7_.OE pres_counter_4_.D.X1 \
+pres_counter_4_.D.X2 pres_counter_5_.D.X1 pres_counter_5_.D.X2 \
+pres_counter_6_.D.X1 pres_counter_6_.D.X2 pres_o_clk_slowreg.D.X1 \
+pres_o_clk_slowreg.D.X2
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_1_.D
+10 1
+01 1
+00 0
+11 0
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_2_.D
+110 1
+-01 1
+0-1 1
+111 0
+-00 0
+0-0 0
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_3_.BLIF pres_counter_3_.D
+1110 1
+--01 1
+-0-1 1
+0--1 1
+1111 0
+--00 0
+-0-0 0
+0--0 0
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_3_.BLIF pres_counter_4_.BLIF pres_counter_5_.BLIF \
+pres_counter_6_.BLIF pres_counter_0_.D
+0----0- 1
+0---1-- 1
+0--1--- 1
+0-1---- 1
+01----- 1
+0-----1 1
+-000010 0
+1------ 0
+.names i_btn_1_.BLIF i_btn_0_.BLIF currState_0_reg.BLIF currState_0_reg.D
+10- 1
+-01 1
+1-1 1
+01- 0
+-10 0
+0-0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_7_
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_clkSlow
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_6_
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_5_
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_4_
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_3_
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_2_
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_1_
+1 1
+0 0
+.names pres_o_clk_slowreg.BLIF o_diodes_0_
+1 1
+0 0
+.names i_clk.BLIF pres_counter_4_.C
+1 1
+0 0
+.names i_clk.BLIF pres_counter_5_.C
+1 1
+0 0
+.names i_clk.BLIF pres_counter_6_.C
+1 1
+0 0
+.names i_clk.BLIF pres_counter_1_.C
+1 1
+0 0
+.names i_clk.BLIF pres_counter_2_.C
+1 1
+0 0
+.names i_clk.BLIF pres_counter_3_.C
+1 1
+0 0
+.names i_clk.BLIF pres_o_clk_slowreg.C
+1 1
+0 0
+.names i_clk.BLIF pres_counter_0_.C
+1 1
+0 0
+.names i_clk.BLIF currState_0_reg.C
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_0_.OE
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_1_.OE
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_2_.OE
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_3_.OE
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_4_.OE
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_5_.OE
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_6_.OE
+1 1
+0 0
+.names currState_0_reg.BLIF o_diodes_7_.OE
+1 1
+0 0
+.names pres_counter_4_.BLIF pres_counter_4_.D.X1
+1 1
+0 0
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_3_.BLIF pres_counter_4_.BLIF pres_counter_4_.D.X2
+1111- 1
+0---- 0
+-0--- 0
+--0-- 0
+---0- 0
+.names pres_counter_5_.BLIF pres_counter_5_.D.X1
+1 1
+0 0
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_3_.BLIF pres_counter_4_.BLIF pres_counter_5_.BLIF \
+pres_counter_6_.BLIF pres_counter_5_.D.X2
+0000010 1
+11111-- 1
+01----- 0
+10----- 0
+0-1---- 0
+1-0---- 0
+0--1--- 0
+1--0--- 0
+0---1-- 0
+1---0-- 0
+0----0- 0
+0-----1 0
+.names pres_counter_6_.BLIF pres_counter_6_.D.X1
+1 1
+0 0
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_3_.BLIF pres_counter_4_.BLIF pres_counter_5_.BLIF \
+pres_counter_6_.BLIF pres_counter_6_.D.X2
+111111- 1
+0------ 0
+-0----- 0
+--0---- 0
+---0--- 0
+----0-- 0
+-----0- 0
+.names pres_o_clk_slowreg.BLIF pres_o_clk_slowreg.D.X1
+1 1
+0 0
+.names pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF \
+pres_counter_3_.BLIF pres_counter_4_.BLIF pres_counter_5_.BLIF \
+pres_counter_6_.BLIF pres_o_clk_slowreg.BLIF pres_o_clk_slowreg.D.X2
+0000010- 1
+1------- 0
+-1------ 0
+--1----- 0
+---1---- 0
+----1--- 0
+-----0-- 0
+------1- 0
+.end

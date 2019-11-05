@@ -1,0 +1,9 @@
+
+
+MODULE top
+
+	SUBMODULE bcd_to_seg7
+		INSTANCE U2
+
+	SUBMODULE counter
+		INSTANCE U1

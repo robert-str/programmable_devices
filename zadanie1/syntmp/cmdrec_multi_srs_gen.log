@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  adder3bit  -multisrs  "D:\isplever projects\zadanie1\synwork\adder3bit_comp.srs"  -osyn  "D:\isplever projects\zadanie1\synwork\adder3bit_mult.srs"  -log  "D:\isplever projects\zadanie1\synlog\adder3bit_multi_srs_gen.srr" 
+rc:0 success:1
+D:\isplever projects\zadanie1\synwork\adder3bit_comp.srs|i|1543565209|2473
+D:\isplever projects\zadanie1\synwork\adder3bit_mult.srs|o|1543565210|2094
+D:\isplever projects\zadanie1\synlog\adder3bit_multi_srs_gen.srr|o|1543565210|461
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401220336|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401220532|6337536

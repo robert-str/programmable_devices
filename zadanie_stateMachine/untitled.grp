@@ -1,0 +1,9 @@
+
+GROUP MACH_SEG_A counter_3_ counter_0_ pres_counter_3_ pres_counter_2_ 
+      pres_counter_1_ 
+GROUP MACH_SEG_B counter_5_ counter_4_ pres_counter_0_ pres_counter_5_ 
+      counter_1_ pres_counter_4_ 
+GROUP MACH_SEG_C o_state_1_ RN_o_state_1_ o_state_0_ RN_o_state_0_ o_clkSlow 
+      counter_2_ pres_counter_6_ 
+GROUP MACH_SEG_D o_diodes_0_ o_diodes_1_ o_diodes_2_ o_diodes_3_ o_diodes_4_ 
+      o_diodes_5_ o_diodes_6_ o_diodes_7_ 

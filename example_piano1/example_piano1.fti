@@ -1,0 +1,101 @@
+#PLAFILE example_piano1.tt4
+#DATE    10/29/2019
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION CLK0:*_*_11	// Cin
+DATA LOCATION N_89:C_12	// NOD
+DATA LOCATION datain_0_:C_*_31	// INP
+DATA LOCATION datain_1_:C_*_30	// INP
+DATA LOCATION datain_2_:C_*_29	// INP
+DATA LOCATION datain_3_:C_*_28	// INP
+DATA LOCATION datain_4_:C_*_27	// INP
+DATA LOCATION odlicz_0_:B_1	// NOD
+DATA LOCATION odlicz_1_:B_12	// NOD
+DATA LOCATION odlicz_2_:B_4	// NOD
+DATA LOCATION odlicz_3_:B_8	// NOD
+DATA LOCATION odlicz_4_:B_0	// NOD
+DATA LOCATION odlicz_5_:D_4	// NOD
+DATA LOCATION odlicz_6_:D_12	// NOD
+DATA LOCATION odlicz_7_:D_8	// NOD
+DATA LOCATION out0_0_:A_0_9	//  IO
+DATA LOCATION out0_1_:A_4_8	//  IO
+DATA LOCATION out0_2_:A_8_7	//  IO
+DATA LOCATION out0_3_:A_12_6	//  IO
+DATA LOCATION out0_4_:A_9_5	//  IO
+DATA LOCATION out0_5_:A_1_4	//  IO
+DATA LOCATION out0_6_:A_13_3	//  IO
+DATA LOCATION out0_7_:A_5_2	//  IO
+DATA LOCATION un2_datain_17_i:C_0	// NOD
+DATA LOCATION un4_odlicz_1:C_8	// NOD
+DATA LOCATION un4_odlicz_2:C_4	// NOD
+DATA LOCATION un4_odlicz_6:D_0	// NOD
+DATA IO_DIR   CLK0:IN
+DATA IO_DIR   datain_0_:IN
+DATA IO_DIR   datain_1_:IN
+DATA IO_DIR   datain_2_:IN
+DATA IO_DIR   datain_3_:IN
+DATA IO_DIR   datain_4_:IN
+DATA IO_DIR   out0_0_:BI
+DATA IO_DIR   out0_1_:BI
+DATA IO_DIR   out0_2_:BI
+DATA IO_DIR   out0_3_:BI
+DATA IO_DIR   out0_4_:BI
+DATA IO_DIR   out0_5_:BI
+DATA IO_DIR   out0_6_:BI
+DATA IO_DIR   out0_7_:BI
+DATA GLB_CLOCK  CLK0
+DATA PW_LEVEL  out0_7_:0
+DATA SLEW      out0_7_:0
+DATA PW_LEVEL  datain_4_:0
+DATA SLEW      datain_4_:0
+DATA SLEW      CLK0:0
+DATA PW_LEVEL  out0_6_:0
+DATA SLEW      out0_6_:0
+DATA PW_LEVEL  out0_5_:0
+DATA SLEW      out0_5_:0
+DATA PW_LEVEL  out0_4_:0
+DATA SLEW      out0_4_:0
+DATA PW_LEVEL  out0_3_:0
+DATA SLEW      out0_3_:0
+DATA PW_LEVEL  out0_2_:0
+DATA SLEW      out0_2_:0
+DATA PW_LEVEL  out0_1_:0
+DATA SLEW      out0_1_:0
+DATA PW_LEVEL  out0_0_:0
+DATA SLEW      out0_0_:0
+DATA PW_LEVEL  datain_3_:0
+DATA SLEW      datain_3_:0
+DATA PW_LEVEL  datain_2_:0
+DATA SLEW      datain_2_:0
+DATA PW_LEVEL  datain_1_:0
+DATA SLEW      datain_1_:0
+DATA PW_LEVEL  datain_0_:0
+DATA SLEW      datain_0_:0
+DATA PW_LEVEL  odlicz_0_:0
+DATA SLEW      odlicz_0_:0
+DATA PW_LEVEL  odlicz_1_:0
+DATA SLEW      odlicz_1_:0
+DATA PW_LEVEL  odlicz_2_:0
+DATA SLEW      odlicz_2_:0
+DATA PW_LEVEL  odlicz_3_:0
+DATA SLEW      odlicz_3_:0
+DATA PW_LEVEL  odlicz_4_:0
+DATA SLEW      odlicz_4_:0
+DATA PW_LEVEL  odlicz_5_:0
+DATA SLEW      odlicz_5_:0
+DATA PW_LEVEL  odlicz_6_:0
+DATA SLEW      odlicz_6_:0
+DATA PW_LEVEL  odlicz_7_:0
+DATA SLEW      odlicz_7_:0
+DATA PW_LEVEL  N_89:0
+DATA SLEW      N_89:0
+DATA PW_LEVEL  un2_datain_17_i:0
+DATA SLEW      un2_datain_17_i:0
+DATA PW_LEVEL  un4_odlicz_1:0
+DATA SLEW      un4_odlicz_1:0
+DATA PW_LEVEL  un4_odlicz_2:0
+DATA SLEW      un4_odlicz_2:0
+DATA PW_LEVEL  un4_odlicz_6:0
+DATA SLEW      un4_odlicz_6:0
+END

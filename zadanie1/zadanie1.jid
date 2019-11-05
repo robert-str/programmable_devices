@@ -1,0 +1,5 @@
+. two_3bits_adder zadanie_comb_fin1.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie1\zadanie_comb_fin1.vhd"
+ADDER1.B1 sum sum1b.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie1\sum1b.vhd"
+ADDER1.B2 sum sum1b.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie1\sum1b.vhd"
+ADDER1 adder3bit three_bit_adder.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie1\three_bit_adder.vhd"
+DEKODER1 bcd_to_seg7 seg7_decoder_v1.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie1\seg7_decoder_v1.vhd"

@@ -1,0 +1,3 @@
+. calculator main.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\main.vhd"
+input_keypad keypad keypad.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd"
+calc_proc not_a_cpu calculator.vhd "c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd"

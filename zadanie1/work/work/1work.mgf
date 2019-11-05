@@ -1,0 +1,49 @@
+V 000049 55 1632          1542095602872 behavior
+(_unit VHDL (testbench 0 7(behavior 0 10))
+	(_version vc1)
+	(_time 1542095602873 2018.11.13 08:53:22)
+	(_source (\./../../tb_sum.vhd\))
+	(_code ca9e9c9f9e9c9dddccc5d8909ecc9fccc9ccc2cdce)
+	(_entity
+		(_time 1542095602870)
+	)
+	(_component
+		(sum
+			(_object
+				(_port (_int wejscie ~STD_LOGIC_VECTOR{1~downto~0}~13 0 14(_entity (_in))))
+				(_port (_int wyjscie ~STD_LOGIC_VECTOR{1~downto~0}~132 0 15(_entity (_out))))
+			)
+		)
+	)
+	(_instantiation uut 0 24(_component sum)
+		(_port
+			((wejscie)(wejscie))
+			((wyjscie)(wyjscie))
+		)
+		(_use (_entity . sum)
+		)
+	)
+	(_object
+		(_type (_int ~STD_LOGIC_VECTOR{1~downto~0}~13 0 14(_array ~extieee.std_logic_1164.STD_LOGIC ((_dto i 1 i 0)))))
+		(_type (_int ~STD_LOGIC_VECTOR{1~downto~0}~132 0 15(_array ~extieee.std_logic_1164.STD_LOGIC ((_dto i 1 i 0)))))
+		(_type (_int ~STD_LOGIC_VECTOR{1~downto~0}~134 0 19(_array ~extieee.std_logic_1164.STD_LOGIC ((_dto i 1 i 0)))))
+		(_signal (_int wejscie ~STD_LOGIC_VECTOR{1~downto~0}~134 0 19(_architecture(_uni))))
+		(_signal (_int wyjscie ~STD_LOGIC_VECTOR{1~downto~0}~134 0 20(_architecture(_uni))))
+		(_process
+			(tb(_architecture 0 0 31(_process (_wait_for)(_target(0)))))
+		)
+		(_subprogram
+			(_ext resolved (0 15))
+		)
+		(_type (_ext ~extieee.std_logic_1164.STD_LOGIC (0 STD_LOGIC)))
+		(_type (_ext ~extieee.std_logic_1164.STD_ULOGIC (0 STD_ULOGIC)))
+		(_type (_ext ~extieee.std_logic_1164.STD_LOGIC_VECTOR (0 STD_LOGIC_VECTOR)))
+	)
+	(_use (ieee(std_logic_1164))(std(standard))(ieee(NUMERIC_STD))(generics(COMPONENTS)))
+	(_static
+		(771)
+		(770)
+		(515)
+	)
+	(_model . behavior 1 -1)
+)

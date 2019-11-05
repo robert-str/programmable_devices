@@ -1,0 +1,16 @@
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+EDIF2BLIF: Warning: Remove floating instance: :
+	i_btn[3]
+
+Inspect circuit stateMachine1
+    Number of input ports   : 2
+    Number of output ports  : 3
+    Number of bidir ports   : 0
+    Number of instances     : 133
+    Number of nets          : 142
+
+No design errors found in circuit stateMachine1
+
+WriteBLIF ended normally.

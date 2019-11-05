@@ -1,0 +1,198 @@
+#$ DATE Tue Nov 20 09:17:33 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE two_3bits_addes
+#$ PINS 16 i_a_3_ i_b_3_ segments_7_ i_a_2_ i_a_1_ i_a_0_ i_b_2_ i_b_1_ i_b_0_ segments_6_ segments_5_ segments_4_ segments_3_ segments_2_ segments_1_ segments_0_
+#$ NODES 74 DEKODER1_seg7_1_0_x2_4_ N_38 N_38_1 N_37 N_22 N_36 N_29 N_21 N_45 N_44 \
+#  N_43 N_49 N_31 N_30 N_40 N_39 N_26 N_28 N_48 N_33 \
+#  N_46 i_a_i_2__n i_a_i_3__n i_a_i_1__n i_a_i_0__n i_a_c_0__n i_a_c_1__n i_a_c_2__n i_a_c_3__n segments_c_0__n \
+#  segments_c_1__n segments_c_2__n segments_c_3__n segments_c_4__n segments_c_5__n segments_c_7__n segments_c_0_0__n segments_c_i_7__n N_33_i segments_c_0_3__n \
+#  N_37_i N_38_i segments_c_0_5__n N_18_i N_22_i N_48_i N_26_0 N_28_i N_39_i N_40_i \
+#  N_30_i N_29_i N_31_i segments_c_0_1__n N_49_i N_36_i segments_c_0_4__n N_43_i N_44_i N_45_i \
+#  N_21_0 N_21_0_1 segments_c_0_1_4__n segments_c_0_1_1__n N_37_1 N_38_1_1 N_29_1 N_18_i_1 N_18_i_2 segments_c_0_1_0__n \
+#  i_b_3__n i_b_2__n i_b_1__n i_b_0__n 
+.model two_3bits_addes
+.inputs i_a_3_.BLIF i_b_3_.BLIF i_a_2_.BLIF i_a_1_.BLIF i_a_0_.BLIF i_b_2_.BLIF i_b_1_.BLIF i_b_0_.BLIF DEKODER1_seg7_1_0_x2_4_.BLIF \
+  N_38.BLIF N_38_1.BLIF N_37.BLIF N_22.BLIF N_36.BLIF N_29.BLIF N_21.BLIF N_45.BLIF N_44.BLIF \
+  N_43.BLIF N_49.BLIF N_31.BLIF N_30.BLIF N_40.BLIF N_39.BLIF N_26.BLIF N_28.BLIF N_48.BLIF \
+  N_33.BLIF N_46.BLIF i_a_i_2__n.BLIF i_a_i_3__n.BLIF i_a_i_1__n.BLIF i_a_i_0__n.BLIF i_a_c_0__n.BLIF i_a_c_1__n.BLIF i_a_c_2__n.BLIF \
+  i_a_c_3__n.BLIF segments_c_0__n.BLIF segments_c_1__n.BLIF segments_c_2__n.BLIF segments_c_3__n.BLIF segments_c_4__n.BLIF segments_c_5__n.BLIF segments_c_7__n.BLIF segments_c_0_0__n.BLIF \
+  segments_c_i_7__n.BLIF N_33_i.BLIF segments_c_0_3__n.BLIF N_37_i.BLIF N_38_i.BLIF segments_c_0_5__n.BLIF N_18_i.BLIF N_22_i.BLIF N_48_i.BLIF \
+  N_26_0.BLIF N_28_i.BLIF N_39_i.BLIF N_40_i.BLIF N_30_i.BLIF N_29_i.BLIF N_31_i.BLIF segments_c_0_1__n.BLIF N_49_i.BLIF \
+  N_36_i.BLIF segments_c_0_4__n.BLIF N_43_i.BLIF N_44_i.BLIF N_45_i.BLIF N_21_0.BLIF N_21_0_1.BLIF segments_c_0_1_4__n.BLIF segments_c_0_1_1__n.BLIF \
+  N_37_1.BLIF N_38_1_1.BLIF N_29_1.BLIF N_18_i_1.BLIF N_18_i_2.BLIF segments_c_0_1_0__n.BLIF i_b_3__n.BLIF i_b_2__n.BLIF i_b_1__n.BLIF \
+  i_b_0__n.BLIF  
+.outputs segments_7_ segments_6_ segments_5_ segments_4_ segments_3_ segments_2_ segments_1_ segments_0_ DEKODER1_seg7_1_0_x2_4_.X1 DEKODER1_seg7_1_0_x2_4_.X2 N_38 \
+  N_38_1 N_37 N_22 N_36 N_29 N_21 N_45 N_44 N_43 N_49 N_31 \
+  N_30 N_40 N_39 N_26 N_28 N_48 N_33 N_46 i_a_i_2__n i_a_i_3__n i_a_i_1__n \
+  i_a_i_0__n i_a_c_0__n i_a_c_1__n i_a_c_2__n i_a_c_3__n segments_c_0__n segments_c_1__n segments_c_2__n segments_c_3__n segments_c_4__n segments_c_5__n \
+  segments_c_7__n segments_c_0_0__n segments_c_i_7__n N_33_i segments_c_0_3__n N_37_i N_38_i segments_c_0_5__n N_18_i N_22_i N_48_i \
+  N_26_0 N_28_i N_39_i N_40_i N_30_i N_29_i N_31_i segments_c_0_1__n N_49_i N_36_i segments_c_0_4__n \
+  N_43_i N_44_i N_45_i N_21_0 N_21_0_1 segments_c_0_1_4__n segments_c_0_1_1__n N_37_1 N_38_1_1 N_29_1 N_18_i_1 \
+  N_18_i_2 segments_c_0_1_0__n i_b_3__n i_b_2__n i_b_1__n i_b_0__n
+.names  i_a_0_.BLIF i_a_c_0__n
+1 1
+.names  i_a_1_.BLIF i_a_c_1__n
+1 1
+.names  i_a_2_.BLIF i_a_c_2__n
+1 1
+.names  i_a_3_.BLIF i_a_c_3__n
+1 1
+.names  segments_c_0__n.BLIF segments_0_
+1 1
+.names  segments_c_1__n.BLIF segments_1_
+1 1
+.names  segments_c_2__n.BLIF segments_2_
+1 1
+.names  segments_c_3__n.BLIF segments_3_
+1 1
+.names  segments_c_4__n.BLIF segments_4_
+1 1
+.names  segments_c_5__n.BLIF segments_5_
+1 1
+.names  N_18_i.BLIF segments_6_
+1 1
+.names  segments_c_7__n.BLIF segments_7_
+1 1
+.names  i_a_c_2__n.BLIF i_a_c_3__n.BLIF N_29_1
+11 1
+.names  N_29_1.BLIF i_a_i_1__n.BLIF N_29
+11 1
+.names  N_39_i.BLIF N_40_i.BLIF N_18_i_1
+11 1
+.names  i_a_c_2__n.BLIF segments_c_i_7__n.BLIF N_18_i_2
+11 1
+.names  N_18_i_1.BLIF N_18_i_2.BLIF N_18_i
+11 1
+.names  i_a_c_0__n.BLIF N_26_0.BLIF segments_c_0_1_0__n
+11 1
+.names  segments_c_0_1_0__n.BLIF N_28_i.BLIF segments_c_0_0__n
+11 1
+.names  segments_c_0_4__n.BLIF segments_c_4__n
+0 1
+.names  N_43.BLIF N_43_i
+0 1
+.names  N_44.BLIF N_44_i
+0 1
+.names  N_45.BLIF N_45_i
+0 1
+.names  N_21_0.BLIF N_21
+0 1
+.names  N_43_i.BLIF N_44_i.BLIF N_21_0_1
+11 1
+.names  N_21_0_1.BLIF N_45_i.BLIF N_21_0
+11 1
+.names  N_36_i.BLIF N_49_i.BLIF segments_c_0_1_4__n
+11 1
+.names  segments_c_0_1_4__n.BLIF segments_c_i_7__n.BLIF segments_c_0_4__n
+11 1
+.names  N_31_i.BLIF N_29_i.BLIF segments_c_0_1_1__n
+11 1
+.names  segments_c_0_1_1__n.BLIF N_30_i.BLIF segments_c_0_1__n
+11 1
+.names  N_22.BLIF i_a_c_2__n.BLIF N_37_1
+11 1
+.names  N_37_1.BLIF i_a_c_3__n.BLIF N_37
+11 1
+.names  i_a_c_1__n.BLIF i_a_i_0__n.BLIF N_38_1_1
+11 1
+.names  N_38_1_1.BLIF i_a_i_2__n.BLIF N_38_1
+11 1
+.names  N_37.BLIF N_37_i
+0 1
+.names  N_38.BLIF N_38_i
+0 1
+.names  segments_c_0_5__n.BLIF segments_c_5__n
+0 1
+.names  N_22_i.BLIF N_22
+0 1
+.names  N_48.BLIF N_48_i
+0 1
+.names  N_26_0.BLIF N_26
+0 1
+.names  N_28.BLIF N_28_i
+0 1
+.names  N_39.BLIF N_39_i
+0 1
+.names  N_40.BLIF N_40_i
+0 1
+.names  N_30.BLIF N_30_i
+0 1
+.names  N_29.BLIF N_29_i
+0 1
+.names  N_31.BLIF N_31_i
+0 1
+.names  segments_c_0_1__n.BLIF segments_c_1__n
+0 1
+.names  N_49.BLIF N_49_i
+0 1
+.names  N_36.BLIF N_36_i
+0 1
+.names  segments_c_0_0__n.BLIF segments_c_0__n
+0 1
+.names  segments_c_7__n.BLIF segments_c_i_7__n
+0 1
+.names  N_33.BLIF N_33_i
+0 1
+.names  segments_c_0_3__n.BLIF segments_c_3__n
+0 1
+.names  N_22_i.BLIF i_a_c_3__n.BLIF N_40
+11 1
+.names  N_45.BLIF i_a_i_3__n.BLIF N_39
+11 1
+.names  DEKODER1_seg7_1_0_x2_4_.BLIF N_46.BLIF segments_c_7__n
+11 1
+.names  N_26.BLIF i_a_c_0__n.BLIF N_33
+11 1
+.names  N_21.BLIF i_a_i_3__n.BLIF segments_c_2__n
+11 1
+.names  i_a_c_3__n.BLIF i_a_i_3__n
+0 1
+.names  N_49.BLIF i_a_i_3__n.BLIF N_31
+11 1
+.names  i_a_c_2__n.BLIF i_a_i_2__n
+0 1
+.names  N_46.BLIF i_a_i_2__n.BLIF N_30
+11 1
+.names  i_a_c_1__n.BLIF i_a_c_2__n.BLIF N_28
+11 1
+.names  N_38_1.BLIF i_a_i_3__n.BLIF N_38
+11 1
+.names  N_38_1.BLIF i_a_c_3__n.BLIF N_36
+11 1
+.names  N_48_i.BLIF i_a_c_3__n.BLIF N_26_0
+11 1
+.names  i_a_c_0__n.BLIF i_a_i_1__n.BLIF N_22_i
+11 1
+.names  N_37_i.BLIF N_38_i.BLIF segments_c_0_5__n
+11 1
+.names  N_33_i.BLIF segments_c_i_7__n.BLIF segments_c_0_3__n
+11 1
+.names  N_45.BLIF i_a_c_2__n.BLIF N_49
+11 1
+.names  i_a_i_1__n.BLIF i_a_i_2__n.BLIF N_48
+11 1
+.names  i_a_c_0__n.BLIF i_a_i_0__n
+0 1
+.names  i_a_c_1__n.BLIF i_a_i_1__n
+0 1
+.names  i_a_i_1__n.BLIF i_a_i_3__n.BLIF N_46
+11 1
+.names  i_a_c_0__n.BLIF i_a_c_1__n.BLIF N_45
+11 1
+.names  i_a_c_1__n.BLIF i_a_i_2__n.BLIF N_44
+11 1
+.names  i_a_c_0__n.BLIF i_a_i_2__n.BLIF N_43
+11 1
+.names  i_b_3_.BLIF i_b_3__n
+1 1
+.names  i_b_2_.BLIF i_b_2__n
+1 1
+.names  i_b_1_.BLIF i_b_1__n
+1 1
+.names  i_b_0_.BLIF i_b_0__n
+1 1
+.names  i_a_c_0__n.BLIF DEKODER1_seg7_1_0_x2_4_.X1
+1 1
+.names  i_a_c_2__n.BLIF DEKODER1_seg7_1_0_x2_4_.X2
+1 1
+.end

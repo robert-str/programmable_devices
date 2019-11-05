@@ -1,0 +1,226 @@
+
+7 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  35      wyjsc  0        3   0              35   -1   4   0   21
+  14     btn_1_  1   -1  -1   1           3  14   -1
+  13     btn_0_  1   -1  -1   1           3  13   -1
+   8  diode1_0_  1   -1  -1   1           3   8   -1
+   7  diode1_1_  1   -1  -1   1           3   7   -1
+   6  diode1_2_  1   -1  -1   1           3   6   -1
+   5  diode1_3_  1   -1  -1   1           3   5   -1
+3 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  14 wyjscie_1_  0        1   0              14   -1   1   0   21
+  13 wyjscie_0_  0        1   0              13   -1   1   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+4 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  14 wyjscie_1_  0        1   0              14   -1   1   0   21
+  13 wyjscie_0_  0        1   0              13   -1   1   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+ 141 wejscie_1_  1   -1  -1   1     1        -1   -1
+4 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  14 wyjscie_1_  0        1   0              14   -1   1   0   21
+  13 wyjscie_0_  0        1   0              13   -1   1   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+   7 wejscie_1_  1   -1  -1   1     1         7   -1
+4 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  13 wyjscie_0_  0        1   0              13   -1   2   0   21
+  14 wyjscie_1_  0        1   0              14   -1   1   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+   7 wejscie_1_  1   -1  -1   1     1         7   -1
+5 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  13 wyjscie_0_  0        1   0              13   -1   4   0   21
+  14 wyjscie_1_  0        1   0              14   -1   3   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+   7 wejscie_1_  1   -1  -1   1     1         7   -1
+ 141 wejscie_2_  1   -1  -1   1     1        -1   -1
+5 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  13 wyjscie_0_  0        1   0              13   -1   4   0   21
+  14 wyjscie_1_  0        1   0              14   -1   3   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+   7 wejscie_1_  1   -1  -1   1     1         7   -1
+   6 wejscie_2_  1   -1  -1   1     1         6   -1
+5 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  13 wyjscie_0_  0        1   0              13   -1   4   0   21
+  14 wyjscie_1_  0        1   0              14   -1   3   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+   7 wejscie_1_  1   -1  -1   1     1         7   -1
+   6 wejscie_2_  1   -1  -1   1     1         6   -1
+5 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  13 wyjscie_0_  0        1   0              13   -1   4   0   21
+  14 wyjscie_1_  0        1   0              14   -1   3   0   21
+   8 wejscie_0_  1   -1  -1   1     1         8   -1
+   7 wejscie_1_  1   -1  -1   1     1         7   -1
+   6 wejscie_2_  1   -1  -1   1     1         6   -1
+13 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  41    seg7_6_  0        3   0              41   -1   4   0   21
+  40    seg7_5_  0        3   0              40   -1   4   0   21
+  39    seg7_4_  0        3   0              39   -1   4   0   21
+  42    seg7_7_  0        3   0              42   -1   3   0   21
+  38    seg7_3_  0        3   0              38   -1   3   0   21
+  37    seg7_2_  0        3   0              37   -1   3   0   21
+  36    seg7_1_  0        3   0              36   -1   3   0   21
+  35    seg7_0_  0        3   0              35   -1   2   0   21
+  26   segments  0        2   0              26   -1   1   0   21
+   8  number_0_  1   -1  -1   1           3   8   -1
+   7  number_1_  1   -1  -1   1           3   7   -1
+   6  number_2_  1   -1  -1   1           3   6   -1
+   5  number_3_  1   -1  -1   1           3   5   -1
+13 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  41    seg7_6_  0        3   0              41   -1   4   0   21
+  39    seg7_4_  0        3   0              39   -1   4   0   21
+  38    seg7_3_  0        3   0              38   -1   4   0   21
+  42    seg7_7_  0        3   0              42   -1   3   0   21
+  40    seg7_5_  0        3   0              40   -1   3   0   21
+  37    seg7_2_  0        3   0              37   -1   3   0   21
+  36    seg7_1_  0        3   0              36   -1   3   0   21
+  35    seg7_0_  0        3   0              35   -1   2   0   21
+  26   segments  0        2   0              26   -1   1   0   21
+   8  number_0_  1   -1  -1   1           3   8   -1
+   7  number_1_  1   -1  -1   1           3   7   -1
+   6  number_2_  1   -1  -1   1           3   6   -1
+   5  number_3_  1   -1  -1   1           3   5   -1
+13 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  41    seg7_6_  0        3   0              41   -1   4   0   21
+  39    seg7_4_  0        3   0              39   -1   4   0   21
+  40    seg7_5_  0        3   0              40   -1   3   0   21
+  38    seg7_3_  0        3   0              38   -1   3   0   21
+  37    seg7_2_  0        3   0              37   -1   3   0   21
+  36    seg7_1_  0        3   0              36   -1   3   0   21
+  42    seg7_7_  0        3   0              42   -1   2   0   21
+  35    seg7_0_  0        3   0              35   -1   2   0   21
+  26   segments  0        2   0              26   -1   1   0   21
+   8  number_0_  1   -1  -1   1           3   8   -1
+   7  number_1_  1   -1  -1   1           3   7   -1
+   6  number_2_  1   -1  -1   1           3   6   -1
+   5  number_3_  1   -1  -1   1           3   5   -1
+12 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+ 148 segments_4_  0        3   0              -1   -1   4   0   21
+ 146 segments_6_  0        1   0              -1   -1   4   0   21
+ 151 segments_1_  0        2   0              -1   -1   3   0   21
+ 150 segments_2_  0        1   0              -1   -1   3   0   21
+ 149 segments_3_  0        3   0              -1   -1   3   0   21
+ 147 segments_5_  0        0   0              -1   -1   3   0   21
+ 152 segments_0_  0        2   0              -1   -1   2   0   21
+ 142 segments_7_  0        0   0              -1   -1   2   0   21
+ 145     i_a_0_  1   -1  -1   4  0  1  2  3  -1   -1
+ 144     i_a_1_  1   -1  -1   4  0  1  2  3  -1   -1
+ 143     i_a_2_  1   -1  -1   4  0  1  2  3  -1   -1
+ 141     i_a_3_  1   -1  -1   4  0  1  2  3  -1   -1
+12 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  41 segments_6_  0        3   0              41   -1   4   0   21
+  39 segments_4_  0        3   0              39   -1   4   0   21
+  40 segments_5_  0        3   0              40   -1   3   0   21
+  38 segments_3_  0        3   0              38   -1   3   0   21
+  37 segments_2_  0        3   0              37   -1   3   0   21
+  36 segments_1_  0        3   0              36   -1   3   0   21
+  42 segments_7_  0        3   0              42   -1   2   0   21
+  35 segments_0_  0        3   0              35   -1   2   0   21
+   8     i_a_0_  1   -1  -1   1           3   8   -1
+   7     i_a_1_  1   -1  -1   1           3   7   -1
+   6     i_a_2_  1   -1  -1   1           3   6   -1
+   5     i_a_3_  1   -1  -1   1           3   5   -1
+12 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42 segments_7_  0        3   0              42   -1   5   0   21
+  39 segments_4_  0        3   0              39   -1   5   0   21
+  38 segments_3_  0        3   0              38   -1   4   0   21
+  37 segments_2_  0        3   0              37   -1   4   0   21
+  40 segments_5_  0        3   0              40   -1   3   0   21
+  41 segments_6_  0        3   0              41   -1   2   0   21
+  36 segments_1_  0        3   0              36   -1   2   0   21
+  35 segments_0_  0        3   0              35   -1   1   0   21
+   8     i_a_0_  1   -1  -1   1           3   8   -1
+   7     i_a_1_  1   -1  -1   1           3   7   -1
+   4     i_b_0_  1   -1  -1   1           3   4   -1
+   3     i_b_1_  1   -1  -1   1           3   3   -1
+12 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42 segments_7_  0        3   0              42   -1   5   0   21
+  39 segments_4_  0        3   0              39   -1   5   0   21
+  38 segments_3_  0        3   0              38   -1   4   0   21
+  37 segments_2_  0        3   0              37   -1   4   0   21
+  40 segments_5_  0        3   0              40   -1   3   0   21
+  41 segments_6_  0        3   0              41   -1   2   0   21
+  36 segments_1_  0        3   0              36   -1   2   0   21
+  35 segments_0_  0        3   0              35   -1   1   0   21
+  14     i_b_1_  1   -1  -1   1           3  14   -1
+  13     i_b_0_  1   -1  -1   1           3  13   -1
+   8     i_a_0_  1   -1  -1   1           3   8   -1
+   7     i_a_1_  1   -1  -1   1           3   7   -1

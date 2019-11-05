@@ -1,0 +1,85 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      i_a(2:0)                      i_a                  2          3            -1
+      Port          2      i_b(2:0)                      i_b                  2          3            -1
+      Port          3      o_result(3:0)                 o_result                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      i_a_2_                      i_a[2]                       1            0            
+        Port      i_a_1_                      i_a[1]                       1            1            
+        Port      i_a_0_                      i_a[0]                       1            2            
+        Port      i_b_2_                      i_b[2]                       2            0            
+        Port      i_b_1_                      i_b[1]                       2            1            
+        Port      i_b_0_                      i_b[0]                       2            2            
+        Port      o_result_3_                 o_result[3]                       3            0            
+        Port      o_result_2_                 o_result[2]                       3            1            
+        Port      o_result_1_                 o_result[1]                       3            2            
+        Port      o_result_0_                 o_result[0]                       3            3            
+End
+Section Cross Reference File
+Design 'adder3bit' created Fri Nov 30 09:06:55 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                 i_a_0_                                    i_a[0]
+   Inst                 i_a_1_                                    i_a[1]
+   Inst                 i_b_0_                                    i_b[0]
+   Inst                 i_b_1_                                    i_b[1]
+   Inst            o_result_0_                               o_result[0]
+   Inst            o_result_1_                               o_result[1]
+   Inst            o_result_2_                               o_result[2]
+   Inst            o_result_3_                               o_result[3]
+   Inst   B2_o_wyjscie_1_0__m2_1                    B2.o_wyjscie_1_0_.m2_1
+   Inst   B2_o_wyjscie_1_0__m2                      B2.o_wyjscie_1_0_.m2
+   Inst   B2_o_wyjscie_1_0__i_a_i_1_                B2.o_wyjscie_1_0_.i_a_i[1]
+   Inst   B2_o_wyjscie_1_0__i_b_i_1_                B2.o_wyjscie_1_0_.i_b_i[1]
+   Inst   B2_o_wyjscie_1_0__m5_r                    B2.o_wyjscie_1_0_.m5.r
+   Inst   B2_o_wyjscie_1_0__m5_m                    B2.o_wyjscie_1_0_.m5.m
+   Inst   B2_o_wyjscie_1_0__m5_n                    B2.o_wyjscie_1_0_.m5.n
+   Inst   B2_o_wyjscie_1_0__m5_p                    B2.o_wyjscie_1_0_.m5.p
+   Inst   B2_o_wyjscie_1_0__m4                      B2.o_wyjscie_1_0_.m4
+   Inst            B1_i_a_i_0_                               B1.i_a_i[0]
+   Inst                  B1_m1                                     B1.m1
+   Inst               B1_N_2_i                                  B1.N_2_i
+   Inst   B2_o_wyjscie_1_0__i1_mux_i                B2.o_wyjscie_1_0_.i1_mux_i
+   Net               out2_0__n                                   out2[0]
+   Net                 gnd_n_n                                       GND
+   Net                b1_n_2_n                                    B1.N_2
+   Net    b2_o_wyjscie_1_0__i1_mux_n                  B2.o_wyjscie_1_0_.i1_mux
+   Net    b2_o_wyjscie_1_0__n_7_n                     B2.o_wyjscie_1_0_.N_7
+   Net              b1_n_2_i_n                                  B1.N_2_i
+   Net    b2_o_wyjscie_1_0__i1_mux_i_n                B2.o_wyjscie_1_0_.i1_mux_i
+   Net              i_a_i_0__n                                  i_a_i[0]
+   Net              i_a_i_1__n                                  i_a_i[1]
+   Net              i_b_i_1__n                                  i_b_i[1]
+   Net              i_a_c_0__n                                  i_a_c[0]
+   Net                i_a_0__n                                    i_a[0]
+   Net              i_a_c_1__n                                  i_a_c[1]
+   Net                i_a_1__n                                    i_a[1]
+   Net              i_b_c_0__n                                  i_b_c[0]
+   Net                i_b_0__n                                    i_b[0]
+   Net              i_b_c_1__n                                  i_b_c[1]
+   Net                i_b_1__n                                    i_b[1]
+   Net           o_result_0__n                               o_result[0]
+   Net           o_result_1__n                               o_result[1]
+   Net           o_result_2__n                               o_result[2]
+   Net             out2_1_0__n                                 out2_1[0]
+   Net    b2_o_wyjscie_1_0__m5_un3_n                  B2.o_wyjscie_1_0_.m5.un3
+   Net    b2_o_wyjscie_1_0__m5_un1_n                  B2.o_wyjscie_1_0_.m5.un1
+   Net    b2_o_wyjscie_1_0__m5_un0_n                  B2.o_wyjscie_1_0_.m5.un0
+   Net                i_a_2__n                                    i_a[2]
+   Net                i_b_2__n                                    i_b[2]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_a_2_
+        Input     i_b_2_
+        Input     i_a_1_
+        Input     i_a_0_
+        Input     i_b_1_
+        Input     i_b_0_
+        Output     o_result_3_
+        Output     o_result_2_
+        Output     o_result_1_
+        Output     o_result_0_
+End

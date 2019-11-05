@@ -1,0 +1,3 @@
+@E: CD716 :"D:\isplever projects\zadanie_statemachine\machina.vhd":40:16:40:23|Expression has ambiguous type
+@E: CD676 :"D:\isplever projects\zadanie_statemachine\machina.vhd":40:6:40:23|Can't implement expression (no function signature?)
+

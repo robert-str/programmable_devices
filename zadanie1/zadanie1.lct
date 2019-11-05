@@ -1,0 +1,135 @@
+
+[Device]
+Family = M4A5;
+PartNumber = M4A5-64/32-10JC;
+Package = 44PLCC;
+PartType = M4A5-64/32;
+Speed = -10;
+Operating_condition = COM;
+Status = Production;
+EN_PinGLB = Yes;
+EN_PinMacrocell = Yes;
+
+[Revision]
+Parent = m4a5.lci;
+DATE = 11/20/2018;
+TIME = 09:46:13;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+
+[Location Assignments]
+layer = OFF;
+i_a_0_ = Pin, 9, -, A, -;
+i_a_1_ = Pin, 8, -, A, -;
+i_a_2_ = Pin, 7, -, A, -;
+segments_0_ = Pin, 36, -, D, -;
+segments_1_ = Pin, 37, -, D, -;
+segments_2_ = Pin, 38, -, D, -;
+segments_3_ = Pin, 39, -, D, -;
+segments_4_ = Pin, 40, -, D, -;
+segments_5_ = Pin, 41, -, D, -;
+segments_6_ = Pin, 42, -, D, -;
+segments_7_ = Pin, 43, -, D, -;
+i_b_0_ = Pin, 14, -, B, -;
+i_b_1_ = Pin, 15, -, B, -;
+i_b_2_ = Pin, 16, -, B, -;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;

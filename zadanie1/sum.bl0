@@ -1,0 +1,49 @@
+#$ DATE Fri Nov 30 08:50:59 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE sum
+#$ PINS 5 o_wyjscie_1_ i_a i_b i_c o_wyjscie_0_
+#$ NODES 13 o_wyjscie_1_0__i1_mux_n o_wyjscie_1_0__m2 o_wyjscie_1_0__m4 o_wyjscie_1_0__i1_mux_i_n i_c_i i_b_i i_a_c i_b_c i_c_c o_wyjscie_1_0__m2_1 \
+#  o_wyjscie_1_0__m5_un3_n o_wyjscie_1_0__m5_un1_n o_wyjscie_1_0__m5_un0_n 
+.model sum
+.inputs i_a.BLIF i_b.BLIF i_c.BLIF o_wyjscie_1_0__i1_mux_n.BLIF o_wyjscie_1_0__m2.BLIF o_wyjscie_1_0__m4.BLIF o_wyjscie_1_0__i1_mux_i_n.BLIF i_c_i.BLIF i_b_i.BLIF \
+  i_a_c.BLIF i_b_c.BLIF i_c_c.BLIF o_wyjscie_1_0__m2_1.BLIF o_wyjscie_1_0__m5_un3_n.BLIF o_wyjscie_1_0__m5_un1_n.BLIF o_wyjscie_1_0__m5_un0_n.BLIF  
+.outputs o_wyjscie_1_ o_wyjscie_0_ o_wyjscie_1_0__m4.X1 o_wyjscie_1_0__m4.X2 o_wyjscie_1_0__m2_1.X1 o_wyjscie_1_0__m2_1.X2 o_wyjscie_1_0__m2.X1 o_wyjscie_1_0__m2.X2 o_wyjscie_1_0__i1_mux_n o_wyjscie_1_0__i1_mux_i_n i_c_i \
+  i_b_i i_a_c i_b_c i_c_c o_wyjscie_1_0__m5_un3_n o_wyjscie_1_0__m5_un1_n o_wyjscie_1_0__m5_un0_n
+.names  i_a.BLIF i_a_c
+1 1
+.names  i_b.BLIF i_b_c
+1 1
+.names  i_c.BLIF i_c_c
+1 1
+.names  o_wyjscie_1_0__m2.BLIF o_wyjscie_0_
+1 1
+.names  o_wyjscie_1_0__i1_mux_i_n.BLIF o_wyjscie_1_
+1 1
+.names  i_c_c.BLIF i_c_i
+0 1
+.names  i_b_c.BLIF i_b_i
+0 1
+.names  o_wyjscie_1_0__m4.BLIF o_wyjscie_1_0__m5_un3_n
+0 1
+.names  i_b_i.BLIF o_wyjscie_1_0__m4.BLIF o_wyjscie_1_0__m5_un1_n
+11 1
+.names  i_c_i.BLIF o_wyjscie_1_0__m5_un3_n.BLIF o_wyjscie_1_0__m5_un0_n
+11 1
+.names  o_wyjscie_1_0__m5_un1_n.BLIF o_wyjscie_1_0__m5_un0_n.BLIF o_wyjscie_1_0__i1_mux_n
+1- 1
+-1 1
+.names  o_wyjscie_1_0__i1_mux_n.BLIF o_wyjscie_1_0__i1_mux_i_n
+0 1
+.names  i_a_c.BLIF o_wyjscie_1_0__m4.X1
+1 1
+.names  i_c_c.BLIF o_wyjscie_1_0__m4.X2
+1 1
+.names  i_a_c.BLIF o_wyjscie_1_0__m2_1.X1
+1 1
+.names  i_b_c.BLIF o_wyjscie_1_0__m2_1.X2
+1 1
+.names  o_wyjscie_1_0__m2_1.BLIF o_wyjscie_1_0__m2.X1
+1 1
+.names  i_c_c.BLIF o_wyjscie_1_0__m2.X2
+1 1
+.end

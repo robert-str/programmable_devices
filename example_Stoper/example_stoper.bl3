@@ -1,0 +1,380 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Tue Oct 29 13:03:38 2019
+#$ MODULE example_stoper
+#$ PINS 12 r_3_ disp_3_ start stop reset clk r_2_ r_1_ r_0_ disp_2_ disp_1_ disp_0_
+#$ NODES 26 s_1_ s_2_ d_1_ d_2_ j_1_ j_2_ t_1_ t_2_ j_0_ j_3_ d_0_ d_3_ s_0_ s_3_ t_0_ t_3_ \
+#  currState_0_ finally_disp17_n disp_sn_N_3 se digit_un3_zl_n rDFF_0_reg rDFF_1_reg \
+#  rDFF_2_reg rDFF_3_reg te_i
+.model stoper
+.inputs start.BLIF stop.BLIF reset.BLIF clk.BLIF s_1_.BLIF s_2_.BLIF d_1_.BLIF \
+d_2_.BLIF j_1_.BLIF j_2_.BLIF t_1_.BLIF t_2_.BLIF j_0_.BLIF j_3_.BLIF \
+d_0_.BLIF d_3_.BLIF s_0_.BLIF s_3_.BLIF t_0_.BLIF t_3_.BLIF currState_0_.BLIF \
+finally_disp17_n.BLIF disp_sn_N_3.BLIF se.BLIF digit_un3_zl_n.BLIF \
+rDFF_0_reg.BLIF rDFF_1_reg.BLIF rDFF_2_reg.BLIF rDFF_3_reg.BLIF te_i.BLIF
+.outputs r_3_ disp_3_ r_2_ r_1_ r_0_ disp_2_ disp_1_ disp_0_ currState_0_.D \
+currState_0_.C t_3_.C rDFF_0_reg.D rDFF_0_reg.C rDFF_1_reg.D rDFF_1_reg.C \
+rDFF_2_reg.D rDFF_2_reg.C rDFF_3_reg.D rDFF_3_reg.C t_0_.D t_0_.C t_1_.D \
+t_1_.C t_2_.D t_2_.C s_2_.D s_2_.C s_3_.C d_3_.C s_0_.D s_0_.C s_1_.D s_1_.C \
+d_1_.C d_2_.C j_2_.D j_2_.C j_3_.C d_0_.D d_0_.C j_0_.D j_0_.C j_1_.D j_1_.C \
+finally_disp17_n disp_sn_N_3 se digit_un3_zl_n te_i d_1_.D.X1 d_1_.D.X2 \
+d_2_.D.X1 d_2_.D.X2 j_3_.D.X1 j_3_.D.X2 d_3_.D.X1 d_3_.D.X2 s_3_.D.X1 \
+s_3_.D.X2 t_3_.D.X1 t_3_.D.X2
+.names start.BLIF stop.BLIF currState_0_.BLIF currState_0_.D
+-10 1
+0-1 1
+-00 0
+1-1 0
+.names reset.BLIF rDFF_3_reg.BLIF rDFF_0_reg.D
+01 1
+1- 0
+-0 0
+.names reset.BLIF rDFF_0_reg.BLIF rDFF_1_reg.D
+1- 1
+-1 1
+00 0
+.names reset.BLIF rDFF_1_reg.BLIF rDFF_2_reg.D
+1- 1
+-1 1
+00 0
+.names reset.BLIF rDFF_2_reg.BLIF rDFF_3_reg.D
+1- 1
+-1 1
+00 0
+.names reset.BLIF t_0_.BLIF te_i.BLIF t_0_.D
+000 1
+-11 1
+1-0 0
+-10 0
+-01 0
+.names reset.BLIF t_1_.BLIF t_2_.BLIF t_0_.BLIF t_3_.BLIF te_i.BLIF t_1_.D
+00-100 1
+0011-0 1
+01-0-- 1
+-1---1 1
+-00-1- 0
+-1-1-0 0
+-0-0-- 0
+-0---1 0
+1----0 0
+.names reset.BLIF t_1_.BLIF t_2_.BLIF t_0_.BLIF te_i.BLIF t_2_.D
+01010 1
+0-10- 1
+001-- 1
+--1-1 1
+-1110 0
+--00- 0
+-00-- 0
+--0-1 0
+1---0 0
+.names reset.BLIF s_1_.BLIF s_2_.BLIF s_0_.BLIF se.BLIF s_2_.D
+01011 1
+0-10- 1
+001-- 1
+--1-0 1
+-1111 0
+--00- 0
+-00-- 0
+--0-0 0
+1---1 0
+.names reset.BLIF s_0_.BLIF se.BLIF s_0_.D
+001 1
+-10 1
+1-1 0
+-00 0
+-11 0
+.names reset.BLIF s_1_.BLIF s_2_.BLIF s_0_.BLIF s_3_.BLIF se.BLIF s_1_.D
+00-101 1
+0011-1 1
+01-0-- 1
+-1---0 1
+-00-1- 0
+-1-1-1 0
+-0-0-- 0
+-0---0 0
+1----1 0
+.names reset.BLIF j_1_.BLIF j_2_.BLIF j_0_.BLIF currState_0_.BLIF \
+digit_un3_zl_n.BLIF j_2_.D
+010100 1
+0-10-0 1
+001--0 1
+0-1-1- 1
+-1110- 0
+--0-1- 0
+--00-- 0
+-00--- 0
+----01 0
+1----- 0
+.names reset.BLIF d_0_.BLIF currState_0_.BLIF digit_un3_zl_n.BLIF d_0_.D
+0001 1
+011- 1
+01-0 1
+-101 0
+-01- 0
+-0-0 0
+1--- 0
+.names reset.BLIF j_0_.BLIF currState_0_.BLIF digit_un3_zl_n.BLIF j_0_.D
+0000 1
+011- 1
+-0-1 0
+-01- 0
+-10- 0
+1--- 0
+.names reset.BLIF j_1_.BLIF j_0_.BLIF currState_0_.BLIF digit_un3_zl_n.BLIF \
+j_1_.D
+00100 1
+01-1- 1
+010-0 1
+-110- 0
+-0-1- 0
+-00-- 0
+---01 0
+1---- 0
+.names rDFF_0_reg.BLIF rDFF_1_reg.BLIF rDFF_2_reg.BLIF rDFF_3_reg.BLIF \
+finally_disp17_n
+1101 1
+--1- 0
+-0-- 0
+0--- 0
+---0 0
+.names rDFF_0_reg.BLIF rDFF_1_reg.BLIF rDFF_2_reg.BLIF rDFF_3_reg.BLIF \
+disp_sn_N_3
+00-- 1
+11-- 1
+--0- 1
+---0 1
+1011 0
+0111 0
+.names reset.BLIF d_1_.BLIF d_2_.BLIF d_0_.BLIF d_3_.BLIF currState_0_.BLIF \
+digit_un3_zl_n.BLIF se
+-001101 1
+1------ 1
+0----1- 0
+0---0-- 0
+0--0--- 0
+0-1---- 0
+01----- 0
+0-----0 0
+.names j_1_.BLIF j_2_.BLIF j_0_.BLIF j_3_.BLIF digit_un3_zl_n
+0011 1
+--0- 0
+-1-- 0
+1--- 0
+---0 0
+.names reset.BLIF s_1_.BLIF s_2_.BLIF d_1_.BLIF d_2_.BLIF d_0_.BLIF d_3_.BLIF \
+s_0_.BLIF s_3_.BLIF currState_0_.BLIF digit_un3_zl_n.BLIF te_i
+0--------1- 1
+0-------0-- 1
+0------0--- 1
+0-----0---- 1
+0----0----- 1
+0---1------ 1
+0--1------- 1
+0-1-------- 1
+01--------- 1
+0---------0 1
+-0000111101 0
+1---------- 0
+.names rDFF_3_reg.BLIF r_3_
+1 1
+0 0
+.names j_3_.BLIF d_3_.BLIF s_3_.BLIF t_3_.BLIF finally_disp17_n.BLIF \
+disp_sn_N_3.BLIF rDFF_0_reg.BLIF disp_3_
+---101- 1
+--1-11- 1
+1----00 1
+-1---01 1
+---001- 0
+--0-11- 0
+0----00 0
+-0---01 0
+.names rDFF_2_reg.BLIF r_2_
+1 1
+0 0
+.names rDFF_1_reg.BLIF r_1_
+1 1
+0 0
+.names rDFF_0_reg.BLIF r_0_
+1 1
+0 0
+.names s_2_.BLIF d_2_.BLIF j_2_.BLIF t_2_.BLIF finally_disp17_n.BLIF \
+disp_sn_N_3.BLIF rDFF_0_reg.BLIF disp_2_
+---101- 1
+1---11- 1
+--1--00 1
+-1---01 1
+---001- 0
+0---11- 0
+--0--00 0
+-0---01 0
+.names s_1_.BLIF d_1_.BLIF j_1_.BLIF t_1_.BLIF finally_disp17_n.BLIF \
+disp_sn_N_3.BLIF rDFF_0_reg.BLIF disp_1_
+---101- 1
+1---11- 1
+--1--00 1
+-1---01 1
+---001- 0
+0---11- 0
+--0--00 0
+-0---01 0
+.names j_0_.BLIF d_0_.BLIF s_0_.BLIF t_0_.BLIF finally_disp17_n.BLIF \
+disp_sn_N_3.BLIF rDFF_0_reg.BLIF disp_0_
+---101- 1
+--1-11- 1
+1----00 1
+-1---01 1
+---001- 0
+--0-11- 0
+0----00 0
+-0---01 0
+.names clk.BLIF currState_0_.C
+1 1
+0 0
+.names clk.BLIF t_3_.C
+1 1
+0 0
+.names clk.BLIF rDFF_0_reg.C
+1 1
+0 0
+.names clk.BLIF rDFF_1_reg.C
+1 1
+0 0
+.names clk.BLIF rDFF_2_reg.C
+1 1
+0 0
+.names clk.BLIF rDFF_3_reg.C
+1 1
+0 0
+.names clk.BLIF t_0_.C
+1 1
+0 0
+.names clk.BLIF t_1_.C
+1 1
+0 0
+.names clk.BLIF t_2_.C
+1 1
+0 0
+.names clk.BLIF s_2_.C
+1 1
+0 0
+.names clk.BLIF s_3_.C
+1 1
+0 0
+.names clk.BLIF d_3_.C
+1 1
+0 0
+.names clk.BLIF s_0_.C
+1 1
+0 0
+.names clk.BLIF s_1_.C
+1 1
+0 0
+.names clk.BLIF d_1_.C
+1 1
+0 0
+.names clk.BLIF d_2_.C
+1 1
+0 0
+.names clk.BLIF j_2_.C
+1 1
+0 0
+.names clk.BLIF j_3_.C
+1 1
+0 0
+.names clk.BLIF d_0_.C
+1 1
+0 0
+.names clk.BLIF j_0_.C
+1 1
+0 0
+.names clk.BLIF j_1_.C
+1 1
+0 0
+.names reset.BLIF d_1_.BLIF d_1_.D.X1
+01 1
+1- 0
+-0 0
+.names reset.BLIF d_1_.BLIF d_2_.BLIF d_0_.BLIF d_3_.BLIF currState_0_.BLIF \
+digit_un3_zl_n.BLIF d_1_.D.X2
+0-11-01 1
+0--1001 1
+01-1-01 1
+1------ 0
+---0--- 0
+-----1- 0
+------0 0
+-00-1-- 0
+.names d_2_.BLIF d_2_.D.X1
+1 1
+0 0
+.names reset.BLIF d_1_.BLIF d_2_.BLIF d_0_.BLIF currState_0_.BLIF \
+digit_un3_zl_n.BLIF d_2_.D.X2
+01-101 1
+1-1--- 1
+-11101 1
+00---- 0
+1-0--- 0
+0--0-- 0
+0---1- 0
+0----0 0
+.names reset.BLIF j_3_.BLIF j_3_.D.X1
+01 1
+1- 0
+-0 0
+.names reset.BLIF j_1_.BLIF j_2_.BLIF j_0_.BLIF j_3_.BLIF currState_0_.BLIF \
+digit_un3_zl_n.BLIF j_3_.D.X2
+0111-00 1
+0---101 1
+011110- 1
+1------ 0
+-----1- 0
+----0-1 0
+-0----0 0
+--0---0 0
+---0--0 0
+.names d_3_.BLIF d_3_.D.X1
+1 1
+0 0
+.names reset.BLIF d_1_.BLIF d_2_.BLIF d_0_.BLIF d_3_.BLIF currState_0_.BLIF \
+digit_un3_zl_n.BLIF d_3_.D.X2
+0111-01 1
+1---1-- 1
+-001101 1
+-111101 1
+0--0--- 0
+1---0-- 0
+-0--0-- 0
+0----1- 0
+0-----0 0
+001---- 0
+010---- 0
+.names reset.BLIF s_3_.BLIF s_3_.D.X1
+01 1
+1- 0
+-0 0
+.names reset.BLIF s_1_.BLIF s_2_.BLIF s_0_.BLIF s_3_.BLIF se.BLIF s_3_.D.X2
+000111 1
+0111-1 1
+1---10 1
+0--0-- 0
+1---0- 0
+-0--0- 0
+1----1 0
+0----0 0
+001--- 0
+010--- 0
+.names reset.BLIF t_3_.BLIF t_3_.D.X1
+01 1
+1- 0
+-0 0
+.names reset.BLIF t_1_.BLIF t_2_.BLIF t_0_.BLIF t_3_.BLIF te_i.BLIF t_3_.D.X2
+000110 1
+0111-0 1
+1---11 1
+0--0-- 0
+1---0- 0
+-0--0- 0
+0----1 0
+1----0 0
+001--- 0
+010--- 0
+.end

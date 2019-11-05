@@ -1,0 +1,35 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file d:/isplever projects/zadanie1\adder3bit.prj
+#-- Written on Fri Nov 30 09:06:26 2018
+
+
+#device options
+set_option -technology mach
+set_option -part M4A5-64
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "sum1b.vhd"
+add_file -vhdl -lib work "three_bit_adder.vhd"
+
+#-- top module name
+set_option -top_module adder3bit
+
+#-- set result format/file last
+project -result_file "adder3bit.edi"
+
+#-- error message log file
+project -log_file adder3bit.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

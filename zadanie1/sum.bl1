@@ -1,0 +1,66 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Wed Nov 14 11:27:08 2018
+#$ MODULE sum
+#$ PINS 5 wejscie_2_ wyjscie_1_ wejscie_1_ wejscie_0_ wyjscie_0_
+#$ NODES 13 wyjscie_1_0__i1_mux_n wyjscie_1_0__m2 wyjscie_1_0__m4 \
+#  wyjscie_1_0__i1_mux_i_n wejscie_i_0__n wejscie_i_1__n wejscie_c_0__n \
+#  wejscie_c_1__n wejscie_c_2__n wyjscie_1_0__m2_1 wyjscie_1_0__m5_un3_n \
+#  wyjscie_1_0__m5_un1_n wyjscie_1_0__m5_un0_n
+.model sum
+.inputs wejscie_2_.BLIF wejscie_1_.BLIF wejscie_0_.BLIF \
+wyjscie_1_0__i1_mux_n.BLIF wyjscie_1_0__m2.BLIF wyjscie_1_0__m4.BLIF \
+wyjscie_1_0__i1_mux_i_n.BLIF wejscie_i_0__n.BLIF wejscie_i_1__n.BLIF \
+wejscie_c_0__n.BLIF wejscie_c_1__n.BLIF wejscie_c_2__n.BLIF \
+wyjscie_1_0__m2_1.BLIF wyjscie_1_0__m5_un3_n.BLIF wyjscie_1_0__m5_un1_n.BLIF \
+wyjscie_1_0__m5_un0_n.BLIF
+.outputs wyjscie_1_ wyjscie_0_ wyjscie_1_0__i1_mux_n wyjscie_1_0__i1_mux_i_n \
+wejscie_i_0__n wejscie_i_1__n wejscie_c_0__n wejscie_c_1__n wejscie_c_2__n \
+wyjscie_1_0__m5_un3_n wyjscie_1_0__m5_un1_n wyjscie_1_0__m5_un0_n \
+wyjscie_1_0__m2 wyjscie_1_0__m4 wyjscie_1_0__m2_1
+.names wyjscie_1_0__m5_un1_n.BLIF wyjscie_1_0__m5_un0_n.BLIF \
+wyjscie_1_0__i1_mux_n
+1- 1
+-1 1
+.names wyjscie_1_0__i1_mux_n.BLIF wyjscie_1_0__i1_mux_i_n
+0 1
+.names wejscie_c_0__n.BLIF wejscie_i_0__n
+0 1
+.names wejscie_c_1__n.BLIF wejscie_i_1__n
+0 1
+.names wyjscie_1_0__m4.BLIF wyjscie_1_0__m5_un3_n
+0 1
+.names wejscie_i_1__n.BLIF wyjscie_1_0__m4.BLIF wyjscie_1_0__m5_un1_n
+11 1
+.names wejscie_i_0__n.BLIF wyjscie_1_0__m5_un3_n.BLIF wyjscie_1_0__m5_un0_n
+11 1
+.names wyjscie_1_0__i1_mux_i_n.BLIF wyjscie_1_
+1 1
+0 0
+.names wyjscie_1_0__m2.BLIF wyjscie_0_
+1 1
+0 0
+.names wejscie_0_.BLIF wejscie_c_0__n
+1 1
+0 0
+.names wejscie_1_.BLIF wejscie_c_1__n
+1 1
+0 0
+.names wejscie_2_.BLIF wejscie_c_2__n
+1 1
+0 0
+.names wejscie_c_2__n.BLIF wyjscie_1_0__m2_1.BLIF wyjscie_1_0__m2
+01 1
+10 1
+11 0
+00 0
+.names wejscie_c_0__n.BLIF wejscie_c_2__n.BLIF wyjscie_1_0__m4
+01 1
+10 1
+11 0
+00 0
+.names wejscie_c_0__n.BLIF wejscie_c_1__n.BLIF wyjscie_1_0__m2_1
+01 1
+10 1
+11 0
+00 0
+.end

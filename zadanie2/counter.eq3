@@ -1,0 +1,91 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design top created  Wed Nov 21 09:27:59 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   2          4        1    Pin   seg7_7_ 
+   4          4        1    Pin   seg7_6_ 
+   3          4        1    Pin   seg7_5_ 
+   4          4        1    Pin   seg7_4_ 
+   3          4        1    Pin   seg7_3_ 
+   3          4        1    Pin   seg7_2_ 
+   3          4        1    Pin   seg7_1_ 
+   2          4        1    Pin   seg7_0_- 
+   1          2        1    Node  U1_o_number_0_.D 
+   1          1        1    Node  U1_o_number_0_.C 
+   2          3        1    Node  U1_o_number_1_.D- 
+   1          1        1    Node  U1_o_number_1_.C 
+   3          4        1    Node  U1_o_number_2_.D 
+   1          1        1    Node  U1_o_number_2_.C 
+   4          5        1    Node  U1_o_number_3_.D- 
+   1          1        1    Node  U1_o_number_3_.C 
+=========
+  38                 P-Term Total: 38
+                       Total Pins: 10
+                      Total Nodes: 4
+            Average P-Term/Output: 2
+
+
+Equations:
+
+seg7_7_ = (!U1_o_number_0_.Q & !U1_o_number_1_.Q & U1_o_number_2_.Q & !U1_o_number_3_.Q
+     # U1_o_number_0_.Q & !U1_o_number_1_.Q & !U1_o_number_2_.Q & !U1_o_number_3_.Q);
+
+seg7_6_ = (!U1_o_number_0_.Q & U1_o_number_1_.Q & U1_o_number_2_.Q
+     # !U1_o_number_0_.Q & U1_o_number_2_.Q & U1_o_number_3_.Q
+     # U1_o_number_1_.Q & U1_o_number_2_.Q & U1_o_number_3_.Q
+     # U1_o_number_0_.Q & !U1_o_number_1_.Q & U1_o_number_2_.Q & !U1_o_number_3_.Q);
+
+seg7_5_ = (!U1_o_number_0_.Q & U1_o_number_2_.Q & U1_o_number_3_.Q
+     # U1_o_number_1_.Q & U1_o_number_2_.Q & U1_o_number_3_.Q
+     # !U1_o_number_0_.Q & U1_o_number_1_.Q & !U1_o_number_2_.Q & !U1_o_number_3_.Q);
+
+seg7_4_ = (U1_o_number_0_.Q & U1_o_number_1_.Q & U1_o_number_2_.Q
+     # !U1_o_number_0_.Q & U1_o_number_1_.Q & !U1_o_number_2_.Q & U1_o_number_3_.Q
+     # !U1_o_number_0_.Q & !U1_o_number_1_.Q & U1_o_number_2_.Q & !U1_o_number_3_.Q
+     # U1_o_number_0_.Q & !U1_o_number_1_.Q & !U1_o_number_2_.Q & !U1_o_number_3_.Q);
+
+seg7_3_ = (U1_o_number_0_.Q & !U1_o_number_3_.Q
+     # U1_o_number_0_.Q & !U1_o_number_1_.Q & !U1_o_number_2_.Q
+     # !U1_o_number_1_.Q & U1_o_number_2_.Q & !U1_o_number_3_.Q);
+
+seg7_2_ = (U1_o_number_0_.Q & U1_o_number_1_.Q & !U1_o_number_3_.Q
+     # U1_o_number_0_.Q & !U1_o_number_2_.Q & !U1_o_number_3_.Q
+     # U1_o_number_1_.Q & !U1_o_number_2_.Q & !U1_o_number_3_.Q);
+
+seg7_1_ = (!U1_o_number_1_.Q & U1_o_number_2_.Q & U1_o_number_3_.Q
+     # !U1_o_number_1_.Q & !U1_o_number_2_.Q & !U1_o_number_3_.Q
+     # U1_o_number_0_.Q & U1_o_number_1_.Q & U1_o_number_2_.Q & !U1_o_number_3_.Q);
+
+!seg7_0_ = (U1_o_number_0_.Q & !U1_o_number_1_.Q & U1_o_number_2_.Q & U1_o_number_3_.Q
+     # U1_o_number_0_.Q & U1_o_number_1_.Q & !U1_o_number_2_.Q & U1_o_number_3_.Q);
+
+U1_o_number_0_.D = (!zero & !U1_o_number_0_.Q);
+
+U1_o_number_0_.C = (clk);
+
+!U1_o_number_1_.D = (!zero & U1_o_number_0_.Q & U1_o_number_1_.Q
+     # !zero & !U1_o_number_0_.Q & !U1_o_number_1_.Q);
+
+U1_o_number_1_.C = (clk);
+
+U1_o_number_2_.D = (!zero & !U1_o_number_0_.Q & U1_o_number_2_.Q
+     # !zero & !U1_o_number_1_.Q & U1_o_number_2_.Q
+     # !zero & U1_o_number_0_.Q & U1_o_number_1_.Q & !U1_o_number_2_.Q);
+
+U1_o_number_2_.C = (clk);
+
+!U1_o_number_3_.D = (!zero & !U1_o_number_0_.Q & !U1_o_number_3_.Q
+     # !zero & !U1_o_number_1_.Q & !U1_o_number_3_.Q
+     # !zero & !U1_o_number_2_.Q & !U1_o_number_3_.Q
+     # !zero & U1_o_number_0_.Q & U1_o_number_1_.Q & U1_o_number_2_.Q & U1_o_number_3_.Q);
+
+U1_o_number_3_.C = (clk);
+
+
+Reverse-Polarity Equations:
+

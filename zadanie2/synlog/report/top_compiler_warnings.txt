@@ -1,0 +1,2 @@
+@W: CD266 :"C:\isplever projects\zadanie2\counter1.vhd":27:15:27:22|o_number is not readable.  This may cause a simulation mismatch.
+

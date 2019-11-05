@@ -1,0 +1,2 @@
+@E: CD327 :"C:\isplever projects\zadanie3\top_module.vhd":41:21:41:29|Illegal connection of instance input i_clk to entity output clock_sig
+

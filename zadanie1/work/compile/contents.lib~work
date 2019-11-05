@@ -1,0 +1,4 @@
+6
+~E 1 "./../../sum1b.vhd" 6 sum
+~E 1 "./../../tb_sum.vhd" 7 testbench
+~A 1 "./../../tb_sum.vhd" 10 behavior

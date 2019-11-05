@@ -1,0 +1,12 @@
+start  i
+stop  i
+reset  i
+clk  i
+r[3]  o
+r[2]  o
+r[1]  o
+r[0]  o
+disp[3]  o
+disp[2]  o
+disp[1]  o
+disp[0]  o

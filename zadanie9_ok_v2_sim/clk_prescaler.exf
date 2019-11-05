@@ -1,0 +1,87 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      i_prescalerValue(6:0)               i_prescalerValue                  6          7            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      i_prescalerValue_6_               i_prescalerValue[6]                       1            0            
+        Port      i_prescalerValue_5_               i_prescalerValue[5]                       1            1            
+        Port      i_prescalerValue_4_               i_prescalerValue[4]                       1            2            
+        Port      i_prescalerValue_3_               i_prescalerValue[3]                       1            3            
+        Port      i_prescalerValue_2_               i_prescalerValue[2]                       1            4            
+        Port      i_prescalerValue_1_               i_prescalerValue[1]                       1            5            
+        Port      i_prescalerValue_0_               i_prescalerValue[0]                       1            6            
+End
+Section Cross Reference File
+Design 'clk_prescaler' created Tue Jan 15 14:16:49 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst             counter_4_                                counter[4]
+   Inst             counter_5_                                counter[5]
+   Inst             counter_6_                                counter[6]
+   Inst             counter_1_                                counter[1]
+   Inst             counter_2_                                counter[2]
+   Inst             counter_3_                                counter[3]
+   Inst             counter_0_                                counter[0]
+   Inst    i_prescalerValue_0_                       i_prescalerValue[0]
+   Inst    i_prescalerValue_1_                       i_prescalerValue[1]
+   Inst    i_prescalerValue_2_                       i_prescalerValue[2]
+   Inst    i_prescalerValue_3_                       i_prescalerValue[3]
+   Inst    i_prescalerValue_4_                       i_prescalerValue[4]
+   Inst    i_prescalerValue_5_                       i_prescalerValue[5]
+   Inst    i_prescalerValue_6_                       i_prescalerValue[6]
+   Inst        zegar_counter_i                           zegar.counter_i
+   Inst           counter_i_0_                              counter_i[0]
+   Inst           counter_i_1_                              counter_i[1]
+   Inst           counter_i_2_                              counter_i[2]
+   Inst           counter_i_3_                              counter_i[3]
+   Inst           counter_i_4_                              counter_i[4]
+   Inst           counter_i_5_                              counter_i[5]
+   Inst           counter_i_6_                              counter_i[6]
+   Net         zegar_counter_n                             zegar.counter
+   Net            counter_0__n                                counter[0]
+   Net            counter_1__n                                counter[1]
+   Net            counter_2__n                                counter[2]
+   Net            counter_3__n                                counter[3]
+   Net            counter_4__n                                counter[4]
+   Net            counter_5__n                                counter[5]
+   Net            counter_6__n                                counter[6]
+   Net        counter_i_0_5__n                            counter_i_0[5]
+   Net        counter_i_0_4__n                            counter_i_0[4]
+   Net        counter_i_0_3__n                            counter_i_0[3]
+   Net        counter_i_0_2__n                            counter_i_0[2]
+   Net        counter_i_0_0__n                            counter_i_0[0]
+   Net        counter_i_0_1__n                            counter_i_0[1]
+   Net       zegar_counter_i_n                           zegar.counter_i
+   Net        counter_i_0_6__n                            counter_i_0[6]
+   Net    i_prescalervalue_c_0__n                     i_prescalerValue_c[0]
+   Net    i_prescalervalue_0__n                       i_prescalerValue[0]
+   Net    i_prescalervalue_c_1__n                     i_prescalerValue_c[1]
+   Net    i_prescalervalue_1__n                       i_prescalerValue[1]
+   Net    i_prescalervalue_c_2__n                     i_prescalerValue_c[2]
+   Net    i_prescalervalue_2__n                       i_prescalerValue[2]
+   Net    i_prescalervalue_c_3__n                     i_prescalerValue_c[3]
+   Net    i_prescalervalue_3__n                       i_prescalerValue[3]
+   Net    i_prescalervalue_c_4__n                     i_prescalerValue_c[4]
+   Net    i_prescalervalue_4__n                       i_prescalerValue[4]
+   Net    i_prescalervalue_c_5__n                     i_prescalerValue_c[5]
+   Net    i_prescalervalue_5__n                       i_prescalerValue[5]
+   Net    i_prescalervalue_c_6__n                     i_prescalerValue_c[6]
+   Net       zegar_counter_1_n                           zegar.counter_1
+   Net       zegar_counter_2_n                           zegar.counter_2
+   Net       zegar_counter_3_n                           zegar.counter_3
+   Net       zegar_counter_4_n                           zegar.counter_4
+   Net       zegar_counter_5_n                           zegar.counter_5
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_prescalerValue_6_
+        Input     i_clk_fast
+        Input     i_prescalerValue_5_
+        Input     i_prescalerValue_4_
+        Input     i_prescalerValue_3_
+        Input     i_prescalerValue_2_
+        Input     i_prescalerValue_1_
+        Input     i_prescalerValue_0_
+        Output     o_clk_slow
+End

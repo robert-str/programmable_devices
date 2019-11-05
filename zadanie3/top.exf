@@ -1,0 +1,330 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      i_prescalerSelect(6:0)               i_prescalerSelect                  6          7            -1
+      Port          2      seg7(7:0)                     seg7                  7          8            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      i_prescalerSelect_6_               i_prescalerSelect[6]                       1            0            
+        Port      i_prescalerSelect_5_               i_prescalerSelect[5]                       1            1            
+        Port      i_prescalerSelect_4_               i_prescalerSelect[4]                       1            2            
+        Port      i_prescalerSelect_3_               i_prescalerSelect[3]                       1            3            
+        Port      i_prescalerSelect_2_               i_prescalerSelect[2]                       1            4            
+        Port      i_prescalerSelect_1_               i_prescalerSelect[1]                       1            5            
+        Port      i_prescalerSelect_0_               i_prescalerSelect[0]                       1            6            
+        Port      seg7_7_                     seg7[7]                       2            0            
+        Port      seg7_6_                     seg7[6]                       2            1            
+        Port      seg7_5_                     seg7[5]                       2            2            
+        Port      seg7_4_                     seg7[4]                       2            3            
+        Port      seg7_3_                     seg7[3]                       2            4            
+        Port      seg7_2_                     seg7[2]                       2            5            
+        Port      seg7_1_                     seg7[1]                       2            6            
+        Port      seg7_0_                     seg7[0]                       2            7            
+End
+Section Cross Reference File
+Design 'top' created Mon Oct 28 12:04:53 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst          U0_counter_4_                             U0.counter[4]
+   Inst          U0_counter_5_                             U0.counter[5]
+   Inst          U0_counter_6_                             U0.counter[6]
+   Inst          U0_counter_1_                             U0.counter[1]
+   Inst          U0_counter_2_                             U0.counter[2]
+   Inst          U0_counter_3_                             U0.counter[3]
+   Inst            U0_clk_slow                               U0.clk_slow
+   Inst          U0_counter_0_                             U0.counter[0]
+   Inst             U1_dsec_3_                                U1.dsec[3]
+   Inst          U1_seconds_0_                             U1.seconds[0]
+   Inst          U1_seconds_1_                             U1.seconds[1]
+   Inst          U1_seconds_2_                             U1.seconds[2]
+   Inst          U1_seconds_3_                             U1.seconds[3]
+   Inst             U1_dsec_0_                                U1.dsec[0]
+   Inst             U1_dsec_1_                                U1.dsec[1]
+   Inst             U1_dsec_2_                                U1.dsec[2]
+   Inst   i_prescalerSelect_0_                      i_prescalerSelect[0]
+   Inst   i_prescalerSelect_1_                      i_prescalerSelect[1]
+   Inst   i_prescalerSelect_2_                      i_prescalerSelect[2]
+   Inst   i_prescalerSelect_3_                      i_prescalerSelect[3]
+   Inst   i_prescalerSelect_4_                      i_prescalerSelect[4]
+   Inst   i_prescalerSelect_5_                      i_prescalerSelect[5]
+   Inst   i_prescalerSelect_6_                      i_prescalerSelect[6]
+   Inst                seg7_0_                                   seg7[0]
+   Inst                seg7_1_                                   seg7[1]
+   Inst                seg7_2_                                   seg7[2]
+   Inst                seg7_3_                                   seg7[3]
+   Inst                seg7_4_                                   seg7[4]
+   Inst                seg7_5_                                   seg7[5]
+   Inst                seg7_6_                                   seg7[6]
+   Inst                seg7_7_                                   seg7[7]
+   Inst      U0_counter_n3_i_1                         U0.counter_n3_i_1
+   Inst        U0_counter_n3_i                           U0.counter_n3_i
+   Inst      U0_counter_n4_i_1                         U0.counter_n4_i_1
+   Inst        U0_counter_n4_i                           U0.counter_n4_i
+   Inst      U0_counter_n5_i_1                         U0.counter_n5_i_1
+   Inst        U0_counter_n5_i                           U0.counter_n5_i
+   Inst      U0_counter_n6_i_1                         U0.counter_n6_i_1
+   Inst        U0_counter_n6_i                           U0.counter_n6_i
+   Inst              U0_G_22_1                                 U0.G_22_1
+   Inst              U0_G_22_2                                 U0.G_22_2
+   Inst              U0_G_22_3                                 U0.G_22_3
+   Inst              U0_G_22_4                                 U0.G_22_4
+   Inst              U0_G_22_5                                 U0.G_22_5
+   Inst                U0_G_22                                   U0.G_22
+   Inst              U0_N_41_i                                 U0.N_41_i
+   Inst              U0_N_40_i                                 U0.N_40_i
+   Inst              U0_N_39_i                                 U0.N_39_i
+   Inst              U0_N_37_i                                 U0.N_37_i
+   Inst              U0_N_38_i                                 U0.N_38_i
+   Inst    U1_op_eq_seconds6_1                       U1.op_eq.seconds6_1
+   Inst    U1_op_eq_seconds6_2                       U1.op_eq.seconds6_2
+   Inst      U1_op_eq_seconds6                         U1.op_eq.seconds6
+   Inst       U1_op_eq_dsec6_1                          U1.op_eq.dsec6_1
+   Inst       U1_op_eq_dsec6_2                          U1.op_eq.dsec6_2
+   Inst         U1_op_eq_dsec6                            U1.op_eq.dsec6
+   Inst      U0_counter_n1_i_1                         U0.counter_n1_i_1
+   Inst        U0_counter_n1_i                           U0.counter_n1_i
+   Inst      U0_counter_n2_i_1                         U0.counter_n2_i_1
+   Inst        U0_counter_n2_i                           U0.counter_n2_i
+   Inst   U0_counter_n6_i_o4_i                      U0.counter_n6_i_o4_i
+   Inst   U0_counter_n5_i_o4_i                      U0.counter_n5_i_o4_i
+   Inst   U0_counter_n4_i_o4_i                      U0.counter_n4_i_o4_i
+   Inst   U0_counter_n3_i_o4_i                      U0.counter_n3_i_o4_i
+   Inst   U0_counter_n2_i_o4_i                      U0.counter_n2_i_o4_i
+   Inst              U0_N_44_i                                 U0.N_44_i
+   Inst              U0_N_42_i                                 U0.N_42_i
+   Inst    U1_op_eq_seconds6_i                       U1.op_eq.seconds6_i
+   Inst        U1_seconds_2_3_                           U1.seconds_2[3]
+   Inst                 U1_G_5                                    U1.G_5
+   Inst                U1_G_17                                   U1.G_17
+   Inst                U1_G_19                                   U1.G_19
+   Inst                U1_G_15                                   U1.G_15
+   Inst                 U1_G_7                                    U1.G_7
+   Inst        U1_seconds_0_0_                           U1.seconds_0[0]
+   Inst                 U1_G_3                                    U1.G_3
+   Inst           U1_seg7_i_5_                              U1.seg7_i[5]
+   Inst           U1_seg7_i_6_                              U1.seg7_i[6]
+   Inst           U1_seg7_i_1_                              U1.seg7_i[1]
+   Inst           U1_seg7_i_2_                              U1.seg7_i[2]
+   Inst           U1_dsec_3_1_                              U1.dsec_3[1]
+   Inst       U1_op_eq_dsec6_i                          U1.op_eq.dsec6_i
+   Inst           U1_dsec_3_3_                              U1.dsec_3[3]
+   Inst        U1_seconds_2_1_                           U1.seconds_2[1]
+   Inst      U1_seconds_0_2__r                         U1.seconds_0_2_.r
+   Inst      U1_seconds_0_2__m                         U1.seconds_0_2_.m
+   Inst      U1_seconds_0_2__n                         U1.seconds_0_2_.n
+   Inst      U1_seconds_0_2__p                         U1.seconds_0_2_.p
+   Inst      U1_seconds_0_3__r                         U1.seconds_0_3_.r
+   Inst      U1_seconds_0_3__m                         U1.seconds_0_3_.m
+   Inst      U1_seconds_0_3__n                         U1.seconds_0_3_.n
+   Inst      U1_seconds_0_3__p                         U1.seconds_0_3_.p
+   Inst           U1_seg7_i_0_                              U1.seg7_i[0]
+   Inst                 U1_G_4                                    U1.G_4
+   Inst                 U1_G_6                                    U1.G_6
+   Inst                U1_G_16                                   U1.G_16
+   Inst                U1_G_18                                   U1.G_18
+   Inst     U0_zegar_counter_i                        U0.zegar.counter_i
+   Inst     U0_counter_n0_i_a4                        U0.counter_n0_i_a4
+   Inst     U0_counter_n1_i_a4                        U0.counter_n1_i_a4
+   Inst        U0_counter_i_0_                           U0.counter_i[0]
+   Inst        U0_counter_i_1_                           U0.counter_i[1]
+   Inst     U0_counter_n2_i_o4                        U0.counter_n2_i_o4
+   Inst        U0_counter_i_2_                           U0.counter_i[2]
+   Inst     U0_counter_n3_i_o4                        U0.counter_n3_i_o4
+   Inst        U0_counter_i_3_                           U0.counter_i[3]
+   Inst     U0_counter_n4_i_o4                        U0.counter_n4_i_o4
+   Inst        U0_counter_i_4_                           U0.counter_i[4]
+   Inst     U0_counter_n5_i_o4                        U0.counter_n5_i_o4
+   Inst        U0_counter_i_5_                           U0.counter_i[5]
+   Inst     U0_counter_n6_i_o4                        U0.counter_n6_i_o4
+   Inst      U1_seconds_0_1__r                         U1.seconds_0_1_.r
+   Inst      U1_seconds_0_1__m                         U1.seconds_0_1_.m
+   Inst      U1_seconds_0_1__n                         U1.seconds_0_1_.n
+   Inst      U1_seconds_0_1__p                         U1.seconds_0_1_.p
+   Inst          U0_clk_slow_0                             U0.clk_slow_0
+   Inst                U0_G_15                                   U0.G_15
+   Inst                U0_G_16                                   U0.G_16
+   Inst                U0_G_17                                   U0.G_17
+   Inst                U0_G_18                                   U0.G_18
+   Inst                U0_G_19                                   U0.G_19
+   Inst                U0_G_20                                   U0.G_20
+   Inst                U0_G_21                                   U0.G_21
+   Inst        U0_counter_i_6_                           U0.counter_i[6]
+   Inst     U0_counter_n6_i_a4                        U0.counter_n6_i_a4
+   Inst   U0_counter_n6_i_a4_0                      U0.counter_n6_i_a4_0
+   Inst     U0_counter_n5_i_a4                        U0.counter_n5_i_a4
+   Inst     U0_counter_n4_i_a4                        U0.counter_n4_i_a4
+   Inst     U0_counter_n3_i_a4                        U0.counter_n3_i_a4
+   Inst     U0_counter_n2_i_a4                        U0.counter_n2_i_a4
+   Inst              U0_N_17_i                                 U0.N_17_i
+   Inst              U0_N_18_i                                 U0.N_18_i
+   Inst              U0_N_19_i                                 U0.N_19_i
+   Inst              U0_N_20_i                                 U0.N_20_i
+   Inst              U0_N_21_i                                 U0.N_21_i
+   Inst              U0_N_22_i                                 U0.N_22_i
+   Inst              U0_N_23_i                                 U0.N_23_i
+   Net                 vcc_n_n                                       VCC
+   Net                 gnd_n_n                                       GND
+   Net     u1_un1_seconds_2__n                         U1.un1_seconds[2]
+   Net        u1_un1_dsec_2__n                            U1.un1_dsec[2]
+   Net        u1_op_eq_dsec6_n                            U1.op_eq.dsec6
+   Net          u1_dsec_3_1__n                              U1.dsec_3[1]
+   Net          u1_dsec_3_3__n                              U1.dsec_3[3]
+   Net       u1_seconds_2_1__n                           U1.seconds_2[1]
+   Net       u1_seconds_2_3__n                           U1.seconds_2[3]
+   Net                u1_n_1_n                                    U1.N_1
+   Net                u1_n_2_n                                    U1.N_2
+   Net                u1_n_3_n                                    U1.N_3
+   Net                u1_n_4_n                                    U1.N_4
+   Net               u1_n_10_n                                   U1.N_10
+   Net               u1_n_12_n                                   U1.N_12
+   Net               u1_n_20_n                                   U1.N_20
+   Net               u1_n_22_n                                   U1.N_22
+   Net     u1_op_eq_seconds6_n                         U1.op_eq.seconds6
+   Net        u1_un1_dsec_3__n                            U1.un1_dsec[3]
+   Net        u1_un1_dsec_1__n                            U1.un1_dsec[1]
+   Net     u1_un1_seconds_3__n                         U1.un1_seconds[3]
+   Net     u1_un1_seconds_1__n                         U1.un1_seconds[1]
+   Net      u0_zegar_counter_n                          U0.zegar.counter
+   Net         u0_counter_0__n                             U0.counter[0]
+   Net         u0_counter_1__n                             U0.counter[1]
+   Net         u0_counter_2__n                             U0.counter[2]
+   Net         u0_counter_3__n                             U0.counter[3]
+   Net         u0_counter_4__n                             U0.counter[4]
+   Net         u0_counter_5__n                             U0.counter[5]
+   Net         u0_counter_6__n                             U0.counter[6]
+   Net                u0_n_1_n                                    U0.N_1
+   Net               u0_n_17_n                                   U0.N_17
+   Net               u0_n_18_n                                   U0.N_18
+   Net               u0_n_19_n                                   U0.N_19
+   Net               u0_n_20_n                                   U0.N_20
+   Net               u0_n_21_n                                   U0.N_21
+   Net               u0_n_22_n                                   U0.N_22
+   Net               u0_n_23_n                                   U0.N_23
+   Net               u0_n_32_n                                   U0.N_32
+   Net               u0_n_33_n                                   U0.N_33
+   Net               u0_n_34_n                                   U0.N_34
+   Net               u0_n_35_n                                   U0.N_35
+   Net               u0_n_36_n                                   U0.N_36
+   Net               u0_n_37_n                                   U0.N_37
+   Net               u0_n_38_n                                   U0.N_38
+   Net               u0_n_39_n                                   U0.N_39
+   Net               u0_n_40_n                                   U0.N_40
+   Net               u0_n_41_n                                   U0.N_41
+   Net               u0_n_42_n                                   U0.N_42
+   Net             u0_n_27_i_n                                 U0.N_27_i
+   Net               u0_n_44_n                                   U0.N_44
+   Net    u1_op_eq_seconds6_i_n                       U1.op_eq.seconds6_i
+   Net      u1_op_eq_dsec6_i_n                          U1.op_eq.dsec6_i
+   Net             seg7_i_1__n                                 seg7_i[1]
+   Net             seg7_i_2__n                                 seg7_i[2]
+   Net             seg7_i_5__n                                 seg7_i[5]
+   Net             seg7_i_6__n                                 seg7_i[6]
+   Net             seg7_i_0__n                                 seg7_i[0]
+   Net     u0_counter_i_0_5__n                         U0.counter_i_0[5]
+   Net     u0_counter_i_0_4__n                         U0.counter_i_0[4]
+   Net     u0_counter_i_0_3__n                         U0.counter_i_0[3]
+   Net     u0_counter_i_0_2__n                         U0.counter_i_0[2]
+   Net     u0_counter_i_0_0__n                         U0.counter_i_0[0]
+   Net     u0_counter_i_0_1__n                         U0.counter_i_0[1]
+   Net    u0_zegar_counter_i_n                        U0.zegar.counter_i
+   Net     u0_counter_i_0_6__n                         U0.counter_i_0[6]
+   Net             u0_n_17_i_n                                 U0.N_17_i
+   Net             u0_n_18_i_n                                 U0.N_18_i
+   Net             u0_n_19_i_n                                 U0.N_19_i
+   Net             u0_n_20_i_n                                 U0.N_20_i
+   Net             u0_n_21_i_n                                 U0.N_21_i
+   Net             u0_n_22_i_n                                 U0.N_22_i
+   Net             u0_n_23_i_n                                 U0.N_23_i
+   Net    i_prescalerselect_c_0__n                    i_prescalerSelect_c[0]
+   Net    i_prescalerselect_0__n                      i_prescalerSelect[0]
+   Net    i_prescalerselect_c_1__n                    i_prescalerSelect_c[1]
+   Net    i_prescalerselect_1__n                      i_prescalerSelect[1]
+   Net    i_prescalerselect_c_2__n                    i_prescalerSelect_c[2]
+   Net    i_prescalerselect_2__n                      i_prescalerSelect[2]
+   Net    i_prescalerselect_c_3__n                    i_prescalerSelect_c[3]
+   Net    i_prescalerselect_3__n                      i_prescalerSelect[3]
+   Net    i_prescalerselect_c_4__n                    i_prescalerSelect_c[4]
+   Net    i_prescalerselect_4__n                      i_prescalerSelect[4]
+   Net    i_prescalerselect_c_5__n                    i_prescalerSelect_c[5]
+   Net    i_prescalerselect_5__n                      i_prescalerSelect[5]
+   Net    i_prescalerselect_c_6__n                    i_prescalerSelect_c[6]
+   Net             seg7_c_0__n                                 seg7_c[0]
+   Net               seg7_0__n                                   seg7[0]
+   Net             seg7_c_1__n                                 seg7_c[1]
+   Net               seg7_1__n                                   seg7[1]
+   Net             seg7_c_2__n                                 seg7_c[2]
+   Net               seg7_2__n                                   seg7[2]
+   Net             seg7_c_3__n                                 seg7_c[3]
+   Net               seg7_3__n                                   seg7[3]
+   Net             seg7_c_4__n                                 seg7_c[4]
+   Net               seg7_4__n                                   seg7[4]
+   Net             seg7_c_5__n                                 seg7_c[5]
+   Net               seg7_5__n                                   seg7[5]
+   Net             seg7_c_6__n                                 seg7_c[6]
+   Net               seg7_6__n                                   seg7[6]
+   Net             seg7_c_7__n                                 seg7_c[7]
+   Net             u0_n_36_0_n                                 U0.N_36_0
+   Net             u0_n_35_0_n                                 U0.N_35_0
+   Net             u0_n_34_0_n                                 U0.N_34_0
+   Net             u0_n_33_0_n                                 U0.N_33_0
+   Net             u0_n_32_0_n                                 U0.N_32_0
+   Net             u0_n_44_i_n                                 U0.N_44_i
+   Net             u0_n_31_0_n                                 U0.N_31_0
+   Net             u0_n_42_i_n                                 U0.N_42_i
+   Net             u0_n_24_0_n                                 U0.N_24_0
+   Net             u0_n_41_i_n                                 U0.N_41_i
+   Net             u0_n_30_0_n                                 U0.N_30_0
+   Net             u0_n_40_i_n                                 U0.N_40_i
+   Net             u0_n_29_0_n                                 U0.N_29_0
+   Net             u0_n_39_i_n                                 U0.N_39_i
+   Net             u0_n_28_0_n                                 U0.N_28_0
+   Net             u0_n_37_i_n                                 U0.N_37_i
+   Net             u0_n_38_i_n                                 U0.N_38_i
+   Net              u0_n_5_0_n                                  U0.N_5_0
+   Net    u1_op_eq_seconds6_1_n                       U1.op_eq.seconds6_1
+   Net    u1_op_eq_seconds6_2_n                       U1.op_eq.seconds6_2
+   Net      u1_op_eq_dsec6_1_n                          U1.op_eq.dsec6_1
+   Net      u1_op_eq_dsec6_2_n                          U1.op_eq.dsec6_2
+   Net           u0_n_31_0_1_n                               U0.N_31_0_1
+   Net           u0_n_24_0_1_n                               U0.N_24_0_1
+   Net           u0_n_30_0_1_n                               U0.N_30_0_1
+   Net           u0_n_29_0_1_n                               U0.N_29_0_1
+   Net           u0_n_28_0_1_n                               U0.N_28_0_1
+   Net            u0_n_5_0_1_n                                U0.N_5_0_1
+   Net    u0_zegar_counter_1_n                        U0.zegar.counter_1
+   Net    u0_zegar_counter_2_n                        U0.zegar.counter_2
+   Net    u0_zegar_counter_3_n                        U0.zegar.counter_3
+   Net    u0_zegar_counter_4_n                        U0.zegar.counter_4
+   Net    u0_zegar_counter_5_n                        U0.zegar.counter_5
+   Net    u1_seconds_0_2__un3_n                       U1.seconds_0_2_.un3
+   Net    u1_seconds_0_2__un1_n                       U1.seconds_0_2_.un1
+   Net    u1_seconds_0_2__un0_n                       U1.seconds_0_2_.un0
+   Net    u1_seconds_0_3__un3_n                       U1.seconds_0_3_.un3
+   Net    u1_seconds_0_3__un1_n                       U1.seconds_0_3_.un1
+   Net    u1_seconds_0_3__un0_n                       U1.seconds_0_3_.un0
+   Net    u1_seconds_0_1__un3_n                       U1.seconds_0_1_.un3
+   Net    u1_seconds_0_1__un1_n                       U1.seconds_0_1_.un1
+   Net    u1_seconds_0_1__un0_n                       U1.seconds_0_1_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_prescalerSelect_6_
+        Input     clk
+        Input     i_prescalerSelect_5_
+        Input     i_prescalerSelect_4_
+        Input     i_prescalerSelect_3_
+        Input     i_prescalerSelect_2_
+        Input     i_prescalerSelect_1_
+        Input     i_prescalerSelect_0_
+        Output     seg7_7_
+        Output     clock_out
+        Output     LD
+        Output     BI
+        Output     seg7_6_
+        Output     seg7_5_
+        Output     seg7_4_
+        Output     seg7_3_
+        Output     seg7_2_
+        Output     seg7_1_
+        Output     seg7_0_
+End

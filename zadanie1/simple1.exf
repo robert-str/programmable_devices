@@ -1,0 +1,76 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      diode1(6:0)                   diode1                  6          7            -1
+      Port          2      btn(1:0)                      btn                  1          2            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      diode1_6_                   diode1[6]                       1            0            
+        Port      diode1_5_                   diode1[5]                       1            1            
+        Port      diode1_4_                   diode1[4]                       1            2            
+        Port      diode1_3_                   diode1[3]                       1            3            
+        Port      diode1_2_                   diode1[2]                       1            4            
+        Port      diode1_1_                   diode1[1]                       1            5            
+        Port      diode1_0_                   diode1[0]                       1            6            
+        Port      btn_1_                      btn[1]                       2            0            
+        Port      btn_0_                      btn[0]                       2            1            
+End
+Section Cross Reference File
+Design 'simple1' created Fri Nov 09 13:00:33 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst              diode1_0_                                 diode1[0]
+   Inst              diode1_1_                                 diode1[1]
+   Inst              diode1_2_                                 diode1[2]
+   Inst              diode1_3_                                 diode1[3]
+   Inst                 btn_0_                                    btn[0]
+   Inst                 btn_1_                                    btn[1]
+   Inst              wyjsc_1_r                                 wyjsc_1.r
+   Inst              wyjsc_1_m                                 wyjsc_1.m
+   Inst              wyjsc_1_n                                 wyjsc_1.n
+   Inst              wyjsc_1_p                                 wyjsc_1.p
+   Inst              wyjsc_2_r                                 wyjsc_2.r
+   Inst              wyjsc_2_m                                 wyjsc_2.m
+   Inst              wyjsc_2_n                                 wyjsc_2.n
+   Inst              wyjsc_2_p                                 wyjsc_2.p
+   Inst              wyjsc_3_r                                 wyjsc_3.r
+   Inst              wyjsc_3_m                                 wyjsc_3.m
+   Inst              wyjsc_3_n                                 wyjsc_3.n
+   Inst              wyjsc_3_p                                 wyjsc_3.p
+   Net           diode1_c_0__n                               diode1_c[0]
+   Net             diode1_0__n                                 diode1[0]
+   Net           diode1_c_1__n                               diode1_c[1]
+   Net             diode1_1__n                                 diode1[1]
+   Net           diode1_c_2__n                               diode1_c[2]
+   Net             diode1_2__n                                 diode1[2]
+   Net           diode1_c_3__n                               diode1_c[3]
+   Net             diode1_3__n                                 diode1[3]
+   Net              btn_c_0__n                                  btn_c[0]
+   Net                btn_0__n                                    btn[0]
+   Net              btn_c_1__n                                  btn_c[1]
+   Net           wyjsc_1_un3_n                               wyjsc_1.un3
+   Net           wyjsc_1_un1_n                               wyjsc_1.un1
+   Net           wyjsc_1_un0_n                               wyjsc_1.un0
+   Net           wyjsc_2_un3_n                               wyjsc_2.un3
+   Net           wyjsc_2_un1_n                               wyjsc_2.un1
+   Net           wyjsc_2_un0_n                               wyjsc_2.un0
+   Net           wyjsc_3_un3_n                               wyjsc_3.un3
+   Net           wyjsc_3_un1_n                               wyjsc_3.un1
+   Net           wyjsc_3_un0_n                               wyjsc_3.un0
+   Net             diode1_6__n                                 diode1[6]
+   Net             diode1_5__n                                 diode1[5]
+   Net             diode1_4__n                                 diode1[4]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     diode1_6_
+        Input     btn_1_
+        Input     diode1_5_
+        Input     diode1_4_
+        Input     diode1_3_
+        Input     diode1_2_
+        Input     diode1_1_
+        Input     diode1_0_
+        Input     btn_0_
+        Output     wyjsc
+End

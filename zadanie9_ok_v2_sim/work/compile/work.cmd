@@ -1,0 +1,1 @@
+-w -s "D:\ispLEVER Projects\zadanie9_ok\work\library.cfg"  -j "D:\ispLEVER Projects\zadanie9_ok\work\projlib.cfg"  -d "D:\ispLEVER Projects\zadanie9_ok\work\compile"   -work work  -O3 -e 100 "tb_statemachine1.vhd"

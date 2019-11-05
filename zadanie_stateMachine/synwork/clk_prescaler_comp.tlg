@@ -1,0 +1,3 @@
+@N: CD630 :"D:\isplever projects\zadanie_statemachine\clk_prescaler.vhd":6:7:6:19|Synthesizing work.clk_prescaler.prescaler 
+@W: CD638 :"D:\isplever projects\zadanie_statemachine\clk_prescaler.vhd":16:7:16:23|Signal s_activeprescaler is undriven 
+Post processing for work.clk_prescaler.prescaler

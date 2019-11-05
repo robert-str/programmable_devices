@@ -1,0 +1,37 @@
+Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N: MF248 |Running in 64-bit mode.
+@N:"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd":25:2:25:3|Found counter in view:work.keypad(behavioral) inst counter[3:0]
+@N: MO106 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd":71:11:71:12|Found ROM, 'key_found[3:0]', 16 words by 4 bits 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Net calc_proc.state_next_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Net calc_proc.N_36_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":67:8:67:25|Net calc_proc.state_next_0_sqmuxa_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":40:1:40:12|Net calc_proc.un1_num_acc3_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":70:1:70:12|Net calc_proc.N_18_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Net calc_proc.un1_num_acc3_2_0 appears to be an unidentified clock source. Assuming default frequency. 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+DFF             13 uses
+IBUF            5 uses
+OBUF            12 uses
+AND2            138 uses
+XOR2            17 uses
+INV             100 uses
+DLATRH          15 uses
+OR2             11 uses
+DLATSH          9 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 104MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 15:16:49 2019
+
+###########################################################]

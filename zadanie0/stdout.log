@@ -1,0 +1,53 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Tue Nov 05 11:02:28 2019
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/users/strak.desktop-d9mddlk/documents/isplever projects/zadanie0\base.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srr"
+
+Running base|zadanie0
+
+Running: Compile on base|zadanie0
+
+Running: Compile Process on base|zadanie0
+
+Running: Compile Input on base|zadanie0
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_comp.srs to C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on base|zadanie0
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_comp.srs to C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_mult.srs to C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srs
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srr to C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srf
+Complete: Compile Process on base|zadanie0
+Complete: Compile on base|zadanie0
+
+Running: Map on base|zadanie0
+
+Running: Map & Optimize on base|zadanie0
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Complete: Map on base|zadanie0
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srr to C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srf
+Complete: Logic Synthesis on base|zadanie0
+
+exit status=0
+
+exit status=0
+

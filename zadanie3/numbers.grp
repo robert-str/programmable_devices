@@ -1,0 +1,9 @@
+
+GROUP MACH_SEG_A seg7_5_ RN_seg7_5_ seg7_3_ RN_seg7_3_ seg7_7_ RN_seg7_7_ 
+      seg7_6_ RN_seg7_6_ seg7_2_ RN_seg7_2_ seg7_1_ RN_seg7_1_ seg7_4_ 
+      RN_seg7_4_ seg7_0_ RN_seg7_0_ 
+GROUP MACH_SEG_B U0_counter_2_ U0_counter_1_ U0_counter_0_ u1_op_eq_dsec6_n 
+      u0_n_33_0_n 
+GROUP MACH_SEG_C U0_counter_6_ U0_counter_5_ U0_counter_4_ U0_counter_3_ 
+      u0_zegar_counter_5_n 
+GROUP MACH_SEG_D clock_out RN_clock_out LD BI u0_zegar_counter_4_n 

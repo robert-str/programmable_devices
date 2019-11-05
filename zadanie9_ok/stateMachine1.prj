@@ -1,0 +1,35 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file d:/projekttestowy\stateMachine1.prj
+#-- Written on Tue Dec 11 13:14:19 2018
+
+
+#device options
+set_option -technology mach
+set_option -part M4A5-64
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "clk_prescaler.vhd"
+add_file -vhdl -lib work "statemachine1.vhd"
+
+#-- top module name
+set_option -top_module stateMachine1
+
+#-- set result format/file last
+project -result_file "stateMachine1.edi"
+
+#-- error message log file
+project -log_file statemachine1.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

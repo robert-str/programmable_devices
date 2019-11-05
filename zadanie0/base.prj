@@ -1,0 +1,34 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/users/strak.desktop-d9mddlk/documents/isplever projects/zadanie0\base.prj
+#-- Written on Tue Nov 05 11:02:21 2019
+
+
+#device options
+set_option -technology mach
+set_option -part M4A5-64
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "top_module.vhd"
+
+#-- top module name
+set_option -top_module base
+
+#-- set result format/file last
+project -result_file "base.edi"
+
+#-- error message log file
+project -log_file base.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

@@ -1,0 +1,9 @@
+
+
+MODULE top
+
+	SUBMODULE clk_prescaler
+		INSTANCE U0
+
+	SUBMODULE counter
+		INSTANCE U1

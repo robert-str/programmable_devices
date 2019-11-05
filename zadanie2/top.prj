@@ -1,0 +1,36 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/isplever projects/zadanie2\top.prj
+#-- Written on Wed Nov 21 09:27:47 2018
+
+
+#device options
+set_option -technology mach
+set_option -part M4A5-64
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "seg7_decoder_v1.vhd"
+add_file -vhdl -lib work "counter1.vhd"
+add_file -vhdl -lib work "top_module.vhd"
+
+#-- top module name
+set_option -top_module top
+
+#-- set result format/file last
+project -result_file "top.edi"
+
+#-- error message log file
+project -log_file top.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

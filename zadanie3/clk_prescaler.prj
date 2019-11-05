@@ -1,0 +1,34 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/isplever projects/zadanie3\clk_prescaler.prj
+#-- Written on Fri Nov 23 10:40:30 2018
+
+
+#device options
+set_option -technology mach
+set_option -part M4A5-64
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "clk_prescaler.vhd"
+
+#-- top module name
+set_option -top_module clk_prescaler
+
+#-- set result format/file last
+project -result_file "clk_prescaler.edi"
+
+#-- error message log file
+project -log_file clk_prescaler.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

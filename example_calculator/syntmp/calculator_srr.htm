@@ -1,0 +1,96 @@
+<html><body><samp><pre>
+<!@TC:1572358608>
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: COREI7-314
+
+#Implementation: example_calculator
+
+<a name=compilerReport1>$ Start of Compile</a>
+#Tue Oct 29 15:16:48 2019
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1572358608> | Running in 64-bit mode 
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N:<a href="@N:CD720:@XP_HELP">CD720</a> : <a href="C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd:123:18:123:22:@N:CD720:@XP_MSG">std.vhd(123)</a><!@TM:1572358608> | Setting time resolution to ns
+@N: : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\main.vhd:6:7:6:17:@N::@XP_MSG">main.vhd(6)</a><!@TM:1572358608> | Top entity is set to calculator.
+VHDL syntax check successful!
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\main.vhd:6:7:6:17:@N:CD630:@XP_MSG">main.vhd(6)</a><!@TM:1572358608> | Synthesizing work.calculator.abacus 
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:7:7:7:16:@N:CD630:@XP_MSG">calculator.vhd(7)</a><!@TM:1572358608> | Synthesizing work.not_a_cpu.fsm 
+@N:<a href="@N:CD233:@XP_HELP">CD233</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:16:18:16:20:@N:CD233:@XP_MSG">calculator.vhd(16)</a><!@TM:1572358608> | Using sequential encoding for type stage_state
+@N:<a href="@N:CD233:@XP_HELP">CD233</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:17:17:17:19:@N:CD233:@XP_MSG">calculator.vhd(17)</a><!@TM:1572358608> | Using sequential encoding for type oper_state
+@N:<a href="@N:CD233:@XP_HELP">CD233</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:18:17:18:19:@N:CD233:@XP_MSG">calculator.vhd(18)</a><!@TM:1572358608> | Using sequential encoding for type disp_state
+Post processing for work.not_a_cpu.fsm
+<font color=#A52A2A>@W:<a href="@W:CL117:@XP_HELP">CL117</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:CL117:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358608> | Latch generated from process for signal number_out(7 downto 0); possible missing assignment in an if or case statement.</font>
+<font color=#A52A2A>@W:<a href="@W:CL117:@XP_HELP">CL117</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:CL117:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358608> | Latch generated from process for signal num_buf(3 downto 0); possible missing assignment in an if or case statement.</font>
+<font color=#A52A2A>@W:<a href="@W:CL117:@XP_HELP">CL117</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:CL117:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358608> | Latch generated from process for signal state_disp(buf); possible missing assignment in an if or case statement.</font>
+<font color=#A52A2A>@W:<a href="@W:CL117:@XP_HELP">CL117</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:CL117:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358608> | Latch generated from process for signal num_acc_buf(3 downto 0); possible missing assignment in an if or case statement.</font>
+<font color=#A52A2A>@W:<a href="@W:CL117:@XP_HELP">CL117</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:CL117:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358608> | Latch generated from process for signal key_catched(3 downto 0); possible missing assignment in an if or case statement.</font>
+<font color=#A52A2A>@W:<a href="@W:CL117:@XP_HELP">CL117</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:CL117:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358608> | Latch generated from process for signal state_oper(add); possible missing assignment in an if or case statement.</font>
+<font color=#A52A2A>@W:<a href="@W:CL117:@XP_HELP">CL117</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:39:1:39:5:@W:CL117:@XP_MSG">calculator.vhd(39)</a><!@TM:1572358608> | Latch generated from process for signal num_acc(3 downto 0); possible missing assignment in an if or case statement.</font>
+@N:<a href="@N:CD630:@XP_HELP">CD630</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd:7:7:7:13:@N:CD630:@XP_MSG">keypad.vhd(7)</a><!@TM:1572358608> | Synthesizing work.keypad.behavioral 
+<font color=#A52A2A>@W:<a href="@W:CD638:@XP_HELP">CD638</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd:18:8:18:23:@W:CD638:@XP_MSG">keypad.vhd(18)</a><!@TM:1572358608> | Signal interrupt_shift is undriven </font>
+Post processing for work.keypad.behavioral
+Post processing for work.calculator.abacus
+<font color=#A52A2A>@W:<a href="@W:CL279:@XP_HELP">CL279</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:CL279:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358608> | Pruning register bits 7 to 6 of number_out(7 downto 0)  </font>
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:31:1:31:3:@N:CL201:@XP_MSG">calculator.vhd(31)</a><!@TM:1572358608> | Trying to extract state machine for register state_curr
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 15:16:48 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N: : <!@TM:1572358609> | Running in 64-bit mode 
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 15:16:49 2019
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport2>Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014</a>
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1572358609> | Running in 64-bit mode. 
+@N: : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd:25:2:25:4:@N::@XP_MSG">keypad.vhd(25)</a><!@TM:1572358609> | Found counter in view:work.keypad(behavioral) inst counter[3:0]
+@N:<a href="@N:MO106:@XP_HELP">MO106</a> : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd:71:11:71:13:@N:MO106:@XP_MSG">keypad.vhd(71)</a><!@TM:1572358609> | Found ROM, 'key_found[3:0]', 16 words by 4 bits 
+<font color=#A52A2A>@W:<a href="@W:MT462:@XP_HELP">MT462</a> : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:MT462:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358609> | Net calc_proc.state_next_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. </font>
+<font color=#A52A2A>@W:<a href="@W:MT462:@XP_HELP">MT462</a> : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:MT462:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358609> | Net calc_proc.N_36_0 appears to be an unidentified clock source. Assuming default frequency. </font>
+<font color=#A52A2A>@W:<a href="@W:MT462:@XP_HELP">MT462</a> : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:67:8:67:26:@W:MT462:@XP_MSG">calculator.vhd(67)</a><!@TM:1572358609> | Net calc_proc.state_next_0_sqmuxa_2 appears to be an unidentified clock source. Assuming default frequency. </font>
+<font color=#A52A2A>@W:<a href="@W:MT462:@XP_HELP">MT462</a> : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:40:1:40:13:@W:MT462:@XP_MSG">calculator.vhd(40)</a><!@TM:1572358609> | Net calc_proc.un1_num_acc3_1 appears to be an unidentified clock source. Assuming default frequency. </font>
+<font color=#A52A2A>@W:<a href="@W:MT462:@XP_HELP">MT462</a> : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:70:1:70:13:@W:MT462:@XP_MSG">calculator.vhd(70)</a><!@TM:1572358609> | Net calc_proc.N_18_0 appears to be an unidentified clock source. Assuming default frequency. </font>
+<font color=#A52A2A>@W:<a href="@W:MT462:@XP_HELP">MT462</a> : <a href="c:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd:19:42:19:48:@W:MT462:@XP_MSG">calculator.vhd(19)</a><!@TM:1572358609> | Net calc_proc.un1_num_acc3_2_0 appears to be an unidentified clock source. Assuming default frequency. </font>
+---------------------------------------
+<a name=resourceUsage3>Resource Usage Report</a>
+
+Simple gate primitives:
+DFF             13 uses
+IBUF            5 uses
+OBUF            12 uses
+AND2            138 uses
+XOR2            17 uses
+INV             100 uses
+DLATRH          15 uses
+OR2             11 uses
+DLATSH          9 uses
+
+
+@N:<a href="@N:FC100:@XP_HELP">FC100</a> : <!@TM:1572358609> | Timing Report not generated for this device, please use place and route tools for timing analysis. 
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 104MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 15:16:49 2019
+
+###########################################################]
+
+</pre></samp></body></html>

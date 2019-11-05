@@ -1,0 +1,188 @@
+#PLAFILE example_calculator.tt4
+#DATE    10/29/2019
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION bcd_out_0_:D_0_36	// OUT
+DATA LOCATION bcd_out_1_:D_8_37	// OUT
+DATA LOCATION bcd_out_2_:D_4_38	// OUT
+DATA LOCATION bcd_out_3_:D_9_39	// OUT
+DATA LOCATION bcd_out_4_:D_12_40	// OUT
+DATA LOCATION bcd_out_5_:D_10_41	// OUT
+DATA LOCATION bcd_out_6_:D_13_42	// OUT
+DATA LOCATION bcd_out_7_:D_1_43	// OUT
+DATA LOCATION calc_proc_G_89_1:A_13	// NOD
+DATA LOCATION calc_proc_key_catched_0_:C_9	// NOD
+DATA LOCATION calc_proc_key_catched_1_:B_6	// NOD
+DATA LOCATION calc_proc_key_catched_2_:A_5	// NOD
+DATA LOCATION calc_proc_key_catched_3_:A_1	// NOD
+DATA LOCATION calc_proc_n_36_0_n:D_2	// NOD
+DATA LOCATION calc_proc_n_79_1_n:A_6	// NOD
+DATA LOCATION calc_proc_n_82_0_n:A_9	// NOD
+DATA LOCATION calc_proc_num_acc_0_:C_5	// NOD
+DATA LOCATION calc_proc_num_acc_1_:B_2	// NOD
+DATA LOCATION calc_proc_num_acc_2_:C_1	// NOD
+DATA LOCATION calc_proc_num_acc_3_:A_14	// NOD
+DATA LOCATION calc_proc_num_acc_buf_0_:D_3	// NOD
+DATA LOCATION calc_proc_num_acc_buf_1_:D_5	// NOD
+DATA LOCATION calc_proc_num_acc_buf_2_:D_14	// NOD
+DATA LOCATION calc_proc_num_acc_buf_3_:D_6	// NOD
+DATA LOCATION calc_proc_num_buf_0_:C_6	// NOD
+DATA LOCATION calc_proc_num_buf_1_:C_2	// NOD
+DATA LOCATION calc_proc_num_buf_2_:C_13	// NOD
+DATA LOCATION calc_proc_num_buf_3_:C_14	// NOD
+DATA LOCATION calc_proc_state_curr_0_:B_0	// NOD
+DATA LOCATION calc_proc_state_curr_1_:B_8	// NOD
+DATA LOCATION calc_proc_state_curr_2_:B_4	// NOD
+DATA LOCATION calc_proc_state_disp_0_:B_3	// NOD
+DATA LOCATION calc_proc_state_next_0_sqmuxa_2_n:C_12	// NOD
+DATA LOCATION calc_proc_state_oper_0_:B_10	// NOD
+DATA LOCATION calc_proc_state_oper_0__0:B_14	// NOD
+DATA LOCATION clk:*_*_11	// Cin
+DATA LOCATION input_keypad_counter_0_:B_12	// NOD
+DATA LOCATION input_keypad_counter_1_:B_1	// NOD
+DATA LOCATION input_keypad_counter_2_:C_0	// NOD
+DATA LOCATION input_keypad_counter_3_:B_13	// NOD
+DATA LOCATION input_keypad_interrupt:B_9	// NOD
+DATA LOCATION input_keypad_interrupt_0_sqmuxa_n:B_5	// NOD
+DATA LOCATION input_keypad_interrupt_out:C_4	// NOD
+DATA LOCATION input_keypad_key_out_0_:C_10	// NOD
+DATA LOCATION input_keypad_key_out_1_:C_8	// NOD
+DATA LOCATION input_keypad_key_out_2_:A_2	// NOD
+DATA LOCATION input_keypad_key_out_3_:A_10	// NOD
+DATA LOCATION keypad_cols_0_:A_8_5	// OUT
+DATA LOCATION keypad_cols_1_:A_0_4	// OUT
+DATA LOCATION keypad_cols_2_:A_12_3	// OUT
+DATA LOCATION keypad_cols_3_:A_4_2	// OUT
+DATA LOCATION keypad_rows_0_:A_*_9	// INP
+DATA LOCATION keypad_rows_1_:A_*_8	// INP
+DATA LOCATION keypad_rows_2_:A_*_7	// INP
+DATA LOCATION keypad_rows_3_:A_*_6	// INP
+DATA IO_DIR   bcd_out_0_:OUT
+DATA IO_DIR   bcd_out_1_:OUT
+DATA IO_DIR   bcd_out_2_:OUT
+DATA IO_DIR   bcd_out_3_:OUT
+DATA IO_DIR   bcd_out_4_:OUT
+DATA IO_DIR   bcd_out_5_:OUT
+DATA IO_DIR   bcd_out_6_:OUT
+DATA IO_DIR   bcd_out_7_:OUT
+DATA IO_DIR   clk:IN
+DATA IO_DIR   keypad_cols_0_:OUT
+DATA IO_DIR   keypad_cols_1_:OUT
+DATA IO_DIR   keypad_cols_2_:OUT
+DATA IO_DIR   keypad_cols_3_:OUT
+DATA IO_DIR   keypad_rows_0_:IN
+DATA IO_DIR   keypad_rows_1_:IN
+DATA IO_DIR   keypad_rows_2_:IN
+DATA IO_DIR   keypad_rows_3_:IN
+DATA GLB_CLOCK  clk
+DATA PW_LEVEL  keypad_rows_3_:0
+DATA SLEW      keypad_rows_3_:0
+DATA PW_LEVEL  keypad_cols_3_:0
+DATA SLEW      keypad_cols_3_:0
+DATA PW_LEVEL  bcd_out_7_:0
+DATA SLEW      bcd_out_7_:0
+DATA SLEW      clk:0
+DATA PW_LEVEL  keypad_rows_2_:0
+DATA SLEW      keypad_rows_2_:0
+DATA PW_LEVEL  keypad_rows_1_:0
+DATA SLEW      keypad_rows_1_:0
+DATA PW_LEVEL  keypad_rows_0_:0
+DATA SLEW      keypad_rows_0_:0
+DATA PW_LEVEL  keypad_cols_2_:0
+DATA SLEW      keypad_cols_2_:0
+DATA PW_LEVEL  keypad_cols_1_:0
+DATA SLEW      keypad_cols_1_:0
+DATA PW_LEVEL  keypad_cols_0_:0
+DATA SLEW      keypad_cols_0_:0
+DATA PW_LEVEL  bcd_out_6_:0
+DATA SLEW      bcd_out_6_:0
+DATA PW_LEVEL  bcd_out_5_:0
+DATA SLEW      bcd_out_5_:0
+DATA PW_LEVEL  bcd_out_4_:0
+DATA SLEW      bcd_out_4_:0
+DATA PW_LEVEL  bcd_out_3_:0
+DATA SLEW      bcd_out_3_:0
+DATA PW_LEVEL  bcd_out_2_:0
+DATA SLEW      bcd_out_2_:0
+DATA PW_LEVEL  bcd_out_1_:0
+DATA SLEW      bcd_out_1_:0
+DATA PW_LEVEL  bcd_out_0_:0
+DATA SLEW      bcd_out_0_:0
+DATA PW_LEVEL  input_keypad_interrupt_out:0
+DATA SLEW      input_keypad_interrupt_out:0
+DATA PW_LEVEL  input_keypad_key_out_0_:0
+DATA SLEW      input_keypad_key_out_0_:0
+DATA PW_LEVEL  input_keypad_key_out_1_:0
+DATA SLEW      input_keypad_key_out_1_:0
+DATA PW_LEVEL  input_keypad_key_out_2_:0
+DATA SLEW      input_keypad_key_out_2_:0
+DATA PW_LEVEL  input_keypad_key_out_3_:0
+DATA SLEW      input_keypad_key_out_3_:0
+DATA PW_LEVEL  calc_proc_state_oper_0_:0
+DATA SLEW      calc_proc_state_oper_0_:0
+DATA PW_LEVEL  calc_proc_state_disp_0_:0
+DATA SLEW      calc_proc_state_disp_0_:0
+DATA PW_LEVEL  calc_proc_num_buf_0_:0
+DATA SLEW      calc_proc_num_buf_0_:0
+DATA PW_LEVEL  calc_proc_num_buf_1_:0
+DATA SLEW      calc_proc_num_buf_1_:0
+DATA PW_LEVEL  calc_proc_num_buf_2_:0
+DATA SLEW      calc_proc_num_buf_2_:0
+DATA PW_LEVEL  calc_proc_num_buf_3_:0
+DATA SLEW      calc_proc_num_buf_3_:0
+DATA PW_LEVEL  calc_proc_key_catched_0_:0
+DATA SLEW      calc_proc_key_catched_0_:0
+DATA PW_LEVEL  calc_proc_key_catched_2_:0
+DATA SLEW      calc_proc_key_catched_2_:0
+DATA PW_LEVEL  calc_proc_state_curr_0_:0
+DATA SLEW      calc_proc_state_curr_0_:0
+DATA PW_LEVEL  calc_proc_state_curr_1_:0
+DATA SLEW      calc_proc_state_curr_1_:0
+DATA PW_LEVEL  calc_proc_state_curr_2_:0
+DATA SLEW      calc_proc_state_curr_2_:0
+DATA PW_LEVEL  calc_proc_key_catched_1_:0
+DATA SLEW      calc_proc_key_catched_1_:0
+DATA PW_LEVEL  calc_proc_key_catched_3_:0
+DATA SLEW      calc_proc_key_catched_3_:0
+DATA PW_LEVEL  calc_proc_num_acc_0_:0
+DATA SLEW      calc_proc_num_acc_0_:0
+DATA PW_LEVEL  calc_proc_num_acc_1_:0
+DATA SLEW      calc_proc_num_acc_1_:0
+DATA PW_LEVEL  calc_proc_num_acc_2_:0
+DATA SLEW      calc_proc_num_acc_2_:0
+DATA PW_LEVEL  calc_proc_num_acc_3_:0
+DATA SLEW      calc_proc_num_acc_3_:0
+DATA PW_LEVEL  calc_proc_G_89_1:0
+DATA SLEW      calc_proc_G_89_1:0
+DATA PW_LEVEL  calc_proc_state_next_0_sqmuxa_2_n:0
+DATA SLEW      calc_proc_state_next_0_sqmuxa_2_n:0
+DATA PW_LEVEL  calc_proc_num_acc_buf_0_:0
+DATA SLEW      calc_proc_num_acc_buf_0_:0
+DATA PW_LEVEL  calc_proc_num_acc_buf_1_:0
+DATA SLEW      calc_proc_num_acc_buf_1_:0
+DATA PW_LEVEL  calc_proc_num_acc_buf_2_:0
+DATA SLEW      calc_proc_num_acc_buf_2_:0
+DATA PW_LEVEL  calc_proc_num_acc_buf_3_:0
+DATA SLEW      calc_proc_num_acc_buf_3_:0
+DATA PW_LEVEL  calc_proc_n_79_1_n:0
+DATA SLEW      calc_proc_n_79_1_n:0
+DATA PW_LEVEL  input_keypad_counter_0_:0
+DATA SLEW      input_keypad_counter_0_:0
+DATA PW_LEVEL  input_keypad_counter_1_:0
+DATA SLEW      input_keypad_counter_1_:0
+DATA PW_LEVEL  input_keypad_counter_2_:0
+DATA SLEW      input_keypad_counter_2_:0
+DATA PW_LEVEL  input_keypad_counter_3_:0
+DATA SLEW      input_keypad_counter_3_:0
+DATA PW_LEVEL  input_keypad_interrupt:0
+DATA SLEW      input_keypad_interrupt:0
+DATA PW_LEVEL  input_keypad_interrupt_0_sqmuxa_n:0
+DATA SLEW      input_keypad_interrupt_0_sqmuxa_n:0
+DATA PW_LEVEL  calc_proc_n_36_0_n:0
+DATA SLEW      calc_proc_n_36_0_n:0
+DATA PW_LEVEL  calc_proc_n_82_0_n:0
+DATA SLEW      calc_proc_n_82_0_n:0
+DATA PW_LEVEL  calc_proc_state_oper_0__0:0
+DATA SLEW      calc_proc_state_oper_0__0:0
+END

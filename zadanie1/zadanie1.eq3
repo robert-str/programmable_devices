@@ -1,0 +1,63 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design two_3bits_adder created  Tue Nov 20 09:52:25 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   2          4        1    Pin   segments_6_ 
+   3          4        1    Pin   segments_5_ 
+   5          4        1    Pin   segments_7_ 
+   5          4        1    Pin   segments_4_ 
+   4          4        1    Pin   segments_3_- 
+   4          4        1    Pin   segments_2_- 
+   2          4        1    Pin   segments_1_ 
+   1          0        1    Pin   segments_0_ 
+=========
+  26                 P-Term Total: 26
+                       Total Pins: 12
+                      Total Nodes: 0
+            Average P-Term/Output: 3
+
+
+Equations:
+
+segments_6_ = (i_a_1_ & i_a_0_ & i_b_1_
+     # i_a_1_ & i_b_1_ & i_b_0_);
+
+segments_5_ = (!i_a_1_ & i_a_0_ & !i_b_1_ & i_b_0_
+     # !i_a_1_ & !i_a_0_ & i_b_1_ & !i_b_0_
+     # i_a_1_ & !i_a_0_ & !i_b_1_ & !i_b_0_);
+
+segments_7_ = (!i_a_1_ & i_a_0_ & i_b_1_ & i_b_0_
+     # i_a_1_ & i_a_0_ & !i_b_1_ & i_b_0_
+     # !i_a_1_ & !i_a_0_ & !i_b_1_ & i_b_0_
+     # i_a_1_ & !i_a_0_ & i_b_1_ & !i_b_0_
+     # !i_a_1_ & i_a_0_ & !i_b_1_ & !i_b_0_);
+
+segments_4_ = (!i_a_1_ & i_a_0_ & i_b_1_ & i_b_0_
+     # i_a_1_ & i_a_0_ & !i_b_1_ & i_b_0_
+     # !i_a_1_ & !i_a_0_ & !i_b_1_ & i_b_0_
+     # i_a_1_ & !i_a_0_ & i_b_1_ & !i_b_0_
+     # !i_a_1_ & i_a_0_ & !i_b_1_ & !i_b_0_);
+
+!segments_3_ = (!i_a_1_ & !i_a_0_ & !i_b_0_
+     # !i_a_0_ & !i_b_1_ & !i_b_0_
+     # i_a_1_ & i_a_0_ & i_b_1_ & i_b_0_
+     # !i_a_1_ & i_a_0_ & !i_b_1_ & i_b_0_);
+
+!segments_2_ = (i_a_1_ & i_b_1_
+     # i_a_1_ & i_a_0_ & i_b_0_
+     # i_a_0_ & i_b_1_ & i_b_0_
+     # !i_a_1_ & !i_a_0_ & !i_b_1_ & !i_b_0_);
+
+segments_1_ = (!i_a_1_ & !i_a_0_ & !i_b_1_
+     # !i_a_1_ & !i_b_1_ & !i_b_0_);
+
+segments_0_ = (1);
+
+
+Reverse-Polarity Equations:
+

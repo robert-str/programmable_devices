@@ -1,0 +1,184 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      datain(4:0)                   datain                  4          5            -1
+      Port          2      out0(7:0)                     out0                  7          8            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      out0_7_                     out0[7]                       2            0            
+        Port      out0_6_                     out0[6]                       2            1            
+        Port      out0_5_                     out0[5]                       2            2            
+        Port      out0_4_                     out0[4]                       2            3            
+        Port      out0_3_                     out0[3]                       2            4            
+        Port      out0_2_                     out0[2]                       2            5            
+        Port      out0_1_                     out0[1]                       2            6            
+        Port      out0_0_                     out0[0]                       2            7            
+        Port      datain_4_                   datain[4]                       1            0            
+        Port      datain_3_                   datain[3]                       1            1            
+        Port      datain_2_                   datain[2]                       1            2            
+        Port      datain_1_                   datain[1]                       1            3            
+        Port      datain_0_                   datain[0]                       1            4            
+End
+Section Cross Reference File
+Design 'pianino' created Tue Oct 29 15:04:31 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst              odlicz_0_                                 odlicz[0]
+   Inst              odlicz_1_                                 odlicz[1]
+   Inst              odlicz_2_                                 odlicz[2]
+   Inst              odlicz_3_                                 odlicz[3]
+   Inst              odlicz_4_                                 odlicz[4]
+   Inst              odlicz_5_                                 odlicz[5]
+   Inst              odlicz_6_                                 odlicz[6]
+   Inst              odlicz_7_                                 odlicz[7]
+   Inst                out0_0_                                   out0[0]
+   Inst                out0_1_                                   out0[1]
+   Inst                out0_2_                                   out0[2]
+   Inst                out0_3_                                   out0[3]
+   Inst                out0_4_                                   out0[4]
+   Inst                out0_5_                                   out0[5]
+   Inst                out0_6_                                   out0[6]
+   Inst                out0_7_                                   out0[7]
+   Inst              datain_0_                                 datain[0]
+   Inst              datain_1_                                 datain[1]
+   Inst              datain_2_                                 datain[2]
+   Inst              datain_3_                                 datain[3]
+   Inst              datain_4_                                 datain[4]
+   Inst          datain_c_i_3_                             datain_c_i[3]
+   Inst            out0_i_i_7_                               out0_i_i[7]
+   Inst                   m3_r                                      m3.r
+   Inst                   m3_m                                      m3.m
+   Inst                   m3_n                                      m3.n
+   Inst                   m3_p                                      m3.p
+   Inst                   m4_r                                      m4.r
+   Inst                   m4_m                                      m4.m
+   Inst                   m4_n                                      m4.n
+   Inst                   m4_p                                      m4.p
+   Inst                   m5_r                                      m5.r
+   Inst                   m5_m                                      m5.m
+   Inst                   m5_n                                      m5.n
+   Inst                   m5_p                                      m5.p
+   Inst                   m6_r                                      m6.r
+   Inst                   m6_m                                      m6.m
+   Inst                   m6_n                                      m6.n
+   Inst                   m6_p                                      m6.p
+   Inst                   m7_r                                      m7.r
+   Inst                   m7_m                                      m7.m
+   Inst                   m7_n                                      m7.n
+   Inst                   m7_p                                      m7.p
+   Inst                   m8_r                                      m8.r
+   Inst                   m8_m                                      m8.m
+   Inst                   m8_n                                      m8.n
+   Inst                   m8_p                                      m8.p
+   Inst                   m9_r                                      m9.r
+   Inst                   m9_m                                      m9.m
+   Inst                   m9_n                                      m9.n
+   Inst                   m9_p                                      m9.p
+   Inst            datain_i_1_                               datain_i[1]
+   Inst            datain_i_0_                               datain_i[0]
+   Inst            datain_i_4_                               datain_i[4]
+   Inst            datain_i_2_                               datain_i[2]
+   Inst           out0_i_x2_7_                              out0_i_x2[7]
+   Inst       odlicz_4_i_x2_4_                          odlicz_4_i_x2[4]
+   Inst       odlicz_4_i_x2_3_                          odlicz_4_i_x2[3]
+   Inst       odlicz_4_i_x2_2_                          odlicz_4_i_x2[2]
+   Inst       odlicz_4_i_x2_1_                          odlicz_4_i_x2[1]
+   Inst            odlicz_i_0_                               odlicz_i[0]
+   Inst       odlicz_4_0_a2_0_                          odlicz_4_0_a2[0]
+   Inst              out0_i_7_                                 out0_i[7]
+   Inst          odlicz_4_i_4_                             odlicz_4_i[4]
+   Inst          odlicz_4_i_3_                             odlicz_4_i[3]
+   Inst          odlicz_4_i_2_                             odlicz_4_i[2]
+   Inst          odlicz_4_i_1_                             odlicz_4_i[1]
+   Inst            odlicz_i_6_                               odlicz_i[6]
+   Inst            odlicz_i_7_                               odlicz_i[7]
+   Inst            odlicz_i_4_                               odlicz_i[4]
+   Inst            odlicz_i_3_                               odlicz_i[3]
+   Inst            odlicz_i_1_                               odlicz_i[1]
+   Inst            odlicz_i_5_                               odlicz_i[5]
+   Net        un7_odlicz_27__n                            un7_odlicz[27]
+   Net        un7_odlicz_26__n                            un7_odlicz[26]
+   Net        un7_odlicz_25__n                            un7_odlicz[25]
+   Net             odlicz_0__n                                 odlicz[0]
+   Net             odlicz_1__n                                 odlicz[1]
+   Net             odlicz_2__n                                 odlicz[2]
+   Net             odlicz_3__n                                 odlicz[3]
+   Net             odlicz_4__n                                 odlicz[4]
+   Net             odlicz_5__n                                 odlicz[5]
+   Net             odlicz_6__n                                 odlicz[6]
+   Net             odlicz_7__n                                 odlicz[7]
+   Net           odlicz_4_0__n                               odlicz_4[0]
+   Net           datain_i_0__n                               datain_i[0]
+   Net           datain_i_4__n                               datain_i[4]
+   Net           datain_i_1__n                               datain_i[1]
+   Net           datain_i_2__n                               datain_i[2]
+   Net           odlicz_i_0__n                               odlicz_i[0]
+   Net           odlicz_i_1__n                               odlicz_i[1]
+   Net           odlicz_i_3__n                               odlicz_i[3]
+   Net           odlicz_i_4__n                               odlicz_i[4]
+   Net           odlicz_i_5__n                               odlicz_i[5]
+   Net           odlicz_i_6__n                               odlicz_i[6]
+   Net           odlicz_i_7__n                               odlicz_i[7]
+   Net               out0_0__n                                   out0[0]
+   Net               out0_1__n                                   out0[1]
+   Net               out0_2__n                                   out0[2]
+   Net               out0_3__n                                   out0[3]
+   Net               out0_4__n                                   out0[4]
+   Net               out0_5__n                                   out0[5]
+   Net               out0_6__n                                   out0[6]
+   Net           datain_c_0__n                               datain_c[0]
+   Net             datain_0__n                                 datain[0]
+   Net           datain_c_1__n                               datain_c[1]
+   Net             datain_1__n                                 datain[1]
+   Net           datain_c_2__n                               datain_c[2]
+   Net             datain_2__n                                 datain[2]
+   Net           datain_c_3__n                               datain_c[3]
+   Net             datain_3__n                                 datain[3]
+   Net           datain_c_4__n                               datain_c[4]
+   Net             out0_c_0__n                                 out0_c[0]
+   Net             out0_c_1__n                                 out0_c[1]
+   Net             out0_c_2__n                                 out0_c[2]
+   Net             out0_c_3__n                                 out0_c[3]
+   Net             out0_c_4__n                                 out0_c[4]
+   Net             out0_c_5__n                                 out0_c[5]
+   Net             out0_c_6__n                                 out0_c[6]
+   Net         datain_c_i_3__n                             datain_c_i[3]
+   Net                m3_un3_n                                    m3.un3
+   Net                m3_un1_n                                    m3.un1
+   Net                m3_un0_n                                    m3.un0
+   Net                m4_un3_n                                    m4.un3
+   Net                m4_un1_n                                    m4.un1
+   Net                m4_un0_n                                    m4.un0
+   Net                m5_un3_n                                    m5.un3
+   Net                m5_un1_n                                    m5.un1
+   Net                m5_un0_n                                    m5.un0
+   Net                m6_un3_n                                    m6.un3
+   Net                m6_un1_n                                    m6.un1
+   Net                m6_un0_n                                    m6.un0
+   Net                m7_un3_n                                    m7.un3
+   Net                m7_un1_n                                    m7.un1
+   Net                m7_un0_n                                    m7.un0
+   Net                m8_un3_n                                    m8.un3
+   Net                m8_un1_n                                    m8.un1
+   Net                m8_un0_n                                    m8.un0
+   Net                m9_un3_n                                    m9.un3
+   Net                m9_un1_n                                    m9.un1
+   Net                m9_un0_n                                    m9.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     datain_4_
+        Input     CLK0
+        Input     datain_3_
+        Input     datain_2_
+        Input     datain_1_
+        Input     datain_0_
+        Output     out0_7_
+        Output     out0_6_
+        Output     out0_5_
+        Output     out0_4_
+        Output     out0_3_
+        Output     out0_2_
+        Output     out0_1_
+        Output     out0_0_
+End

@@ -1,0 +1,17 @@
+JDF B
+// Created by Version 2.0 
+PROJECT zadanie1
+DESIGN zadanie1 Normal
+DEVKIT M4A5-64/32-10JC
+ENTRY Pure VHDL
+MODULE sum1b.vhd
+MODSTYLE sum Normal
+MODULE three_bit_adder.vhd
+MODSTYLE adder3bit Normal
+MODULE seg7_decoder_v1.vhd
+MODSTYLE bcd_to_seg7 Normal
+MODULE zadanie_comb_fin1.vhd
+MODSTYLE two_3bits_adder Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE two_3bits_adder

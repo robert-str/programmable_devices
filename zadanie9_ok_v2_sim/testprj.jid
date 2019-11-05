@@ -1,0 +1,2 @@
+. stateMachine1 statemachine1.vhd "d:\isplever projects\zadanie9_ok\statemachine1.vhd"
+pres clk_prescaler clk_prescaler.vhd "d:\isplever projects\zadanie9_ok\clk_prescaler.vhd"

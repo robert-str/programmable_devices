@@ -1,0 +1,195 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design pianino created  Tue Oct 29 15:04:31 2019
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   4          5        1    Pin   out0_7_ 
+   4          5        1    Pin   out0_6_ 
+   4          5        1    Pin   out0_5_ 
+   4          5        1    Pin   out0_4_ 
+   4          5        1    Pin   out0_3_ 
+   4          5        1    Pin   out0_2_ 
+   4          5        1    Pin   out0_1_ 
+   4          5        1    Pin   out0_0_ 
+   1          1        1    Node  odlicz_0_.AR 
+   2          4        1    Node  odlicz_0_.D- 
+   1          1        1    Node  odlicz_0_.C 
+   1          1        1    Node  odlicz_1_.AR 
+   3          5        1    Node  odlicz_1_.D- 
+   1          1        1    Node  odlicz_1_.C 
+   1          1        1    Node  odlicz_2_.AR 
+   4          6        1    Node  odlicz_2_.D- 
+   1          1        1    Node  odlicz_2_.C 
+   1          1        1    Node  odlicz_3_.AR 
+   3          5        1    Node  odlicz_3_.D- 
+   1          1        1    Node  odlicz_3_.C 
+   1          1        1    Node  odlicz_4_.AR 
+   4          6        1    Node  odlicz_4_.D- 
+   1          1        1    Node  odlicz_4_.C 
+   1          1        1    Node  odlicz_5_.AR 
+   4          4        1    Node  odlicz_5_.D 
+   1          1        1    Node  odlicz_5_.C 
+   1          4        1    NodeX1  odlicz_6_.D.X1 
+   1          1        1    NodeX2  odlicz_6_.D.X2 
+   1          1        1    Node  odlicz_6_.AR 
+   1          1        1    Node  odlicz_6_.C 
+   1          1        1    Node  odlicz_7_.AR 
+   1          5        1    Node  odlicz_7_.T 
+   1          1        1    Node  odlicz_7_.C 
+   1          3        1    Node  N_89 
+   1          4        1    NodeX1  un2_datain_17_i.X1 
+   1          1        1    NodeX2  un2_datain_17_i.X2 
+   4          7        1    NodeX1  un4_odlicz_1.X1 
+   1          3        1    NodeX2  un4_odlicz_1.X2 
+   7          7        1    NodeX1  un4_odlicz_2.X1 
+   1          3        1    NodeX2  un4_odlicz_2.X2 
+   2          6        1    NodeX1  un4_odlicz_6.X1 
+   1          4        1    NodeX2  un4_odlicz_6.X2 
+=========
+  90                 P-Term Total: 90
+                       Total Pins: 14
+                      Total Nodes: 13
+            Average P-Term/Output: 2
+
+
+Equations:
+
+out0_7_ = (un2_datain_17_i & !un4_odlicz_1 & out0_7_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_7_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_7_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_7_);
+
+out0_6_ = (un2_datain_17_i & !un4_odlicz_1 & out0_6_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_6_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_6_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_6_);
+
+out0_5_ = (un2_datain_17_i & !un4_odlicz_1 & out0_5_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_5_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_5_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_5_);
+
+out0_4_ = (un2_datain_17_i & !un4_odlicz_1 & out0_4_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_4_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_4_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_4_);
+
+out0_3_ = (un2_datain_17_i & !un4_odlicz_1 & out0_3_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_3_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_3_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_3_);
+
+out0_2_ = (un2_datain_17_i & !un4_odlicz_1 & out0_2_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_2_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_2_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_2_);
+
+out0_1_ = (un2_datain_17_i & !un4_odlicz_1 & out0_1_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_1_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_1_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_1_);
+
+out0_0_ = (un2_datain_17_i & !un4_odlicz_1 & out0_0_
+     # un2_datain_17_i & !un4_odlicz_2 & out0_0_
+     # un2_datain_17_i & !un4_odlicz_6 & out0_0_
+     # un2_datain_17_i & un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6 & !out0_0_);
+
+odlicz_0_.AR = (!un2_datain_17_i);
+
+!odlicz_0_.D = (odlicz_0_.Q
+     # un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6);
+
+odlicz_0_.C = (CLK0);
+
+odlicz_1_.AR = (!un2_datain_17_i);
+
+!odlicz_1_.D = (odlicz_0_.Q & odlicz_1_.Q
+     # !odlicz_0_.Q & !odlicz_1_.Q
+     # un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6);
+
+odlicz_1_.C = (CLK0);
+
+odlicz_2_.AR = (!un2_datain_17_i);
+
+!odlicz_2_.D = (!odlicz_0_.Q & !odlicz_2_.Q
+     # !odlicz_1_.Q & !odlicz_2_.Q
+     # odlicz_0_.Q & odlicz_1_.Q & odlicz_2_.Q
+     # un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6);
+
+odlicz_2_.C = (CLK0);
+
+odlicz_3_.AR = (!un2_datain_17_i);
+
+!odlicz_3_.D = (odlicz_3_.Q & N_89
+     # !odlicz_3_.Q & !N_89
+     # un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6);
+
+odlicz_3_.C = (CLK0);
+
+odlicz_4_.AR = (!un2_datain_17_i);
+
+!odlicz_4_.D = (!odlicz_3_.Q & !odlicz_4_.Q
+     # !odlicz_4_.Q & !N_89
+     # odlicz_3_.Q & odlicz_4_.Q & N_89
+     # un4_odlicz_1 & un4_odlicz_2 & un4_odlicz_6);
+
+odlicz_4_.C = (CLK0);
+
+odlicz_5_.AR = (!un2_datain_17_i);
+
+odlicz_5_.D = (!odlicz_3_.Q & odlicz_5_.Q
+     # !odlicz_4_.Q & odlicz_5_.Q
+     # odlicz_5_.Q & !N_89
+     # odlicz_3_.Q & odlicz_4_.Q & !odlicz_5_.Q & N_89);
+
+odlicz_5_.C = (CLK0);
+
+odlicz_6_.D.X1 = (odlicz_3_.Q & odlicz_4_.Q & odlicz_5_.Q & N_89);
+
+odlicz_6_.D.X2 = (odlicz_6_.Q);
+
+odlicz_6_.AR = (!un2_datain_17_i);
+
+odlicz_6_.C = (CLK0);
+
+odlicz_7_.AR = (!un2_datain_17_i);
+
+odlicz_7_.T = (odlicz_3_.Q & odlicz_4_.Q & odlicz_5_.Q & odlicz_6_.Q & N_89);
+
+odlicz_7_.C = (CLK0);
+
+N_89 = (odlicz_0_.Q & odlicz_1_.Q & odlicz_2_.Q);
+
+un2_datain_17_i.X1 = (!datain_3_ & !datain_2_ & !datain_1_ & !datain_0_);
+
+un2_datain_17_i.X2 = (!datain_4_);
+
+un4_odlicz_1.X1 = (!datain_4_ & datain_2_ & odlicz_2_.Q & !odlicz_4_.Q
+     # datain_4_ & datain_2_ & !odlicz_2_.Q & !odlicz_4_.Q
+     # !datain_4_ & !datain_3_ & !datain_2_ & datain_1_ & !odlicz_2_.Q
+     # !datain_4_ & !datain_3_ & !datain_2_ & datain_0_ & !odlicz_2_.Q);
+
+un4_odlicz_1.X2 = (!datain_2_ & !odlicz_2_.Q & !odlicz_4_.Q);
+
+un4_odlicz_2.X1 = (!datain_4_ & !datain_1_ & datain_0_ & !odlicz_0_.Q & odlicz_1_.Q
+     # !datain_4_ & datain_1_ & !datain_0_ & odlicz_0_.Q & !odlicz_1_.Q
+     # !datain_4_ & datain_1_ & datain_0_ & !odlicz_0_.Q & !odlicz_1_.Q
+     # !datain_4_ & datain_3_ & !datain_1_ & !datain_0_ & odlicz_0_.Q & odlicz_1_.Q
+     # !datain_4_ & datain_2_ & !datain_1_ & !datain_0_ & odlicz_0_.Q & odlicz_1_.Q
+     # !datain_3_ & !datain_2_ & !datain_1_ & !datain_0_ & !odlicz_0_.Q & !odlicz_1_.Q
+     # datain_4_ & !datain_3_ & !datain_2_ & !datain_1_ & !datain_0_ & odlicz_0_.Q & odlicz_1_.Q);
+
+un4_odlicz_2.X2 = (datain_4_ & !odlicz_0_.Q & !odlicz_1_.Q);
+
+un4_odlicz_6.X1 = (!datain_4_ & !datain_3_ & datain_2_ & !odlicz_5_.Q & !odlicz_6_.Q & !odlicz_7_.Q
+     # !datain_4_ & datain_3_ & !datain_2_ & !odlicz_5_.Q & !odlicz_6_.Q & !odlicz_7_.Q);
+
+un4_odlicz_6.X2 = (!odlicz_3_.Q & !odlicz_5_.Q & !odlicz_6_.Q & !odlicz_7_.Q);
+
+
+Reverse-Polarity Equations:
+

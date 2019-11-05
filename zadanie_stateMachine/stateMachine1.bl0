@@ -1,0 +1,365 @@
+#$ DATE Fri Nov 30 10:12:20 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE statemachine1
+#$ PINS 20 i_btn_7_ o_state_1_ o_diodes_7_ i_clk o_clkSlow i_btn_6_ i_btn_5_ i_btn_4_ i_btn_3_ i_btn_2_ i_btn_1_ i_btn_0_ o_state_0_ o_diodes_6_ o_diodes_5_ o_diodes_4_ o_diodes_3_ o_diodes_2_ o_diodes_1_ o_diodes_0_
+#$ NODES 114 G_56 G_58 G_60 G_62 G_64 proc1_un1_currstate_n counter_0_ counter_1_ counter_2_ counter_3_ \
+#  counter_4_ counter_5_ currState_0_reg currState_1_reg N_50 N_53 currstate_ns_0__n G_51 N_72 N_75 \
+#  N_77 N_79 N_81 G_52 G_54 N_66 N_65 N_52 pres_zegar_counter_n pres_counter_0_ \
+#  pres_counter_1_ pres_counter_2_ pres_counter_3_ pres_counter_4_ pres_counter_5_ pres_counter_6_ pres_clk_slow_0 pres_n_29_n pres_n_30_n pres_n_31_n \
+#  pres_n_32_n pres_n_36_n pres_n_37_n pres_n_38_n pres_n_39_n pres_n_40_n pres_n_41_n pres_n_42_n pres_n_44_n currstate_i_0__n \
+#  currstate_i_1__n i_btn_i_2__n i_btn_i_1__n proc1_un1_currstate_i_n N_67_i pres_counter_i_0_5__n pres_counter_i_4__n pres_counter_i_3__n pres_counter_i_2__n pres_counter_i_0__n \
+#  pres_counter_i_1__n pres_zegar_counter_i_n pres_counter_i_6__n i_clk_c i_btn_c_0__n i_btn_c_1__n i_btn_c_2__n pres_clk_slowreg N_65_i N_66_i \
+#  N_50_i N_52_0 N_62_i pres_n_36_0_n pres_n_32_0_n pres_n_31_0_n pres_n_30_0_n pres_n_29_0_n pres_n_44_i_n pres_n_42_i_n \
+#  pres_n_41_i_n pres_n_40_i_n pres_n_39_i_n pres_n_37_i_n pres_n_38_i_n N_53_1 N_53_2 N_53_3 N_53_4 currstate_ns_1_0__n \
+#  currstate_ns_2_0__n currstate_ns_3_0__n pres_n_17_0_1_n pres_n_35_0_1_n pres_n_34_0_1_n pres_n_8_0_1_n pres_n_6_0_1_n pres_n_4_0_1_n pres_zegar_counter_1_n pres_zegar_counter_2_n \
+#  pres_zegar_counter_3_n pres_zegar_counter_4_n pres_zegar_counter_5_n currstatese_un3_n currstatese_un1_n currstatese_un0_n currstatese_0_un3_n currstatese_0_un1_n currstatese_0_un0_n i_btn_7__n \
+#  i_btn_6__n i_btn_5__n i_btn_4__n i_btn_3__n 
+.model statemachine1
+.inputs i_btn_7_.BLIF i_clk.BLIF i_btn_6_.BLIF i_btn_5_.BLIF i_btn_4_.BLIF i_btn_3_.BLIF i_btn_2_.BLIF i_btn_1_.BLIF i_btn_0_.BLIF \
+  G_56.BLIF G_58.BLIF G_60.BLIF G_62.BLIF G_64.BLIF proc1_un1_currstate_n.BLIF counter_0_.BLIF counter_1_.BLIF counter_2_.BLIF \
+  counter_3_.BLIF counter_4_.BLIF counter_5_.BLIF currState_0_reg.BLIF currState_1_reg.BLIF N_50.BLIF N_53.BLIF currstate_ns_0__n.BLIF G_51.BLIF \
+  N_72.BLIF N_75.BLIF N_77.BLIF N_79.BLIF N_81.BLIF G_52.BLIF G_54.BLIF N_66.BLIF N_65.BLIF \
+  N_52.BLIF pres_zegar_counter_n.BLIF pres_counter_0_.BLIF pres_counter_1_.BLIF pres_counter_2_.BLIF pres_counter_3_.BLIF pres_counter_4_.BLIF pres_counter_5_.BLIF pres_counter_6_.BLIF \
+  pres_clk_slow_0.BLIF pres_n_29_n.BLIF pres_n_30_n.BLIF pres_n_31_n.BLIF pres_n_32_n.BLIF pres_n_36_n.BLIF pres_n_37_n.BLIF pres_n_38_n.BLIF pres_n_39_n.BLIF \
+  pres_n_40_n.BLIF pres_n_41_n.BLIF pres_n_42_n.BLIF pres_n_44_n.BLIF currstate_i_0__n.BLIF currstate_i_1__n.BLIF i_btn_i_2__n.BLIF i_btn_i_1__n.BLIF proc1_un1_currstate_i_n.BLIF \
+  N_67_i.BLIF pres_counter_i_0_5__n.BLIF pres_counter_i_4__n.BLIF pres_counter_i_3__n.BLIF pres_counter_i_2__n.BLIF pres_counter_i_0__n.BLIF pres_counter_i_1__n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_i_6__n.BLIF \
+  i_clk_c.BLIF i_btn_c_0__n.BLIF i_btn_c_1__n.BLIF i_btn_c_2__n.BLIF pres_clk_slowreg.BLIF N_65_i.BLIF N_66_i.BLIF N_50_i.BLIF N_52_0.BLIF \
+  N_62_i.BLIF pres_n_36_0_n.BLIF pres_n_32_0_n.BLIF pres_n_31_0_n.BLIF pres_n_30_0_n.BLIF pres_n_29_0_n.BLIF pres_n_44_i_n.BLIF pres_n_42_i_n.BLIF pres_n_41_i_n.BLIF \
+  pres_n_40_i_n.BLIF pres_n_39_i_n.BLIF pres_n_37_i_n.BLIF pres_n_38_i_n.BLIF N_53_1.BLIF N_53_2.BLIF N_53_3.BLIF N_53_4.BLIF currstate_ns_1_0__n.BLIF \
+  currstate_ns_2_0__n.BLIF currstate_ns_3_0__n.BLIF pres_n_17_0_1_n.BLIF pres_n_35_0_1_n.BLIF pres_n_34_0_1_n.BLIF pres_n_8_0_1_n.BLIF pres_n_6_0_1_n.BLIF pres_n_4_0_1_n.BLIF pres_zegar_counter_1_n.BLIF \
+  pres_zegar_counter_2_n.BLIF pres_zegar_counter_3_n.BLIF pres_zegar_counter_4_n.BLIF pres_zegar_counter_5_n.BLIF currstatese_un3_n.BLIF currstatese_un1_n.BLIF currstatese_un0_n.BLIF currstatese_0_un3_n.BLIF currstatese_0_un1_n.BLIF \
+  currstatese_0_un0_n.BLIF i_btn_7__n.BLIF i_btn_6__n.BLIF i_btn_5__n.BLIF i_btn_4__n.BLIF i_btn_3__n.BLIF  
+.outputs o_state_1_ o_diodes_7_ o_clkSlow o_state_0_ o_diodes_6_ o_diodes_5_ o_diodes_4_ o_diodes_3_ o_diodes_2_ o_diodes_1_ o_diodes_0_ \
+  pres_counter_4_.D pres_counter_4_.C pres_counter_5_.D pres_counter_5_.C pres_counter_6_.D pres_counter_6_.C pres_counter_1_.D pres_counter_1_.C pres_counter_2_.D pres_counter_2_.C pres_counter_3_.D \
+  pres_counter_3_.C pres_clk_slowreg.D pres_clk_slowreg.C pres_counter_0_.D pres_counter_0_.C currState_0_reg.D currState_0_reg.C currState_1_reg.D currState_1_reg.C counter_0_.D counter_0_.C \
+  counter_1_.D counter_1_.C counter_2_.D counter_2_.C counter_3_.D counter_3_.C counter_4_.D counter_4_.C counter_5_.D counter_5_.C G_54.X1 \
+  G_54.X2 G_56.X1 G_56.X2 G_58.X1 G_58.X2 G_60.X1 G_60.X2 G_62.X1 G_62.X2 G_64.X1 G_64.X2 \
+  G_52.X1 G_52.X2 G_51.X1 G_51.X2 pres_clk_slow_0.X1 pres_clk_slow_0.X2 proc1_un1_currstate_n N_50 N_53 currstate_ns_0__n N_72 \
+  N_75 N_77 N_79 N_81 N_66 N_65 N_52 pres_zegar_counter_n pres_n_29_n pres_n_30_n pres_n_31_n \
+  pres_n_32_n pres_n_36_n pres_n_37_n pres_n_38_n pres_n_39_n pres_n_40_n pres_n_41_n pres_n_42_n pres_n_44_n currstate_i_0__n currstate_i_1__n \
+  i_btn_i_2__n i_btn_i_1__n proc1_un1_currstate_i_n N_67_i pres_counter_i_0_5__n pres_counter_i_4__n pres_counter_i_3__n pres_counter_i_2__n pres_counter_i_0__n pres_counter_i_1__n pres_zegar_counter_i_n \
+  pres_counter_i_6__n i_clk_c i_btn_c_0__n i_btn_c_1__n i_btn_c_2__n N_65_i N_66_i N_50_i N_52_0 N_62_i pres_n_36_0_n \
+  pres_n_32_0_n pres_n_31_0_n pres_n_30_0_n pres_n_29_0_n pres_n_44_i_n pres_n_42_i_n pres_n_41_i_n pres_n_40_i_n pres_n_39_i_n pres_n_37_i_n pres_n_38_i_n \
+  N_53_1 N_53_2 N_53_3 N_53_4 currstate_ns_1_0__n currstate_ns_2_0__n currstate_ns_3_0__n pres_n_17_0_1_n pres_n_35_0_1_n pres_n_34_0_1_n pres_n_8_0_1_n \
+  pres_n_6_0_1_n pres_n_4_0_1_n pres_zegar_counter_1_n pres_zegar_counter_2_n pres_zegar_counter_3_n pres_zegar_counter_4_n pres_zegar_counter_5_n currstatese_un3_n currstatese_un1_n currstatese_un0_n currstatese_0_un3_n \
+  currstatese_0_un1_n currstatese_0_un0_n i_btn_7__n i_btn_6__n i_btn_5__n i_btn_4__n i_btn_3__n o_diodes_0_.OE o_diodes_1_.OE \
+  o_diodes_2_.OE o_diodes_3_.OE o_diodes_4_.OE o_diodes_5_.OE o_diodes_6_.OE o_diodes_7_.OE
+.names pres_clk_slowreg.BLIF o_diodes_0_
+1 1
+.names currState_1_reg.BLIF o_diodes_0_.OE
+1 1
+.names pres_clk_slowreg.BLIF o_diodes_1_
+1 1
+.names currState_1_reg.BLIF o_diodes_1_.OE
+1 1
+.names pres_clk_slowreg.BLIF o_diodes_2_
+1 1
+.names currState_1_reg.BLIF o_diodes_2_.OE
+1 1
+.names pres_clk_slowreg.BLIF o_diodes_3_
+1 1
+.names currState_1_reg.BLIF o_diodes_3_.OE
+1 1
+.names pres_clk_slowreg.BLIF o_diodes_4_
+1 1
+.names currState_1_reg.BLIF o_diodes_4_.OE
+1 1
+.names pres_clk_slowreg.BLIF o_diodes_5_
+1 1
+.names currState_1_reg.BLIF o_diodes_5_.OE
+1 1
+.names pres_clk_slowreg.BLIF o_diodes_6_
+1 1
+.names currState_1_reg.BLIF o_diodes_6_.OE
+1 1
+.names pres_clk_slowreg.BLIF o_diodes_7_
+1 1
+.names currState_1_reg.BLIF o_diodes_7_.OE
+1 1
+.names  N_50.BLIF G_52.X1
+1 1
+.names  currState_1_reg.BLIF G_52.X2
+1 1
+.names  currState_0_reg.BLIF G_51.X1
+1 1
+.names  currstate_ns_0__n.BLIF G_51.X2
+1 1
+.names  pres_clk_slowreg.BLIF pres_clk_slow_0.X1
+1 1
+.names  pres_zegar_counter_n.BLIF pres_clk_slow_0.X2
+1 1
+.names  pres_clk_slow_0.BLIF pres_clk_slowreg.D
+1 1
+.names  G_56.BLIF counter_1_.D
+1 1
+.names  G_58.BLIF counter_2_.D
+1 1
+.names  G_60.BLIF counter_3_.D
+1 1
+.names  G_62.BLIF counter_4_.D
+1 1
+.names  G_64.BLIF counter_5_.D
+1 1
+.names  i_clk.BLIF i_clk_c
+1 1
+.names  i_btn_0_.BLIF i_btn_c_0__n
+1 1
+.names  i_btn_1_.BLIF i_btn_c_1__n
+1 1
+.names  i_btn_2_.BLIF i_btn_c_2__n
+1 1
+.names  pres_clk_slowreg.BLIF o_clkSlow
+1 1
+.names  currState_0_reg.BLIF o_state_0_
+1 1
+.names  currState_1_reg.BLIF o_state_1_
+1 1
+.names  pres_n_36_n.BLIF pres_n_39_i_n.BLIF pres_n_6_0_1_n
+11 1
+.names  pres_n_6_0_1_n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_5_.D
+11 1
+.names  pres_n_37_i_n.BLIF pres_n_38_i_n.BLIF pres_n_4_0_1_n
+11 1
+.names  pres_n_4_0_1_n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_6_.D
+11 1
+.names  pres_counter_5_.BLIF pres_counter_i_0__n.BLIF pres_zegar_counter_1_n
+11 1
+.names  pres_counter_i_1__n.BLIF pres_counter_i_2__n.BLIF pres_zegar_counter_2_n
+11 1
+.names  pres_counter_i_6__n.BLIF pres_counter_i_3__n.BLIF pres_zegar_counter_3_n
+11 1
+.names  pres_zegar_counter_1_n.BLIF pres_zegar_counter_2_n.BLIF pres_zegar_counter_4_n
+11 1
+.names  pres_zegar_counter_3_n.BLIF pres_counter_i_4__n.BLIF pres_zegar_counter_5_n
+11 1
+.names  pres_zegar_counter_4_n.BLIF pres_zegar_counter_5_n.BLIF pres_zegar_counter_n
+11 1
+.names  counter_2_.BLIF counter_3_.BLIF N_53_3
+11 1
+.names  N_53_1.BLIF N_53_2.BLIF N_53_4
+11 1
+.names  N_53_4.BLIF N_53_3.BLIF N_53
+11 1
+.names  currstate_i_0__n.BLIF currstate_i_1__n.BLIF currstate_ns_1_0__n
+11 1
+.names  i_btn_c_0__n.BLIF i_btn_i_1__n.BLIF currstate_ns_2_0__n
+11 1
+.names  currstate_ns_1_0__n.BLIF currstate_ns_2_0__n.BLIF currstate_ns_3_0__n
+11 1
+.names  currstate_ns_3_0__n.BLIF i_btn_i_2__n.BLIF currstate_ns_0__n
+11 1
+.names  pres_n_29_n.BLIF pres_n_44_i_n.BLIF pres_n_17_0_1_n
+11 1
+.names  pres_n_17_0_1_n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_1_.D
+11 1
+.names  pres_n_30_n.BLIF pres_n_42_i_n.BLIF pres_n_35_0_1_n
+11 1
+.names  pres_n_35_0_1_n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_2_.D
+11 1
+.names  pres_n_31_n.BLIF pres_n_41_i_n.BLIF pres_n_34_0_1_n
+11 1
+.names  pres_n_34_0_1_n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_3_.D
+11 1
+.names  pres_n_32_n.BLIF pres_n_40_i_n.BLIF pres_n_8_0_1_n
+11 1
+.names  pres_n_8_0_1_n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_4_.D
+11 1
+.names  N_52_0.BLIF N_52
+0 1
+.names  pres_n_36_0_n.BLIF pres_n_36_n
+0 1
+.names  pres_n_32_0_n.BLIF pres_n_32_n
+0 1
+.names  pres_n_31_0_n.BLIF pres_n_31_n
+0 1
+.names  pres_n_30_0_n.BLIF pres_n_30_n
+0 1
+.names  pres_n_29_0_n.BLIF pres_n_29_n
+0 1
+.names  pres_n_44_n.BLIF pres_n_44_i_n
+0 1
+.names  pres_n_42_n.BLIF pres_n_42_i_n
+0 1
+.names  pres_n_41_n.BLIF pres_n_41_i_n
+0 1
+.names  pres_n_40_n.BLIF pres_n_40_i_n
+0 1
+.names  pres_n_39_n.BLIF pres_n_39_i_n
+0 1
+.names  pres_n_37_n.BLIF pres_n_37_i_n
+0 1
+.names  pres_n_38_n.BLIF pres_n_38_i_n
+0 1
+.names  counter_4_.BLIF counter_5_.BLIF N_53_1
+11 1
+.names  counter_0_.BLIF counter_1_.BLIF N_53_2
+11 1
+.names  N_65.BLIF N_65_i
+0 1
+.names  N_66.BLIF N_66_i
+0 1
+.names  N_50_i.BLIF N_50
+0 1
+.names  i_btn_c_2__n.BLIF i_btn_i_1__n.BLIF N_62_i
+11 1
+.names  N_62_i.BLIF i_btn_c_0__n.BLIF N_66
+11 1
+.names  currState_1_reg.BLIF currstate_i_1__n
+0 1
+.names  N_52.BLIF currstate_i_1__n.BLIF N_65
+11 1
+.names  currState_0_reg.BLIF currstate_i_0__n
+0 1
+.names  N_62_i.BLIF currState_0_reg.BLIF N_52_0
+11 1
+.names  N_65_i.BLIF N_66_i.BLIF N_50_i
+11 1
+.names  counter_0_.BLIF proc1_un1_currstate_i_n.BLIF N_72
+11 1
+.names  N_72.BLIF counter_1_.BLIF N_75
+11 1
+.names  N_75.BLIF counter_2_.BLIF N_77
+11 1
+.names  N_77.BLIF counter_3_.BLIF N_79
+11 1
+.names  N_79.BLIF counter_4_.BLIF N_81
+11 1
+.names  i_btn_c_1__n.BLIF i_btn_i_1__n
+0 1
+.names  i_btn_c_2__n.BLIF i_btn_i_2__n
+0 1
+.names  N_53.BLIF currstatese_un3_n
+0 1
+.names  currstate_ns_0__n.BLIF N_53.BLIF currstatese_un1_n
+11 1
+.names  currState_0_reg.BLIF currstatese_un3_n.BLIF currstatese_un0_n
+11 1
+.names  currstatese_un1_n.BLIF currstatese_un0_n.BLIF currState_0_reg.D
+1- 1
+-1 1
+.names  N_53.BLIF currstatese_0_un3_n
+0 1
+.names  N_50_i.BLIF N_53.BLIF currstatese_0_un1_n
+11 1
+.names  currState_1_reg.BLIF currstatese_0_un3_n.BLIF currstatese_0_un0_n
+11 1
+.names  currstatese_0_un1_n.BLIF currstatese_0_un0_n.BLIF currState_1_reg.D
+1- 1
+-1 1
+.names  G_54.BLIF counter_0_.D
+0 1
+.names  G_51.BLIF N_67_i
+0 1
+.names  N_67_i.BLIF G_52.BLIF proc1_un1_currstate_n
+11 1
+.names  proc1_un1_currstate_n.BLIF proc1_un1_currstate_i_n
+0 1
+.names  pres_n_29_n.BLIF pres_counter_i_2__n.BLIF pres_n_42_n
+11 1
+.names  pres_zegar_counter_n.BLIF pres_zegar_counter_i_n
+0 1
+.names  pres_counter_i_0__n.BLIF pres_zegar_counter_i_n.BLIF pres_counter_0_.D
+11 1
+.names  pres_counter_i_0__n.BLIF pres_counter_i_1__n.BLIF pres_n_44_n
+11 1
+.names  pres_counter_0_.BLIF pres_counter_i_0__n
+0 1
+.names  pres_counter_1_.BLIF pres_counter_i_1__n
+0 1
+.names  pres_counter_0_.BLIF pres_counter_1_.BLIF pres_n_29_0_n
+11 1
+.names  pres_counter_2_.BLIF pres_counter_i_2__n
+0 1
+.names  pres_n_29_0_n.BLIF pres_counter_2_.BLIF pres_n_30_0_n
+11 1
+.names  pres_counter_3_.BLIF pres_counter_i_3__n
+0 1
+.names  pres_n_30_0_n.BLIF pres_counter_3_.BLIF pres_n_31_0_n
+11 1
+.names  pres_counter_4_.BLIF pres_counter_i_4__n
+0 1
+.names  pres_n_31_0_n.BLIF pres_counter_4_.BLIF pres_n_32_0_n
+11 1
+.names  pres_counter_5_.BLIF pres_counter_i_0_5__n
+0 1
+.names  pres_n_32_0_n.BLIF pres_counter_5_.BLIF pres_n_36_0_n
+11 1
+.names  pres_counter_6_.BLIF pres_counter_i_6__n
+0 1
+.names  pres_n_36_n.BLIF pres_counter_i_6__n.BLIF pres_n_37_n
+11 1
+.names  pres_n_36_0_n.BLIF pres_counter_6_.BLIF pres_n_38_n
+11 1
+.names  pres_n_32_n.BLIF pres_counter_i_0_5__n.BLIF pres_n_39_n
+11 1
+.names  pres_n_31_n.BLIF pres_counter_i_4__n.BLIF pres_n_40_n
+11 1
+.names  pres_n_30_n.BLIF pres_counter_i_3__n.BLIF pres_n_41_n
+11 1
+.names  i_btn_7_.BLIF i_btn_7__n
+1 1
+.names  i_btn_6_.BLIF i_btn_6__n
+1 1
+.names  i_btn_5_.BLIF i_btn_5__n
+1 1
+.names  i_btn_4_.BLIF i_btn_4__n
+1 1
+.names  i_btn_3_.BLIF i_btn_3__n
+1 1
+.names  i_clk_c.BLIF pres_counter_4_.C
+1 1
+.names  i_clk_c.BLIF pres_counter_5_.C
+1 1
+.names  i_clk_c.BLIF pres_counter_6_.C
+1 1
+.names  i_clk_c.BLIF pres_counter_1_.C
+1 1
+.names  i_clk_c.BLIF pres_counter_2_.C
+1 1
+.names  i_clk_c.BLIF pres_counter_3_.C
+1 1
+.names  i_clk_c.BLIF pres_clk_slowreg.C
+1 1
+.names  i_clk_c.BLIF pres_counter_0_.C
+1 1
+.names  i_clk_c.BLIF currState_0_reg.C
+1 1
+.names  i_clk_c.BLIF currState_1_reg.C
+1 1
+.names  i_clk_c.BLIF counter_0_.C
+1 1
+.names  i_clk_c.BLIF counter_1_.C
+1 1
+.names  i_clk_c.BLIF counter_2_.C
+1 1
+.names  i_clk_c.BLIF counter_3_.C
+1 1
+.names  i_clk_c.BLIF counter_4_.C
+1 1
+.names  i_clk_c.BLIF counter_5_.C
+1 1
+.names  counter_0_.BLIF G_54.X1
+1 1
+.names  proc1_un1_currstate_n.BLIF G_54.X2
+1 1
+.names  N_72.BLIF G_56.X1
+1 1
+.names  counter_1_.BLIF G_56.X2
+1 1
+.names  N_75.BLIF G_58.X1
+1 1
+.names  counter_2_.BLIF G_58.X2
+1 1
+.names  N_77.BLIF G_60.X1
+1 1
+.names  counter_3_.BLIF G_60.X2
+1 1
+.names  N_79.BLIF G_62.X1
+1 1
+.names  counter_4_.BLIF G_62.X2
+1 1
+.names  N_81.BLIF G_64.X1
+1 1
+.names  counter_5_.BLIF G_64.X2
+1 1
+.end

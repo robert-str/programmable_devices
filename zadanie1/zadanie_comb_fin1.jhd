@@ -1,0 +1,9 @@
+
+
+MODULE two_3bits_adder
+
+	SUBMODULE adder3bit
+		INSTANCE ADDER1
+
+	SUBMODULE bcd_to_seg7
+		INSTANCE DEKODER1

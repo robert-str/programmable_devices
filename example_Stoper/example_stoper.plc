@@ -1,0 +1,53 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file example_stoper.tt4
+; FITTER-generated Placements.
+; DEVICE   mach463a
+; DATE     Tue Oct 29 13:14:25 2019
+
+
+Pin   5  disp_3_ Comb ; S6=1  S9=1  Pair 57
+Pin   30  start
+Pin   29  stop
+Pin   31  reset
+Pin   11  clk
+Pin   4  disp_2_ Comb ; S6=1  S9=1  Pair 45
+Pin   3  disp_1_ Comb ; S6=1  S9=1  Pair 63
+Pin   2  disp_0_ Comb ; S6=1  S9=1  Pair 51
+Pin   39  r_3_ Reg  ; S6=1  S9=1  Pair 129
+Pin   38  r_2_ Reg  ; S6=1  S9=1  Pair 123
+Pin   37  r_1_ Reg  ; S6=1  S9=1  Pair 125
+Pin   36  r_0_ Reg  ; S6=1  S9=1  Pair 117
+Node  129  RN_r_3_ Reg  ; S6=1  S9=1 
+Node  123  RN_r_2_ Reg  ; S6=1  S9=1 
+Node  125  RN_r_1_ Reg  ; S6=1  S9=1 
+Node  117  RN_r_0_ Reg  ; S6=1  S9=1 
+Node  93  s_1_ Reg  ; S6=1  S9=1 
+Node  47  s_2_ Reg  ; S6=1  S9=1 
+Node  95  d_1_ Reg  ; S6=1  S9=1 
+Node  101  d_2_ Reg  ; S6=1  S9=1 
+Node  77  j_1_ Reg  ; S6=1  S9=1 
+Node  87  j_2_ Reg  ; S6=1  S9=1 
+Node  81  t_1_ Reg  ; S6=1  S9=1 
+Node  75  t_2_ Reg  ; S6=1  S9=1 
+Node  119  j_0_ Reg  ; S6=1  S9=1 
+Node  89  j_3_ Reg  ; S6=1  S9=1 
+Node  105  d_0_ Reg  ; S6=1  S9=1 
+Node  99  d_3_ Reg  ; S6=1  S9=1 
+Node  59  s_0_ Reg  ; S6=1  S9=1 
+Node  53  s_3_ Reg  ; S6=1  S9=1 
+Node  83  t_0_ Reg  ; S6=1  S9=1 
+Node  71  t_3_ Reg  ; S6=1  S9=1 
+Node  135  currState_0_ Reg  ; S6=1  S9=1 
+Node  137  finally_disp17_n Comb ; S6=1  S9=1 
+Node  131  disp_sn_N_3 Comb ; S6=1  S9=1 
+Node  111  se Comb ; S6=1  S9=1 
+Node  69  digit_un3_zl_n Comb ; S6=1  S9=1 
+Node  107  te_i Comb ; S6=1  S9=1 
+; Unused Pins & Nodes
+; -> None Found.

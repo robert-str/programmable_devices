@@ -1,0 +1,6 @@
+
+
+MODULE stateMachine1
+
+	SUBMODULE clk_prescaler
+		INSTANCE pres

@@ -1,0 +1,54 @@
+#$ DATE Wed Nov 21 08:32:32 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE counter
+#$ PINS 5 o_number_3_ i_clk o_number_2_ o_number_1_ o_number_0_
+#$ NODES 10 o_number_n1 o_number_n2 o_number_c2 o_number_n3 o_number_c1 i_clk_c o_numberDFF_0_reg o_numberDFF_1_reg o_numberDFF_2_reg o_numberDFF_3_reg \
+#  
+.model counter
+.inputs i_clk.BLIF o_number_n1.BLIF o_number_n2.BLIF o_number_c2.BLIF o_number_n3.BLIF o_number_c1.BLIF i_clk_c.BLIF o_numberDFF_0_reg.BLIF o_numberDFF_1_reg.BLIF \
+  o_numberDFF_2_reg.BLIF o_numberDFF_3_reg.BLIF  
+.outputs o_number_3_ o_number_2_ o_number_1_ o_number_0_ o_numberDFF_0_reg.D o_numberDFF_0_reg.C o_numberDFF_1_reg.D o_numberDFF_1_reg.C o_numberDFF_2_reg.D o_numberDFF_2_reg.C o_numberDFF_3_reg.D \
+  o_numberDFF_3_reg.C o_number_n3.X1 o_number_n3.X2 o_number_n2.X1 o_number_n2.X2 o_number_n1.X1 o_number_n1.X2 o_number_c2 o_number_c1 i_clk_c
+.names  i_clk.BLIF i_clk_c
+1 1
+.names  o_numberDFF_0_reg.BLIF o_number_0_
+1 1
+.names  o_numberDFF_1_reg.BLIF o_number_1_
+1 1
+.names  o_numberDFF_2_reg.BLIF o_number_2_
+1 1
+.names  o_numberDFF_3_reg.BLIF o_number_3_
+1 1
+.names  o_numberDFF_0_reg.BLIF o_numberDFF_0_reg.D
+0 1
+.names  o_number_c1.BLIF o_numberDFF_2_reg.BLIF o_number_c2
+11 1
+.names  o_numberDFF_0_reg.BLIF o_numberDFF_1_reg.BLIF o_number_c1
+11 1
+.names  i_clk_c.BLIF o_numberDFF_0_reg.C
+1 1
+.names  i_clk_c.BLIF o_numberDFF_1_reg.C
+1 1
+.names  i_clk_c.BLIF o_numberDFF_2_reg.C
+1 1
+.names  i_clk_c.BLIF o_numberDFF_3_reg.C
+1 1
+.names  o_number_c2.BLIF o_number_n3.X1
+1 1
+.names  o_numberDFF_3_reg.BLIF o_number_n3.X2
+1 1
+.names  o_number_c1.BLIF o_number_n2.X1
+1 1
+.names  o_numberDFF_2_reg.BLIF o_number_n2.X2
+1 1
+.names  o_numberDFF_0_reg.BLIF o_number_n1.X1
+1 1
+.names  o_numberDFF_1_reg.BLIF o_number_n1.X2
+1 1
+.names  o_number_n1.BLIF o_numberDFF_1_reg.D
+1 1
+.names  o_number_n2.BLIF o_numberDFF_2_reg.D
+1 1
+.names  o_number_n3.BLIF o_numberDFF_3_reg.D
+1 1
+.end

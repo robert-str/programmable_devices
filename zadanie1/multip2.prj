@@ -1,0 +1,34 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file h:/dydaktyka/politechnika - dydaktyka/laboratoria materia£y/uk£ady programowalne (3sem)/isplever projects/zadanie1\multip2.prj
+#-- Written on Tue Nov 13 10:21:28 2018
+
+
+#device options
+set_option -technology mach
+set_option -part M4A5-64
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "sum1b.vhd"
+
+#-- top module name
+set_option -top_module multip2
+
+#-- set result format/file last
+project -result_file "multip2.edi"
+
+#-- error message log file
+project -log_file multip2.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

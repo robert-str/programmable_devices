@@ -1,0 +1,42 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file example_piano1.tt4
+; FITTER-generated Placements.
+; DEVICE   mach463a
+; DATE     Tue Oct 29 15:05:46 2019
+
+
+Pin   2  out0_7_ Comb ; S6=1  S9=1  Pair 53
+Pin   27  datain_4_
+Pin   11  CLK0
+Pin   3  out0_6_ Comb ; S6=1  S9=1  Pair 65
+Pin   4  out0_5_ Comb ; S6=1  S9=1  Pair 47
+Pin   5  out0_4_ Comb ; S6=1  S9=1  Pair 59
+Pin   6  out0_3_ Comb ; S6=1  S9=1  Pair 63
+Pin   7  out0_2_ Comb ; S6=1  S9=1  Pair 57
+Pin   8  out0_1_ Comb ; S6=1  S9=1  Pair 51
+Pin   9  out0_0_ Comb ; S6=1  S9=1  Pair 45
+Pin   28  datain_3_
+Pin   29  datain_2_
+Pin   30  datain_1_
+Pin   31  datain_0_
+Node  71  odlicz_0_ Reg  ; S6=1  S9=1 
+Node  87  odlicz_1_ Reg  ; S6=1  S9=1 
+Node  75  odlicz_2_ Reg  ; S6=1  S9=1 
+Node  81  odlicz_3_ Reg  ; S6=1  S9=1 
+Node  69  odlicz_4_ Reg  ; S6=1  S9=1 
+Node  123  odlicz_5_ Reg  ; S6=1  S9=1 
+Node  135  odlicz_6_ Reg  ; S6=1  S9=1 
+Node  129  odlicz_7_ Reg  ; S6=1  S9=1 
+Node  111  N_89 Comb ; S6=1  S9=1 
+Node  93  un2_datain_17_i Comb ; S6=1  S9=1 
+Node  105  un4_odlicz_1 Comb ; S6=1  S9=1 
+Node  99  un4_odlicz_2 Comb ; S6=1  S9=1 
+Node  117  un4_odlicz_6 Comb ; S6=1  S9=1 
+; Unused Pins & Nodes
+; -> None Found.

@@ -1,0 +1,62 @@
+(edif base
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2019 11 5 11 2 30)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "I-2014.03LC , mapper maplat, Build 923R"))
+     )
+   )
+  (external mach
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell IBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell OBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell base (cellType GENERIC)
+       (view top (viewType NETLIST)
+         (interface
+           (port i_btn (direction INPUT))
+           (port o_led (direction OUTPUT))
+         )
+         (contents
+          (instance i_btn (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance o_led (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (net i_btn (joined
+           (portRef i_btn)
+           (portRef I0 (instanceRef i_btn))
+          ))
+          (net o_led_c (joined
+           (portRef O (instanceRef i_btn))
+           (portRef I0 (instanceRef o_led))
+          ))
+          (net o_led (joined
+           (portRef O (instanceRef o_led))
+           (portRef o_led)
+          ))
+         )
+        (property orig_inst_of (string "base"))
+       )
+    )
+  )
+  (design base (cellRef base (libraryRef work)))
+)

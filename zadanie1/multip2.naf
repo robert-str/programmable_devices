@@ -1,0 +1,5 @@
+out_signal  o
+in_signals[3]  i
+in_signals[2]  i
+in_signals[1]  i
+in_signals[0]  i

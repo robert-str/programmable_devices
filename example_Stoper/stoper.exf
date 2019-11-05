@@ -1,0 +1,354 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      r(3:0)                        r                  3          4            -1
+      Port          2      disp(3:0)                     disp                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      r_3_                        r[3]                       1            0            
+        Port      r_2_                        r[2]                       1            1            
+        Port      r_1_                        r[1]                       1            2            
+        Port      r_0_                        r[0]                       1            3            
+        Port      disp_3_                     disp[3]                       2            0            
+        Port      disp_2_                     disp[2]                       2            1            
+        Port      disp_1_                     disp[1]                       2            2            
+        Port      disp_0_                     disp[0]                       2            3            
+End
+Section Cross Reference File
+Design 'stoper' created Tue Oct 29 13:03:38 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst           dispmux_3__p                              dispmux_3_.p
+   Inst           dispmux_2__r                              dispmux_2_.r
+   Inst           dispmux_2__m                              dispmux_2_.m
+   Inst           dispmux_2__n                              dispmux_2_.n
+   Inst           dispmux_2__p                              dispmux_2_.p
+   Inst           dispmux_1__r                              dispmux_1_.r
+   Inst           dispmux_1__m                              dispmux_1_.m
+   Inst           dispmux_1__n                              dispmux_1_.n
+   Inst           dispmux_1__p                              dispmux_1_.p
+   Inst           currState_0_                              currState[0]
+   Inst           dispmux_0__r                              dispmux_0_.r
+   Inst                   t_3_                                      t[3]
+   Inst           dispmux_0__m                              dispmux_0_.m
+   Inst                rDFF_0_                                   rDFF[0]
+   Inst           dispmux_0__n                              dispmux_0_.n
+   Inst                rDFF_1_                                   rDFF[1]
+   Inst           dispmux_0__p                              dispmux_0_.p
+   Inst                rDFF_2_                                   rDFF[2]
+   Inst            disp_1_3__r                               disp_1_3_.r
+   Inst                rDFF_3_                                   rDFF[3]
+   Inst            disp_1_3__m                               disp_1_3_.m
+   Inst                   t_0_                                      t[0]
+   Inst            disp_1_3__n                               disp_1_3_.n
+   Inst                   t_1_                                      t[1]
+   Inst            disp_1_3__p                               disp_1_3_.p
+   Inst                   t_2_                                      t[2]
+   Inst                   s_2_                                      s[2]
+   Inst                   s_3_                                      s[3]
+   Inst                   d_3_                                      d[3]
+   Inst                   s_0_                                      s[0]
+   Inst                 r_i_2_                                    r_i[2]
+   Inst                   s_1_                                      s[1]
+   Inst                 r_i_1_                                    r_i[1]
+   Inst                   d_1_                                      d[1]
+   Inst                 r_i_0_                                    r_i[0]
+   Inst                   d_2_                                      d[2]
+   Inst                 s_i_1_                                    s_i[1]
+   Inst                   j_2_                                      j[2]
+   Inst                   j_3_                                      j[3]
+   Inst                   d_0_                                      d[0]
+   Inst                   j_0_                                      j[0]
+   Inst                   j_1_                                      j[1]
+   Inst                   r_0_                                      r[0]
+   Inst                   r_1_                                      r[1]
+   Inst                   r_2_                                      r[2]
+   Inst                   r_3_                                      r[3]
+   Inst                disp_0_                                   disp[0]
+   Inst                disp_1_                                   disp[1]
+   Inst                disp_2_                                   disp[2]
+   Inst                disp_3_                                   disp[3]
+   Inst         digit_un5_zl_1                            digit.un5_zl_1
+   Inst         digit_un5_zl_2                            digit.un5_zl_2
+   Inst           digit_un5_zl                              digit.un5_zl
+   Inst         digit_un3_zl_1                            digit.un3_zl_1
+   Inst         digit_un3_zl_2                            digit.un3_zl_2
+   Inst           digit_un3_zl                              digit.un3_zl
+   Inst       finally_disp17_1                          finally.disp17_1
+   Inst       finally_disp17_2                          finally.disp17_2
+   Inst         finally_disp17                            finally.disp17
+   Inst       finally_disp16_1                          finally.disp16_1
+   Inst       finally_disp16_2                          finally.disp16_2
+   Inst         finally_disp16                            finally.disp16
+   Inst       finally_disp15_1                          finally.disp15_1
+   Inst       finally_disp15_2                          finally.disp15_2
+   Inst         finally_disp15                            finally.disp15
+   Inst         digit_un7_zl_1                            digit.un7_zl_1
+   Inst         digit_un7_zl_2                            digit.un7_zl_2
+   Inst           digit_un7_zl                              digit.un7_zl
+   Inst               r_0_i_1_                                  r_0_i[1]
+   Inst               r_0_i_2_                                  r_0_i[2]
+   Inst               r_0_i_3_                                  r_0_i[3]
+   Inst         digit_un7_zl_i                            digit.un7_zl_i
+   Inst         digit_un3_zl_i                            digit.un3_zl_i
+   Inst         digit_un5_zl_i                            digit.un5_zl_i
+   Inst                 d_e1_r                                    d_e1.r
+   Inst                 d_e1_m                                    d_e1.m
+   Inst                 d_e1_n                                    d_e1.n
+   Inst                 d_e1_p                                    d_e1.p
+   Inst                 d_e0_r                                    d_e0.r
+   Inst                 d_e0_m                                    d_e0.m
+   Inst                 d_e0_n                                    d_e0.n
+   Inst                 d_e0_p                                    d_e0.p
+   Inst                 j_e1_r                                    j_e1.r
+   Inst                 j_e1_m                                    j_e1.m
+   Inst                 j_e1_n                                    j_e1.n
+   Inst                 j_e1_p                                    j_e1.p
+   Inst                 j_e0_r                                    j_e0.r
+   Inst                 j_e0_m                                    j_e0.m
+   Inst                 j_e0_n                                    j_e0.n
+   Inst                 j_e0_p                                    j_e0.p
+   Inst                 d_e3_r                                    d_e3.r
+   Inst                 d_e3_m                                    d_e3.m
+   Inst                 d_e3_n                                    d_e3.n
+   Inst                 d_e3_p                                    d_e3.p
+   Inst                 d_e2_r                                    d_e2.r
+   Inst                 d_e2_m                                    d_e2.m
+   Inst                 d_e2_n                                    d_e2.n
+   Inst                 d_e2_p                                    d_e2.p
+   Inst                 d_i_1_                                    d_i[1]
+   Inst                 d_i_2_                                    d_i[2]
+   Inst                 j_i_1_                                    j_i[1]
+   Inst                 j_i_2_                                    j_i[2]
+   Inst         currState_i_0_                            currState_i[0]
+   Inst   currState_ns_0_0__start_i                 currState_ns_0_0_.start_i
+   Inst   currState_ns_0_0__m2_r                    currState_ns_0_0_.m2.r
+   Inst   currState_ns_0_0__m2_m                    currState_ns_0_0_.m2.m
+   Inst   currState_ns_0_0__m2_n                    currState_ns_0_0_.m2.n
+   Inst   currState_ns_0_0__m2_p                    currState_ns_0_0_.m2.p
+   Inst                 j_e3_r                                    j_e3.r
+   Inst                 j_e3_m                                    j_e3.m
+   Inst                 j_e3_n                                    j_e3.n
+   Inst                 j_e3_p                                    j_e3.p
+   Inst                 j_e2_r                                    j_e2.r
+   Inst                 j_e2_m                                    j_e2.m
+   Inst                 j_e2_n                                    j_e2.n
+   Inst                 j_e2_p                                    j_e2.p
+   Inst                 t_i_1_                                    t_i[1]
+   Inst                 t_i_2_                                    t_i[2]
+   Inst                 r_0_2_                                    r_0[2]
+   Inst                 r_0_1_                                    r_0[1]
+   Inst                 r_0_0_                                    r_0[0]
+   Inst                 t_i_3_                                    t_i[3]
+   Inst                 t_i_0_                                    t_i[0]
+   Inst            disp_1_2__r                               disp_1_2_.r
+   Inst            disp_1_2__m                               disp_1_2_.m
+   Inst            disp_1_2__n                               disp_1_2_.n
+   Inst            disp_1_2__p                               disp_1_2_.p
+   Inst            disp_1_1__r                               disp_1_1_.r
+   Inst            disp_1_1__m                               disp_1_1_.m
+   Inst            disp_1_1__n                               disp_1_1_.n
+   Inst            disp_1_1__p                               disp_1_1_.p
+   Inst            disp_1_0__r                               disp_1_0_.r
+   Inst            disp_1_0__m                               disp_1_0_.m
+   Inst            disp_1_0__n                               disp_1_0_.n
+   Inst            disp_1_0__p                               disp_1_0_.p
+   Inst            disp_0_3__r                               disp_0_3_.r
+   Inst            disp_0_3__m                               disp_0_3_.m
+   Inst            disp_0_3__n                               disp_0_3_.n
+   Inst            disp_0_3__p                               disp_0_3_.p
+   Inst            disp_0_2__r                               disp_0_2_.r
+   Inst            disp_0_2__m                               disp_0_2_.m
+   Inst            disp_0_2__n                               disp_0_2_.n
+   Inst            disp_0_2__p                               disp_0_2_.p
+   Inst            disp_0_1__r                               disp_0_1_.r
+   Inst            disp_0_1__m                               disp_0_1_.m
+   Inst            disp_0_1__n                               disp_0_1_.n
+   Inst            disp_0_1__p                               disp_0_1_.p
+   Inst            disp_0_0__r                               disp_0_0_.r
+   Inst            disp_0_0__m                               disp_0_0_.m
+   Inst            disp_0_0__n                               disp_0_0_.n
+   Inst            disp_0_0__p                               disp_0_0_.p
+   Inst                 s_e3_r                                    s_e3.r
+   Inst                 s_e3_m                                    s_e3.m
+   Inst                 s_e3_n                                    s_e3.n
+   Inst                 s_e3_p                                    s_e3.p
+   Inst                 s_e2_r                                    s_e2.r
+   Inst                 s_e2_m                                    s_e2.m
+   Inst                 s_e2_n                                    s_e2.n
+   Inst                 s_e2_p                                    s_e2.p
+   Inst                 s_e1_r                                    s_e1.r
+   Inst                 s_e1_m                                    s_e1.m
+   Inst                 s_e1_n                                    s_e1.n
+   Inst                 s_e1_p                                    s_e1.p
+   Inst                 s_e0_r                                    s_e0.r
+   Inst                 s_e0_m                                    s_e0.m
+   Inst                 s_e0_n                                    s_e0.n
+   Inst                 s_e0_p                                    s_e0.p
+   Inst                 r_0_3_                                    r_0[3]
+   Inst                 s_i_2_                                    s_i[2]
+   Inst       finally_disp15_i                          finally.disp15_i
+   Inst       finally_disp16_i                          finally.disp16_i
+   Inst           dispmux_3__r                              dispmux_3_.r
+   Inst           dispmux_3__m                              dispmux_3_.m
+   Inst           dispmux_3__n                              dispmux_3_.n
+   Net              s_e2_un1_n                                  s_e2.un1
+   Net              s_e2_un0_n                                  s_e2.un0
+   Net              s_e1_un3_n                                  s_e1.un3
+   Net                  s_1__n                                      s[1]
+   Net              s_e1_un1_n                                  s_e1.un1
+   Net                  s_2__n                                      s[2]
+   Net              s_e1_un0_n                                  s_e1.un0
+   Net                  d_1__n                                      d[1]
+   Net              s_e0_un3_n                                  s_e0.un3
+   Net                  d_2__n                                      d[2]
+   Net              s_e0_un1_n                                  s_e0.un1
+   Net                  j_1__n                                      j[1]
+   Net              s_e0_un0_n                                  s_e0.un0
+   Net                  j_2__n                                      j[2]
+   Net        dispmux_3__un3_n                            dispmux_3_.un3
+   Net                  t_1__n                                      t[1]
+   Net        dispmux_3__un1_n                            dispmux_3_.un1
+   Net                  t_2__n                                      t[2]
+   Net        dispmux_3__un0_n                            dispmux_3_.un0
+   Net                  j_0__n                                      j[0]
+   Net        dispmux_2__un3_n                            dispmux_2_.un3
+   Net                  j_3__n                                      j[3]
+   Net        dispmux_2__un1_n                            dispmux_2_.un1
+   Net                  d_0__n                                      d[0]
+   Net        dispmux_2__un0_n                            dispmux_2_.un0
+   Net                  d_3__n                                      d[3]
+   Net        dispmux_1__un3_n                            dispmux_1_.un3
+   Net                  s_0__n                                      s[0]
+   Net        dispmux_1__un1_n                            dispmux_1_.un1
+   Net                  s_3__n                                      s[3]
+   Net        dispmux_1__un0_n                            dispmux_1_.un0
+   Net                  t_0__n                                      t[0]
+   Net        dispmux_0__un3_n                            dispmux_0_.un3
+   Net                  t_3__n                                      t[3]
+   Net        dispmux_0__un1_n                            dispmux_0_.un1
+   Net        dispmux_0__un0_n                            dispmux_0_.un0
+   Net         disp_1_3__un3_n                             disp_1_3_.un3
+   Net         disp_1_3__un1_n                             disp_1_3_.un1
+   Net         disp_1_3__un0_n                             disp_1_3_.un0
+   Net          currstate_0__n                              currState[0]
+   Net       currstate_ns_0__n                           currState_ns[0]
+   Net        finally_disp17_n                            finally.disp17
+   Net        finally_disp16_n                            finally.disp16
+   Net        finally_disp15_n                            finally.disp15
+   Net          digit_un7_zl_n                              digit.un7_zl
+   Net          digit_un5_zl_n                              digit.un5_zl
+   Net          digit_un3_zl_n                              digit.un3_zl
+   Net        currstate_i_0__n                            currState_i[0]
+   Net                j_i_1__n                                    j_i[1]
+   Net                j_i_2__n                                    j_i[2]
+   Net                d_i_1__n                                    d_i[1]
+   Net                d_i_2__n                                    d_i[2]
+   Net                t_i_1__n                                    t_i[1]
+   Net                t_i_2__n                                    t_i[2]
+   Net                t_i_0__n                                    t_i[0]
+   Net                t_i_3__n                                    t_i[3]
+   Net      finally_disp15_i_n                          finally.disp15_i
+   Net      finally_disp16_i_n                          finally.disp16_i
+   Net                s_i_1__n                                    s_i[1]
+   Net                s_i_2__n                                    s_i[2]
+   Net                r_i_0__n                                    r_i[0]
+   Net                r_i_1__n                                    r_i[1]
+   Net                r_i_2__n                                    r_i[2]
+   Net                r_c_0__n                                    r_c[0]
+   Net                  r_0__n                                      r[0]
+   Net                r_c_1__n                                    r_c[1]
+   Net                  r_1__n                                      r[1]
+   Net                r_c_2__n                                    r_c[2]
+   Net                  r_2__n                                      r[2]
+   Net                r_c_3__n                                    r_c[3]
+   Net             disp_c_0__n                                 disp_c[0]
+   Net               disp_0__n                                   disp[0]
+   Net             disp_c_1__n                                 disp_c[1]
+   Net               disp_1__n                                   disp[1]
+   Net             disp_c_2__n                                 disp_c[2]
+   Net               disp_2__n                                   disp[2]
+   Net             disp_c_3__n                                 disp_c[3]
+   Net        digit_un3_zl_i_n                            digit.un3_zl_i
+   Net        digit_un5_zl_i_n                            digit.un5_zl_i
+   Net        digit_un7_zl_i_n                            digit.un7_zl_i
+   Net      finally_disp17_1_n                          finally.disp17_1
+   Net      finally_disp17_2_n                          finally.disp17_2
+   Net      finally_disp16_1_n                          finally.disp16_1
+   Net      finally_disp16_2_n                          finally.disp16_2
+   Net      finally_disp15_1_n                          finally.disp15_1
+   Net      finally_disp15_2_n                          finally.disp15_2
+   Net        digit_un7_zl_1_n                            digit.un7_zl_1
+   Net        digit_un7_zl_2_n                            digit.un7_zl_2
+   Net        digit_un5_zl_1_n                            digit.un5_zl_1
+   Net        digit_un5_zl_2_n                            digit.un5_zl_2
+   Net        digit_un3_zl_1_n                            digit.un3_zl_1
+   Net        digit_un3_zl_2_n                            digit.un3_zl_2
+   Net              d_e1_un3_n                                  d_e1.un3
+   Net              d_e1_un1_n                                  d_e1.un1
+   Net              d_e1_un0_n                                  d_e1.un0
+   Net              d_e0_un3_n                                  d_e0.un3
+   Net              d_e0_un1_n                                  d_e0.un1
+   Net              d_e0_un0_n                                  d_e0.un0
+   Net              j_e1_un3_n                                  j_e1.un3
+   Net              j_e1_un1_n                                  j_e1.un1
+   Net              j_e1_un0_n                                  j_e1.un0
+   Net              j_e0_un3_n                                  j_e0.un3
+   Net              j_e0_un1_n                                  j_e0.un1
+   Net              j_e0_un0_n                                  j_e0.un0
+   Net              d_e3_un3_n                                  d_e3.un3
+   Net              d_e3_un1_n                                  d_e3.un1
+   Net              d_e3_un0_n                                  d_e3.un0
+   Net              d_e2_un3_n                                  d_e2.un3
+   Net              d_e2_un1_n                                  d_e2.un1
+   Net              d_e2_un0_n                                  d_e2.un0
+   Net    currstate_ns_0_0__m2_un3_n                  currState_ns_0_0_.m2.un3
+   Net    currstate_ns_0_0__m2_un1_n                  currState_ns_0_0_.m2.un1
+   Net    currstate_ns_0_0__m2_un0_n                  currState_ns_0_0_.m2.un0
+   Net              j_e3_un3_n                                  j_e3.un3
+   Net              j_e3_un1_n                                  j_e3.un1
+   Net              j_e3_un0_n                                  j_e3.un0
+   Net              j_e2_un3_n                                  j_e2.un3
+   Net              j_e2_un1_n                                  j_e2.un1
+   Net              j_e2_un0_n                                  j_e2.un0
+   Net         disp_1_2__un3_n                             disp_1_2_.un3
+   Net         disp_1_2__un1_n                             disp_1_2_.un1
+   Net         disp_1_2__un0_n                             disp_1_2_.un0
+   Net         disp_1_1__un3_n                             disp_1_1_.un3
+   Net         disp_1_1__un1_n                             disp_1_1_.un1
+   Net         disp_1_1__un0_n                             disp_1_1_.un0
+   Net         disp_1_0__un3_n                             disp_1_0_.un3
+   Net         disp_1_0__un1_n                             disp_1_0_.un1
+   Net         disp_1_0__un0_n                             disp_1_0_.un0
+   Net         disp_0_3__un3_n                             disp_0_3_.un3
+   Net         disp_0_3__un1_n                             disp_0_3_.un1
+   Net         disp_0_3__un0_n                             disp_0_3_.un0
+   Net         disp_0_2__un3_n                             disp_0_2_.un3
+   Net         disp_0_2__un1_n                             disp_0_2_.un1
+   Net         disp_0_2__un0_n                             disp_0_2_.un0
+   Net         disp_0_1__un3_n                             disp_0_1_.un3
+   Net         disp_0_1__un1_n                             disp_0_1_.un1
+   Net         disp_0_1__un0_n                             disp_0_1_.un0
+   Net         disp_0_0__un3_n                             disp_0_0_.un3
+   Net         disp_0_0__un1_n                             disp_0_0_.un1
+   Net         disp_0_0__un0_n                             disp_0_0_.un0
+   Net              s_e3_un3_n                                  s_e3.un3
+   Net              s_e3_un1_n                                  s_e3.un1
+   Net              s_e3_un0_n                                  s_e3.un0
+   Net              s_e2_un3_n                                  s_e2.un3
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     start
+        Input     stop
+        Input     reset
+        Input     clk
+        Output     r_3_
+        Output     disp_3_
+        Output     r_2_
+        Output     r_1_
+        Output     r_0_
+        Output     disp_2_
+        Output     disp_1_
+        Output     disp_0_
+End

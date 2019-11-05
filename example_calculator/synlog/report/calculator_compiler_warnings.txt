@@ -1,0 +1,10 @@
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal number_out(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal num_buf(3 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal state_disp(buf); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal num_acc_buf(3 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal key_catched(3 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal state_oper(add); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":39:1:39:4|Latch generated from process for signal num_acc(3 downto 0); possible missing assignment in an if or case statement.
+@W: CD638 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd":18:8:18:22|Signal interrupt_shift is undriven 
+@W: CL279 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Pruning register bits 7 to 6 of number_out(7 downto 0)  
+

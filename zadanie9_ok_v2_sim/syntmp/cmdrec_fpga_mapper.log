@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "D:\isplever projects\zadanie9_ok"  -part M4A5-64   -RWCheckOnRam 1 -areadelay 0 -minc -summaryfile "D:\isplever projects\zadanie9_ok\synlog\report\stateMachine1_fpga_mapper.xml" -top_level_module  stateMachine1  -multisrs  -oedif  "D:\isplever projects\zadanie9_ok\stateMachine1.edi"  -freq 1.000  "D:\isplever projects\zadanie9_ok\synwork\stateMachine1_mult.srs"  -ologparam  "D:\isplever projects\zadanie9_ok\syntmp\stateMachine1.plg"  -osyn  "D:\isplever projects\zadanie9_ok\stateMachine1.srm"  -prjdir  "d:\isplever projects\zadanie9_ok\"  -prjname  stateMachine1  -log  "D:\isplever projects\zadanie9_ok\synlog\stateMachine1_fpga_mapper.srr" 
+rc:0 success:1
+D:\isplever projects\zadanie9_ok\stateMachine1.edi|o|1547559417|31855
+D:\isplever projects\zadanie9_ok\synwork\stateMachine1_mult.srs|i|1547559416|2714
+"D:\isplever projects\zadanie9_ok\syntmp\stateMachine1.plg"|o|0|0
+D:\isplever projects\zadanie9_ok\stateMachine1.srm|o|1547559417|13971
+D:\isplever projects\zadanie9_ok\synlog\stateMachine1_fpga_mapper.srr|o|1547559417|1298
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399362084|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399364922|8049664

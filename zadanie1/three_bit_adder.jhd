@@ -1,0 +1,7 @@
+
+
+MODULE adder3bit
+
+	SUBMODULE sum
+		INSTANCE B1
+		INSTANCE B2

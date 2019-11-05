@@ -1,0 +1,11 @@
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":7:7:7:13|Synthesizing work.pianino.simple 
+Post processing for work.pianino.simple
+@W: CL113 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":23:0:23:1|Feedback mux created for signal odlicz[7:0].
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[7]
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[6]
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[5]
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[4]
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[3]
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[2]
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[1]
+@W: CL179 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino .vhd":79:0:79:1|Found combinational loop at out0[0]

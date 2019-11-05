@@ -1,0 +1,131 @@
+
+[Device]
+Family = M4A5;
+PartNumber = M4A5-64/32-10JC;
+Package = 44PLCC;
+PartType = M4A5-64/32;
+Speed = -10;
+Operating_condition = COM;
+Status = Production;
+EN_PinGLB = Yes;
+EN_PinMacrocell = Yes;
+
+[Revision]
+Parent = m4a5.lci;
+DATE = 11/21/2018;
+TIME = 09:18:44;
+Source_Format = Pure_VHDL;
+Synthesis = Synplify;
+
+[Ignore Assignments]
+
+[Clear Assignments]
+
+[Backannotate Assignments]
+
+[Global Constraints]
+
+[Location Assignments]
+layer = OFF;
+seg7_0_ = Pin, 9, -, A, -;
+seg7_1_ = Pin, 8, -, A, -;
+seg7_2_ = Pin, 7, -, A, -;
+seg7_3_ = Pin, 6, -, A, -;
+seg7_4_ = Pin, 5, -, A, -;
+seg7_5_ = Pin, 4, -, A, -;
+seg7_6_ = Pin, 3, -, A, -;
+seg7_7_ = Pin, 2, -, A, -;
+clk = Pin, 36, -, D, -;
+zero = Pin, 37, -, D, -;
+
+[Group Assignments]
+layer = OFF;
+
+[Resource Reservations]
+layer = OFF;
+
+[Fitter Report Format]
+
+[Power]
+
+[Source Constraint Option]
+
+[Fast Bypass]
+
+[OSM Bypass]
+
+[Input Registers]
+
+[Netlist/Delay Format]
+NetList = VHDL;
+
+[IO Types]
+layer = OFF;
+
+[Pullup]
+
+[Slewrate]
+
+[Region]
+
+[Timing Constraints]
+
+[HSI Attributes]
+
+[Input Delay]
+
+[opt global constraints list]
+
+[Explorer User Settings]
+
+[Pin attributes list]
+
+[global constraints list]
+
+[Global Constraints Process Update]
+
+[pin lock limitation]
+
+[LOCATION ASSIGNMENTS LIST]
+
+[RESOURCE RESERVATIONS LIST]
+
+[individual constraints list]
+
+[Attributes list setting]
+
+[Timing Analyzer]
+
+[PLL Assignments]
+
+[Dual Function Macrocell]
+
+[Explorer Results]
+
+[VHDL synplify constraints]
+
+[VHDL spectrum constraints]
+
+[verilog synplify constraints]
+
+[verilog spectrum constraints]
+
+[VHDL synplify constraints list]
+
+[VHDL spectrum constraints list]
+
+[verilog synplify constraints list]
+
+[verilog spectrum constraints list]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;

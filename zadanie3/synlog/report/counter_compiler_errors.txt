@@ -1,0 +1,2 @@
+@E: CD395 :"C:\isplever projects\zadanie3\counter1.vhd":11:49:11:54|Constant width 4 does not match context width 8
+

@@ -1,0 +1,11 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\main.vhd":6:7:6:16|Top entity is set to calculator.
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\main.vhd":6:7:6:16|Synthesizing work.calculator.abacus 
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":7:7:7:15|Synthesizing work.not_a_cpu.fsm 
+@N: CD233 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":16:18:16:19|Using sequential encoding for type stage_state
+@N: CD233 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":17:17:17:18|Using sequential encoding for type oper_state
+@N: CD233 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":18:17:18:18|Using sequential encoding for type disp_state
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd":7:7:7:12|Synthesizing work.keypad.behavioral 
+@N: CL201 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":31:1:31:2|Trying to extract state machine for register state_curr
+

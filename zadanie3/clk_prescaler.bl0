@@ -1,0 +1,187 @@
+#$ DATE Fri Nov 23 10:40:42 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE clk_prescaler
+#$ PINS 16 prescalerValue_6_ number_6_ clk_fast clk_1s prescalerValue_5_ prescalerValue_4_ prescalerValue_3_ prescalerValue_2_ prescalerValue_1_ prescalerValue_0_ number_5_ number_4_ number_3_ number_2_ number_1_ number_0_
+#$ NODES 50 zegar_counter_n numberDFF_4_reg clk_1s_0 G_15 G_16 G_17 G_18 G_19 G_20 G_21 \
+#  counter_c1 counter_c2 counter_c3 counter_c4 counter_c5 G_35 G_33 G_31 G_29 G_27 \
+#  G_25 zegar_counter_i_n counter_i_0__n N_24_i N_25_i N_26_i N_27_i N_28_i N_29_i N_30_i \
+#  clk_fast_c prescalervalue_c_0__n prescalervalue_c_1__n prescalervalue_c_2__n prescalervalue_c_3__n prescalervalue_c_4__n prescalervalue_c_5__n prescalervalue_c_6__n counter_0_reg counter_1_reg \
+#  counter_2_reg counter_3_reg counter_5_reg counter_6_reg clk_1sDFFreg zegar_counter_1_n zegar_counter_2_n zegar_counter_3_n zegar_counter_4_n zegar_counter_5_n \
+#  
+.model clk_prescaler
+.inputs prescalerValue_6_.BLIF clk_fast.BLIF prescalerValue_5_.BLIF prescalerValue_4_.BLIF prescalerValue_3_.BLIF prescalerValue_2_.BLIF prescalerValue_1_.BLIF prescalerValue_0_.BLIF zegar_counter_n.BLIF \
+  numberDFF_4_reg.BLIF clk_1s_0.BLIF G_15.BLIF G_16.BLIF G_17.BLIF G_18.BLIF G_19.BLIF G_20.BLIF G_21.BLIF \
+  counter_c1.BLIF counter_c2.BLIF counter_c3.BLIF counter_c4.BLIF counter_c5.BLIF G_35.BLIF G_33.BLIF G_31.BLIF G_29.BLIF \
+  G_27.BLIF G_25.BLIF zegar_counter_i_n.BLIF counter_i_0__n.BLIF N_24_i.BLIF N_25_i.BLIF N_26_i.BLIF N_27_i.BLIF N_28_i.BLIF \
+  N_29_i.BLIF N_30_i.BLIF clk_fast_c.BLIF prescalervalue_c_0__n.BLIF prescalervalue_c_1__n.BLIF prescalervalue_c_2__n.BLIF prescalervalue_c_3__n.BLIF prescalervalue_c_4__n.BLIF prescalervalue_c_5__n.BLIF \
+  prescalervalue_c_6__n.BLIF counter_0_reg.BLIF counter_1_reg.BLIF counter_2_reg.BLIF counter_3_reg.BLIF counter_5_reg.BLIF counter_6_reg.BLIF clk_1sDFFreg.BLIF zegar_counter_1_n.BLIF \
+  zegar_counter_2_n.BLIF zegar_counter_3_n.BLIF zegar_counter_4_n.BLIF zegar_counter_5_n.BLIF  
+.outputs number_6_ clk_1s number_5_ number_4_ number_3_ number_2_ number_1_ number_0_ counter_5_reg.D counter_5_reg.C counter_6_reg.D \
+  counter_6_reg.C numberDFF_4_reg.D numberDFF_4_reg.C counter_1_reg.D counter_1_reg.C counter_2_reg.D counter_2_reg.C counter_3_reg.D counter_3_reg.C counter_0_reg.D counter_0_reg.C \
+  clk_1sDFFreg.D clk_1sDFFreg.C G_31.X1 G_31.X2 G_29.X1 G_29.X2 G_27.X1 G_27.X2 G_25.X1 G_25.X2 clk_1s_0.X1 \
+  clk_1s_0.X2 G_16.X1 G_16.X2 G_15.X1 G_15.X2 G_17.X1 G_17.X2 G_18.X1 G_18.X2 G_19.X1 G_19.X2 \
+  G_20.X1 G_20.X2 G_21.X1 G_21.X2 G_35.X1 G_35.X2 G_33.X1 G_33.X2 zegar_counter_n counter_c1 counter_c2 \
+  counter_c3 counter_c4 counter_c5 zegar_counter_i_n counter_i_0__n N_24_i N_25_i N_26_i N_27_i N_28_i N_29_i \
+  N_30_i clk_fast_c prescalervalue_c_0__n prescalervalue_c_1__n prescalervalue_c_2__n prescalervalue_c_3__n prescalervalue_c_4__n prescalervalue_c_5__n prescalervalue_c_6__n zegar_counter_1_n zegar_counter_2_n \
+  zegar_counter_3_n zegar_counter_4_n zegar_counter_5_n
+.names  clk_fast.BLIF clk_fast_c
+1 1
+.names  prescalerValue_0_.BLIF prescalervalue_c_0__n
+1 1
+.names  prescalerValue_1_.BLIF prescalervalue_c_1__n
+1 1
+.names  prescalerValue_2_.BLIF prescalervalue_c_2__n
+1 1
+.names  prescalerValue_3_.BLIF prescalervalue_c_3__n
+1 1
+.names  prescalerValue_4_.BLIF prescalervalue_c_4__n
+1 1
+.names  prescalerValue_5_.BLIF prescalervalue_c_5__n
+1 1
+.names  prescalerValue_6_.BLIF prescalervalue_c_6__n
+1 1
+.names  counter_0_reg.BLIF number_0_
+1 1
+.names  counter_1_reg.BLIF number_1_
+1 1
+.names  counter_2_reg.BLIF number_2_
+1 1
+.names  counter_3_reg.BLIF number_3_
+1 1
+.names  numberDFF_4_reg.BLIF number_4_
+1 1
+.names  counter_5_reg.BLIF number_5_
+1 1
+.names  counter_6_reg.BLIF number_6_
+1 1
+.names  clk_1sDFFreg.BLIF clk_1s
+1 1
+.names  N_26_i.BLIF N_27_i.BLIF zegar_counter_2_n
+11 1
+.names  N_30_i.BLIF N_28_i.BLIF zegar_counter_3_n
+11 1
+.names  zegar_counter_1_n.BLIF zegar_counter_2_n.BLIF zegar_counter_4_n
+11 1
+.names  zegar_counter_3_n.BLIF N_29_i.BLIF zegar_counter_5_n
+11 1
+.names  zegar_counter_4_n.BLIF zegar_counter_5_n.BLIF zegar_counter_n
+11 1
+.names  N_24_i.BLIF N_25_i.BLIF zegar_counter_1_n
+11 1
+.names  counter_0_reg.BLIF counter_i_0__n
+0 1
+.names  counter_i_0__n.BLIF zegar_counter_i_n.BLIF counter_0_reg.D
+11 1
+.names  G_25.BLIF zegar_counter_i_n.BLIF counter_1_reg.D
+11 1
+.names  G_27.BLIF zegar_counter_i_n.BLIF counter_2_reg.D
+11 1
+.names  G_29.BLIF zegar_counter_i_n.BLIF counter_3_reg.D
+11 1
+.names  G_31.BLIF zegar_counter_i_n.BLIF numberDFF_4_reg.D
+11 1
+.names  G_33.BLIF zegar_counter_i_n.BLIF counter_5_reg.D
+11 1
+.names  zegar_counter_n.BLIF zegar_counter_i_n
+0 1
+.names  G_35.BLIF zegar_counter_i_n.BLIF counter_6_reg.D
+11 1
+.names  counter_0_reg.BLIF counter_1_reg.BLIF counter_c1
+11 1
+.names  counter_2_reg.BLIF counter_c1.BLIF counter_c2
+11 1
+.names  counter_3_reg.BLIF counter_c2.BLIF counter_c3
+11 1
+.names  numberDFF_4_reg.BLIF counter_c3.BLIF counter_c4
+11 1
+.names  counter_5_reg.BLIF counter_c4.BLIF counter_c5
+11 1
+.names  G_15.BLIF N_24_i
+0 1
+.names  G_16.BLIF N_25_i
+0 1
+.names  G_17.BLIF N_26_i
+0 1
+.names  G_18.BLIF N_27_i
+0 1
+.names  G_19.BLIF N_28_i
+0 1
+.names  G_20.BLIF N_29_i
+0 1
+.names  G_21.BLIF N_30_i
+0 1
+.names  clk_fast_c.BLIF counter_5_reg.C
+1 1
+.names  clk_fast_c.BLIF counter_6_reg.C
+1 1
+.names  clk_fast_c.BLIF numberDFF_4_reg.C
+1 1
+.names  clk_fast_c.BLIF counter_1_reg.C
+1 1
+.names  clk_fast_c.BLIF counter_2_reg.C
+1 1
+.names  clk_fast_c.BLIF counter_3_reg.C
+1 1
+.names  clk_fast_c.BLIF counter_0_reg.C
+1 1
+.names  clk_fast_c.BLIF clk_1sDFFreg.C
+1 1
+.names  numberDFF_4_reg.BLIF G_31.X1
+1 1
+.names  counter_c3.BLIF G_31.X2
+1 1
+.names  counter_3_reg.BLIF G_29.X1
+1 1
+.names  counter_c2.BLIF G_29.X2
+1 1
+.names  counter_2_reg.BLIF G_27.X1
+1 1
+.names  counter_c1.BLIF G_27.X2
+1 1
+.names  counter_0_reg.BLIF G_25.X1
+1 1
+.names  counter_1_reg.BLIF G_25.X2
+1 1
+.names  clk_1sDFFreg.BLIF clk_1s_0.X1
+1 1
+.names  zegar_counter_n.BLIF clk_1s_0.X2
+1 1
+.names  counter_1_reg.BLIF G_16.X1
+1 1
+.names  prescalervalue_c_1__n.BLIF G_16.X2
+1 1
+.names  counter_0_reg.BLIF G_15.X1
+1 1
+.names  prescalervalue_c_0__n.BLIF G_15.X2
+1 1
+.names  counter_2_reg.BLIF G_17.X1
+1 1
+.names  prescalervalue_c_2__n.BLIF G_17.X2
+1 1
+.names  counter_3_reg.BLIF G_18.X1
+1 1
+.names  prescalervalue_c_3__n.BLIF G_18.X2
+1 1
+.names  numberDFF_4_reg.BLIF G_19.X1
+1 1
+.names  prescalervalue_c_4__n.BLIF G_19.X2
+1 1
+.names  counter_5_reg.BLIF G_20.X1
+1 1
+.names  prescalervalue_c_5__n.BLIF G_20.X2
+1 1
+.names  counter_6_reg.BLIF G_21.X1
+1 1
+.names  prescalervalue_c_6__n.BLIF G_21.X2
+1 1
+.names  counter_6_reg.BLIF G_35.X1
+1 1
+.names  counter_c5.BLIF G_35.X2
+1 1
+.names  counter_5_reg.BLIF G_33.X1
+1 1
+.names  counter_c4.BLIF G_33.X2
+1 1
+.names  clk_1s_0.BLIF clk_1sDFFreg.D
+1 1
+.end

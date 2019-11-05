@@ -1,0 +1,197 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      i_btn(1:0)                    i_btn                  1          2            -1
+      Port          2      o_diodes(7:0)                 o_diodes                  7          8            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      i_btn_1_                    i_btn[1]                       1            0            
+        Port      i_btn_0_                    i_btn[0]                       1            1            
+        Port      o_diodes_7_                 o_diodes[7]                       2            0            
+        Port      o_diodes_6_                 o_diodes[6]                       2            1            
+        Port      o_diodes_5_                 o_diodes[5]                       2            2            
+        Port      o_diodes_4_                 o_diodes[4]                       2            3            
+        Port      o_diodes_3_                 o_diodes[3]                       2            4            
+        Port      o_diodes_2_                 o_diodes[2]                       2            5            
+        Port      o_diodes_1_                 o_diodes[1]                       2            6            
+        Port      o_diodes_0_                 o_diodes[0]                       2            7            
+End
+Section Cross Reference File
+Design 'stateMachine1' created Tue Jan 15 14:37:01 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst        pres_counter_4_                           pres.counter[4]
+   Inst        pres_counter_5_                           pres.counter[5]
+   Inst        pres_counter_6_                           pres.counter[6]
+   Inst        pres_counter_1_                           pres.counter[1]
+   Inst        pres_counter_2_                           pres.counter[2]
+   Inst        pres_counter_3_                           pres.counter[3]
+   Inst   pres_o_clk_slow_temp                      pres.o_clk_slow_temp
+   Inst        pres_counter_0_                           pres.counter[0]
+   Inst           currState_0_                              currState[0]
+   Inst               i_btn_0_                                  i_btn[0]
+   Inst               i_btn_1_                                  i_btn[1]
+   Inst            o_diodes_0_                               o_diodes[0]
+   Inst            o_diodes_1_                               o_diodes[1]
+   Inst            o_diodes_2_                               o_diodes[2]
+   Inst            o_diodes_3_                               o_diodes[3]
+   Inst            o_diodes_4_                               o_diodes[4]
+   Inst            o_diodes_5_                               o_diodes[5]
+   Inst            o_diodes_6_                               o_diodes[6]
+   Inst            o_diodes_7_                               o_diodes[7]
+   Inst            pres_G_15_3                               pres.G_15_3
+   Inst            pres_G_15_4                               pres.G_15_4
+   Inst            pres_G_15_5                               pres.G_15_5
+   Inst              pres_G_15                                 pres.G_15
+   Inst            pres_N_38_i                               pres.N_38_i
+   Inst    pres_counter_n1_i_1                       pres.counter_n1_i_1
+   Inst      pres_counter_n1_i                         pres.counter_n1_i
+   Inst    pres_counter_n2_i_1                       pres.counter_n2_i_1
+   Inst      pres_counter_n2_i                         pres.counter_n2_i
+   Inst    pres_counter_n3_i_1                       pres.counter_n3_i_1
+   Inst      pres_counter_n3_i                         pres.counter_n3_i
+   Inst    pres_counter_n4_i_1                       pres.counter_n4_i_1
+   Inst      pres_counter_n4_i                         pres.counter_n4_i
+   Inst    pres_counter_n5_i_1                       pres.counter_n5_i_1
+   Inst      pres_counter_n5_i                         pres.counter_n5_i
+   Inst    pres_counter_n6_i_1                       pres.counter_n6_i_1
+   Inst      pres_counter_n6_i                         pres.counter_n6_i
+   Inst            pres_G_15_1                               pres.G_15_1
+   Inst            pres_G_15_2                               pres.G_15_2
+   Inst   pres_counter_n6_i_o4_i                    pres.counter_n6_i_o4_i
+   Inst   pres_counter_n5_i_o4_i                    pres.counter_n5_i_o4_i
+   Inst   pres_counter_n4_i_o4_i                    pres.counter_n4_i_o4_i
+   Inst   pres_counter_n3_i_o4_i                    pres.counter_n3_i_o4_i
+   Inst   pres_counter_n2_i_o4_i                    pres.counter_n2_i_o4_i
+   Inst            pres_N_44_i                               pres.N_44_i
+   Inst            pres_N_42_i                               pres.N_42_i
+   Inst            pres_N_41_i                               pres.N_41_i
+   Inst            pres_N_40_i                               pres.N_40_i
+   Inst            pres_N_39_i                               pres.N_39_i
+   Inst            pres_N_37_i                               pres.N_37_i
+   Inst   stateDecode_un3_i_btn_i                   stateDecode.un3_i_btn_i
+   Inst       nextState_1_0__r                          nextState_1_0_.r
+   Inst       nextState_1_0__m                          nextState_1_0_.m
+   Inst       nextState_1_0__n                          nextState_1_0_.n
+   Inst       nextState_1_0__p                          nextState_1_0_.p
+   Inst             i_btn_i_1_                                i_btn_i[1]
+   Inst   stateDecode_un3_i_btn                     stateDecode.un3_i_btn
+   Inst             i_btn_i_0_                                i_btn_i[0]
+   Inst   stateDecode_un1_i_btn                     stateDecode.un1_i_btn
+   Inst   pres_counter_n2_i_a4                      pres.counter_n2_i_a4
+   Inst   pres_zegar_counter_i                      pres.zegar.counter_i
+   Inst   pres_counter_n0_i_a4                      pres.counter_n0_i_a4
+   Inst   pres_counter_n1_i_a4                      pres.counter_n1_i_a4
+   Inst      pres_counter_i_1_                         pres.counter_i[1]
+   Inst      pres_counter_i_0_                         pres.counter_i[0]
+   Inst   pres_counter_n2_i_o4                      pres.counter_n2_i_o4
+   Inst      pres_counter_i_2_                         pres.counter_i[2]
+   Inst   pres_counter_n3_i_o4                      pres.counter_n3_i_o4
+   Inst      pres_counter_i_3_                         pres.counter_i[3]
+   Inst   pres_counter_n4_i_o4                      pres.counter_n4_i_o4
+   Inst      pres_counter_i_4_                         pres.counter_i[4]
+   Inst   pres_counter_n5_i_o4                      pres.counter_n5_i_o4
+   Inst      pres_counter_i_5_                         pres.counter_i[5]
+   Inst   pres_counter_n6_i_o4                      pres.counter_n6_i_o4
+   Inst   pres_o_clk_slow_temp_0                    pres.o_clk_slow_temp_0
+   Inst      pres_counter_i_6_                         pres.counter_i[6]
+   Inst   pres_counter_n6_i_a4                      pres.counter_n6_i_a4
+   Inst   pres_counter_n6_i_a4_0                    pres.counter_n6_i_a4_0
+   Inst   pres_counter_n5_i_a4                      pres.counter_n5_i_a4
+   Inst   pres_counter_n4_i_a4                      pres.counter_n4_i_a4
+   Inst   pres_counter_n3_i_a4                      pres.counter_n3_i_a4
+   Net          currstate_0__n                              currState[0]
+   Net        nextstate_1_0__n                            nextState_1[0]
+   Net    statedecode_un3_i_btn_n                     stateDecode.un3_i_btn
+   Net    statedecode_un1_i_btn_n                     stateDecode.un1_i_btn
+   Net    pres_zegar_counter_n                        pres.zegar.counter
+   Net       pres_counter_0__n                           pres.counter[0]
+   Net       pres_counter_1__n                           pres.counter[1]
+   Net       pres_counter_2__n                           pres.counter[2]
+   Net       pres_counter_3__n                           pres.counter[3]
+   Net       pres_counter_4__n                           pres.counter[4]
+   Net       pres_counter_5__n                           pres.counter[5]
+   Net       pres_counter_6__n                           pres.counter[6]
+   Net              pres_n_1_n                                  pres.N_1
+   Net             pres_n_29_n                                 pres.N_29
+   Net             pres_n_30_n                                 pres.N_30
+   Net             pres_n_31_n                                 pres.N_31
+   Net             pres_n_32_n                                 pres.N_32
+   Net             pres_n_36_n                                 pres.N_36
+   Net             pres_n_37_n                                 pres.N_37
+   Net             pres_n_38_n                                 pres.N_38
+   Net             pres_n_39_n                                 pres.N_39
+   Net             pres_n_40_n                                 pres.N_40
+   Net             pres_n_41_n                                 pres.N_41
+   Net             pres_n_42_n                                 pres.N_42
+   Net           pres_n_33_i_n                               pres.N_33_i
+   Net             pres_n_44_n                                 pres.N_44
+   Net            i_btn_i_0__n                                i_btn_i[0]
+   Net            i_btn_i_1__n                                i_btn_i[1]
+   Net    statedecode_un3_i_btn_i_n                   stateDecode.un3_i_btn_i
+   Net     pres_counter_i_5__n                         pres.counter_i[5]
+   Net     pres_counter_i_4__n                         pres.counter_i[4]
+   Net     pres_counter_i_3__n                         pres.counter_i[3]
+   Net     pres_counter_i_2__n                         pres.counter_i[2]
+   Net    pres_counter_i_0_1__n                       pres.counter_i_0[1]
+   Net     pres_counter_i_0__n                         pres.counter_i[0]
+   Net    pres_zegar_counter_i_n                      pres.zegar.counter_i
+   Net     pres_counter_i_6__n                         pres.counter_i[6]
+   Net            i_btn_c_0__n                                i_btn_c[0]
+   Net              i_btn_0__n                                  i_btn[0]
+   Net            i_btn_c_1__n                                i_btn_c[1]
+   Net           o_diodes_0__n                               o_diodes[0]
+   Net           o_diodes_1__n                               o_diodes[1]
+   Net           o_diodes_2__n                               o_diodes[2]
+   Net           o_diodes_3__n                               o_diodes[3]
+   Net           o_diodes_4__n                               o_diodes[4]
+   Net           o_diodes_5__n                               o_diodes[5]
+   Net           o_diodes_6__n                               o_diodes[6]
+   Net           pres_n_36_0_n                               pres.N_36_0
+   Net           pres_n_32_0_n                               pres.N_32_0
+   Net           pres_n_31_0_n                               pres.N_31_0
+   Net           pres_n_30_0_n                               pres.N_30_0
+   Net           pres_n_29_0_n                               pres.N_29_0
+   Net           pres_n_44_i_n                               pres.N_44_i
+   Net           pres_n_17_0_n                               pres.N_17_0
+   Net           pres_n_42_i_n                               pres.N_42_i
+   Net           pres_n_35_0_n                               pres.N_35_0
+   Net           pres_n_41_i_n                               pres.N_41_i
+   Net           pres_n_34_0_n                               pres.N_34_0
+   Net           pres_n_40_i_n                               pres.N_40_i
+   Net            pres_n_8_0_n                                pres.N_8_0
+   Net           pres_n_39_i_n                               pres.N_39_i
+   Net            pres_n_6_0_n                                pres.N_6_0
+   Net           pres_n_37_i_n                               pres.N_37_i
+   Net           pres_n_38_i_n                               pres.N_38_i
+   Net            pres_n_4_0_n                                pres.N_4_0
+   Net         pres_n_17_0_1_n                             pres.N_17_0_1
+   Net         pres_n_35_0_1_n                             pres.N_35_0_1
+   Net         pres_n_34_0_1_n                             pres.N_34_0_1
+   Net          pres_n_8_0_1_n                              pres.N_8_0_1
+   Net          pres_n_6_0_1_n                              pres.N_6_0_1
+   Net          pres_n_4_0_1_n                              pres.N_4_0_1
+   Net    pres_zegar_counter_1_n                      pres.zegar.counter_1
+   Net    pres_zegar_counter_2_n                      pres.zegar.counter_2
+   Net    pres_zegar_counter_3_n                      pres.zegar.counter_3
+   Net    pres_zegar_counter_4_n                      pres.zegar.counter_4
+   Net    pres_zegar_counter_5_n                      pres.zegar.counter_5
+   Net    nextstate_1_0__un3_n                        nextState_1_0_.un3
+   Net    nextstate_1_0__un1_n                        nextState_1_0_.un1
+   Net    nextstate_1_0__un0_n                        nextState_1_0_.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_btn_1_
+        Input     i_clk
+        Input     i_btn_0_
+        Output     o_diodes_7_
+        Output     o_clkSlow
+        Output     o_diodes_6_
+        Output     o_diodes_5_
+        Output     o_diodes_4_
+        Output     o_diodes_3_
+        Output     o_diodes_2_
+        Output     o_diodes_1_
+        Output     o_diodes_0_
+End

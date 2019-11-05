@@ -1,0 +1,52 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic2_0\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic2_0\synpbase
+Date:        Tue Oct 29 15:04:26 2019
+Version:     I-2014.03LC 
+
+Arguments:   -product synplify_pro  -batch c:/users/strak.desktop-d9mddlk/documents/isplever projects/example_piano1\pianino.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino.srr"
+
+Running pianino|example_piano1
+
+Running: Compile on pianino|example_piano1
+
+Running: Compile Process on pianino|example_piano1
+
+Running: Compile Input on pianino|example_piano1
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\synwork\pianino_comp.srs to C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on pianino|example_piano1
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\synwork\pianino_comp.srs to C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\synwork\pianino_s.srs
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\synwork\pianino_mult.srs to C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino.srs
+Copied C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino.srr to C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_piano1\pianino.srf
+Complete: Compile Process on pianino|example_piano1
+Complete: Compile on pianino|example_piano1
+
+Running: Map on pianino|example_piano1
+
+Running: Map & Optimize on pianino|example_piano1
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Complete: Map on pianino|example_piano1
+Complete: Logic Synthesis on pianino|example_piano1
+
+exit status=0
+
+exit status=0
+

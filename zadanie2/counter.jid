@@ -1,0 +1,3 @@
+. top top_module.vhd "f:\politechnika\dydaktyka\uk³ady programowalne (3sem)\isplever projects\zadanie2\top_module.vhd"
+U2 bcd_to_seg7 seg7_decoder_v1.vhd "f:\politechnika\dydaktyka\uk³ady programowalne (3sem)\isplever projects\zadanie2\seg7_decoder_v1.vhd"
+U1 counter counter1.vhd "f:\politechnika\dydaktyka\uk³ady programowalne (3sem)\isplever projects\zadanie2\counter1.vhd"

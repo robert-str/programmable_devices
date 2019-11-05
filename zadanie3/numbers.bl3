@@ -1,0 +1,583 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Mon Oct 28 12:04:53 2019
+#$ MODULE numbers
+#$ PINS 19 i_prescalerSelect_6_ seg7_7_ clk clock_out LD BI i_prescalerSelect_5_ \
+#  i_prescalerSelect_4_ i_prescalerSelect_3_ i_prescalerSelect_2_ \
+#  i_prescalerSelect_1_ i_prescalerSelect_0_ seg7_6_ seg7_5_ seg7_4_ seg7_3_ seg7_2_ \
+#  seg7_1_ seg7_0_
+#$ NODES 17 U0_counter_0_ U0_counter_1_ U0_counter_2_ U0_counter_3_ U0_counter_4_ \
+#  U0_counter_5_ U0_counter_6_ U1_dsec_0_reg U1_dsec_1_reg U1_dsec_2_reg U1_dsec_3_reg \
+#  U1_seconds_0_reg U1_seconds_1_reg U1_seconds_2_reg U1_seconds_3_reg U0_clk_slowreg \
+#  u0_zegar_counter_4_n
+.model top
+.inputs i_prescalerSelect_6_.BLIF clk.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF i_prescalerSelect_3_.BLIF i_prescalerSelect_2_.BLIF \
+i_prescalerSelect_1_.BLIF i_prescalerSelect_0_.BLIF U0_counter_0_.BLIF \
+U0_counter_1_.BLIF U0_counter_2_.BLIF U0_counter_3_.BLIF U0_counter_4_.BLIF \
+U0_counter_5_.BLIF U0_counter_6_.BLIF U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF \
+U1_dsec_2_reg.BLIF U1_dsec_3_reg.BLIF U1_seconds_0_reg.BLIF \
+U1_seconds_1_reg.BLIF U1_seconds_2_reg.BLIF U1_seconds_3_reg.BLIF \
+U0_clk_slowreg.BLIF u0_zegar_counter_4_n.BLIF
+.outputs seg7_7_ clock_out LD BI seg7_6_ seg7_5_ seg7_4_ seg7_3_ seg7_2_ \
+seg7_1_ seg7_0_ U0_counter_4_.C U0_counter_5_.C U0_counter_6_.C \
+U0_counter_1_.D U0_counter_1_.C U0_counter_2_.D U0_counter_2_.C \
+U0_counter_3_.D U0_counter_3_.C U0_clk_slowreg.C U0_counter_0_.D \
+U0_counter_0_.C U1_dsec_3_reg.D U1_dsec_3_reg.C U1_seconds_0_reg.C \
+U1_seconds_1_reg.C U1_seconds_2_reg.C U1_seconds_3_reg.C U1_dsec_0_reg.D \
+U1_dsec_0_reg.C U1_dsec_1_reg.D U1_dsec_1_reg.C U1_dsec_2_reg.D \
+U1_dsec_2_reg.C u0_zegar_counter_4_n U0_counter_4_.D.X1 U0_counter_4_.D.X2 \
+U0_counter_5_.D.X1 U0_counter_5_.D.X2 U0_counter_6_.D.X1 U0_counter_6_.D.X2 \
+U1_seconds_0_reg.D.X1 U1_seconds_0_reg.D.X2 U1_seconds_1_reg.D.X1 \
+U1_seconds_1_reg.D.X2 U1_seconds_2_reg.D.X1 U1_seconds_2_reg.D.X2 \
+U1_seconds_3_reg.D.X1 U1_seconds_3_reg.D.X2 U0_clk_slowreg.D.X1 \
+U0_clk_slowreg.D.X2
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF U0_counter_0_.BLIF U0_counter_1_.BLIF \
+U0_counter_4_.BLIF U0_counter_5_.BLIF U0_counter_6_.BLIF \
+u0_zegar_counter_4_n.BLIF U0_counter_1_.D
+1--10--0- 1
+1--01--0- 1
+0--10--1- 1
+0--01--1- 1
+-1-10-0-- 1
+-1-01-0-- 1
+-0-10-1-- 1
+-0-01-1-- 1
+--1100--- 1
+--1010--- 1
+--0101--- 1
+--0011--- 1
+---10---0 1
+---01---0 1
+000--0001 0
+001--1001 0
+010--0101 0
+011--1101 0
+100--0011 0
+101--1011 0
+110--0111 0
+111--1111 0
+---00---- 0
+---11---- 0
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF U0_counter_0_.BLIF U0_counter_1_.BLIF \
+U0_counter_2_.BLIF U0_counter_4_.BLIF U0_counter_5_.BLIF U0_counter_6_.BLIF \
+u0_zegar_counter_4_n.BLIF U0_counter_2_.D
+1--110--0- 1
+0--110--1- 1
+-1-110-0-- 1
+-0-110-1-- 1
+--11100--- 1
+--01101--- 1
+---110---0 1
+1---01--0- 1
+1--0-1--0- 1
+0---01--1- 1
+0--0-1--1- 1
+-1--01-0-- 1
+-1-0-1-0-- 1
+-0--01-1-- 1
+-0-0-1-1-- 1
+--1-010--- 1
+--10-10--- 1
+--0-011--- 1
+--00-11--- 1
+----01---0 1
+---0-1---0 1
+000---0001 0
+001---1001 0
+010---0101 0
+011---1101 0
+100---0011 0
+101---1011 0
+110---0111 0
+111---1111 0
+---111---- 0
+----00---- 0
+---0-0---- 0
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF U0_counter_0_.BLIF U0_counter_1_.BLIF \
+U0_counter_2_.BLIF U0_counter_3_.BLIF U0_counter_4_.BLIF U0_counter_5_.BLIF \
+U0_counter_6_.BLIF u0_zegar_counter_4_n.BLIF U0_counter_3_.D
+1--1110--0- 1
+0--1110--1- 1
+-1-1110-0-- 1
+-0-1110-1-- 1
+--111100--- 1
+--011101--- 1
+---1110---0 1
+1----01--0- 1
+1---0-1--0- 1
+1--0--1--0- 1
+0----01--1- 1
+0---0-1--1- 1
+0--0--1--1- 1
+-1---01-0-- 1
+-1--0-1-0-- 1
+-1-0--1-0-- 1
+-0---01-1-- 1
+-0--0-1-1-- 1
+-0-0--1-1-- 1
+--1--010--- 1
+--1-0-10--- 1
+--10--10--- 1
+--0--011--- 1
+--0-0-11--- 1
+--00--11--- 1
+-----01---0 1
+----0-1---0 1
+---0--1---0 1
+000----0001 0
+001----1001 0
+010----0101 0
+011----1101 0
+100----0011 0
+101----1011 0
+110----0111 0
+111----1111 0
+---1111---- 0
+-----00---- 0
+----0-0---- 0
+---0--0---- 0
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF i_prescalerSelect_3_.BLIF i_prescalerSelect_2_.BLIF \
+i_prescalerSelect_1_.BLIF i_prescalerSelect_0_.BLIF U0_counter_0_.BLIF \
+U0_counter_1_.BLIF U0_counter_2_.BLIF U0_counter_3_.BLIF U0_counter_4_.BLIF \
+U0_counter_5_.BLIF U0_counter_6_.BLIF U0_counter_0_.D
+-1-----0----0- 1
+-0-----0----1- 1
+--1----0---0-- 1
+--0----0---1-- 1
+---1---0--0--- 1
+---0---0--1--- 1
+----1--0-0---- 1
+----0--0-1---- 1
+-----1-00----- 1
+-----0-01----- 1
+1------0-----0 1
+0------0-----1 1
+------10------ 1
+0000000-000000 0
+0000010-100000 0
+0000100-010000 0
+0000110-110000 0
+0001000-001000 0
+0001010-101000 0
+0001100-011000 0
+0001110-111000 0
+0010000-000100 0
+0010010-100100 0
+0010100-010100 0
+0010110-110100 0
+0011000-001100 0
+0011010-101100 0
+0011100-011100 0
+0011110-111100 0
+0100000-000010 0
+0100010-100010 0
+0100100-010010 0
+0100110-110010 0
+0101000-001010 0
+0101010-101010 0
+0101100-011010 0
+0101110-111010 0
+0110000-000110 0
+0110010-100110 0
+0110100-010110 0
+0110110-110110 0
+0111000-001110 0
+0111010-101110 0
+0111100-011110 0
+0111110-111110 0
+1000000-000001 0
+1000010-100001 0
+1000100-010001 0
+1000110-110001 0
+1001000-001001 0
+1001010-101001 0
+1001100-011001 0
+1001110-111001 0
+1010000-000101 0
+1010010-100101 0
+1010100-010101 0
+1010110-110101 0
+1011000-001101 0
+1011010-101101 0
+1011100-011101 0
+1011110-111101 0
+1100000-000011 0
+1100010-100011 0
+1100100-010011 0
+1100110-110011 0
+1101000-001011 0
+1101010-101011 0
+1101100-011011 0
+1101110-111011 0
+1110000-000111 0
+1110010-100111 0
+1110100-010111 0
+1110110-110111 0
+1111000-001111 0
+1111010-101111 0
+1111100-011111 0
+1111110-111111 0
+-------1------ 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_dsec_2_reg.BLIF \
+U1_dsec_3_reg.BLIF U1_dsec_3_reg.D
+1110 1
+-101 1
+-011 1
+0--1 1
+1111 0
+100- 0
+0--0 0
+--00 0
+-0-0 0
+.names U1_dsec_0_reg.BLIF U1_dsec_0_reg.D
+0 1
+1 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_dsec_2_reg.BLIF \
+U1_dsec_3_reg.BLIF U1_dsec_1_reg.D
+101- 1
+10-0 1
+01-- 1
+-001 0
+00-- 0
+11-- 0
+.names i_prescalerSelect_3_.BLIF i_prescalerSelect_2_.BLIF \
+i_prescalerSelect_1_.BLIF i_prescalerSelect_0_.BLIF U0_counter_0_.BLIF \
+U0_counter_1_.BLIF U0_counter_2_.BLIF U0_counter_3_.BLIF u0_zegar_counter_4_n
+00000000 1
+00011000 1
+00100100 1
+00111100 1
+01000010 1
+01011010 1
+01100110 1
+01111110 1
+10000001 1
+10011001 1
+10100101 1
+10111101 1
+11000011 1
+11011011 1
+11100111 1
+11111111 1
+-1----0- 0
+-0----1- 0
+--1--0-- 0
+--0--1-- 0
+---10--- 0
+---01--- 0
+1------0 0
+0------1 0
+.names U1_seconds_3_reg.BLIF seg7_7_
+1 1
+0 0
+.names U0_clk_slowreg.BLIF clock_out
+1 1
+0 0
+.names LD
+ 1
+.names BI
+ 0
+.names U1_seconds_2_reg.BLIF seg7_6_
+1 1
+0 0
+.names U1_seconds_1_reg.BLIF seg7_5_
+1 1
+0 0
+.names U1_seconds_0_reg.BLIF seg7_4_
+1 1
+0 0
+.names U1_dsec_3_reg.BLIF seg7_3_
+1 1
+0 0
+.names U1_dsec_2_reg.BLIF seg7_2_
+1 1
+0 0
+.names U1_dsec_1_reg.BLIF seg7_1_
+1 1
+0 0
+.names U1_dsec_0_reg.BLIF seg7_0_
+1 1
+0 0
+.names clk.BLIF U0_counter_4_.C
+1 1
+0 0
+.names clk.BLIF U0_counter_5_.C
+1 1
+0 0
+.names clk.BLIF U0_counter_6_.C
+1 1
+0 0
+.names clk.BLIF U0_counter_1_.C
+1 1
+0 0
+.names clk.BLIF U0_counter_2_.C
+1 1
+0 0
+.names clk.BLIF U0_counter_3_.C
+1 1
+0 0
+.names clk.BLIF U0_clk_slowreg.C
+1 1
+0 0
+.names clk.BLIF U0_counter_0_.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_dsec_3_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_0_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_1_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_2_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_seconds_3_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_dsec_0_reg.C
+1 1
+0 0
+.names U0_clk_slowreg.BLIF U1_dsec_1_reg.C
+1 1
+0 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_dsec_2_reg.BLIF \
+U1_dsec_2_reg.D
+110 1
+-01 1
+0-1 1
+111 0
+-00 0
+0-0 0
+.names U0_clk_slowreg.BLIF U1_dsec_2_reg.C
+1 1
+0 0
+.names U0_counter_4_.BLIF U0_counter_4_.D.X1
+1 1
+0 0
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF U0_counter_0_.BLIF U0_counter_1_.BLIF \
+U0_counter_2_.BLIF U0_counter_3_.BLIF U0_counter_4_.BLIF U0_counter_5_.BLIF \
+U0_counter_6_.BLIF u0_zegar_counter_4_n.BLIF U0_counter_4_.D.X2
+--11111---- 1
+-0-1111-1-- 1
+0--1111--1- 1
+---1111---0 1
+-1-1111-0-- 1
+1--1111--0- 1
+---11111--- 1
+001----1001 1
+011----1101 1
+101----1011 1
+111----1111 1
+--00------- 0
+--0-0------ 0
+--0--0----- 0
+--0---0---- 0
+---0---0--- 0
+----0--0--- 0
+-----0-0--- 0
+------00--- 0
+---0------0 0
+----0-----0 0
+-----0----0 0
+------0---0 0
+-0-0----1-- 0
+-0--0---1-- 0
+-0---0--1-- 0
+-0----0-1-- 0
+-1-0----0-- 0
+-1--0---0-- 0
+-1---0--0-- 0
+-1----0-0-- 0
+0--0-----1- 0
+0---0----1- 0
+0----0---1- 0
+0-----0--1- 0
+1--0-----0- 0
+1---0----0- 0
+1----0---0- 0
+1-----0--0- 0
+110----0111 0
+100----0011 0
+010----0101 0
+000----0001 0
+.names U0_counter_5_.BLIF U0_counter_5_.D.X1
+1 1
+0 0
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF U0_counter_0_.BLIF U0_counter_1_.BLIF \
+U0_counter_2_.BLIF U0_counter_3_.BLIF U0_counter_4_.BLIF U0_counter_5_.BLIF \
+U0_counter_6_.BLIF u0_zegar_counter_4_n.BLIF U0_counter_5_.D.X2
+-1-11111--- 1
+--011111--- 1
+0--11111-1- 1
+---11111--0 1
+1--11111-0- 1
+010----0101 1
+110----0111 1
+---111111-- 1
+011----1101 1
+111----1111 1
+-0-0------- 0
+-0--0------ 0
+-0---0----- 0
+-0----0---- 0
+-0-----0--- 0
+--1----0--- 0
+---0----0-- 0
+----0---0-- 0
+-----0--0-- 0
+------0-0-- 0
+-------00-- 0
+---0------0 0
+----0-----0 0
+-----0----0 0
+------0---0 0
+-------0--0 0
+--00---1--- 0
+--0-0--1--- 0
+--0--0-1--- 0
+--0---01--- 0
+0--0-----1- 0
+0---0----1- 0
+0----0---1- 0
+0-----0--1- 0
+0------0-1- 0
+1--0-----0- 0
+1---0----0- 0
+1----0---0- 0
+1-----0--0- 0
+1------0-0- 0
+101-----011 0
+001-----001 0
+.names U0_counter_6_.BLIF U0_counter_6_.D.X1
+1 1
+0 0
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF U0_counter_0_.BLIF U0_counter_1_.BLIF \
+U0_counter_2_.BLIF U0_counter_3_.BLIF U0_counter_4_.BLIF U0_counter_5_.BLIF \
+U0_counter_6_.BLIF u0_zegar_counter_4_n.BLIF U0_counter_6_.D.X2
+1--111111-- 1
+-0-111111-- 1
+--0111111-- 1
+---111111-0 1
+100----0011 1
+110----0111 1
+101----1011 1
+---1111111- 1
+111----1111 1
+0--0------- 0
+0---0------ 0
+0----0----- 0
+0-----0---- 0
+0------0--- 0
+--1----0--- 0
+0-------0-- 0
+-1------0-- 0
+---0-----0- 0
+----0----0- 0
+-----0---0- 0
+------0--0- 0
+-------0-0- 0
+--------00- 0
+---0------0 0
+----0-----0 0
+-----0----0 0
+------0---0 0
+-------0--0 0
+--------0-0 0
+--00---1--- 0
+--0-0--1--- 0
+--0--0-1--- 0
+--0---01--- 0
+-0-0----1-- 0
+-0--0---1-- 0
+-0---0--1-- 0
+-0----0-1-- 0
+-0-----01-- 0
+--0----10-- 0
+011------01 0
+.names U1_seconds_0_reg.BLIF U1_seconds_0_reg.D.X1
+1 1
+0 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_dsec_2_reg.BLIF \
+U1_dsec_3_reg.BLIF U1_seconds_0_reg.BLIF U1_seconds_0_reg.D.X2
+1001- 1
+0---- 0
+-1--- 0
+--1-- 0
+---0- 0
+.names U1_seconds_1_reg.BLIF U1_seconds_1_reg.D.X1
+1 1
+0 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_dsec_2_reg.BLIF \
+U1_dsec_3_reg.BLIF U1_seconds_0_reg.BLIF U1_seconds_1_reg.BLIF \
+U1_seconds_2_reg.BLIF U1_seconds_3_reg.BLIF U1_seconds_1_reg.D.X2
+10011-1- 1
+10011--0 1
+100111-- 1
+0------- 0
+-1------ 0
+--1----- 0
+---0---- 0
+----0--- 0
+-----001 0
+.names U1_seconds_2_reg.BLIF U1_seconds_2_reg.D.X1
+1 1
+0 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_dsec_2_reg.BLIF \
+U1_dsec_3_reg.BLIF U1_seconds_0_reg.BLIF U1_seconds_1_reg.BLIF \
+U1_seconds_2_reg.BLIF U1_seconds_2_reg.D.X2
+100111- 1
+0------ 0
+-1----- 0
+--1---- 0
+---0--- 0
+----0-- 0
+-----0- 0
+.names U1_seconds_3_reg.BLIF U1_seconds_3_reg.D.X1
+1 1
+0 0
+.names U1_dsec_0_reg.BLIF U1_dsec_1_reg.BLIF U1_dsec_2_reg.BLIF \
+U1_dsec_3_reg.BLIF U1_seconds_0_reg.BLIF U1_seconds_1_reg.BLIF \
+U1_seconds_2_reg.BLIF U1_seconds_3_reg.BLIF U1_seconds_3_reg.D.X2
+10011001 1
+1001111- 1
+0------- 0
+-1------ 0
+--1----- 0
+---0---- 0
+----0--- 0
+-----01- 0
+-----10- 0
+-----0-0 0
+.names U0_clk_slowreg.BLIF U0_clk_slowreg.D.X1
+0 1
+1 0
+.names i_prescalerSelect_6_.BLIF i_prescalerSelect_5_.BLIF \
+i_prescalerSelect_4_.BLIF U0_counter_4_.BLIF U0_counter_5_.BLIF \
+U0_counter_6_.BLIF U0_clk_slowreg.BLIF u0_zegar_counter_4_n.BLIF \
+U0_clk_slowreg.D.X2
+--01---- 1
+-0--1--- 1
+0----1-- 1
+-------0 1
+--10---- 1
+-1--0--- 1
+1----0-- 1
+111111-1 0
+110011-1 0
+101101-1 0
+100001-1 0
+011110-1 0
+010010-1 0
+001100-1 0
+000000-1 0
+.end

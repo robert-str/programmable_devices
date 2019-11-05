@@ -1,0 +1,2 @@
+@E: CD379 :"C:\isplever projects\zadanie1\zadanie_comb_fin1.vhd":19:43:19:43|Specified wrong number of values in aggregate, expected 3
+

@@ -1,0 +1,54 @@
+#PLAFILE zadanie1.tt4
+#DATE    11/20/2018
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION i_a_0_:A_*_9	// INP
+DATA LOCATION i_a_1_:A_*_8	// INP
+DATA LOCATION i_b_0_:B_*_14	// INP
+DATA LOCATION i_b_1_:B_*_15	// INP
+DATA LOCATION segments_0_:D_2_36	// OUT
+DATA LOCATION segments_1_:D_5_37	// OUT
+DATA LOCATION segments_2_:D_4_38	// OUT
+DATA LOCATION segments_3_:D_12_39	// OUT
+DATA LOCATION segments_4_:D_8_40	// OUT
+DATA LOCATION segments_5_:D_1_41	// OUT
+DATA LOCATION segments_6_:D_13_42	// OUT
+DATA LOCATION segments_7_:D_0_43	// OUT
+DATA IO_DIR   i_a_0_:IN
+DATA IO_DIR   i_a_1_:IN
+DATA IO_DIR   i_b_0_:IN
+DATA IO_DIR   i_b_1_:IN
+DATA IO_DIR   segments_0_:OUT
+DATA IO_DIR   segments_1_:OUT
+DATA IO_DIR   segments_2_:OUT
+DATA IO_DIR   segments_3_:OUT
+DATA IO_DIR   segments_4_:OUT
+DATA IO_DIR   segments_5_:OUT
+DATA IO_DIR   segments_6_:OUT
+DATA IO_DIR   segments_7_:OUT
+DATA PW_LEVEL  i_a_1_:0
+DATA SLEW      i_a_1_:0
+DATA PW_LEVEL  i_a_0_:0
+DATA SLEW      i_a_0_:0
+DATA PW_LEVEL  i_b_1_:0
+DATA SLEW      i_b_1_:0
+DATA PW_LEVEL  i_b_0_:0
+DATA SLEW      i_b_0_:0
+DATA PW_LEVEL  segments_6_:0
+DATA SLEW      segments_6_:0
+DATA PW_LEVEL  segments_5_:0
+DATA SLEW      segments_5_:0
+DATA PW_LEVEL  segments_7_:0
+DATA SLEW      segments_7_:0
+DATA PW_LEVEL  segments_4_:0
+DATA SLEW      segments_4_:0
+DATA PW_LEVEL  segments_3_:0
+DATA SLEW      segments_3_:0
+DATA PW_LEVEL  segments_2_:0
+DATA SLEW      segments_2_:0
+DATA PW_LEVEL  segments_1_:0
+DATA SLEW      segments_1_:0
+DATA PW_LEVEL  segments_0_:0
+DATA SLEW      segments_0_:0
+END

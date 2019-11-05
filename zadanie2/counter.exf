@@ -1,0 +1,41 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      o_number(3:0)                 o_number                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      o_number_3_                 o_number[3]                       1            0            
+        Port      o_number_2_                 o_number[2]                       1            1            
+        Port      o_number_1_                 o_number[1]                       1            2            
+        Port      o_number_0_                 o_number[0]                       1            3            
+End
+Section Cross Reference File
+Design 'counter' created Wed Nov 21 08:32:32 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst         o_numberDFF_0_                            o_numberDFF[0]
+   Inst         o_numberDFF_1_                            o_numberDFF[1]
+   Inst         o_numberDFF_2_                            o_numberDFF[2]
+   Inst         o_numberDFF_3_                            o_numberDFF[3]
+   Inst            o_number_0_                               o_number[0]
+   Inst            o_number_1_                               o_number[1]
+   Inst            o_number_2_                               o_number[2]
+   Inst            o_number_3_                               o_number[3]
+   Inst          o_number_i_0_                             o_number_i[0]
+   Net         o_number_i_0__n                             o_number_i[0]
+   Net         o_number_c_0__n                             o_number_c[0]
+   Net           o_number_0__n                               o_number[0]
+   Net         o_number_c_1__n                             o_number_c[1]
+   Net           o_number_1__n                               o_number[1]
+   Net         o_number_c_2__n                             o_number_c[2]
+   Net           o_number_2__n                               o_number[2]
+   Net         o_number_c_3__n                             o_number_c[3]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_clk
+        Output     o_number_3_
+        Output     o_number_2_
+        Output     o_number_1_
+        Output     o_number_0_
+End

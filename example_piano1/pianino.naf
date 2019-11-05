@@ -1,0 +1,14 @@
+CLK0  i
+out0[7]  o
+out0[6]  o
+out0[5]  o
+out0[4]  o
+out0[3]  o
+out0[2]  o
+out0[1]  o
+out0[0]  o
+datain[4]  i
+datain[3]  i
+datain[2]  i
+datain[1]  i
+datain[0]  i

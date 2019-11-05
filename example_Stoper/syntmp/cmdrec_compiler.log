@@ -1,0 +1,8 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synwork\stoper_comp.srs"  -top  stoper  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\dm"  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\stoper.vhd" -loga  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\stoper.srr" 
+rc:0 success:1
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\synwork\stoper_comp.srs|o|1572350611|3135
+"C:\users\strak.desktop-d9mddlk\documents\isplever|i|0|0
+projects\example_stoper\stoper.vhd"|i|0|0
+C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_stoper\stoper.srr|o|1572350611|2968
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401220298|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401220504|5533184

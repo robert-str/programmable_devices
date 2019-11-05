@@ -1,0 +1,178 @@
+[DEVICE]
+Family = M4A5;
+PartType = M4A5-64/32;
+Package = 44PLCC;
+PartNumber = M4A5-64/32-10JC;
+Speed = -10;
+Operating_condition = COM;
+EN_Segment = No;
+Pin_MC_1to1 = No;
+EN_PinReserve_IO = Yes;
+EN_PinReserve_BIDIR = Yes;
+Voltage = 5.0;
+
+[REVISION]
+RCS = "$Revision: 1.2 $";
+Parent = m4a5.lci;
+SDS_File = m4a5.sds;
+Design = example_calculator.tt4;
+DATE = 10/29/19;
+TIME = 15:23:34;
+Source_Format = Pure_VHDL;
+Type = TT2;
+Pre_Fit_Time = 1;
+
+[IGNORE ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+
+[CLEAR ASSIGNMENTS]
+Pin_Assignments = No;
+Pin_Keep_Block = No;
+Pin_Keep_Segment = No;
+Group_Assignments = No;
+Macrocell_Assignments = No;
+Macrocell_Keep_Block = No;
+Macrocell_Keep_Segment = No;
+Pin_Reservation = No;
+Block_Reservation = No;
+Segment_Reservation = No;
+Timing_Constraints = No;
+
+[BACKANNOTATE ASSIGNMENTS]
+Pin_Block = No;
+Pin_Macrocell_Block = No;
+Routing = No;
+
+[GLOBAL CONSTRAINTS]
+Max_PTerm_Split = 16;
+Max_PTerm_Collapse = 16;
+Max_Pin_Percent = 100;
+Max_Macrocell_Percent = 100;
+Max_GLB_Input_Percent = 100;
+Max_Seg_In_Percent = 100;
+Logic_Reduction = Yes;
+XOR_Synthesis = Yes;
+DT_Synthesis = Yes;
+Node_Collapse = Yes;
+Run_Time = 0;
+Set_Reset_Dont_Care = No;
+Clock_Optimize = No;
+In_Reg_Optimize = Yes;
+Balanced_Partitioning = Yes;
+Device_max_fanin = 33;
+Device_max_pterms = 20;
+Usercode = 0;
+Usercode_Format = Hex;
+
+[LOCATION ASSIGNMENTS]
+Layer = OFF;
+keypad_rows_3_ = pin,6,-,A,-;
+keypad_cols_3_ = pin,2,-,A,-;
+bcd_out_7_ = pin,43,-,D,-;
+clk = pin,11,-,-,-;
+keypad_rows_2_ = pin,7,-,A,-;
+keypad_rows_1_ = pin,8,-,A,-;
+keypad_rows_0_ = pin,9,-,A,-;
+keypad_cols_2_ = pin,3,-,A,-;
+keypad_cols_1_ = pin,4,-,A,-;
+keypad_cols_0_ = pin,5,-,A,-;
+bcd_out_6_ = pin,42,-,D,-;
+bcd_out_5_ = pin,41,-,D,-;
+bcd_out_4_ = pin,40,-,D,-;
+bcd_out_3_ = pin,39,-,D,-;
+bcd_out_2_ = pin,38,-,D,-;
+bcd_out_1_ = pin,37,-,D,-;
+bcd_out_0_ = pin,36,-,D,-;
+input_keypad_interrupt_out = node,-,-,C,4;
+input_keypad_key_out_0_ = node,-,-,C,10;
+input_keypad_key_out_1_ = node,-,-,C,8;
+input_keypad_key_out_2_ = node,-,-,A,2;
+input_keypad_key_out_3_ = node,-,-,A,10;
+calc_proc_state_oper_0_ = node,-,-,B,10;
+calc_proc_state_disp_0_ = node,-,-,B,3;
+calc_proc_num_buf_0_ = node,-,-,C,6;
+calc_proc_num_buf_1_ = node,-,-,C,2;
+calc_proc_num_buf_2_ = node,-,-,C,13;
+calc_proc_num_buf_3_ = node,-,-,C,14;
+calc_proc_key_catched_0_ = node,-,-,C,9;
+calc_proc_key_catched_2_ = node,-,-,A,5;
+calc_proc_state_curr_0_ = node,-,-,B,0;
+calc_proc_state_curr_1_ = node,-,-,B,8;
+calc_proc_state_curr_2_ = node,-,-,B,4;
+calc_proc_key_catched_1_ = node,-,-,B,6;
+calc_proc_key_catched_3_ = node,-,-,A,1;
+calc_proc_num_acc_0_ = node,-,-,C,5;
+calc_proc_num_acc_1_ = node,-,-,B,2;
+calc_proc_num_acc_2_ = node,-,-,C,1;
+calc_proc_num_acc_3_ = node,-,-,A,14;
+calc_proc_G_89_1 = node,-,-,A,13;
+calc_proc_state_next_0_sqmuxa_2_n = node,-,-,C,12;
+calc_proc_num_acc_buf_0_ = node,-,-,D,3;
+calc_proc_num_acc_buf_1_ = node,-,-,D,5;
+calc_proc_num_acc_buf_2_ = node,-,-,D,14;
+calc_proc_num_acc_buf_3_ = node,-,-,D,6;
+calc_proc_n_79_1_n = node,-,-,A,6;
+input_keypad_counter_0_ = node,-,-,B,12;
+input_keypad_counter_1_ = node,-,-,B,1;
+input_keypad_counter_2_ = node,-,-,C,0;
+input_keypad_counter_3_ = node,-,-,B,13;
+input_keypad_interrupt = node,-,-,B,9;
+input_keypad_interrupt_0_sqmuxa_n = node,-,-,B,5;
+calc_proc_n_36_0_n = node,-,-,D,2;
+calc_proc_n_82_0_n = node,-,-,A,9;
+calc_proc_state_oper_0__0 = node,-,-,B,14;
+
+[GROUP ASSIGNMENTS]
+Layer = OFF;
+
+[RESOURCE RESERVATIONS]
+Layer = OFF;
+
+[SLEWRATE]
+Default = FAST;
+
+[PULLUP]
+Default = Hold;
+
+[NETLIST/DELAY FORMAT]
+Delay_File = SDF;
+Netlist = VHDL;
+
+[OSM BYPASS]
+
+[FITTER REPORT FORMAT]
+Fitter_Options = Yes;
+Pinout_Diagram = No;
+Pinout_Listing = Yes;
+Detailed_Block_Segment_Summary = Yes;
+Input_Signal_List = Yes;
+Output_Signal_List = Yes;
+Bidir_Signal_List = Yes;
+Node_Signal_List = Yes;
+Signal_Fanout_List = Yes;
+Block_Segment_Fanin_List = Yes;
+Postfit_Eqn = Yes;
+Prefit_Eqn = Yes;
+Page_Break = Yes;
+
+[POWER]
+Powerlevel =  Low,High;
+Default = High;
+Type = GLB;
+
+[SOURCE CONSTRAINT OPTION]
+
+[TIMING ANALYZER]
+Last_source=;
+Last_source_type=Fmax;
+

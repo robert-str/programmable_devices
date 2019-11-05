@@ -1,0 +1,6 @@
+
+GROUP MACH_SEG_A out0_7_ out0_6_ out0_5_ out0_4_ out0_3_ out0_2_ out0_1_ 
+      out0_0_ 
+GROUP MACH_SEG_B odlicz_2_ odlicz_4_ odlicz_1_ odlicz_3_ odlicz_0_ 
+GROUP MACH_SEG_C un4_odlicz_2 un4_odlicz_1 un2_datain_17_i N_89 
+GROUP MACH_SEG_D odlicz_6_ odlicz_7_ odlicz_5_ un4_odlicz_6 

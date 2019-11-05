@@ -1,0 +1,9 @@
+
+
+MODULE calculator
+
+	SUBMODULE not_a_cpu
+		INSTANCE calc_proc
+
+	SUBMODULE keypad
+		INSTANCE input_keypad

@@ -1,0 +1,34 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file c:/users/strak.desktop-d9mddlk/documents/isplever projects/example_stoper\stoper.prj
+#-- Written on Tue Oct 29 13:03:24 2019
+
+
+#device options
+set_option -technology mach
+set_option -part M4A5-64
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "stoper.vhd"
+
+#-- top module name
+set_option -top_module stoper
+
+#-- set result format/file last
+project -result_file "stoper.edi"
+
+#-- error message log file
+project -log_file stoper.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

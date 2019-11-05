@@ -1,0 +1,14 @@
+clk  i
+key_int  i
+key_input[3]  i
+key_input[2]  i
+key_input[1]  i
+key_input[0]  i
+number_out[7]  o
+number_out[6]  o
+number_out[5]  o
+number_out[4]  o
+number_out[3]  o
+number_out[2]  o
+number_out[1]  o
+number_out[0]  o

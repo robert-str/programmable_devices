@@ -1,0 +1,53 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: COREI7-314
+
+#Implementation: example_calculator
+
+$ Start of Compile
+#Tue Oct 29 15:16:48 2019
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\main.vhd":6:7:6:16|Top entity is set to calculator.
+VHDL syntax check successful!
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\main.vhd":6:7:6:16|Synthesizing work.calculator.abacus 
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":7:7:7:15|Synthesizing work.not_a_cpu.fsm 
+@N: CD233 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":16:18:16:19|Using sequential encoding for type stage_state
+@N: CD233 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":17:17:17:18|Using sequential encoding for type oper_state
+@N: CD233 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":18:17:18:18|Using sequential encoding for type disp_state
+Post processing for work.not_a_cpu.fsm
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal number_out(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal num_buf(3 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal state_disp(buf); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal num_acc_buf(3 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal key_catched(3 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Latch generated from process for signal state_oper(add); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":39:1:39:4|Latch generated from process for signal num_acc(3 downto 0); possible missing assignment in an if or case statement.
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd":7:7:7:12|Synthesizing work.keypad.behavioral 
+@W: CD638 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\keypad.vhd":18:8:18:22|Signal interrupt_shift is undriven 
+Post processing for work.keypad.behavioral
+Post processing for work.calculator.abacus
+@W: CL279 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":19:42:19:47|Pruning register bits 7 to 6 of number_out(7 downto 0)  
+@N: CL201 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\example_calculator\calculator.vhd":31:1:31:2|Trying to extract state machine for register state_curr
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 15:16:48 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Oct 29 15:16:49 2019
+
+###########################################################]
