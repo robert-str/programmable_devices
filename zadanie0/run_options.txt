@@ -1,11 +1,11 @@
 #--  Synopsys, Inc.
 #--  Version I-2014.03LC 
-#--  Project file C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\run_options.txt
-#--  Written on Tue Nov 05 11:02:28 2019
+#--  Project file C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\run_options.txt
+#--  Written on Tue Nov 05 11:40:27 2019
 
 
 #project files
-add_file -vhdl -lib work "./top_module.vhd"
+add_file -vhdl -lib work "./tom_module2.vhd"
 
 
 
@@ -20,7 +20,7 @@ set_option -speed_grade ""
 set_option -part_companion ""
 
 #compilation/mapping options
-set_option -top_module "base"
+set_option -top_module "base2"
 
 # mapper_options
 set_option -frequency 1
@@ -49,8 +49,8 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "./base.edi"
+project -result_file "./base2.edi"
 
 #set log file 
-set_option log_file "C:/users/strak.desktop-d9mddlk/documents/isplever projects/zadanie0/base.srf" 
+set_option log_file "C:/users/strak.desktop-d9mddlk/documents/isplever_projects/zadanie0/base2.srf" 
 impl -active "zadanie0"

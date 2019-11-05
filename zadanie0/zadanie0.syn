@@ -4,8 +4,10 @@ PROJECT zadanie0
 DESIGN zadanie0 Normal
 DEVKIT M4A5-64/32-10JC
 ENTRY Pure VHDL
+MODULE tom_module2.vhd
+MODSTYLE base2 Normal
 MODULE top_module.vhd
 MODSTYLE base Normal
 SYNTHESIS_TOOL Synplify
 SIMULATOR_TOOL ActiveHDL
-TOPMODULE base
+TOPMODULE base2

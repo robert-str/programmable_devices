@@ -1,7 +1,7 @@
-C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  base  -multisrs  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_comp.srs"  -osyn  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_mult.srs"  -log  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synlog\base_multi_srs_gen.srr" 
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  base2  -multisrs  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synwork\base2_comp.srs  -osyn  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synwork\base2_mult.srs  -log  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synlog\base2_multi_srs_gen.srr 
 rc:0 success:1
-C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_comp.srs|i|1572948148|1406
-C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_mult.srs|o|1572948149|1421
-C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synlog\base_multi_srs_gen.srr|o|1572948149|376
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synwork\base2_comp.srs|i|1572950427|1493
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synwork\base2_mult.srs|o|1572950428|1602
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synlog\base2_multi_srs_gen.srr|o|1572950428|495
 C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401220336|2741760
 C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401220532|6337536

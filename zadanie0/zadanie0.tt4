@@ -1,0 +1,14 @@
+#$ TOOL  ispLEVER Classic 2.0.00.17.20.15
+#$ DATE  Tue Nov 05 11:40:32 2019
+#$ MODULE  base2
+#$ PINS 3 i_btn i_sel o_led
+.type f
+.i 2
+.o 2
+.ilb i_btn i_sel
+.ob o_led.D o_led.LH
+.phase 11
+.p 2
+1- 10
+-1 01
+.end

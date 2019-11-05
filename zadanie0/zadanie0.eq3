@@ -1,0 +1,27 @@
+ ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design base2 created  Tue Nov 05 11:40:32 2019
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1          1        1    Pin   o_led.D 
+   1          1        1    Pin   o_led.LH 
+=========
+   2                 P-Term Total: 2
+                       Total Pins: 3
+                      Total Nodes: 0
+            Average P-Term/Output: 1
+
+
+Equations:
+
+o_led.D = (i_btn);
+
+o_led.LH = (i_sel);
+
+
+Reverse-Polarity Equations:
+

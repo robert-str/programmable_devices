@@ -1,11 +1,11 @@
 ispLEVER Auto-Make Log File
 ---------------------------
 
-Updating: Compile EDIF File
+Updating: Fit Design
 Start to record tcl script...
 Finished recording TCL script.
 
-Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\Synpwrap.exe -e base -target mach -pro '
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\Synpwrap.exe -e base2 -target mach -pro '
 
 Copyright (c) 1991-2010 Lattice Semiconductor Corporation,  All rights reserved.
 Version : 2.0.00.17.20.15
@@ -19,32 +19,35 @@ Done sucessfully with exit code 0.
 #Implementation: zadanie0
 
 $ Start of Compile
-#Tue Nov 05 11:02:28 2019
+#Tue Nov 05 11:40:27 2019
 
 Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
 Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
 @N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
-@N:"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\top_module.vhd":6:7:6:10|Top entity is set to base.
+@N:"C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\tom_module2.vhd":6:7:6:11|Top entity is set to base2.
+File C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\tom_module2.vhd changed - recompiling
 VHDL syntax check successful!
-@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\top_module.vhd":6:7:6:10|Synthesizing work.base.top 
-Post processing for work.base.top
+File C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\tom_module2.vhd changed - recompiling
+@N: CD630 :"C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\tom_module2.vhd":6:7:6:11|Synthesizing work.base2.base2 
+Post processing for work.base2.base2
 @END
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 05 11:02:28 2019
+# Tue Nov 05 11:40:27 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
 @N|Running in 64-bit mode
+File C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synwork\base2_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 05 11:02:29 2019
+# Tue Nov 05 11:40:28 2019
 
 ###########################################################]
 Map & Optimize Report
@@ -53,12 +56,14 @@ Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014
 Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
 Product Version I-2014.03LC 
 @N: MF248 |Running in 64-bit mode.
+@W: MT462 :|Net i_sel_c appears to be an unidentified clock source. Assuming default frequency. 
 ---------------------------------------
 Resource Usage Report
 
 Simple gate primitives:
-IBUF            1 use
+IBUF            2 uses
 OBUF            1 use
+DLAT            1 use
 
 
 @N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
@@ -68,7 +73,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 102MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 05 11:02:30 2019
+# Tue Nov 05 11:40:29 2019
 
 ###########################################################]
 
@@ -76,20 +81,192 @@ Synplicity VHDL/Verilog HDL Synthesizer finished successfully
 
 Done: completed successfully.
 
-Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe -edf base.edi -out base.bl0 -err automake.err -log base.log -prj zadanie0 -lib "C:\ispLEVER_Classic2_0\ispcpld/dat/mach.edn" -net_Vcc VCC -net_GND GND -nbx -dse -tlw -cvt YES -xor'
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\edif2blf.exe -edf base2.edi -out base2.bl0 -err automake.err -log base2.log -prj zadanie0 -lib "C:\ispLEVER_Classic2_0\ispcpld/dat/mach.edn" -net_Vcc VCC -net_GND GND -nbx -dse -tlw -cvt YES -xor'
 
 Starting EDIF2BLIF....
 readEDIF ended normally.
 
-Inspect circuit base
-    Number of input ports   : 1
+Inspect circuit base2
+    Number of input ports   : 2
     Number of output ports  : 1
     Number of bidir ports   : 0
-    Number of instances     : 2
-    Number of nets          : 3
+    Number of instances     : 4
+    Number of nets          : 6
 
-No design errors found in circuit base
+No design errors found in circuit base2
 
 WriteBLIF ended normally.
 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mblifopt.exe base2.bl0 -collapse none -reduce none -keepwires -gui -err automake.err -family'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file base2.bl0...
+Writing Open-ABEL 2 (BLIF) file base2.bl1...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mblflink.exe "base2.bl1" -o "zadanie0.bl2" -omod "zadanie0" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+
+Top-level file: 'base2.bl1'
+
+Hierarchical BLIF: 'zadanie0.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\impsrc.exe -gui -prj zadanie0 -lci zadanie0.lct -log zadanie0.imp -err automake.err -tti zadanie0.bl2 -dir c:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0'
+
+No pin assignment or valid property.
+No source constraints were imported.
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\abelvci.exe -vci zadanie0.lct -blifopt -gui zadanie0.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mblifopt.exe zadanie0.bl2 -sweep -mergefb -err automake.err -o zadanie0.bl3 -gui @zadanie0.b2_'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file zadanie0.bl2...
+Merging feedbacks...
+Control path optimization...
+Performing 'bypin choose' optimization...
+Note    0: Estimated (clusters + macrocells): 1, Fmax Logic Level: 0
+Writing Open-ABEL 2 (BLIF) file zadanie0.bl3...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\abelvci.exe -vci zadanie0.lct -dev mach4a -diofft -gui zadanie0.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\mdiofft.exe zadanie0.bl3 -pla -family AMDMACH -idev van -o zadanie0.tt2 -oxrf zadanie0.xrf -err automake.err -gui @zadanie0.d0'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 2.0 Copyright 1992-2015 Lattice Semiconductor. All Rights Reserved.
+Input file: zadanie0.bl3.
+Output file: zadanie0.tt2.
+Cross reference file: zadanie0.xrf.
+
+....
+Shortening signal names...
+Writing signal name cross reference file zadanie0.xrf... 
+
+DIOFFT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\tt2tott3.exe -prj zadanie0 -dir c:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0 -log zadanie0.log -tti zadanie0.tt2 -tto zadanie0.tt3'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\abelvci.exe -vci zadanie0.lct -dev mach4a -prefit -gui zadanie0.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe -inp zadanie0.tt3 -out zadanie0.tt4 -err automake.err -log zadanie0.log -percent zadanie0.tte -mod base2 -gui @zadanie0.l0'
+
+Prefit Logic Optimizer (May 31 2012)  Tue Nov 05 11:40:33 2019
+
+C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe -inp zadanie0.tt3 -out zadanie0.tt4 -err automake.err -log zadanie0.log -percent zadanie0.tte -mod base2 -gui @zadanie0.l0 
+Number of pins (IO)    :     3
+Number of outputs (MC) :     1
+Number of registers    :     1
+Number of logic pterms :     1
+C:\ispLEVER_Classic2_0\ispcpld\bin\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\blif2eqn.exe zadanie0.tte -o zadanie0.eq3 -use_short -err automake.err -gui'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER Classic 2.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Reading Open-ABEL (PLA) file zadanie0.tte...
+Writing report to file zadanie0.eq3...
+
+BLIF2EQN complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\lci2vci.exe -lci zadanie0.lct -out zadanie0.vct -log zadanie0.l2v'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\machfitr.exe @"zadanie0.rsp"'
+
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+
+*** Source file is zadanie0.tt4 . Device is M4A5-64/32-10JC .
+
+<Note>  F40016:  0 pins have been reserved out of 34 .
+<Note>  F40021:  34 pins are available after reservation, 3 are required by
+                 the design.
+<Note>  F35065:  For outputs, implicit output enables will be set to VCC.
+<Note>  F35068:  Since SET/RESET DON'T CARE is turned off, any unspecified
+                 SET/RESET will be defaulted to GND.
+
+*** End of Pla2db. 
+Check preplaced pins/nodes
+Check preplaced blocks
+Check unreferenced pins/nodes
+Check clock rules
+
+List of non-global clocks:
+   i_sel:
+...... is preplaced on a pin that is not a dedicated clock.
+
+*** End of Normalization.
+
+*** End of DRC. 
+
+*** Start Partitioning
+ 
+*** Partitioning successful.
+
+
+*** Starting Place&Route
+
+*** Place&Route Successful
+<Note>  F35088:  Single-literal clock signal used as product term clock in
+                 block 3. Clock is i_sel (Pin 30).
+...... Zero Hold Time For Input Registers? N
+*** The JEDEC file generated is zadanie0.jed .
+*** Report Generator invoked.
+*** Report Generator end.
+
+// Fitting successful.
+// ERROR count 0 WARNING count 0 .
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\lci2vci.exe -vci zadanie0.vco -out zadanie0.lco -log zadanie0.v2l'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\synsvf.exe -exe "C:\ispLEVER_Classic2_0\ispvmsystem/ispufw" -prj zadanie0 -if zadanie0.jed -j2s -log zadanie0.svl -gui'
+
+Need not generate svf file according to the constraints, exit
 Done: completed successfully.

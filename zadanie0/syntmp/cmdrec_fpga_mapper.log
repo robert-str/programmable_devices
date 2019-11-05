@@ -1,9 +1,9 @@
-C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0"  -part M4A5-64   -RWCheckOnRam 1 -areadelay 0 -minc -summaryfile "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synlog\report\base_fpga_mapper.xml" -top_level_module  base  -multisrs  -oedif  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.edi"  -freq 1.000  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_mult.srs"  -ologparam  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\syntmp\base.plg"  -osyn  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srm"  -prjdir  "c:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\"  -prjname  base  -log  "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synlog\base_fpga_mapper.srr" 
-rc:0 success:1
-C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.edi|o|1572948150|1726
-C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synwork\base_mult.srs|i|1572948149|1421
-"C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\syntmp\base.plg"|o|0|0
-C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\base.srm|o|1572948150|2461
-C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\synlog\base_fpga_mapper.srr|o|1572948150|1016
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0  -part M4A5-64   -RWCheckOnRam 1 -areadelay 0 -minc -summaryfile C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synlog\report\base2_fpga_mapper.xml -top_level_module  base2  -multisrs  -oedif  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\base2.edi  -freq 1.000  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synwork\base2_mult.srs  -ologparam  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\syntmp\base2.plg  -osyn  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\base2.srm  -prjdir  c:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\  -prjname  base2  -log  C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synlog\base2_fpga_mapper.srr 
+rc:1 success:1
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\base2.edi|o|1572950429|2591
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synwork\base2_mult.srs|i|1572950428|1602
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\syntmp\base2.plg|o|1572950429|0
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\base2.srm|o|1572950429|3612
+C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\synlog\base2_fpga_mapper.srr|o|1572950429|1138
 C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399362084|7067648
 C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399364922|8049664

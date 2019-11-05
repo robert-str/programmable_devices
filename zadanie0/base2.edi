@@ -1,0 +1,86 @@
+(edif base2
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2019 11 5 11 40 29)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "I-2014.03LC , mapper maplat, Build 923R"))
+     )
+   )
+  (external mach
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell DLAT (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port Q (direction OUTPUT))
+           (port D (direction INPUT))
+           (port LAT (direction INPUT))
+         )
+       )
+    )
+    (cell IBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+    (cell OBUF (cellType GENERIC)
+       (view prim (viewType NETLIST)
+         (interface
+           (port O (direction OUTPUT))
+           (port I0 (direction INPUT))
+         )
+       )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell base2 (cellType GENERIC)
+       (view base2 (viewType NETLIST)
+         (interface
+           (port i_btn (direction INPUT))
+           (port i_sel (direction INPUT))
+           (port o_led (direction OUTPUT))
+         )
+         (contents
+          (instance i_btn (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance i_sel (viewRef prim (cellRef IBUF (libraryRef mach)))          )
+          (instance o_led (viewRef prim (cellRef OBUF (libraryRef mach)))          )
+          (instance o_ledlat (viewRef prim (cellRef DLAT (libraryRef mach)))          )
+          (net i_btn_c (joined
+           (portRef O (instanceRef i_btn))
+           (portRef D (instanceRef o_ledlat))
+          ))
+          (net i_btn (joined
+           (portRef i_btn)
+           (portRef I0 (instanceRef i_btn))
+          ))
+          (net i_sel_c (joined
+           (portRef O (instanceRef i_sel))
+           (portRef LAT (instanceRef o_ledlat))
+          ))
+          (net i_sel (joined
+           (portRef i_sel)
+           (portRef I0 (instanceRef i_sel))
+          ))
+          (net o_led_c (joined
+           (portRef Q (instanceRef o_ledlat))
+           (portRef I0 (instanceRef o_led))
+          ))
+          (net o_led (joined
+           (portRef O (instanceRef o_led))
+           (portRef o_led)
+          ))
+         )
+        (property orig_inst_of (string "base2"))
+       )
+    )
+  )
+  (design base2 (cellRef base2 (libraryRef work)))
+)

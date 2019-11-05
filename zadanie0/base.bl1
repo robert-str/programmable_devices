@@ -1,0 +1,15 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Tue Nov 05 11:02:35 2019
+#$ MODULE base
+#$ PINS 2 i_btn o_led
+#$ NODES 1 o_led_c
+.model base
+.inputs i_btn.BLIF o_led_c.BLIF
+.outputs o_led o_led_c
+.names o_led_c.BLIF o_led
+1 1
+0 0
+.names i_btn.BLIF o_led_c
+1 1
+0 0
+.end

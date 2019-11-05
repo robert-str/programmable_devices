@@ -1,14 +1,14 @@
 #--  Synopsys, Inc.
 #--  Version I-2014.03LC 
-#--  Project file C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0\scratchproject.prs
+#--  Project file C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0\scratchproject.prs
 
 #project files
-add_file -vhdl -lib work "C:/users/strak.desktop-d9mddlk/documents/isplever projects/zadanie0/top_module.vhd"
+add_file -vhdl -lib work "C:/users/strak.desktop-d9mddlk/documents/isplever_projects/zadanie0/tom_module2.vhd"
 
 
 
 #implementation: "zadanie0"
-impl -add "C:\users\strak.desktop-d9mddlk\documents\isplever projects\zadanie0" -type fpga
+impl -add C:\users\strak.desktop-d9mddlk\documents\isplever_projects\zadanie0 -type fpga
 
 #device options
 set_option -technology mach
@@ -18,7 +18,7 @@ set_option -speed_grade ""
 set_option -part_companion ""
 
 #compilation/mapping options
-set_option -top_module "base"
+set_option -top_module "base2"
 
 # mapper_options
 set_option -frequency 1
@@ -47,8 +47,8 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/users/strak.desktop-d9mddlk/documents/isplever projects/zadanie0/base.edi"
+project -result_file "C:/users/strak.desktop-d9mddlk/documents/isplever_projects/zadanie0/base2.edi"
 
 #set log file 
-set_option log_file "C:/users/strak.desktop-d9mddlk/documents/isplever projects/zadanie0/base.srf" 
+set_option log_file "C:/users/strak.desktop-d9mddlk/documents/isplever_projects/zadanie0/base2.srf" 
 impl -active "zadanie0"

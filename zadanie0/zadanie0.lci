@@ -7,11 +7,13 @@ PartType = M4A5-64/32;
 Speed = -10;
 Operating_condition = COM;
 Status = Production;
+EN_PinGLB = Yes;
+EN_PinMacrocell = Yes;
 
 [Revision]
 Parent = m4a5.lci;
-DATE = 2002;
-TIME = 0:00:00;
+DATE = 11/05/2019;
+TIME = 11:36:23;
 Source_Format = Pure_VHDL;
 Synthesis = Synplify;
 
@@ -25,6 +27,9 @@ Synthesis = Synplify;
 
 [Location Assignments]
 layer = OFF;
+i_btn = Pin, 31, -, C, -;
+o_led = Pin, 43, -, D, -;
+i_sel = Pin, 30, -, C, -;
 
 [Group Assignments]
 layer = OFF;
@@ -105,3 +110,15 @@ layer = OFF;
 [verilog synplify constraints list]
 
 [verilog spectrum constraints list]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;

@@ -1,0 +1,18 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 2.0.00.17.20.15                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file zadanie0.tt4
+; FITTER-generated Placements.
+; DEVICE   mach463a
+; DATE     Tue Nov 05 11:40:33 2019
+
+
+Pin   31  i_btn
+Pin   30  i_sel
+Pin   43  o_led Lat  ; S6=1  S9=0  Pair 117
+; Unused Pins & Nodes
+; -> None Found.

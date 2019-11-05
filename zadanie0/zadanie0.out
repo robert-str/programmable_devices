@@ -1,0 +1,69 @@
+
+2 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42      o_led  0        3   0              42   -1   1   0   21
+  30      i_btn  1   -1  -1   1           3  30   -1
+2 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+ 141      o_btn  0        0   0              -1   -1   1   0   21
+  30      i_btn  1   -1  -1   1  0           30   -1
+2 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+ 141      o_btn  0        0   0              -1   -1   1   0   21
+  30      i_btn  1   -1  -1   1  0           30   -1
+2 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42      o_led  0        3   0              42   -1   1   0   21
+  30      i_btn  1   -1  -1   1           3  30   -1
+3 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42      o_led  0        3   0              42   -1   2   0   21
+  30      i_btn  1   -1  -1   1           3  30   -1
+ 141      i_sel  1   -1  -1   1           3  -1   -1
+3 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42      o_led  0        3   0              42   -1   2   0   21
+  30      i_btn  1   -1  -1   1           3  30   -1
+  29      i_sel  1   -1  -1   1           3  29   -1
+3 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42      o_led  0        3   0              42   -1   1   0   21
+  30      i_btn  1   -1  -1   1           3  30   -1
+  29      i_sel  1   -1  -1   1           3  29   -1
+3 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  42      o_led  0        3   0              42   -1   1   0   20
+  30      i_btn  1   -1  -1   1           3  30   -1
+  29      i_sel  1   -1  -1   1           3  29   -1

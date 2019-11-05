@@ -1,0 +1,18 @@
+#PLAFILE zadanie0.tt4
+#DATE    11/05/2019
+#DESIGN  <no design name>
+#DEVICE  mach463a
+
+DATA LOCATION i_btn:C_*_31	// INP
+DATA LOCATION i_sel:C_*_30	// INP
+DATA LOCATION o_led:D_0_43	// OUT
+DATA IO_DIR   i_btn:IN
+DATA IO_DIR   i_sel:IN
+DATA IO_DIR   o_led:OUT
+DATA PW_LEVEL  i_btn:0
+DATA SLEW      i_btn:0
+DATA PW_LEVEL  i_sel:0
+DATA SLEW      i_sel:0
+DATA PW_LEVEL  o_led:0
+DATA SLEW      o_led:0
+END
