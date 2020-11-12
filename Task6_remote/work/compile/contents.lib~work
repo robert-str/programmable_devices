@@ -1,0 +1,5 @@
+10
+~E 1 "./../../statemachine_initialcode.vhd" 6 stateMachineInit
+~A 1 "./../../statemachine_initialcode.vhd" 13 sequential
+~E 1 "./../../tb_statemachineinit.vhd" 21 testbench
+~A 1 "./../../tb_statemachineinit.vhd" 24 behavior

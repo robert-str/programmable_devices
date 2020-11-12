@@ -1,0 +1,2 @@
+@W: CD604 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":73:1:73:14|OTHERS clause is not synthesized 
+

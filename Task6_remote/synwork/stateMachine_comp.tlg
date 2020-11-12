@@ -1,0 +1,5 @@
+@N: CD630 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":6:7:6:18|Synthesizing work.statemachine.sequential 
+@N: CD233 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":15:11:15:12|Using sequential encoding for type state
+@W: CD604 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":73:1:73:14|OTHERS clause is not synthesized 
+Post processing for work.statemachine.sequential
+@N: CL201 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:1:34:2|Trying to extract state machine for register currState

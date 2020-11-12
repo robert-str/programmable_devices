@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\isplever_prj\task3  -part M4A5-64   -RWCheckOnRam 1 -areadelay 0 -minc -summaryfile C:\isplever_prj\task3\synlog\report\fullAdder2x3_fpga_mapper.xml -top_level_module  fullAdder2x3  -multisrs  -oedif  C:\isplever_prj\task3\fullAdder2x3.edi  -freq 1.000  C:\isplever_prj\task3\synwork\fullAdder2x3_mult.srs  -ologparam  C:\isplever_prj\task3\syntmp\fullAdder2x3.plg  -osyn  C:\isplever_prj\task3\fullAdder2x3.srm  -prjdir  c:\isplever_prj\task3\  -prjname  fullAdder2x3  -log  C:\isplever_prj\task3\synlog\fullAdder2x3_fpga_mapper.srr 
+rc:0 success:1
+C:\isplever_prj\task3\fullAdder2x3.edi|o|1605161843|11384
+C:\isplever_prj\task3\synwork\fullAdder2x3_mult.srs|i|1605161843|2193
+C:\isplever_prj\task3\syntmp\fullAdder2x3.plg|o|1605161843|0
+C:\isplever_prj\task3\fullAdder2x3.srm|o|1605161843|5610
+C:\isplever_prj\task3\synlog\fullAdder2x3_fpga_mapper.srr|o|1605161843|1091
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399365684|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399368522|8049664

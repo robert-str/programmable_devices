@@ -1,0 +1,63 @@
+Section Cross Reference File
+Design 'stateMachine1' created Thu Nov 12 11:40:18 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst           currState_0_                              currState[0]
+   Inst           currState_1_                              currState[1]
+   Inst             timeCnt_6_                                timeCnt[6]
+   Inst             timeCnt_7_                                timeCnt[7]
+   Inst             timeCnt_2_                                timeCnt[2]
+   Inst             timeCnt_3_                                timeCnt[3]
+   Inst             timeCnt_4_                                timeCnt[4]
+   Inst             timeCnt_5_                                timeCnt[5]
+   Inst             timeCnt_0_                                timeCnt[0]
+   Inst             timeCnt_1_                                timeCnt[1]
+   Inst   currState_ns_0_0_i_1_                     currState_ns_0_0_i[1]
+   Inst           timeCnt_i_5_                              timeCnt_i[5]
+   Inst           timeCnt_i_6_                              timeCnt_i[6]
+   Inst         currState_i_0_                            currState_i[0]
+   Inst         currState_i_1_                            currState_i[1]
+   Inst   currState_ns_0_a3_0_a2_0_                 currState_ns_0_a3_0_a2[0]
+   Inst   currState_ns_0_i_a2_0_                    currState_ns_0_i_a2[0]
+   Inst    currState_ns_0_i_0_                       currState_ns_0_i[0]
+   Inst    currState_ns_0_0_1_                       currState_ns_0_0[1]
+   Inst           timeCnt_i_1_                              timeCnt_i[1]
+   Inst           timeCnt_i_2_                              timeCnt_i[2]
+   Inst           timeCnt_i_3_                              timeCnt_i[3]
+   Inst           timeCnt_i_4_                              timeCnt_i[4]
+   Inst   currState_ns_0_0_a3_1_                    currState_ns_0_0_a3[1]
+   Inst   currState_ns_0_0_a3_0_1_                  currState_ns_0_0_a3_0[1]
+   Inst           timeCnt_i_7_                              timeCnt_i[7]
+   Inst     currState_srsts_0_                        currState_srsts[0]
+   Inst     currState_srsts_1_                        currState_srsts[1]
+   Net            timecnt_2__n                                timeCnt[2]
+   Net            timecnt_3__n                                timeCnt[3]
+   Net            timecnt_4__n                                timeCnt[4]
+   Net            timecnt_5__n                                timeCnt[5]
+   Net            timecnt_6__n                                timeCnt[6]
+   Net            timecnt_7__n                                timeCnt[7]
+   Net                 vcc_n_n                                       VCC
+   Net            timecnt_1__n                                timeCnt[1]
+   Net          currstate_0__n                              currState[0]
+   Net          currstate_1__n                              currState[1]
+   Net      currstate_nss_0__n                          currState_nss[0]
+   Net      currstate_nss_1__n                          currState_nss[1]
+   Net       currstate_ns_1__n                           currState_ns[1]
+   Net        currstate_d_2__n                            currState_d[2]
+   Net          timecnt_i_6__n                              timeCnt_i[6]
+   Net          timecnt_i_5__n                              timeCnt_i[5]
+   Net          timecnt_i_4__n                              timeCnt_i[4]
+   Net          timecnt_i_3__n                              timeCnt_i[3]
+   Net          timecnt_i_2__n                              timeCnt_i[2]
+   Net          timecnt_i_1__n                              timeCnt_i[1]
+   Net        currstate_i_0__n                            currState_i[0]
+   Net        currstate_i_1__n                            currState_i[1]
+   Net          timecnt_i_7__n                              timeCnt_i[7]
+   Net     currstate_ns_0_1__n                         currState_ns_0[1]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_clk
+        Input     i_drv
+        Output     o_flag
+End

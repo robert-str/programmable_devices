@@ -1,0 +1,2 @@
+@E: CD648 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":26:5:26:13|Expression does not match type boolean
+

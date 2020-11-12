@@ -1,0 +1,1 @@
+-w -s "C:\ispLever_prj\Task3\work\library.cfg"  -j "C:\ispLever_prj\Task3\work\projlib.cfg"  -d "C:\ispLever_prj\Task3\work\compile"   -work work  -O3 -e 100 "tb_fulladder2x3.vhd"

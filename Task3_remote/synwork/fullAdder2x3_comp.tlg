@@ -1,0 +1,4 @@
+@N: CD630 :"C:\isplever_prj\task3\fulladder2x3.vhd":6:7:6:18|Synthesizing work.fulladder2x3.myfulladder 
+@N: CD630 :"C:\isplever_prj\task3\adder1.vhd":6:7:6:12|Synthesizing work.adder1.myadder 
+Post processing for work.adder1.myadder
+Post processing for work.fulladder2x3.myfulladder

@@ -1,0 +1,6 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\isplever_prj\task3\fulladder2x3.vhd":6:7:6:18|Top entity is set to fullAdder2x3.
+@N: CD630 :"C:\isplever_prj\task3\fulladder2x3.vhd":6:7:6:18|Synthesizing work.fulladder2x3.myfulladder 
+@N: CD630 :"C:\isplever_prj\task3\adder1.vhd":6:7:6:12|Synthesizing work.adder1.myadder 
+

@@ -1,0 +1,73 @@
+V 000051 55 1227          1605189789951 sequential
+(_unit VHDL (statemachineinit 0 6(sequential 0 13))
+	(_version vc1)
+	(_time 1605189789952 2020.11.12 15:03:09)
+	(_source (\./../../statemachine_initialcode.vhd\))
+	(_code 7c2f7f7c2b2b296b7b7a6926797a7d7a7f7a747a75)
+	(_entity
+		(_time 1605189789949)
+	)
+	(_object
+		(_port (_int i_clk ~extieee.std_logic_1164.STD_LOGIC 0 7(_entity(_in)(_event))))
+		(_port (_int i_drv ~extieee.std_logic_1164.STD_LOGIC 0 8(_entity(_in))))
+		(_port (_int o_flag ~extieee.std_logic_1164.STD_LOGIC 0 9(_entity(_out))))
+		(_type (_int state 0 14(_enum1 sidle sflag (_to i 0 i 1))))
+		(_signal (_int currState state 0 15(_architecture(_uni))))
+		(_signal (_int nextState state 0 15(_architecture(_uni))))
+		(_process
+			(stateMemory(_architecture 0 0 19(_process (_target(3))(_sensitivity(0)(4))(_dssslsensitivity 1))))
+			(stateDecode(_architecture 1 0 27(_process (_simple)(_target(4)(2))(_sensitivity(3)(1)))))
+		)
+		(_subprogram
+			(_ext resolved (0 15))
+		)
+		(_type (_ext ~extieee.std_logic_1164.STD_LOGIC (0 STD_LOGIC)))
+		(_type (_ext ~extieee.std_logic_1164.STD_ULOGIC (0 STD_ULOGIC)))
+	)
+	(_use (ieee(std_logic_1164))(std(standard))(ieee(std_logic_arith))(ieee(STD_LOGIC_UNSIGNED)))
+	(_model . sequential 2 -1)
+)
+V 000049 55 1471          1605189790183 behavior
+(_unit VHDL (testbench 0 21(behavior 0 24))
+	(_version vc1)
+	(_time 1605189790184 2020.11.12 15:03:10)
+	(_source (\./../../tb_statemachineinit.vhd\))
+	(_code 66356366653031716133743c3260336065606e6162)
+	(_entity
+		(_time 1605189790181)
+	)
+	(_component
+		(stateMachineInit
+			(_object
+				(_port (_int i_clk ~extieee.std_logic_1164.STD_LOGIC 0 28(_entity (_in))))
+				(_port (_int i_drv ~extieee.std_logic_1164.STD_LOGIC 0 29(_entity (_in))))
+				(_port (_int o_flag ~extieee.std_logic_1164.STD_LOGIC 0 30(_entity (_out))))
+			)
+		)
+	)
+	(_instantiation uut 0 40(_component stateMachineInit)
+		(_port
+			((i_clk)(i_clk))
+			((i_drv)(i_drv))
+			((o_flag)(o_flag))
+		)
+		(_use (_entity . stateMachineInit)
+		)
+	)
+	(_object
+		(_signal (_int i_clk ~extieee.std_logic_1164.STD_LOGIC 0 34(_architecture(_uni))))
+		(_signal (_int i_drv ~extieee.std_logic_1164.STD_LOGIC 0 35(_architecture(_uni))))
+		(_signal (_int o_flag ~extieee.std_logic_1164.STD_LOGIC 0 36(_architecture(_uni))))
+		(_process
+			(clkgen(_architecture 0 0 49(_process (_wait_for)(_target(0))(_read(0)))))
+			(tb(_architecture 1 0 61(_process (_wait_for)(_target(1)))))
+		)
+		(_subprogram
+			(_ext resolved (0 15))
+		)
+		(_type (_ext ~extieee.std_logic_1164.STD_LOGIC (0 STD_LOGIC)))
+		(_type (_ext ~extieee.std_logic_1164.STD_ULOGIC (0 STD_ULOGIC)))
+	)
+	(_use (ieee(std_logic_1164))(std(standard))(ieee(NUMERIC_STD))(generics(COMPONENTS)))
+	(_model . behavior 2 -1)
+)

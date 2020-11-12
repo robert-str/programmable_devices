@@ -1,0 +1,8 @@
+
+
+MODULE fullAdder2x3
+
+	SUBMODULE adder1
+		INSTANCE stage0
+		INSTANCE stage1
+		INSTANCE stage2

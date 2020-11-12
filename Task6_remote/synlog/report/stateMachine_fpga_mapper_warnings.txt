@@ -1,0 +1,6 @@
+@W: BN132 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:1:34:2|Removing instance timeCnt[7],  because it is equivalent to instance timeCnt[6]
+@W: BN132 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:1:34:2|Removing instance timeCnt[6],  because it is equivalent to instance timeCnt[5]
+@W: BN132 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:1:34:2|Removing instance timeCnt[5],  because it is equivalent to instance timeCnt[4]
+@W: BN132 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:1:34:2|Removing instance timeCnt[4],  because it is equivalent to instance timeCnt[3]
+@W: BN132 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:1:34:2|Removing instance timeCnt[3],  because it is equivalent to instance timeCnt[2]
+@W: BN132 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:1:34:2|Removing instance timeCnt[2],  because it is equivalent to instance timeCnt[1]

@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  stateMachine  -multisrs  C:\isplever_prj\programmable_devices\task6_remote\synwork\stateMachine_comp.srs  -osyn  C:\isplever_prj\programmable_devices\task6_remote\synwork\stateMachine_mult.srs  -log  C:\isplever_prj\programmable_devices\task6_remote\synlog\stateMachine_multi_srs_gen.srr 
+rc:0 success:1
+C:\isplever_prj\programmable_devices\task6_remote\synwork\stateMachine_comp.srs|i|1605189355|1794
+C:\isplever_prj\programmable_devices\task6_remote\synwork\stateMachine_mult.srs|o|1605189356|1974
+C:\isplever_prj\programmable_devices\task6_remote\synlog\stateMachine_multi_srs_gen.srr|o|1605189356|484
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401223936|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401224132|6337536

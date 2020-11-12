@@ -1,0 +1,2 @@
+@E: CD441 :"C:\isplever_prj\programmable_devices\task6_remote\stateMachineP1.vhd":27:12:27:18|process must contain at least one wait
+

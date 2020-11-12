@@ -1,0 +1,2 @@
+@W: MT462 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Net un1_currState_1_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":22:1:22:2|Net currState[1] appears to be an unidentified clock source. Assuming default frequency. 

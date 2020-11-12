@@ -1,0 +1,21 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Task3
+DESIGN task3 Normal
+DEVKIT M4A5-64/32-10JC
+ENTRY Pure VHDL
+MODULE multip2.vhd
+MODSTYLE multip2 Normal
+STIMULUS multip2 tb_multip2.vhd
+MODULE adder1.vhd
+MODSTYLE adder1 Normal
+STIMULUS adder1 tb_adder1.vhd
+MODULE adder2.vhd
+MODSTYLE adder2 Normal
+STIMULUS adder2 tb_adder2.vhd
+MODULE fulladder2x3.vhd
+MODSTYLE fullAdder2x3 Normal
+STIMULUS fullAdder2x3 tb_fulladder2x3.vhd
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE multip2

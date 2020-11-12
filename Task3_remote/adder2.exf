@@ -1,0 +1,41 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      sum(1:0)                      sum                  1          2            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      sum_1_                      sum[1]                       1            0            
+        Port      sum_0_                      sum[0]                       1            1            
+End
+Section Cross Reference File
+Design 'adder2' created Thu Nov 12 07:03:33 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                 sum_0_                                    sum[0]
+   Inst                 sum_1_                                    sum[1]
+   Inst            sum_1_0__m4                               sum_1_0_.m4
+   Inst           sum_1_0__c_i                              sum_1_0_.c_i
+   Inst           sum_1_0__b_i                              sum_1_0_.b_i
+   Inst          sum_1_0__m5_r                             sum_1_0_.m5.r
+   Inst          sum_1_0__m5_m                             sum_1_0_.m5.m
+   Inst          sum_1_0__m5_n                             sum_1_0_.m5.n
+   Inst          sum_1_0__m5_p                             sum_1_0_.m5.p
+   Inst      sum_1_0__i1_mux_i                         sum_1_0_.i1_mux_i
+   Inst          sum_1_0__m2_1                             sum_1_0_.m2_1
+   Inst            sum_1_0__m2                               sum_1_0_.m2
+   Net       sum_1_0__i1_mux_n                           sum_1_0_.i1_mux
+   Net          sum_1_0__n_7_n                              sum_1_0_.N_7
+   Net     sum_1_0__i1_mux_i_n                         sum_1_0_.i1_mux_i
+   Net                sum_0__n                                    sum[0]
+   Net       sum_1_0__m5_un3_n                           sum_1_0_.m5.un3
+   Net       sum_1_0__m5_un1_n                           sum_1_0_.m5.un1
+   Net       sum_1_0__m5_un0_n                           sum_1_0_.m5.un0
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     a
+        Input     b
+        Input     c
+        Output     sum_1_
+        Output     sum_0_
+End

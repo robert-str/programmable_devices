@@ -1,2 +1,2 @@
-. stateMachine1 machina.vhd "d:\isplever projects\zadanie_statemachine\machina.vhd"
-pres clk_prescaler clk_prescaler.vhd "d:\isplever projects\zadanie_statemachine\clk_prescaler.vhd"
+. stateMachine1 machina.vhd c:\isplever_prj\programmable_devices\zadanie_statemachine\machina.vhd
+pres clk_prescaler clk_prescaler.vhd c:\isplever_prj\programmable_devices\zadanie_statemachine\clk_prescaler.vhd

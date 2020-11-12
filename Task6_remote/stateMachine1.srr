@@ -1,0 +1,89 @@
+#Build: Synplify Pro I-2014.03LC , Build 063R, May 27 2014
+#install: C:\ispLEVER_Classic2_0\synpbase
+#OS: Windows 7 6.2
+#Hostname: ZBOOK15-RS
+
+#Implementation: task6_remote
+
+$ Start of Compile
+#Thu Nov 12 11:40:13 2020
+
+Synopsys VHDL Compiler, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\ispLEVER_Classic2_0\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":6:7:6:19|Top entity is set to stateMachine1.
+File C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd changed - recompiling
+@N: CD630 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":6:7:6:19|Synthesizing work.statemachine1.sequential 
+@N: CD233 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":14:11:14:12|Using sequential encoding for type state
+@W: CD604 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":65:1:65:14|OTHERS clause is not synthesized 
+@W: CG296 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:12:34:18|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":48:5:48:11|Referenced variable timecnt is not in sensitivity list
+Post processing for work.statemachine1.sequential
+@A: CL109 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Too many clocks (> 8) for set/reset analysis of timerFlag, try moving enabling expressions outside process
+@W: CL117 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Latch generated from process for signal timerFlag; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Latch generated from process for signal o_flag; possible missing assignment in an if or case statement.
+@N: CL201 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":22:1:22:2|Trying to extract state machine for register currState
+Extracted state machine for register currState
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 12 11:40:13 2020
+
+###########################################################]
+Synopsys Netlist Linker, version comp201403rcp1, Build 060R, built May 27 2014
+@N|Running in 64-bit mode
+File C:\isplever_prj\programmable_devices\task6_remote\synwork\stateMachine1_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 12 11:40:14 2020
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 923R, Built May  6 2014
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03LC 
+@N: MF248 |Running in 64-bit mode.
+@N:"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":22:1:22:2|Found counter in view:work.stateMachine1(sequential) inst timeCnt[7:0]
+Encoding state machine currState[0:2] (view:work.stateMachine1(sequential))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@W: MT462 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Net un1_currState_1_0 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":22:1:22:2|Net currState[1] appears to be an unidentified clock source. Assuming default frequency. 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+DFF             10 uses
+IBUF            2 uses
+OBUF            1 use
+AND2            49 uses
+INV             33 uses
+DLATRH          1 use
+DLAT            1 use
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+I-2014.03LC 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 104MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 12 11:40:14 2020
+
+###########################################################]

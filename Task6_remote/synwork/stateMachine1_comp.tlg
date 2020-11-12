@@ -1,0 +1,15 @@
+@N: CD630 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":6:7:6:19|Synthesizing work.statemachine1.sequential 
+@N: CD233 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":14:11:14:12|Using sequential encoding for type state
+@W: CD604 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":65:1:65:14|OTHERS clause is not synthesized 
+@W: CG296 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:12:34:18|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":48:5:48:11|Referenced variable timecnt is not in sensitivity list
+Post processing for work.statemachine1.sequential
+@A: CL109 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Too many clocks (> 8) for set/reset analysis of timerFlag, try moving enabling expressions outside process
+@W: CL117 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Latch generated from process for signal timerFlag; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Latch generated from process for signal o_flag; possible missing assignment in an if or case statement.
+@N: CL201 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":22:1:22:2|Trying to extract state machine for register currState
+Extracted state machine for register currState
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10

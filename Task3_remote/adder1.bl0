@@ -1,0 +1,48 @@
+#$ DATE Thu Nov 12 06:39:22 2020
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE adder1
+#$ PINS 5 sum_1_ a b c sum_0_
+#$ NODES 14 G_1 N_3 N_4 N_5 N_6 a_c b_c c_c N_3_i N_4_i \
+#  N_5_i N_6_0 G_1_1 N_6_0_1 
+.model adder1
+.inputs a.BLIF b.BLIF c.BLIF G_1.BLIF N_3.BLIF N_4.BLIF N_5.BLIF N_6.BLIF a_c.BLIF \
+  b_c.BLIF c_c.BLIF N_3_i.BLIF N_4_i.BLIF N_5_i.BLIF N_6_0.BLIF G_1_1.BLIF N_6_0_1.BLIF  
+.outputs sum_1_ sum_0_ G_1_1.X1 G_1_1.X2 G_1.X1 G_1.X2 N_3 N_4 N_5 N_6 a_c \
+  b_c c_c N_3_i N_4_i N_5_i N_6_0 N_6_0_1
+.names  a.BLIF a_c
+1 1
+.names  b.BLIF b_c
+1 1
+.names  c.BLIF c_c
+1 1
+.names  G_1.BLIF sum_0_
+1 1
+.names  N_6.BLIF sum_1_
+1 1
+.names  N_6_0_1.BLIF N_4_i.BLIF N_6_0
+11 1
+.names  a_c.BLIF b_c.BLIF N_3
+11 1
+.names  b_c.BLIF c_c.BLIF N_4
+11 1
+.names  a_c.BLIF c_c.BLIF N_5
+11 1
+.names  N_3.BLIF N_3_i
+0 1
+.names  N_4.BLIF N_4_i
+0 1
+.names  N_5.BLIF N_5_i
+0 1
+.names  N_6_0.BLIF N_6
+0 1
+.names  N_5_i.BLIF N_3_i.BLIF N_6_0_1
+11 1
+.names  c_c.BLIF G_1_1.X1
+1 1
+.names  a_c.BLIF G_1_1.X2
+1 1
+.names  G_1_1.BLIF G_1.X1
+1 1
+.names  b_c.BLIF G_1.X2
+1 1
+.end

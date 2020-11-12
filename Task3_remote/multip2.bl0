@@ -1,0 +1,54 @@
+#$ DATE Mon Nov 02 11:08:12 2020
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE multip2
+#$ PINS 7 i_signals_3_ i_select_1_ o_signal i_signals_2_ i_signals_1_ i_signals_0_ i_select_0_
+#$ NODES 18 N_4 N_5 o_signal_c i_signals_c_0__n i_signals_c_1__n i_signals_c_2__n i_signals_c_3__n i_select_c_0__n i_select_c_1__n o_signal_1_un3_n \
+#  o_signal_1_un1_n o_signal_1_un0_n o_signal_2_un3_n o_signal_2_un1_n o_signal_2_un0_n o_signal_3_un3_n o_signal_3_un1_n o_signal_3_un0_n 
+.model multip2
+.inputs i_signals_3_.BLIF i_select_1_.BLIF i_signals_2_.BLIF i_signals_1_.BLIF i_signals_0_.BLIF i_select_0_.BLIF N_4.BLIF N_5.BLIF o_signal_c.BLIF \
+  i_signals_c_0__n.BLIF i_signals_c_1__n.BLIF i_signals_c_2__n.BLIF i_signals_c_3__n.BLIF i_select_c_0__n.BLIF i_select_c_1__n.BLIF o_signal_1_un3_n.BLIF o_signal_1_un1_n.BLIF o_signal_1_un0_n.BLIF \
+  o_signal_2_un3_n.BLIF o_signal_2_un1_n.BLIF o_signal_2_un0_n.BLIF o_signal_3_un3_n.BLIF o_signal_3_un1_n.BLIF o_signal_3_un0_n.BLIF  
+.outputs o_signal N_4 N_5 o_signal_c i_signals_c_0__n i_signals_c_1__n i_signals_c_2__n i_signals_c_3__n i_select_c_0__n i_select_c_1__n o_signal_1_un3_n \
+  o_signal_1_un1_n o_signal_1_un0_n o_signal_2_un3_n o_signal_2_un1_n o_signal_2_un0_n o_signal_3_un3_n o_signal_3_un1_n o_signal_3_un0_n
+.names  o_signal_c.BLIF o_signal
+1 1
+.names  i_signals_0_.BLIF i_signals_c_0__n
+1 1
+.names  i_signals_1_.BLIF i_signals_c_1__n
+1 1
+.names  i_signals_2_.BLIF i_signals_c_2__n
+1 1
+.names  i_signals_3_.BLIF i_signals_c_3__n
+1 1
+.names  i_select_0_.BLIF i_select_c_0__n
+1 1
+.names  i_select_1_.BLIF i_select_c_1__n
+1 1
+.names  i_select_c_1__n.BLIF o_signal_1_un3_n
+0 1
+.names  i_signals_c_2__n.BLIF i_select_c_1__n.BLIF o_signal_1_un1_n
+11 1
+.names  i_signals_c_0__n.BLIF o_signal_1_un3_n.BLIF o_signal_1_un0_n
+11 1
+.names  o_signal_1_un1_n.BLIF o_signal_1_un0_n.BLIF N_4
+1- 1
+-1 1
+.names  i_select_c_1__n.BLIF o_signal_2_un3_n
+0 1
+.names  i_signals_c_3__n.BLIF i_select_c_1__n.BLIF o_signal_2_un1_n
+11 1
+.names  i_signals_c_1__n.BLIF o_signal_2_un3_n.BLIF o_signal_2_un0_n
+11 1
+.names  o_signal_2_un1_n.BLIF o_signal_2_un0_n.BLIF N_5
+1- 1
+-1 1
+.names  i_select_c_0__n.BLIF o_signal_3_un3_n
+0 1
+.names  N_5.BLIF i_select_c_0__n.BLIF o_signal_3_un1_n
+11 1
+.names  N_4.BLIF o_signal_3_un3_n.BLIF o_signal_3_un0_n
+11 1
+.names  o_signal_3_un1_n.BLIF o_signal_3_un0_n.BLIF o_signal_c
+1- 1
+-1 1
+.end

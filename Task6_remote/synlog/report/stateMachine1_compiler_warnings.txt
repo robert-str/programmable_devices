@@ -1,0 +1,6 @@
+@W: CD604 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":65:1:65:14|OTHERS clause is not synthesized 
+@W: CG296 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":34:12:34:18|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":48:5:48:11|Referenced variable timecnt is not in sensitivity list
+@W: CL117 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Latch generated from process for signal timerFlag; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\isplever_prj\programmable_devices\task6_remote\statemachine.vhd":36:1:36:4|Latch generated from process for signal o_flag; possible missing assignment in an if or case statement.
+

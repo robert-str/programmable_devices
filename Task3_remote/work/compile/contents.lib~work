@@ -1,0 +1,7 @@
+12
+~E 1 "./../../adder1.vhd" 6 adder1
+~A 1 "./../../adder1.vhd" 16 myadder
+~E 1 "./../../fulladder2x3.vhd" 6 fullAdder2x3
+~A 1 "./../../fulladder2x3.vhd" 15 myFullAdder
+~E 1 "./../../tb_fulladder2x3.vhd" 21 testbench
+~A 1 "./../../tb_fulladder2x3.vhd" 24 behavior

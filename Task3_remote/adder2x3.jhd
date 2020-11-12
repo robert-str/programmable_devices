@@ -1,0 +1,8 @@
+
+
+MODULE adder2x3
+
+	SUBMODULE adder
+		INSTANCE add0
+		INSTANCE add1
+		INSTANCE add2

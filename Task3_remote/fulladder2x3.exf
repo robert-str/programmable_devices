@@ -1,0 +1,65 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      ai(2:0)                       ai                  2          3            -1
+      Port          2      bi(2:0)                       bi                  2          3            -1
+      Port          3      res(3:0)                      res                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      ai_2_                       ai[2]                       1            0            
+        Port      ai_1_                       ai[1]                       1            1            
+        Port      ai_0_                       ai[0]                       1            2            
+        Port      bi_2_                       bi[2]                       2            0            
+        Port      bi_1_                       bi[1]                       2            1            
+        Port      bi_0_                       bi[0]                       2            2            
+        Port      res_3_                      res[3]                       3            0            
+        Port      res_2_                      res[2]                       3            1            
+        Port      res_1_                      res[1]                       3            2            
+        Port      res_0_                      res[0]                       3            3            
+End
+Section Cross Reference File
+Design 'fullAdder2x3' created Thu Nov 12 07:17:28 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                  ai_0_                                     ai[0]
+   Inst                  ai_1_                                     ai[1]
+   Inst                  ai_2_                                     ai[2]
+   Inst                  bi_0_                                     bi[0]
+   Inst                  bi_1_                                     bi[1]
+   Inst                  bi_2_                                     bi[2]
+   Inst                 res_0_                                    res[0]
+   Inst                 res_1_                                    res[1]
+   Inst                 res_2_                                    res[2]
+   Inst                 res_3_                                    res[3]
+   Net         un1_stage0_0__n                             un1_stage0[0]
+   Net         un1_stage1_0__n                             un1_stage1[0]
+   Net              res_1_2__n                                  res_1[2]
+   Net               ai_c_0__n                                   ai_c[0]
+   Net                 ai_0__n                                     ai[0]
+   Net               ai_c_1__n                                   ai_c[1]
+   Net                 ai_1__n                                     ai[1]
+   Net               ai_c_2__n                                   ai_c[2]
+   Net               bi_c_0__n                                   bi_c[0]
+   Net                 bi_0__n                                     bi[0]
+   Net               bi_c_1__n                                   bi_c[1]
+   Net                 bi_1__n                                     bi[1]
+   Net               bi_c_2__n                                   bi_c[2]
+   Net                res_0__n                                    res[0]
+   Net                res_1__n                                    res[1]
+   Net                res_2__n                                    res[2]
+   Net            res_1_1_2__n                                res_1_1[2]
+   Net       un1_stage1_1_0__n                           un1_stage1_1[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     ai_2_
+        Input     bi_2_
+        Input     ai_1_
+        Input     ai_0_
+        Input     bi_1_
+        Input     bi_0_
+        Output     res_3_
+        Output     res_2_
+        Output     res_1_
+        Output     res_0_
+End

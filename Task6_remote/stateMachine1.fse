@@ -1,0 +1,10 @@
+
+fsm_encoding {7221221} sequential
+
+fsm_state_encoding {7221221} sidle {00}
+
+fsm_state_encoding {7221221} sstage1 {01}
+
+fsm_state_encoding {7221221} sflag {10}
+
+fsm_registers {7221221} {currState[1]}  {currState[0]} 

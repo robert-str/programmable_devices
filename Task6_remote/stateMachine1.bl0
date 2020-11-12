@@ -1,0 +1,232 @@
+#$ DATE Thu Nov 12 11:40:18 2020
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE statemachine1
+#$ PINS 3 i_clk i_drv o_flag
+#$ NODES 85 timeCnt_2_ timeCnt_3_ timeCnt_4_ timeCnt_5_ timeCnt_6_ timeCnt_7_ timeCnt_0_ timeCnt_1_ inst_timerFlag currState_0_ \
+#  currState_1_ currstate_ns_1__n currstate_d_2__n N_47 N_48 N_49 N_50 N_51 N_56 N_61 \
+#  N_62 N_63 N_64 N_65 N_66 N_67 N_69 N_70 N_71 N_72 \
+#  N_73 N_74 N_84 N_85 timecnt_i_6__n timecnt_i_5__n timecnt_i_4__n timecnt_i_3__n timecnt_i_2__n timeCnt_c0_i \
+#  timecnt_i_1__n currstate_i_0__n currstate_i_1__n timecnt_i_7__n i_drv_i i_clk_c i_drv_c o_flaglatrsreg N_56_0 N_51_0 \
+#  N_50_0 N_49_0 N_48_0 N_47_0 N_73_i N_74_i currstate_ns_0_1__n N_85_i N_44_0 N_70_i \
+#  N_71_i N_72_i un1_currState_1_0 N_69_i N_67_i N_66_i N_65_i N_64_i N_63_i N_61_i \
+#  N_62_i N_84_1 N_84_2 N_84_3 N_84_4 N_84_5 un1_currState_1_0_1 N_41_0_1 N_38_0_1 N_35_0_1 \
+#  N_25_0_1 N_23_0_1 N_96_0_1 N_6_0_1 N_72_1 
+.model statemachine1
+.inputs i_clk.BLIF i_drv.BLIF timeCnt_2_.BLIF timeCnt_3_.BLIF timeCnt_4_.BLIF timeCnt_5_.BLIF timeCnt_6_.BLIF timeCnt_7_.BLIF timeCnt_0_.BLIF \
+  timeCnt_1_.BLIF inst_timerFlag.BLIF currState_0_.BLIF currState_1_.BLIF currstate_ns_1__n.BLIF currstate_d_2__n.BLIF N_47.BLIF N_48.BLIF N_49.BLIF \
+  N_50.BLIF N_51.BLIF N_56.BLIF N_61.BLIF N_62.BLIF N_63.BLIF N_64.BLIF N_65.BLIF N_66.BLIF \
+  N_67.BLIF N_69.BLIF N_70.BLIF N_71.BLIF N_72.BLIF N_73.BLIF N_74.BLIF N_84.BLIF N_85.BLIF \
+  timecnt_i_6__n.BLIF timecnt_i_5__n.BLIF timecnt_i_4__n.BLIF timecnt_i_3__n.BLIF timecnt_i_2__n.BLIF timeCnt_c0_i.BLIF timecnt_i_1__n.BLIF currstate_i_0__n.BLIF currstate_i_1__n.BLIF \
+  timecnt_i_7__n.BLIF i_drv_i.BLIF i_clk_c.BLIF i_drv_c.BLIF o_flaglatrsreg.BLIF N_56_0.BLIF N_51_0.BLIF N_50_0.BLIF N_49_0.BLIF \
+  N_48_0.BLIF N_47_0.BLIF N_73_i.BLIF N_74_i.BLIF currstate_ns_0_1__n.BLIF N_85_i.BLIF N_44_0.BLIF N_70_i.BLIF N_71_i.BLIF \
+  N_72_i.BLIF un1_currState_1_0.BLIF N_69_i.BLIF N_67_i.BLIF N_66_i.BLIF N_65_i.BLIF N_64_i.BLIF N_63_i.BLIF N_61_i.BLIF \
+  N_62_i.BLIF N_84_1.BLIF N_84_2.BLIF N_84_3.BLIF N_84_4.BLIF N_84_5.BLIF un1_currState_1_0_1.BLIF N_41_0_1.BLIF N_38_0_1.BLIF \
+  N_35_0_1.BLIF N_25_0_1.BLIF N_23_0_1.BLIF N_96_0_1.BLIF N_6_0_1.BLIF N_72_1.BLIF  
+.outputs o_flag currState_0_.D currState_0_.C currState_1_.D currState_1_.C timeCnt_6_.D timeCnt_6_.C timeCnt_7_.D timeCnt_7_.C timeCnt_2_.D timeCnt_2_.C \
+  timeCnt_3_.D timeCnt_3_.C timeCnt_4_.D timeCnt_4_.C timeCnt_5_.D timeCnt_5_.C timeCnt_0_.D timeCnt_0_.C timeCnt_1_.D timeCnt_1_.C o_flaglatrsreg.D \
+  o_flaglatrsreg.LH o_flaglatrsreg.AR inst_timerFlag.D inst_timerFlag.LH currstate_ns_1__n currstate_d_2__n N_47 N_48 N_49 N_50 N_51 \
+  N_61 N_62 N_63 N_64 N_65 N_66 N_67 N_69 N_70 N_71 N_72 \
+  N_73 N_74 N_84 N_85 timecnt_i_6__n timecnt_i_5__n timecnt_i_4__n timecnt_i_3__n timecnt_i_2__n timeCnt_c0_i timecnt_i_1__n \
+  currstate_i_0__n currstate_i_1__n timecnt_i_7__n i_drv_i i_clk_c i_drv_c N_56_0 N_51_0 N_50_0 N_49_0 N_48_0 \
+  N_47_0 N_73_i N_74_i currstate_ns_0_1__n N_85_i N_44_0 N_70_i N_71_i N_72_i un1_currState_1_0 N_69_i \
+  N_67_i N_66_i N_65_i N_64_i N_63_i N_61_i N_62_i N_84_1 N_84_2 N_84_3 N_84_4 \
+  N_84_5 un1_currState_1_0_1 N_41_0_1 N_38_0_1 N_35_0_1 N_25_0_1 N_23_0_1 N_96_0_1 N_6_0_1 N_72_1
+.names  i_clk.BLIF i_clk_c
+1 1
+.names  i_drv.BLIF i_drv_c
+1 1
+.names  o_flaglatrsreg.BLIF o_flag
+1 1
+.names  N_25_0_1.BLIF inst_timerFlag.BLIF timeCnt_4_.D
+11 1
+.names  N_51.BLIF N_64_i.BLIF N_23_0_1
+11 1
+.names  N_23_0_1.BLIF inst_timerFlag.BLIF timeCnt_5_.D
+11 1
+.names  N_56.BLIF N_63_i.BLIF N_96_0_1
+11 1
+.names  N_96_0_1.BLIF inst_timerFlag.BLIF timeCnt_6_.D
+11 1
+.names  N_61_i.BLIF N_62_i.BLIF N_6_0_1
+11 1
+.names  N_6_0_1.BLIF inst_timerFlag.BLIF timeCnt_7_.D
+11 1
+.names  N_84.BLIF currstate_i_1__n.BLIF N_72_1
+11 1
+.names  N_72_1.BLIF i_drv_i.BLIF N_72
+11 1
+.names  N_47_0.BLIF timecnt_i_2__n.BLIF N_84_1
+11 1
+.names  timecnt_i_3__n.BLIF timecnt_i_4__n.BLIF N_84_2
+11 1
+.names  timecnt_i_5__n.BLIF timecnt_i_6__n.BLIF N_84_3
+11 1
+.names  N_84_1.BLIF N_84_2.BLIF N_84_4
+11 1
+.names  N_84_3.BLIF timecnt_i_7__n.BLIF N_84_5
+11 1
+.names  N_84_4.BLIF N_84_5.BLIF N_84
+11 1
+.names  N_72_i.BLIF N_70_i.BLIF un1_currState_1_0_1
+11 1
+.names  un1_currState_1_0_1.BLIF N_71_i.BLIF un1_currState_1_0
+11 1
+.names  N_47.BLIF N_69_i.BLIF N_41_0_1
+11 1
+.names  N_41_0_1.BLIF inst_timerFlag.BLIF timeCnt_1_.D
+11 1
+.names  N_48.BLIF N_67_i.BLIF N_38_0_1
+11 1
+.names  N_38_0_1.BLIF inst_timerFlag.BLIF timeCnt_2_.D
+11 1
+.names  N_49.BLIF N_66_i.BLIF N_35_0_1
+11 1
+.names  N_35_0_1.BLIF inst_timerFlag.BLIF timeCnt_3_.D
+11 1
+.names  N_50.BLIF N_65_i.BLIF N_25_0_1
+11 1
+.names  N_74.BLIF N_74_i
+0 1
+.names  currstate_ns_0_1__n.BLIF currstate_ns_1__n
+0 1
+.names  N_85.BLIF N_85_i
+0 1
+.names  N_70.BLIF N_70_i
+0 1
+.names  N_71.BLIF N_71_i
+0 1
+.names  N_72.BLIF N_72_i
+0 1
+.names  un1_currState_1_0.BLIF inst_timerFlag.LH
+0 1
+.names  N_69.BLIF N_69_i
+0 1
+.names  N_67.BLIF N_67_i
+0 1
+.names  N_66.BLIF N_66_i
+0 1
+.names  N_65.BLIF N_65_i
+0 1
+.names  N_64.BLIF N_64_i
+0 1
+.names  N_63.BLIF N_63_i
+0 1
+.names  N_61.BLIF N_61_i
+0 1
+.names  N_62.BLIF N_62_i
+0 1
+.names  timeCnt_5_.BLIF timecnt_i_5__n
+0 1
+.names  N_50_0.BLIF timeCnt_5_.BLIF N_51_0
+11 1
+.names  timeCnt_6_.BLIF timecnt_i_6__n
+0 1
+.names  N_51_0.BLIF timeCnt_6_.BLIF N_56_0
+11 1
+.names  N_56_0.BLIF N_56
+0 1
+.names  N_51_0.BLIF N_51
+0 1
+.names  N_50_0.BLIF N_50
+0 1
+.names  N_49_0.BLIF N_49
+0 1
+.names  N_48_0.BLIF N_48
+0 1
+.names  N_47_0.BLIF N_47
+0 1
+.names  N_73.BLIF N_73_i
+0 1
+.names  currState_0_.BLIF currstate_i_0__n
+0 1
+.names  currState_1_.BLIF currstate_i_1__n
+0 1
+.names  currstate_i_0__n.BLIF currstate_i_1__n.BLIF currstate_d_2__n
+11 1
+.names  N_84.BLIF currState_0_.BLIF N_85
+11 1
+.names  N_85_i.BLIF currstate_i_1__n.BLIF N_44_0
+11 1
+.names  N_73_i.BLIF N_74_i.BLIF currstate_ns_0_1__n
+11 1
+.names  timeCnt_0_.BLIF timeCnt_c0_i
+0 1
+.names  timeCnt_1_.BLIF timecnt_i_1__n
+0 1
+.names  timeCnt_1_.BLIF timeCnt_0_.BLIF N_47_0
+11 1
+.names  timeCnt_2_.BLIF timecnt_i_2__n
+0 1
+.names  N_47_0.BLIF timeCnt_2_.BLIF N_48_0
+11 1
+.names  timeCnt_3_.BLIF timecnt_i_3__n
+0 1
+.names  N_48_0.BLIF timeCnt_3_.BLIF N_49_0
+11 1
+.names  timeCnt_4_.BLIF timecnt_i_4__n
+0 1
+.names  N_49_0.BLIF timeCnt_4_.BLIF N_50_0
+11 1
+.names  N_56.BLIF timecnt_i_7__n.BLIF N_61
+11 1
+.names  N_56_0.BLIF timeCnt_7_.BLIF N_62
+11 1
+.names  N_51.BLIF timecnt_i_6__n.BLIF N_63
+11 1
+.names  N_50.BLIF timecnt_i_5__n.BLIF N_64
+11 1
+.names  N_49.BLIF timecnt_i_4__n.BLIF N_65
+11 1
+.names  N_48.BLIF timecnt_i_3__n.BLIF N_66
+11 1
+.names  N_47.BLIF timecnt_i_2__n.BLIF N_67
+11 1
+.names  timeCnt_c0_i.BLIF inst_timerFlag.BLIF timeCnt_0_.D
+11 1
+.names  timeCnt_c0_i.BLIF timecnt_i_1__n.BLIF N_69
+11 1
+.names  currState_0_.BLIF i_drv_c.BLIF N_70
+11 1
+.names  currstate_d_2__n.BLIF i_drv_i.BLIF N_71
+11 1
+.names  i_drv_c.BLIF i_drv_i
+0 1
+.names  currState_1_.BLIF currstate_i_0__n.BLIF N_73
+11 1
+.names  N_85.BLIF currstate_i_1__n.BLIF N_74
+11 1
+.names  timeCnt_7_.BLIF timecnt_i_7__n
+0 1
+.names  N_44_0.BLIF i_drv_i.BLIF currState_0_.D
+11 1
+.names  currstate_ns_1__n.BLIF i_drv_i.BLIF currState_1_.D
+11 1
+.names  o_flaglatrsreg.D
+1
+.names  i_clk_c.BLIF currState_0_.C
+1 1
+.names  i_clk_c.BLIF currState_1_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_6_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_7_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_2_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_3_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_4_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_5_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_0_.C
+1 1
+.names  i_clk_c.BLIF timeCnt_1_.C
+1 1
+.names  currState_1_.BLIF o_flaglatrsreg.LH
+1 1
+.names  currstate_d_2__n.BLIF o_flaglatrsreg.AR
+1 1
+.names  currstate_d_2__n.BLIF inst_timerFlag.D
+1 1
+.end

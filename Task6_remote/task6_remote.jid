@@ -1,0 +1,1 @@
+. stateMachineInit statemachine_initialcode.vhd c:\isplever_prj\programmable_devices\task6_remote\statemachine_initialcode.vhd

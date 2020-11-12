@@ -1,0 +1,58 @@
+#$ DATE Thu Nov 12 14:56:00 2020
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE statemachine
+#$ PINS 11 timeCnt_7_ i_clk i_drv o_flag timeCnt_6_ timeCnt_5_ timeCnt_4_ timeCnt_3_ timeCnt_2_ timeCnt_1_ timeCnt_0_
+#$ NODES 10 currState_1_reg currState_0_ currstate_i_0__n currstate_i_1__n i_drv_i i_clk_c i_drv_c timeCntDFF_0_reg timeCntDFF_1_reg nextState_0_sqmuxa_1 \
+#  
+.model statemachine
+.inputs i_clk.BLIF i_drv.BLIF currState_1_reg.BLIF currState_0_.BLIF currstate_i_0__n.BLIF currstate_i_1__n.BLIF i_drv_i.BLIF i_clk_c.BLIF i_drv_c.BLIF \
+  timeCntDFF_0_reg.BLIF timeCntDFF_1_reg.BLIF nextState_0_sqmuxa_1.BLIF  
+.outputs timeCnt_7_ o_flag timeCnt_6_ timeCnt_5_ timeCnt_4_ timeCnt_3_ timeCnt_2_ timeCnt_1_ timeCnt_0_ timeCntDFF_0_reg.D timeCntDFF_0_reg.C \
+  timeCntDFF_1_reg.D timeCntDFF_1_reg.C currState_0_.D currState_0_.C currState_1_reg.D currState_1_reg.C currstate_i_0__n currstate_i_1__n i_drv_i i_clk_c i_drv_c \
+  nextState_0_sqmuxa_1
+.names  i_clk.BLIF i_clk_c
+1 1
+.names  i_drv.BLIF i_drv_c
+1 1
+.names  currState_1_reg.BLIF o_flag
+1 1
+.names  timeCntDFF_0_reg.BLIF timeCnt_0_
+1 1
+.names  timeCntDFF_1_reg.BLIF timeCnt_1_
+1 1
+.names  timeCntDFF_1_reg.BLIF timeCnt_2_
+1 1
+.names  timeCntDFF_1_reg.BLIF timeCnt_3_
+1 1
+.names  timeCntDFF_1_reg.BLIF timeCnt_4_
+1 1
+.names  timeCntDFF_1_reg.BLIF timeCnt_5_
+1 1
+.names  timeCntDFF_1_reg.BLIF timeCnt_6_
+1 1
+.names  timeCntDFF_1_reg.BLIF timeCnt_7_
+1 1
+.names  i_drv_i.BLIF currstate_i_0__n.BLIF nextState_0_sqmuxa_1
+11 1
+.names  nextState_0_sqmuxa_1.BLIF currstate_i_1__n.BLIF currState_0_.D
+11 1
+.names  i_drv_c.BLIF i_drv_i
+0 1
+.names  currState_0_.BLIF currstate_i_0__n
+0 1
+.names  currState_1_reg.BLIF currstate_i_1__n
+0 1
+.names  currState_1_reg.BLIF i_drv_c.BLIF currState_1_reg.D
+11 1
+.names  timeCntDFF_1_reg.D
+.names  currState_0_.BLIF timeCntDFF_0_reg.D
+1 1
+.names  i_clk_c.BLIF timeCntDFF_0_reg.C
+1 1
+.names  i_clk_c.BLIF timeCntDFF_1_reg.C
+1 1
+.names  i_clk_c.BLIF currState_0_.C
+1 1
+.names  i_clk_c.BLIF currState_1_reg.C
+1 1
+.end

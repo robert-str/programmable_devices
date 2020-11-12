@@ -1,0 +1,15 @@
+Section Cross Reference File
+Design 'stateMachineP1' created Thu Nov 12 12:08:42 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst           currState_1_                              currState[1]
+   Inst     nextState_1__N_2_i                        nextState_1_.N_2_i
+   Inst        nextState_1__m1                           nextState_1_.m1
+   Net          currstate_1__n                              currState[1]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     i_clk
+        Input     i_drv
+        Output     o_flag
+End

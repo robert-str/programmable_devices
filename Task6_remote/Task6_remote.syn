@@ -1,0 +1,18 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Task6_remote
+DESIGN task6_remote Normal
+DEVKIT M4A5-64/32-10JC
+ENTRY Pure VHDL
+MODULE stateMachineP1.vhd
+MODSTYLE stateMachineP1 Normal
+STIMULUS stateMachineP1 tb_statemachineP1.vhd
+MODULE statemachine.vhd
+MODSTYLE stateMachine Normal
+STIMULUS stateMachine tb_statemachine.vhd
+MODULE statemachine_initialcode.vhd
+MODSTYLE stateMachineInit Normal
+STIMULUS stateMachineInit tb_statemachineinit.vhd
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE stateMachineInit

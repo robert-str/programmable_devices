@@ -1,0 +1,65 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      a(2:0)                        a                  2          3            -1
+      Port          2      b(2:0)                        b                  2          3            -1
+      Port          3      w(3:0)                        w                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      a_2_                        a[2]                       1            0            
+        Port      a_1_                        a[1]                       1            1            
+        Port      a_0_                        a[0]                       1            2            
+        Port      b_2_                        b[2]                       2            0            
+        Port      b_1_                        b[1]                       2            1            
+        Port      b_0_                        b[0]                       2            2            
+        Port      w_3_                        w[3]                       3            0            
+        Port      w_2_                        w[2]                       3            1            
+        Port      w_1_                        w[1]                       3            2            
+        Port      w_0_                        w[0]                       3            3            
+End
+Section Cross Reference File
+Design 'adder2x3' created Thu Oct 29 21:36:56 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                   a_0_                                      a[0]
+   Inst                   a_1_                                      a[1]
+   Inst                   a_2_                                      a[2]
+   Inst                   b_0_                                      b[0]
+   Inst                   b_1_                                      b[1]
+   Inst                   b_2_                                      b[2]
+   Inst                   w_0_                                      w[0]
+   Inst                   w_1_                                      w[1]
+   Inst                   w_2_                                      w[2]
+   Inst                   w_3_                                      w[3]
+   Net           un1_add0_0__n                               un1_add0[0]
+   Net           un1_add1_0__n                               un1_add1[0]
+   Net                w_1_2__n                                    w_1[2]
+   Net                a_c_0__n                                    a_c[0]
+   Net                  a_0__n                                      a[0]
+   Net                a_c_1__n                                    a_c[1]
+   Net                  a_1__n                                      a[1]
+   Net                a_c_2__n                                    a_c[2]
+   Net                b_c_0__n                                    b_c[0]
+   Net                  b_0__n                                      b[0]
+   Net                b_c_1__n                                    b_c[1]
+   Net                  b_1__n                                      b[1]
+   Net                b_c_2__n                                    b_c[2]
+   Net                  w_0__n                                      w[0]
+   Net                  w_1__n                                      w[1]
+   Net                  w_2__n                                      w[2]
+   Net              w_1_1_2__n                                  w_1_1[2]
+   Net         un1_add1_1_0__n                             un1_add1_1[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     a_2_
+        Input     b_2_
+        Input     a_1_
+        Input     a_0_
+        Input     b_1_
+        Input     b_0_
+        Output     w_3_
+        Output     w_2_
+        Output     w_1_
+        Output     w_0_
+End

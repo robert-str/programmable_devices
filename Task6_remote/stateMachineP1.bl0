@@ -1,0 +1,21 @@
+#$ DATE Thu Nov 12 12:08:42 2020
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE statemachinep1
+#$ PINS 3 i_clk i_drv o_flag
+#$ NODES 3 currState_1_reg nextState_1__m1 i_drv_c 
+.model statemachinep1
+.inputs i_clk.BLIF i_drv.BLIF currState_1_reg.BLIF nextState_1__m1.BLIF i_drv_c.BLIF  
+.outputs o_flag currState_1_reg.D currState_1_reg.C nextState_1__m1.X1 nextState_1__m1.X2 i_drv_c
+.names  i_clk.BLIF currState_1_reg.C
+1 1
+.names  i_drv.BLIF i_drv_c
+1 1
+.names  currState_1_reg.BLIF o_flag
+1 1
+.names  nextState_1__m1.BLIF currState_1_reg.D
+0 1
+.names  currState_1_reg.BLIF nextState_1__m1.X1
+1 1
+.names  i_drv_c.BLIF nextState_1__m1.X2
+1 1
+.end

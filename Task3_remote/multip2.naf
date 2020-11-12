@@ -1,0 +1,7 @@
+o_signal  o
+i_signals[3]  i
+i_signals[2]  i
+i_signals[1]  i
+i_signals[0]  i
+i_select[1]  i
+i_select[0]  i

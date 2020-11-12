@@ -1,0 +1,27 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      sum(1:0)                      sum                  1          2            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      sum_1_                      sum[1]                       1            0            
+        Port      sum_0_                      sum[0]                       1            1            
+End
+Section Cross Reference File
+Design 'adder1' created Thu Nov 12 06:39:22 2020
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                 sum_0_                                    sum[0]
+   Inst                 sum_1_                                    sum[1]
+   Net            un2_sum_0__n                                un2_sum[0]
+   Net                sum_0__n                                    sum[0]
+   Net          un2_sum_1_0__n                              un2_sum_1[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     a
+        Input     b
+        Input     c
+        Output     sum_1_
+        Output     sum_0_
+End

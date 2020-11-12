@@ -1,0 +1,37 @@
+timestamp=1605189790232
+
+[~A]
+ModifyID=10
+Version=73
+
+[statemachineinit]
+A/sequential=21|./../../statemachine_initialcode.vhd|13|1*0
+BinI32/sequential=3*0
+I=0*613
+I/sequential=0*1633
+M=11|0|vc1|1605189789948|./../../statemachine_initialcode.vhd|0*194*0x17db3af15c766da3e39541d2e36fa6765023c8c9|0*509*0x5eebbfaf24833dd780412b1f91e05209
+M/sequential=21|0|vc1|1605189789950|./../../statemachine_initialcode.vhd|0*857*0x5ed164d8827e4b0db545b4c719948fccdcb7162e|0*1515*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../../statemachine_initialcode.vhd|6
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|240e2206f2e4abc5f6e36b0f4afa6e663816cd55f3b03163e411aa2f15a1f83bcacd06a91f29e15949d079474a59fbad
+Version/sequential=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|55c06bc45e3f780fdc274d14e0a3c29ed1348bca961d073d52fe9ea5543e22c5e744bdd4c5223278b31736c6f553a773
+
+[testbench]
+A/behavior=21|./../../tb_statemachineinit.vhd|24|1*1278
+BinI32/behavior=3*535
+I=0*2293
+I/behavior=0*3274
+M=11|0|vc1|1605189790180|./../../tb_statemachineinit.vhd|0*1961*0x60b39730ac49a2b83510569ace244188fc801624|0*2201*0x5eebbfaf24833dd780412b1f91e05209
+M/behavior=21|0|vc1|1605189790182|./../../tb_statemachineinit.vhd|0*2522*0x794dd47c68e81aca7f93769954ef39d3d816357b|0*3170*0x342d199c7b40d21b0ecf2867dd8bfa66
+R=./../../tb_statemachineinit.vhd|21
+Version=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d7913e40376f8ee0edee80cb30af09908f6b0
+Version/behavior=10.1.3088.5434  (Windows)|00000003789cd3f5370600015b00b0|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5f96c1e373f9c802a790f50ce5dadba89d
+
+[~MFT]
+0=13|0work.mgf|3274|0
+1=1|1work.mgf|1278|0
+3=1|3work.mgf|535|0
+
+[~U]
+statemachineinit=stateMachineInit 11|0*0|
+testbench=11|0*1888|
+

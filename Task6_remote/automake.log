@@ -1,0 +1,14 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Aldec VHDL Functional Simulation
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\chipsim.exe tb_statemachineinit.rsp tb_statemachineinit.fado udo.rsp'
+
+
+Done: completed successfully.
+
+Launching: 'C:\ispLEVER_Classic2_0\active-hdl\BIN\avhdl.exe -do "tb_statemachineinit_activehdl.do"'
+

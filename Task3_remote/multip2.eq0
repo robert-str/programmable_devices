@@ -1,0 +1,95 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design multip2 created Mon Nov 02 11:08:12 2020
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   o_signal 
+   2          2        1    Node  N_4 
+   2          2        1    Node  N_5 
+   2          2        1    Node  o_signal_c 
+   1/1        1        1    Node  i_signals_c_0__n 
+   1/1        1        1    Node  i_signals_c_1__n 
+   1/1        1        1    Node  i_signals_c_2__n 
+   1/1        1        1    Node  i_signals_c_3__n 
+   1/1        1        1    Node  i_select_c_0__n 
+   1/1        1        1    Node  i_select_c_1__n 
+   1          1        1    Node  o_signal_1_un3_n 
+   1          2        1    Node  o_signal_1_un1_n 
+   1          2        1    Node  o_signal_1_un0_n 
+   1          1        1    Node  o_signal_2_un3_n 
+   1          2        1    Node  o_signal_2_un1_n 
+   1          2        1    Node  o_signal_2_un0_n 
+   1          1        1    Node  o_signal_3_un3_n 
+   1          2        1    Node  o_signal_3_un1_n 
+   1          2        1    Node  o_signal_3_un0_n 
+=========
+  22/7          Best P-Term Total: 22
+                       Total Pins: 7
+                      Total Nodes: 18
+            Average P-Term/Output: 1
+
+
+Equations:
+
+o_signal = (o_signal_c);
+
+N_4 = (o_signal_1_un1_n
+     # o_signal_1_un0_n);
+
+N_5 = (o_signal_2_un1_n
+     # o_signal_2_un0_n);
+
+o_signal_c = (o_signal_3_un1_n
+     # o_signal_3_un0_n);
+
+i_signals_c_0__n = (i_signals_0_);
+
+i_signals_c_1__n = (i_signals_1_);
+
+i_signals_c_2__n = (i_signals_2_);
+
+i_signals_c_3__n = (i_signals_3_);
+
+i_select_c_0__n = (i_select_0_);
+
+i_select_c_1__n = (i_select_1_);
+
+o_signal_1_un3_n = (!i_select_c_1__n);
+
+o_signal_1_un1_n = (i_signals_c_2__n & i_select_c_1__n);
+
+o_signal_1_un0_n = (i_signals_c_0__n & o_signal_1_un3_n);
+
+o_signal_2_un3_n = (!i_select_c_1__n);
+
+o_signal_2_un1_n = (i_signals_c_3__n & i_select_c_1__n);
+
+o_signal_2_un0_n = (i_signals_c_1__n & o_signal_2_un3_n);
+
+o_signal_3_un3_n = (!i_select_c_0__n);
+
+o_signal_3_un1_n = (N_5 & i_select_c_0__n);
+
+o_signal_3_un0_n = (N_4 & o_signal_3_un3_n);
+
+
+Reverse-Polarity Equations:
+
+!o_signal = (!o_signal_c);
+
+!i_signals_c_0__n = (!i_signals_0_);
+
+!i_signals_c_1__n = (!i_signals_1_);
+
+!i_signals_c_2__n = (!i_signals_2_);
+
+!i_signals_c_3__n = (!i_signals_3_);
+
+!i_select_c_0__n = (!i_select_0_);
+
+!i_select_c_1__n = (!i_select_1_);
+

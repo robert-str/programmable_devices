@@ -1,0 +1,1 @@
+-w -s "C:\ispLever_prj\programmable_devices\Task6_remote\work\library.cfg"  -j "C:\ispLever_prj\programmable_devices\Task6_remote\work\projlib.cfg"  -d "C:\ispLever_prj\programmable_devices\Task6_remote\work\compile"   -work work  -O3 -e 100 "tb_statemachineinit.vhd"

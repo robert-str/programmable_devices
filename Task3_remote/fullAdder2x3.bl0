@@ -1,0 +1,96 @@
+#$ DATE Thu Nov 12 07:17:28 2020
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE fulladder2x3
+#$ PINS 10 ai_2_ bi_2_ res_3_ ai_1_ ai_0_ bi_1_ bi_0_ res_2_ res_1_ res_0_
+#$ NODES 30 G_1 G_7 G_16 c0 c1 N_9 N_10 N_11 N_18 N_19 \
+#  N_20 N_21 ai_c_0__n ai_c_1__n ai_c_2__n bi_c_0__n bi_c_1__n bi_c_2__n N_18_i N_19_i \
+#  N_20_i N_21_0 N_9_i N_10_i N_11_i c1_0 G_16_1 G_7_1 N_21_0_1 c1_0_1 \
+#  
+.model fulladder2x3
+.inputs ai_2_.BLIF bi_2_.BLIF ai_1_.BLIF ai_0_.BLIF bi_1_.BLIF bi_0_.BLIF G_1.BLIF G_7.BLIF G_16.BLIF \
+  c0.BLIF c1.BLIF N_9.BLIF N_10.BLIF N_11.BLIF N_18.BLIF N_19.BLIF N_20.BLIF N_21.BLIF \
+  ai_c_0__n.BLIF ai_c_1__n.BLIF ai_c_2__n.BLIF bi_c_0__n.BLIF bi_c_1__n.BLIF bi_c_2__n.BLIF N_18_i.BLIF N_19_i.BLIF N_20_i.BLIF \
+  N_21_0.BLIF N_9_i.BLIF N_10_i.BLIF N_11_i.BLIF c1_0.BLIF G_16_1.BLIF G_7_1.BLIF N_21_0_1.BLIF c1_0_1.BLIF  
+.outputs res_3_ res_2_ res_1_ res_0_ G_16_1.X1 G_16_1.X2 G_16.X1 G_16.X2 G_7_1.X1 G_7_1.X2 G_7.X1 \
+  G_7.X2 G_1.X1 G_1.X2 c0 c1 N_9 N_10 N_11 N_18 N_19 N_20 \
+  N_21 ai_c_0__n ai_c_1__n ai_c_2__n bi_c_0__n bi_c_1__n bi_c_2__n N_18_i N_19_i N_20_i N_21_0 \
+  N_9_i N_10_i N_11_i c1_0 N_21_0_1 c1_0_1
+.names  ai_0_.BLIF ai_c_0__n
+1 1
+.names  ai_1_.BLIF ai_c_1__n
+1 1
+.names  ai_2_.BLIF ai_c_2__n
+1 1
+.names  bi_0_.BLIF bi_c_0__n
+1 1
+.names  bi_1_.BLIF bi_c_1__n
+1 1
+.names  bi_2_.BLIF bi_c_2__n
+1 1
+.names  G_1.BLIF res_0_
+1 1
+.names  G_7.BLIF res_1_
+1 1
+.names  G_16.BLIF res_2_
+1 1
+.names  N_21.BLIF res_3_
+1 1
+.names  N_20_i.BLIF N_18_i.BLIF N_21_0_1
+11 1
+.names  N_21_0_1.BLIF N_19_i.BLIF N_21_0
+11 1
+.names  N_11_i.BLIF N_9_i.BLIF c1_0_1
+11 1
+.names  c1_0_1.BLIF N_10_i.BLIF c1_0
+11 1
+.names  N_18.BLIF N_18_i
+0 1
+.names  N_19.BLIF N_19_i
+0 1
+.names  N_20.BLIF N_20_i
+0 1
+.names  N_21_0.BLIF N_21
+0 1
+.names  N_9.BLIF N_9_i
+0 1
+.names  N_10.BLIF N_10_i
+0 1
+.names  N_11.BLIF N_11_i
+0 1
+.names  c1_0.BLIF c1
+0 1
+.names  ai_c_0__n.BLIF bi_c_0__n.BLIF c0
+11 1
+.names  ai_c_1__n.BLIF bi_c_1__n.BLIF N_9
+11 1
+.names  bi_c_1__n.BLIF c0.BLIF N_10
+11 1
+.names  ai_c_1__n.BLIF c0.BLIF N_11
+11 1
+.names  ai_c_2__n.BLIF bi_c_2__n.BLIF N_18
+11 1
+.names  bi_c_2__n.BLIF c1.BLIF N_19
+11 1
+.names  ai_c_2__n.BLIF c1.BLIF N_20
+11 1
+.names  c1.BLIF G_16_1.X1
+1 1
+.names  ai_c_2__n.BLIF G_16_1.X2
+1 1
+.names  G_16_1.BLIF G_16.X1
+1 1
+.names  bi_c_2__n.BLIF G_16.X2
+1 1
+.names  c0.BLIF G_7_1.X1
+1 1
+.names  ai_c_1__n.BLIF G_7_1.X2
+1 1
+.names  G_7_1.BLIF G_7.X1
+1 1
+.names  bi_c_1__n.BLIF G_7.X2
+1 1
+.names  ai_c_0__n.BLIF G_1.X1
+1 1
+.names  bi_c_0__n.BLIF G_1.X2
+1 1
+.end
